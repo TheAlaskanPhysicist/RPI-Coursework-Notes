@@ -19,7 +19,7 @@ RPI-Coursework-Notes
 - Fall-2029
 - Spring-2030
 
-Each folder contains notes organized by class ocde, and may include an index or internal README.
+Each folder contains notes organized by class code, and may include an index or internal README.
 
 ## License
 All notes are licensed under [CC BY-NC-SA 4.0](LICENSE). You may share or adapt them with attribution.
