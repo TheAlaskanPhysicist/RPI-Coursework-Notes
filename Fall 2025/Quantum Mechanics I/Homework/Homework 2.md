@@ -286,11 +286,34 @@ $$\begin{align}
 Where $x$ is a the position operator and $\Xi$ is some number with the dimension of momentum.
 Justify your answer.
 
-The parameter $\Xi$ is an element of the Lie algebra of inverse displacement divided by $\hbar$.
-Therefore, $\Xi$ is the generator of momentum translation.
+The parameter $\Xi/\hbar$ is an element of the Lie Algebra, in units of inverse displacement.
+Therefore:
+ - $x$ is the generator of momentum translation.
+ - $\Xi$ is the amount of momentum translation $\ket{p}\rightarrow\ket{p+\Xi}$.
 
-The exponential, then, is the operator that translates a wavefunction such that:
+Verbose proof of this fact:
 $$\begin{align}
-\exp\left(\dfrac{ix\Xi}{\hbar}\right)\ket{p}&=\ket{p-\Xi}
+\left[p,e^{\tfrac{ix\Xi}{\hbar}}\right]&=p\sum_{n\ge0}\dfrac{\left(\tfrac{ix\Xi}{\hbar}\right)^n}{n!}-\sum_{n\ge0}\dfrac{\left(\tfrac{ix\Xi}{\hbar}\right)^n}{n!}p\\
+&=\sum_{n\ge0}\dfrac{\left(\tfrac{i\Xi}{\hbar}\right)^n}{n!}\left(px^n-x^np\right)\\
+&=\sum_{n\ge0}\dfrac{\left(\tfrac{i\Xi}{\hbar}\right)^n}{n!}\left[p,x^n\right]\\
+&=\dfrac{\left(\tfrac{i\Xi}{\hbar}\right)^0}{0!}\left[p,x^0\right]+\sum_{n\ge1}\dfrac{\left(\tfrac{i\Xi}{\hbar}\right)^n}{n!}\left[p,x^n\right]\\
+&=\sum_{n\ge1}\dfrac{\left(\tfrac{i\Xi}{\hbar}\right)^n}{n!}\cdot -i\hbar n x^{n-1}\\
+&=-i\hbar\cdot\dfrac{i\Xi}{\hbar}\sum_{n\ge1}\dfrac{\left(\tfrac{i\Xi}{\hbar}\right)^{n-1}}{(n-1)!}\cdot x^{n-1}\\
+&=\Xi\sum_{m\ge0}\dfrac{\left(\tfrac{i\Xi}{\hbar}\right)^{m}}{m!}\cdot x^{m}\\
+&=\Xi\sum_{m\ge0}\dfrac{\left(\tfrac{ix\Xi}{\hbar}\right)^{m}}{m!}\\
+\Aboxed{\left[p,e^{\tfrac{ix\Xi}{\hbar}}\right]&=\Xi e^{\tfrac{ix\Xi}{\hbar}}}
 \end{align}$$
-I.e. similar to the spatial translation operator, this is a momentum translation operator (or a speedup operator). It's naturally expressed on a momentum eigenstate so show that it translates the momentum eigenstate by $\Xi$.
+Lets operated on a state $\ket{p}$, then:
+$$\begin{align}
+pe^{\tfrac{ix\Xi}{\hbar}}-e^{\tfrac{ix\Xi}{\hbar}}p&=\Xi e^{\tfrac{ix\Xi}{\hbar}}\\
+pe^{\tfrac{ix\Xi}{\hbar}}\ket{p'}&=\Xi e^{\tfrac{ix\Xi}{\hbar}}\ket{p'}+e^{\tfrac{ix\Xi}{\hbar}}p\ket{p'}\\
+p\left(e^{\tfrac{ix\Xi}{\hbar}}\ket{p'}\right)&=\Xi e^{\tfrac{ix\Xi}{\hbar}}\ket{p'}+p'e^{\tfrac{ix\Xi}{\hbar}}\ket{p'}\\
+p\left(e^{\tfrac{ix\Xi}{\hbar}}\ket{p'}\right)&=(p'+\Xi)\left(e^{\tfrac{ix\Xi}{\hbar}}\ket{p'}\right)\\
+\end{align}$$
+Based on its Eigenvalues, this is identical to saying:
+$$\begin{align}
+pe^{\tfrac{ix\Xi}{\hbar}}-e^{\tfrac{ix\Xi}{\hbar}}p&=\Xi e^{\tfrac{ix\Xi}{\hbar}}\\
+pe^{\tfrac{ix\Xi}{\hbar}}\ket{p'}&=\Xi e^{\tfrac{ix\Xi}{\hbar}}\ket{p'}+e^{\tfrac{ix\Xi}{\hbar}}p\ket{p'}\\
+p\left(e^{\tfrac{ix\Xi}{\hbar}}\ket{p'}\right)&=\Xi e^{\tfrac{ix\Xi}{\hbar}}\ket{p'}+p'e^{\tfrac{ix\Xi}{\hbar}}\ket{p'}\\
+\Aboxed{e^{\tfrac{ix\Xi}{\hbar}}\ket{p'}&=\ket{p'+\Xi}}
+\end{align}$$
