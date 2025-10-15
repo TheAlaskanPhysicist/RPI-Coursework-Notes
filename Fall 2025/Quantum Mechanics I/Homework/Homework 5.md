@@ -170,61 +170,221 @@ $$\begin{align}
 -\dfrac{\hbar^2}{2m}\dfrac{\partial^2}{\partial x^2}\psi(x,t)&=E\psi(x,t)\\
 \dfrac{\partial^2}{\partial x^2}\psi(x,t)&=-\dfrac{2mE}{\hbar^2}\psi(x,t)\\
 \end{align}$$
-This is an ODE with a very simple solution. Let $k=\sqrt{\dfrac{2mE}{\hbar^2}}$, and so:
+This is an ODE with a very simple solution. Let $k=\sqrt{-\dfrac{2mE}{\hbar^2}}$, and so:
 $$\begin{align}
-\psi(x,t)&=Ae^{ikx}+Be^{-ikx}
+\psi(x,t)&=Ae^{kx}+Be^{-kx}
 \end{align}$$
 To classify the behavior between both sides, we can see that:
 $$\begin{align}
-\psi_+(x,t)&=A_+e^{ikx}+B_+e^{-ikx}\\
-\psi_-(x,t)&=A_-e^{ikx}+B_-e^{-ikx}\\
+\psi(x,t)&=\begin{cases}
+A_-e^{kx}+B_-e^{-kx} & x<0\\
+A_+e^{kx}+B_+e^{-kx} & x>0
+\end{cases}
 \end{align}$$
-Over the discontinuity, we have to do a bit of a trick. Integrate both sides over a small domain around the discontinuity, $x=x_0-\epsilon$ and $x=x_0+\epsilon$. This might have a discontinuous derivative, but we can still find a continuity in $\psi(x,t)$:
+For the wavefunction to be normalizable, it must be the case that:
 $$\begin{align}
--\dfrac{\hbar^2}{2m}\int_{-\epsilon}^{+\epsilon}\dfrac{\partial^2}{\partial x^2}\psi(x,t)\ dx + \int_{-\epsilon}^{+\epsilon}V(x)\psi(x,t)\ dx&=E\int_{-\epsilon}^{+\epsilon}\psi(x,t)\ dx\\
--\dfrac{\hbar^2}{2m}\left.\dfrac{\partial\psi(x,t)}{\partial x}\right|_{-\epsilon}^{+\epsilon}-V_0b\int_{-\epsilon}^{+\epsilon}\delta(x)\ \psi(x,t)\ dx&=E\int_{-\epsilon}^{+\epsilon}\psi(x,t)\ dx
+\psi(x,t)&=\begin{cases}
+A_-e^{kx} & x<0\\
+B_+e^{-kx} & x>0
+\end{cases}
 \end{align}$$
-We can extend the integral for the delta function, since it's adding a bunch of zeros, and so:
+Otherwise, there is an exponential increase, and therefore not normalizable over all space.
+
+We also want the wavefunction to be continuous:
 $$\begin{align}
--\dfrac{\hbar^2}{2m}\left.\dfrac{\partial\psi(x,t)}{\partial x}\right|_{-\epsilon}^{+\epsilon}-V_0b\ \psi(0,t)&=E\int_{-\epsilon}^{+\epsilon}\psi(x,t)\ dx
+\lim_{x\rightarrow 0^-}\psi(x,t)&=\lim_{x\rightarrow 0^+}\psi(x,t)\\
+\lim_{x\rightarrow 0^-}A_-e^{kx}&=\lim_{x\rightarrow 0^+}B_+e^{-kx}\\
+\Aboxed{A_-&=B_+}
 \end{align}$$
-Take the limit of both sides for $\epsilon\rightarrow0$, then:
+The resultant wavefunction is then:
 $$\begin{align}
--\dfrac{\hbar^2}{2m}\lim_{\epsilon\rightarrow0}\left.\dfrac{\partial\psi(x,t)}{\partial x}\right|_{-\epsilon}^{+\epsilon}-V_0b\ \psi(0,t)&=\lim_{\epsilon\rightarrow0}E\int_{-\epsilon}^{+\epsilon}\psi(x,t)\ dx\\
--\dfrac{\hbar^2}{2m}\left(\left.\dfrac{\partial\psi(x,t)}{\partial x}\right|_{x=\epsilon}-\left.\dfrac{\partial\psi(x,t)}{\partial x}\right|_{x=-\epsilon}\right)-V_0b\ \psi(0,t)&=0\\
-\left.\dfrac{\partial\psi(x,t)}{\partial x}\right|_{x=\epsilon}-\left.\dfrac{\partial\psi(x,t)}{\partial x}\right|_{x=-\epsilon}&=-\dfrac{2mV_0}{\hbar^2}b\ \psi(0,t)\\
-\Aboxed{\lim_{x\rightarrow 0^+}\dfrac{\partial\psi(x,t)}{\partial x}-\lim_{x\rightarrow 0^-}\dfrac{\partial\psi(x,t)}{\partial x}&=-\dfrac{2mV_0}{\hbar^2}b\ \psi(0,t)}
+\psi(x,t)&=\begin{cases}
+Ae^{kx} & x<0\\
+Ae^{-kx} & x>0
+\end{cases}
 \end{align}$$
-Using our expressions for both sides, we can then see:
-
-
-
-
-
-
-
-
-
+Over some interval $x\in(x_0-\epsilon,x_0+\epsilon)$, where $x_0$ is the discontinuity, and $\epsilon\rightarrow0$, we can integrate both sides of the Schrodinger equation in order to see:
 $$\begin{align}
-\lim_{x\rightarrow 0^+}\dfrac{\partial\psi(x,t)}{\partial x}-\lim_{x\rightarrow 0^-}\dfrac{\partial\psi(x,t)}{\partial x}&=-\dfrac{2mV_0}{\hbar^2}b\ \psi(0,t)\\
-\lim_{x\rightarrow 0^+}\dfrac{\partial}{\partial x}\left(A_+e^{ikx}+B_+e^{-ikx}\right)-\lim_{x\rightarrow 0^-}\dfrac{\partial}{\partial x}\left(A_-e^{ikx}+B_-e^{-ikx}\right)&=-\dfrac{2mV_0}{\hbar^2}b\ \psi(0,t)\\
-ik\lim_{x\rightarrow 0^+}\left(A_+e^{ikx}-B_+e^{-ikx}\right)-ik\lim_{x\rightarrow 0^-}\left(A_-e^{ikx}-B_-e^{-ikx}\right)&=-\dfrac{2mV_0}{\hbar^2}b\ \psi(0,t)\\
-ik\left(A_+-B_+\right)-ik\left(A_--B_-\right)&=-\dfrac{2mV_0}{\hbar^2}b\ \psi(0,t)\\
-A_+-B_+-A_-+B_-&=i\dfrac{2mV_0}{\hbar^2k}b\ \psi(0,t)\\
+-\dfrac{\hbar^2}{2m}\dfrac{\partial^2}{\partial x^2}\psi(x,t) + V(x)\psi(x,t)&=E\psi(x,t)\\
+-\dfrac{\hbar^2}{2m}\int_{-\epsilon}^{+\epsilon}\dfrac{\partial^2}{\partial x^2}\psi(x,t)\ dx - V_0b \int_{-\epsilon}^{+\epsilon}\delta(x)\psi(x,t)\ dx&=E\int_{-\epsilon}^{+\epsilon}\psi(x,t)\ dx
 \end{align}$$
-
-
-
-
-
-
-
-
+The integral of the delta function that contains the discontinuity is equal to that of the integral over the whole interval, and so we can find that:
+$$\begin{align}
+-\dfrac{\hbar^2}{2m}\int_{-\epsilon}^{+\epsilon}\dfrac{\partial^2}{\partial x^2}\psi(x,t)\ dx - V_0b \int_{-\infty}^{+\infty}\delta(x)\psi(x,t)\ dx&=E\int_{-\epsilon}^{+\epsilon}\psi(x,t)\ dx\\
+-\dfrac{\hbar^2}{2m}\left.\dfrac{\partial\psi}{\partial x}(x,t)\right|_{-\epsilon}^{+\epsilon} - V_0b\psi(0,t)&=E\int_{-\epsilon}^{+\epsilon}\psi(x,t)\ dx\\
+-\dfrac{\hbar^2}{2m}\left(\left.\dfrac{\partial\psi}{\partial x}(x,t)\right|_{+\epsilon}-\left.\dfrac{\partial\psi}{\partial x}(x,t)\right|_{-\epsilon}\right) - V_0b\psi(0,t)&=E\int_{-\epsilon}^{+\epsilon}\psi(x,t)\ dx\\
+\end{align}$$
+Rearranging, and taking the limit as $\epsilon\rightarrow0$, we can see:
+$$\begin{align}
+-\dfrac{\hbar^2}{2m}\lim_{\epsilon\rightarrow0}\left(\left.\dfrac{\partial\psi}{\partial x}(x,t)\right|_{+\epsilon}-\left.\dfrac{\partial\psi}{\partial x}(x,t)\right|_{-\epsilon}\right)&=\lim_{\epsilon\rightarrow0}V_0b\ \psi(0,t)+\lim_{\epsilon\rightarrow0}E\int_{-\epsilon}^{+\epsilon}\psi(x,t)\ dx\\
+-\dfrac{\hbar^2}{2m}\left(\left.\dfrac{\partial\psi}{\partial x}(x,t)\right|_{x=0^+}-\left.\dfrac{\partial\psi}{\partial x}(x,t)\right|_{x=0^-}\right)&=V_0b\ \psi(0,t)+0\\
+\Aboxed{\left.\dfrac{\partial\psi}{\partial x}(x,t)\right|_{x=0^+}-\left.\dfrac{\partial\psi}{\partial x}(x,t)\right|_{x=0^-}&=-\dfrac{2mV_0b}{\hbar^2}\ \psi(0,t)}
+\end{align}$$
+Using our wavefunction $\psi(x,t)=Ae^{-k|x|}$, we can then simplify the expression to:
+$$\begin{align}
+\left.\dfrac{\partial\psi}{\partial x}(x,t)\right|_{x=0^+}-\left.\dfrac{\partial\psi}{\partial x}(x,t)\right|_{x=0^-}&=-\dfrac{2mV_0b}{\hbar^2}\ \psi(0,t)\\
+\left.\dfrac{\partial}{\partial x}\left(Ae^{-kx}\right)\right|_{x=0^+}-\left.\dfrac{\partial}{\partial x}\left(Ae^{+kx}\right)\right|_{x=0^-}&=-\dfrac{2mV_0b}{\hbar^2}\lim_{x\rightarrow 0}\psi(x,t)\\
+-k\left.\left(Ae^{-kx}\right)\right|_{x=0^+}-k\left.\left(Ae^{+kx}\right)\right|_{x=0^-}&=-\dfrac{2mV_0b}{\hbar^2}\left.Ae^{-k|x|}\right|_{x=0}\\
+-kAe^{-k\cdot0}-kAe^{+k\cdot0}&=-\dfrac{2mV_0b}{\hbar^2}Ae^{-k|0|}\\
+-2k&=-\dfrac{2mV_0b}{\hbar^2}\\
+\Aboxed{k&=\dfrac{mV_0b}{\hbar^2}}
+\end{align}$$
+We've found the spatial frequency, and so we can find the bound energy state as:
+$$\begin{align}
+E&=-\dfrac{\hat{p}^2}{2m}\\
+&=-\dfrac{\hbar^2k^2}{2m}\\
+&=-\dfrac{\hbar^2}{2m}\left(\dfrac{mV_0b}{\hbar^2}\right)^2\\
+&=-\dfrac{\hbar^2}{2m}\dfrac{m^2V_0^2b^2}{\hbar^4}\\
+\Aboxed{E&=-\dfrac{mV_0^2b^2}{2\hbar^2}}
+\end{align}$$
+---
 ### Question 2.34.B
 Generalize this to the double delta-function potential:
 $$\begin{align}
 V(x)&=-V_0\dfrac{b}{2}\left[\delta\left(x+\dfrac{a}{2}\right)+\delta\left(x-\dfrac{a}{2}\right)\right]
 \end{align}$$
-and bound the bound-state energy eigenvalues and plot the corresponding eigenfunctions. Also show that you get the expected results as $a\rightarrow0$.
+and find the bound-state energy eigenvalues and plot the corresponding eigenfunctions. Also show that you get the expected results as $a\rightarrow0$.
 
+This got extremely tedious to show all the lines of work for these, so I will take the liberty to take large steps in calculus and algebra because I can't be bothered to do all of it.
 
+The solution to this system must have a wavefunction symmetric or antisymmetric about $x=0$.
+
+#### Symmetric Wavefunction
+If the wavefunction symmetric about $x=0$, then we can represent the general form as:
+$$\begin{align}
+\psi(x,t)&=\begin{cases}
+Be^{+k(x+\tfrac{a}{2})} & x<-\dfrac{a}{2}\\
+A\cosh(kx) & -\dfrac{a}{2}<x<+\dfrac{a}{2}\\
+Be^{-k(x-\tfrac{a}{2})} & x>+\dfrac{a}{2}\\
+\end{cases}
+\end{align}$$
+Using the continuity of the wavefunction, there is a necessary condition:
+$$\begin{align}
+B&=A\cosh(k\tfrac{a}{2})\\
+\end{align}$$
+The derivative condition enforces that:
+$$\begin{align}
+\psi_+'(\tfrac{a}{2},t)-\psi_-'(\tfrac{a}{2},t)&=-\dfrac{mV_0b}{\hbar^2}\ \psi(\tfrac{a}{2},t)\\
+-kBe^{-k(\tfrac{a}{2}-\tfrac{a}{2})}-kA\sinh(k\tfrac{a}{2})&=-\dfrac{mV_0b}{\hbar^2}\ A\cosh(k\tfrac{a}{2})\\
+-kA\cosh(k\tfrac{a}{2})-kA\sinh(k\tfrac{a}{2})&=-\dfrac{mV_0b}{\hbar^2}\ A\cosh(k\tfrac{a}{2})\\
+k\left[\cosh(k\tfrac{a}{2})+\sinh(k\tfrac{a}{2})\right]&=\dfrac{mV_0b}{\hbar^2}\ \cosh(k\tfrac{a}{2})\\
+\Aboxed{k\tfrac{a}{2}\left[1+\tanh(k\tfrac{a}{2})\right]&=\dfrac{mV_0ab}{2\hbar^2}}
+\end{align}$$
+Our wavenumber should satisfy the condition above.
+
+To continue, we need to assume the following asymptotic limit:
+$$\begin{align}
+mV_0ab/\hbar^2&\gg1
+\end{align}$$
+In this limit, we can see the wavenumber system reduce approximately to:
+$$\begin{align}
+k\tfrac{a}{2}&\approx\dfrac{1}{2}\cdot\dfrac{mV_0ab}{2\hbar^2} &\implies&& \Aboxed{k&\approx\dfrac{mV_0b}{2\hbar^2}}
+\end{align}$$
+We can then find the energy as:
+$$\begin{align}
+E&=-\dfrac{\hbar^2k^2}{2m}\\
+&=-\dfrac{\hbar^2}{2m}\left(\dfrac{mV_0b}{2\hbar^2}\right)^2\\
+&=-\dfrac{\hbar^2}{2m}\dfrac{m^2V_0^2b^2}{4\hbar^4}\\
+\Aboxed{E&=-\dfrac{mV_0^2b^2}{8\hbar^2}}
+\end{align}$$
+---
+#### Anti-Symmetric Wavefunction
+If the wavefunction symmetric about $x=0$, then we can represent the general form as:
+$$\begin{align}
+\psi(x,t)&=\begin{cases}
+-Be^{+k(x+\tfrac{a}{2})} & x<-\dfrac{a}{2}\\
+A\sinh(kx) & -\dfrac{a}{2}<x<+\dfrac{a}{2}\\
+Be^{-k(x-\tfrac{a}{2})} & x>+\dfrac{a}{2}\\
+\end{cases}
+\end{align}$$
+Using the continuity of the wavefunction, there is a necessary condition:
+$$\begin{align}
+B&=A\sinh(k\tfrac{a}{2})\\
+\end{align}$$
+The derivative condition enforces that:
+$$\begin{align}
+\psi_+'(\tfrac{a}{2},t)-\psi_-'(\tfrac{a}{2},t)&=-\dfrac{mV_0b}{\hbar^2}\ \psi(\tfrac{a}{2},t)\\
+-kBe^{-k(\tfrac{a}{2}-\tfrac{a}{2})}-kA\cosh(k\tfrac{a}{2})&=-\dfrac{mV_0b}{\hbar^2}\ A\sinh(k\tfrac{a}{2})\\
+-kA\sinh(k\tfrac{a}{2})-kA\cosh(k\tfrac{a}{2})&=-\dfrac{mV_0b}{\hbar^2}\ A\sinh(k\tfrac{a}{2})\\
+k\left[\sinh(k\tfrac{a}{2})+\cosh(k\tfrac{a}{2})\right]&=\dfrac{mV_0b}{\hbar^2}\ \sinh(k\tfrac{a}{2})\\
+\Aboxed{k\tfrac{a}{2}\left[1+\coth(k\tfrac{a}{2})\right]&=\dfrac{mV_0ab}{2\hbar^2}}
+\end{align}$$
+Our wavenumber should satisfy the condition above.
+
+To continue, we need to assume the following asymptotic limit:
+$$\begin{align}
+mV_0ab/\hbar^2&\gg1
+\end{align}$$
+In this limit, we can see the wavenumber system reduce approximately to:
+$$\begin{align}
+k\tfrac{a}{2}&\approx\dfrac{1}{2}\cdot\dfrac{mV_0ab}{2\hbar^2} &\implies&& \Aboxed{k&\approx\dfrac{mV_0b}{2\hbar^2}}
+\end{align}$$
+We can then find the energy as:
+$$\begin{align}
+E&=-\dfrac{\hbar^2k^2}{2m}\\
+&=-\dfrac{\hbar^2}{2m}\left(\dfrac{mV_0b}{2\hbar^2}\right)^2\\
+&=-\dfrac{\hbar^2}{2m}\dfrac{m^2V_0^2b^2}{4\hbar^4}\\
+\Aboxed{E&=-\dfrac{mV_0^2b^2}{8\hbar^2}}
+\end{align}$$
+---
+#### All Together
+Any wavefunction that satisfies our potential can be expressed as the linear combination of symmetric and anti-symmetric states, so long as both states are pre-normalized.
+
+Therefore, what we see is:
+$$\begin{align}
+\psi_{\text{sym}}(x,t)&=A_{\text{sym}}\begin{cases}
+e^{+k(x+\tfrac{a}{2})} & x<-\dfrac{a}{2}\\
+\dfrac{\cosh(kx)}{\cosh(k\tfrac{a}{2})} & |x|<\dfrac{a}{2}\\
+e^{-k(x-\tfrac{a}{2})} & x>+\dfrac{a}{2}\\
+\end{cases}\\
+\psi_{\text{asym}}(x,t)&=A_{\text{asym}}\begin{cases}
+-e^{+k(x+\tfrac{a}{2})} & x<-\dfrac{a}{2}\\
+\dfrac{\sinh(kx)}{\sinh(k\tfrac{a}{2})} & |x|<\dfrac{a}{2}\\
+e^{-k(x-\tfrac{a}{2})} & x>+\dfrac{a}{2}\\
+\end{cases}
+\end{align}$$
+Where $A_{\text{sym}}$ and $A_{\text{asym}}$ are normalization factors so that the inner product over space is $1$.
+Both systems have bound energy states of:
+$$\begin{align}
+\Aboxed{E&=-\dfrac{mV_0^2b^2}{8\hbar^2}}
+\end{align}$$
+In the limit as $a\rightarrow0$, we can see it also recovers the expected behavior, but we have to only allow the symmetric wavefunction, since there would be a discontinuity for the antisymmetric one:
+$$\begin{align}
+\lim_{a\rightarrow 0}\psi_{\text{sym}}(x,t)
+&=\lim_{a\rightarrow 0}A_{\text{sym}}\begin{cases}
+e^{+k(x+\tfrac{a}{2})} & x<-\dfrac{a}{2}\\
+\dfrac{\cosh(kx)}{\cosh(k\tfrac{a}{2})} & |x|<\dfrac{a}{2}\\
+e^{-k(x-\tfrac{a}{2})} & x>+\dfrac{a}{2}\\
+\end{cases}\\
+&=\lim_{a\rightarrow 0}A_{\text{sym}}\begin{cases}
+e^{+kx} & x<0\\
+\dfrac{\cosh(kx)}{\cosh(0)} & |x|<0\\
+e^{-kx} & x>0\\
+\end{cases}\\
+\lim_{a\rightarrow 0}\psi_{\text{sym}}(x,t)&=A_{\text{sym}}\begin{cases}
+e^{+kx} & x<0\\
+e^{-kx} & x>0\\
+\end{cases}
+\end{align}$$
+Or to put it more succinctly, we have:
+$$\begin{align}
+\Aboxed{\lim_{a\rightarrow 0}\psi_{\text{sym}}(x,t)
+&=A_{\text{sym}}e^{-k|x|}}
+\end{align}$$
+This recovers the same system as the previous part. Since the 2 wells approach each other, and that energy is agnostic to our choice of $a$, we also know that:
+$$\begin{align}
+\lim_{a\rightarrow0}k\left[1+\tanh(k\tfrac{a}{2})\right]&=\dfrac{mV_0b}{\hbar^2}\\
+k\left[1+\tanh(0)\right]&=\dfrac{mV_0b}{\hbar^2}\\
+\Aboxed{\lim_{a\rightarrow0}k&=\dfrac{mV_0b}{\hbar^2}}
+\end{align}$$
+Plugging this into the energy equation, we see:
+$$\begin{align}
+\Aboxed{E&=-\dfrac{mV_0^2b^2}{2\hbar^2}}
+\end{align}$$
+As for graphs, I think it's best if I attach my Desmos Graphs, but I'll also include a few figures:
+https://www.desmos.com/calculator/vldzsmdmpv
+![[hw5q34b1.png]]
+Any linear combination of these 2 wavefunctions is a solution to the given Schrodinger Equation.
+However, you'll have to normalize the wavefunctions in order for probability to make sense.
+![[hw5q34b2.png]]
+These are identical to my wavefunctions above, but are the graphs of the solutions.
