@@ -60,7 +60,7 @@ $$\begin{align}
 &=i\dfrac{1}{2}\sqrt{\dfrac{\hbar m\omega}{2}}\left(-e^{+i(\delta-\omega t)}+0+0+0+e^{-i(\delta-\omega t)}+0\right)\\
 &=\sqrt{\dfrac{\hbar m\omega}{2}}\dfrac{1}{2i}\left(e^{+i(\delta-\omega t)}-e^{-i(\delta-\omega t)}\right)\\
 &=\sqrt{\dfrac{\hbar m\omega}{2}}\sin\left(\delta-\omega t\right)\\
-\Aboxed{\braket{x}(t)&=-\sqrt{\dfrac{\hbar m\omega}{2}}\sin\left(\omega t-\delta\right)}
+\Aboxed{\braket{p}(t)&=-\sqrt{\dfrac{\hbar m\omega}{2}}\sin\left(\omega t-\delta\right)}
 \end{align}$$
 ---
 ### Question 2.12.B

@@ -65,3 +65,27 @@ Write about open questions and the next steps in this research project, to show 
 Whatever paper is the original 1D quantum Ising model (easy citation required).
 Dr. Meng's work of this kind currently in development or already published?
 Qiskit and Python references.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Here's what I have written for the Registration Abstract:
+```
+Interdependency, a concept originating in network science, describes how coupling control parameters across distant parts of a system can trigger cascading effects and novel critical phenomena.  We extend this concept into quantum physics by incorporating a non-local "interdependent" term into the one-dimensional transverse-field quantum Ising model.  This additional coupling links quantum fluctuations between distant spins rather than nearest neighbors, introducing a form of global correlation.  Preliminary simulations indicate that, with sufficient strength and range, interdependency can drive a mixed-order quantum phase transition;  these exhibit non-trivial critical exponents that align with those found in corresponding classical systems.
+```
+This isn't what will likely be on the poster, since that one will look a lot more like the abstract you provided

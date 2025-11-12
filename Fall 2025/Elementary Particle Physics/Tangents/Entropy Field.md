@@ -16,6 +16,8 @@ j^\mu&=\dfrac{i\hbar}{2m}\left(\rho^\dagger D^\mu\rho-\rho D^\mu\rho^\dagger\rig
 Similarly, the current is not necessarily positive just like Klein-Gordon.
 
 
+
+
 ### The "Dirac Entropy" Field
 To restore the phase factor, let:
 $$\begin{align}
