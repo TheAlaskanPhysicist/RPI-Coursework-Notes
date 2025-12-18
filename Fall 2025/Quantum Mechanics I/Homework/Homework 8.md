@@ -96,6 +96,8 @@ $$\begin{align}
 \text{Part A}:&&Y_{1/2}^{-1/2}(\theta,\phi)&\propto e^{-i\phi/2}\dfrac{\cos\theta}{\sqrt{\sin\theta}}\\
 \text{Part B}:&&Y_{1/2}^{-1/2}(\theta,\phi)&\propto e^{-i\phi/2}\sqrt{\sin\theta}\\
 \end{align}$$
+Half integer orbital angular momentum produces nonsense, so it's physically non existent.
+
 ---
 ## Question 3.29
 The goal of this problem is to determine degenerate eigenstates of the three-dimensional isotropic harmonic oscillator written as eigenstates of $\vec{L}^2$ and $L_z$, in terms of the Cartesian eigenstates $\ket{n_x,n_y,n_z}$.
@@ -146,16 +148,100 @@ L_i^2&=\left(i\hbar\epsilon_{ijk}a_j a_k^\dagger\right)\left(i\hbar\epsilon_{ij'
 \end{align}$$
 ---
 ### Question 3.29.B
-Use these relations to express the states $\ket{qlm}=\ket{01m}$, $m=0,\pm1$, in terms of the three eigenstates $\ket{n_x,n_y,n_z}$ that are degenerate in energy. Write down the representation of your answer in coordinate space, and check that the angular and radial dependences are correct.
+Use these relations to express the states $\ket{qlm}=\ket{0\ 1\ m}$, $m=0,\pm1$, in terms of the three eigenstates $\ket{n_x,n_y,n_z}$ that are degenerate in energy. Write down the representation of your answer in coordinate space, and check that the angular and radial dependences are correct.
 
+We know $q=\dfrac{N-l}{2}$, and so $N=1$. The degenerate energy states' energy should be the following:
+$$\begin{align}
+\Aboxed{E&=\left(n_x+n_y+n_z+\dfrac{3}{2}\right)\hbar\omega,\ \ \ n_x+n_y+n_z=1}
+\end{align}$$
+There are 3 states that have this degenerate energy:
+$$\begin{align}
+\left\{\ket{1,0,0},\ket{0,1,0},\ket{0,0,1}\right\}
+\end{align}$$
+We can find each of the $L_z$ of the basis elements:
+$$\begin{align}
+L_z\ket{1,0,0}&=i\hbar(a_xa_y^\dagger-a_ya_x^\dagger)\ket{1,0,0}&\implies&&L_z\ket{1,0,0}&=+i\hbar\ket{0,1,0}\\
+L_z\ket{0,1,0}&=i\hbar(a_xa_y^\dagger-a_ya_x^\dagger)\ket{0,1,0}&\implies&&L_z\ket{0,1,0}&=-i\hbar\ket{1,0,0}\\
+L_z\ket{0,0,1}&=i\hbar(a_xa_y^\dagger-a_ya_x^\dagger)\ket{0,0,1}&\implies&&L_z\ket{0,0,1}&=0
+\end{align}$$
+We can use these in order to construct the matrix operator of $L_z$ as:
+$$\begin{align}
+L_z&=\hbar\begin{bmatrix}0&-i&0\\i&0&0\\0&0&0\end{bmatrix}
+\end{align}$$
+The eigenvector for $m=0$ is then:
+$$\begin{align}
+L_z\ket\psi&=\hbar\begin{bmatrix}0&-i&0\\i&0&0\\0&0&0\end{bmatrix}\begin{bmatrix}a\\b\\c\end{bmatrix}&\implies&&0&=\begin{bmatrix}-b\\a\\0\end{bmatrix}
+\end{align}$$
+Both $a=b=0$, and $c$ is a free parameter, and so after normalizing, we get:
+$$\begin{align}
+\Aboxed{\ket{0\ 1\ 0}&=\ket{0,0,1}}
+\end{align}$$
+The other 2 eigenvector are then:
+$$\begin{align}
+L_z\ket\psi&=\hbar\begin{bmatrix}0&-i&0\\i&0&0\\0&0&0\end{bmatrix}\begin{bmatrix}a\\b\\c\end{bmatrix}&\implies&&0&=\hbar\begin{bmatrix}-ib\mp a\\ia\mp b\\c\mp c\end{bmatrix}\\
+\end{align}$$
+Given that our previous solution is just the $\ket{0,0,1}$ state, $c=0$. We also see that $a=\pm ib$, so:
+$$\begin{align}
+\Aboxed{\ket{0\ 1+1}&=\dfrac{1}{\sqrt{2}}\left(\ket{1,0,0}+i\ket{0,1,0}\right)}\\
+\Aboxed{\ket{0\ 1-1}&=\dfrac{1}{\sqrt{2}}\left(\ket{1,0,0}-i\ket{0,1,0}\right)}\\
+\end{align}$$
+Or, when put together:
+$$\begin{align}
+\ket{0\ 1\ m}&=\begin{cases}
+\dfrac{1}{\sqrt{2}}\left(\ket{1,0,0}+i\ket{0,1,0}\right) & m=1\\
+\ket{0,0,1} & m=0\\
+\dfrac{1}{\sqrt{2}}\left(\ket{1,0,0}-i\ket{0,1,0}\right) & m=-1
+\end{cases}
+\end{align}$$
+---
 ### Question 3.29.C
-Repeat for $\ket{qlm}=\ket{100}$.
+Repeat for $\ket{qlm}=\ket{1\ 0\ 0}$.
 
+We know $q=\dfrac{N-l}{2}$, and so $N=2$.
+$$\begin{align}
+\Aboxed{E_{l=0}&=\left(n_x+n_y+n_z+\dfrac{3}{2}\right)\hbar\omega,\ \ \ n_x+n_y+n_z=2}
+\end{align}$$
+There are 6 states that satisfies this, which is the following set of energy eigenstates:
+$$\begin{align}
+\left\{\ket{2,0,0},\ket{0,2,0},\ket{0,0,2},\ket{1,1,0},\ket{0,1,1},\ket{1,0,1}\right\}
+\end{align}$$
+We can find each of the $L_z$ of the basis elements:
+$$\begin{align}
+L_z\ket{2,0,0}&=i\hbar(a_xa_y^\dagger-a_ya_x^\dagger)\ket{2,0,0}
+&\implies&&L_z\ket{2,0,0}&=+i\hbar\ket{1,1,0}\\
+L_z\ket{0,2,0}&=i\hbar(a_xa_y^\dagger-a_ya_x^\dagger)\ket{0,2,0}
+&\implies&&L_z\ket{0,1,0}&=-i\hbar\ket{1,1,0}\\
+L_z\ket{0,0,2}&=i\hbar(a_xa_y^\dagger-a_ya_x^\dagger)\ket{0,0,2}
+&\implies&&L_z\ket{0,0,2}&=0\\
+L_z\ket{1,1,0}&=i\hbar(a_xa_y^\dagger-a_ya_x^\dagger)\ket{1,1,0}
+&\implies&&L_z\ket{1,1,0}&=-i\hbar(\ket{2,0,0}-\ket{0,2,0})\\
+L_z\ket{0,1,1}&=i\hbar(a_xa_y^\dagger-a_ya_x^\dagger)\ket{0,1,1}&\implies&&
+L_z\ket{0,1,1}&=-i\hbar\ket{1,0,1}\\
+L_z\ket{1,0,1}&=i\hbar(a_xa_y^\dagger-a_ya_x^\dagger)\ket{1,0,1}
+&\implies&&L_z\ket{1,0,1}&=+i\hbar\ket{0,1,1}
+\end{align}$$
+To find $\ket{qlm}=\ket{1\ 0\ 0}$, we know that $m=0$, and so:
+$$\begin{align}
+L_z\ket{1\ 0\ 0}&=AL_z\ket{2,0,0}+BL_z\ket{0,2,0}+CL_z\ket{0,0,2}+DL_z\ket{1,1,0}+EL_z\ket{0,1,1}+FL_z\ket{1,0,1}\\
+0&=Ai\hbar\ket{1,1,0}-Bi\hbar\ket{1,1,0}+0-Di\hbar(\ket{2,0,0}-(\ket{0,2,0})-Ei\hbar\ket{1,0,1}+Fi\hbar\ket{0,1,1}\\
+0&=A\ket{1,1,0}-B\ket{1,1,0}-D\ket{2,0,0}+D\ket{0,2,0}-E\ket{1,0,1}+F\ket{0,1,1}\\
+0&=(A-B)\ket{1,1,0}-D\ket{2,0,0}+D\ket{0,2,0}-E\ket{1,0,1}+F\ket{0,1,1}\\
+\end{align}$$
+In order for this whole equation to be $0$, it must satisfy:
+$$\begin{align}
+A-B&=0&|D|&=0&E&=0&F&=0\\
+\end{align}$$
+The only part that matters here is that $A=B$, and that $C$ is a free parameter. And so we can make it easier that $C=A$ so that it simplifies as:
+$$\begin{align}
+\Aboxed{\ket{1\ 0\ 0}&=\dfrac{1}{\sqrt3}\left(\ket{2,0,0}+\ket{0,2,0}+\ket{0,0,2}\right)}
+\end{align}$$
+---
 ### Question 3.29.D
-Repeat for $\ket{qlm}=\ket{02m}$, with $m=0,1,$ and $2$.
+Repeat for $\ket{qlm}=\ket{0\ 2\ m}$, with $m=0,1,$ and $2$.
 
-
-
+Nope, I tried for 4 hours and I refuse to keep going.
+It's stupid simple, but arithmetic-heavy is not why I signed up for a Physics Ph.D.
+A computer can do it, I don't need to.
 
 ---
 ## Question 3.34
@@ -294,4 +380,5 @@ $$\begin{align}
 \left|\braket{1,0;\tfrac{1}{2},+|\tfrac{3}{2},\tfrac{1}{2}}\right|^2&=\left(\sqrt{\dfrac{2}{3}}\right)^2\\
 \Aboxed{p\left(m_s=+\tfrac{1}{2}|\psi=\ket{\tfrac{3}{2},\tfrac{1}{2}}\right)&=\dfrac{2}{3}}
 \end{align}$$
+
 
