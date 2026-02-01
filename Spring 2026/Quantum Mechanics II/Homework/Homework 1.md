@@ -1,5 +1,5 @@
 Author: Stanley Goodwin
-Date: January 27th, 2025
+Date: January 27th, 2026
 
 ---
 ## PDF Question
@@ -444,4 +444,5 @@ To extend it for $m$ that is half-integer, we can use $i^2=-1$ to then write:
 $$\begin{align}
 \Aboxed{\Theta\ket{j,m}&=i^{2m}\ket{j,-m}}
 \end{align}$$
+
 
