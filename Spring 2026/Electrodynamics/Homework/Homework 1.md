@@ -437,134 +437,124 @@ $$\begin{align}
 \int_0^\pi\sigma P_{l}(\cos\theta)\sin\theta\ d\theta\\
  A_l&=\dfrac{1}{2\epsilon_0}R^{1-l}\int_0^\pi\sigma P_{l}(\cos\theta)\sin\theta\ d\theta
 \end{align}$$
-
-
-
-
-
-
-
-
-
-
+We can substitute our charge distribution and reduce it to a simpler expression:
 $$\begin{align}
-\Phi&=\dfrac{Q}{8\pi\epsilon_0}\sum_{l=0}^\infty\dfrac{1}{2l+1}\left[P_{l+1}(\cos\alpha)-P_{l-1}(\cos\alpha)\right]\dfrac{r^l}{R^{l+1}}P_{l}(\cos\theta)
+A_l&=\dfrac{1}{2\epsilon_0}R^{1-l}\dfrac{Q}{4\pi R^2}\int_\alpha^\pi P_{l}(\cos\theta)\sin\theta\ d\theta+0\\
+&=\dfrac{1}{2\epsilon_0}R^{1-l}\dfrac{Q}{4\pi R^2}\int_{-1}^{\cos\alpha} P_{l}(x)\ dx\\
+&=\dfrac{1}{2\epsilon_0}R^{1-l}\dfrac{Q}{4\pi R^2}\int_{-1}^{\cos\alpha}\dfrac{d}{dx}\left(\dfrac{P_{l+1}(x)-P_{l-1}(x)}{2l+1}\right)\ dx\\
+&=\dfrac{1}{2\epsilon_0}R^{1-l}\dfrac{Q}{4\pi R^2}\left(\dfrac{P_{l+1}(\cos\alpha)-P_{l-1}(\cos\alpha)}{2l+1}-\dfrac{(-1)^{l+1}P_{l+1}(+1)-(-1)^{l-1}P_{l-1}(+1)}{2l+1}\right)\\
+&=\dfrac{Q}{8\pi R^2\epsilon_0}\dfrac{R^{1-l}}{2l+1}\left(P_{l+1}(\cos\alpha)-P_{l-1}(\cos\alpha)-(0-0)\right)\\
+A_l&=\dfrac{Q}{8\pi R^2\epsilon_0}\dfrac{R^{1-l}}{2l+1}\left(P_{l+1}(\cos\alpha)-P_{l-1}(\cos\alpha)\right)\\
 \end{align}$$
-
-
-
-
-
-
-
-Inside the surface$\implies$no charge, so this is the much simpler case:
+Substituting $A_l$, and $B_l=A_lR^{2l+1}$ into our original equation, the two potential functions are:
 $$\begin{align}
-\Phi_\text{in}(r,\theta,\phi)&=\sum_{l=0}^\infty A_lr^lP_l(\cos\theta)
+\Aboxed{\Phi_\text{in}(r,\theta,\phi)&=\dfrac{Q}{8\pi\epsilon_0}\sum_{l=0}^\infty\dfrac{1}{2l+1}\dfrac{r^l}{R^{l+1}}\left(P_{l+1}(\cos\alpha)-P_{l-1}(\cos\alpha)\right)P_l(\cos\theta)}\\
+\Aboxed{\Phi_\text{out}(r,\theta,\phi)&=\dfrac{Q}{8\pi\epsilon_0}\sum_{l=0}^\infty\dfrac{1}{2l+1}\dfrac{R^{l}}{r^{l+1}}\left(P_{l+1}(\cos\alpha)-P_{l-1}(\cos\alpha)\right)P_l(\cos\theta)}
 \end{align}$$
-The outside potential is similar, but of the diverging terms:
-$$\begin{align}
-\Phi_\text{out}(r,\theta,\phi)&=\sum_{l=0}^\infty B_lr^{-l-1}P_l(\cos\theta)
-\end{align}$$
-However, we still require a boundary condition. Similar to previous, we know that:
-$$\begin{align}
-\epsilon_0\vec{E}_\text{above}^\perp-\epsilon_0\vec{E}_\text{below}^\perp&=\sigma
-\end{align}$$
-Our system is a sphere which makes this significantly easier, and so:
-
-Writing in terms of the potential, we see that:
-$$\begin{align}
-\left.\dfrac{\partial\Phi_\text{out}}{\partial r}-\dfrac{\partial\Phi_\text{in}}{\partial r}\right|_{r=R}&=-\dfrac{1}{\epsilon_0}\begin{cases}0&0\le\theta\le\alpha\\\dfrac{Q}{4\pi R^2}&\alpha\lt\theta\le\pi\end{cases}\\
-\end{align}$$
-Substituting our general forms for the potential, we get:
-$$\begin{align}
-\left.\dfrac{\partial}{\partial r}\sum_{l=0}^\infty B_lr^{-l-1}P_l(\cos\theta)\right|_{r=R}-\left.\dfrac{\partial}{\partial r}\sum_{l=0}^\infty A_lr^lP_l(\cos\theta)\right|_{r=R}&=\left.\dfrac{\partial\Phi_\text{out}}{\partial r}-\dfrac{\partial\Phi_\text{in}}{\partial r}\right|_{r=R}\\
--\left.\sum_{l=0}^\infty B_l(l+1)r^{-l-2}P_l(\cos\theta)\right|_{r=R}-\left.\sum_{l=0}^\infty lA_lr^{l-1}P_l(\cos\theta)\right|_{r=R}&=
--\dfrac{1}{\epsilon_0}\begin{cases}0&0\le\theta\le\alpha\\\dfrac{Q}{4\pi R^2}&\alpha\lt\theta\le\pi\end{cases}\\
-\sum_{l=0}^\infty\left(B_l(l+1)r^{-l-2}+lA_lr^{l-1}\right)P_l(\cos\theta)&=\dfrac{1}{\epsilon_0}\begin{cases}0&0\le\theta\le\alpha\\\dfrac{Q}{4\pi R^2}&\alpha\lt\theta\le\pi\end{cases}
-\end{align}$$
-Not sure where to go from here, so I'll calculate charge instead:
-$$\begin{align}
-Q_\text{real}
-&=\int_0^{2\pi}\int_0^{\pi}\int_0^\infty\sigma(\theta,\phi)\delta(r-R)\ r^2\sin\theta\ dr\ d\theta\ d\phi\\
-&=\int_0^\infty\delta(r-R)\ r^2\ dr\ \int_0^{\pi}\sin\theta\begin{cases}0&0\le\theta\le\alpha\\\dfrac{Q}{4\pi R^2}&\alpha\lt\theta\le\pi\end{cases}\ d\theta\ \int_0^{2\pi}d\phi\\
-&=\dfrac{Q}{4\pi R^2}\int_0^\infty\delta(r-R)\ r^2\ dr\ \int_\alpha^{\pi}\sin\theta\ d\theta\ \int_0^{2\pi}d\phi\\
-&=\dfrac{Q}{4\pi R^2}\cdot R^2\cdot\left.-\cos\theta\right|_\alpha^{\pi}\cdot2\pi\\
-&=-\dfrac{Q}{2}\cdot\left(\cos\pi-\cos\alpha\right)\\
-&=Q\dfrac{1+\cos\alpha}{2}\\
-Q_\text{real}&=Q\cos^2\left(\dfrac{\alpha}{2}\right)
-\end{align}$$
-When we go $r\rightarrow\infty$:
-$$\begin{align}
-\lim_{r\rightarrow\infty}\sum_{l=0}^\infty B_lr^{-l-1}P_l(\cos\theta)&=\lim_{r\rightarrow\infty}\Phi_\text{out}(r,\theta,\phi)\\
-B_0r^{-1}P_0(\cos\theta)&=\dfrac{1}{4\pi\epsilon_0}\dfrac{Q_\text{real}}{r}\\
-B_0&=\dfrac{Q}{4\pi\epsilon_0}\cos^2\left(\dfrac{\alpha}{2}\right)\\
-\end{align}$$
-The potential must be continuous from both sides, so:
-$$\begin{align}
-\sum_{l=0}^\infty B_lR^{-l-1}P_l(\cos\theta)&=\sum_{l=0}^\infty A_lR^lP_l(\cos\theta)\\
-B_lR^{-l-1}&=A_lR^l\\
-B_l&=A_lR^{2l+1}
-\end{align}$$
-The potentials are then:
-$$\begin{align}
-\Phi_\text{in}(r,\theta,\phi)&=\dfrac{Q}{4\pi\epsilon_0R}\cos^2\left(\dfrac{\alpha}{2}\right)+\sum_{l=1}^\infty A_lr^lP_l(\cos\theta)\\
-\Phi_\text{out}(r,\theta,\phi)&=\dfrac{Q}{4\pi\epsilon_0r}\cos^2\left(\dfrac{\alpha}{2}\right)+\sum_{l=1}^\infty B_lr^{-l-1}P_l(\cos\theta)
-\end{align}$$
-Apply the boundary condition again?
-$$\begin{align}
-\left.\dfrac{\partial\Phi_\text{out}}{\partial r}\right|_{r=R}-\left.\dfrac{\partial\Phi_\text{in}}{\partial r}\right|_{r=R}&=-\dfrac{1}{\epsilon_0}\sigma(\theta,\phi)\\
--\dfrac{Q}{4\pi\epsilon_0R^2}\cos^2\left(\dfrac{\alpha}{2}\right)-\sum_{l=1}^\infty A_lR^{2l+1}(l+1)R^{-l-2}P_l(\cos\theta)-\sum_{l=1}^\infty lA_lR^{l-1}P_l(\cos\theta)&=\\
-\dfrac{Q}{4\pi\epsilon_0R^2}\cos^2\left(\dfrac{\alpha}{2}\right)+\sum_{l=1}^\infty A_l\left(R^{2l+1}(l+1)R^{-l-2}+lR^{l-1}\right)P_l(\cos\theta)&=\dfrac{1}{\epsilon_0}\sigma(\theta,\phi)\\
-\dfrac{Q}{4\pi R^2}\cos^2\left(\dfrac{\alpha}{2}\right)+\epsilon_0\sum_{l=1}^\infty \left(2l+1\right)A_lR^{l-1}P_l(\cos\theta)&=\sigma(\theta,\phi)
-\end{align}$$
-If I exploit the orthonormality condition, I can do the following:
-$$\begin{align}
-\sigma(\theta,\phi)&=
-\dfrac{Q}{4\pi R^2}\cos^2\left(\dfrac{\alpha}{2}\right)+\epsilon_0\sum_{l=1}^\infty \left(2l+1\right)A_lR^{l-1}P_l(\cos\theta)\\
-\int_0^\pi\sigma(\theta,\phi)P_{l'}(\cos\theta)\sin\theta\ d\theta&=
-\int_0^\pi\left[\epsilon_0\sum_{l=1}^\infty \left(2l+1\right)A_lR^{l-1}P_l(\cos\theta)\right]P_{l'}(\cos\theta)\sin\theta\ d\theta\\
-\int_0^\pi\sigma(\theta,\phi)P_{l}(\cos\theta)\sin\theta\ d\theta&=\epsilon_0\left(2l+1\right)A_lR^{l-1}\\
-A_l&=\dfrac{1}{\epsilon_0\left(2l+1\right)R^{l-1}}\int_0^\pi\sigma(\theta,\phi)P_{l}(\cos\theta)\sin\theta\ d\theta
-\end{align}$$
-Using our expression for $\sigma$:
-$$\begin{align}
-A_l&=\dfrac{1}{\epsilon_0\left(2l+1\right)R^{l-1}}\int_0^\pi\sigma(\theta,\phi)P_{l}(\cos\theta)\sin\theta\ d\theta\\
-&=\dfrac{1}{\epsilon_0\left(2l+1\right)R^{l-1}}\dfrac{Q}{4\pi R^2}\int_\alpha^\pi P_{l}(\cos\theta)\sin\theta\ d\theta\\
-&=\dfrac{1}{\epsilon_0\left(2l+1\right)R^{l-1}}\dfrac{Q}{4\pi R^2}\int_{-1}^{\cos\alpha} P_{l}(x)\ dx\\
-\end{align}$$
-
-
-
-
-
-
-
-
-$$\begin{align}
-\Phi&=\dfrac{Q}{8\pi\epsilon_0}\sum_{l=0}^\infty\dfrac{1}{2l+1}\left[P_{l+1}(\cos\alpha)-P_{l-1}(\cos\alpha)\right]\dfrac{r^l}{R^{l+1}}P_{l}(\cos\theta)
-\end{align}$$
-
-
-
-
-
-
-
-
-
+---
 ### Question 3.2.B
 Find the magnitude and the direction of the electric field at the origin.
 
-
+The electric field can be found from the general equation (ignoring $\phi$ by symmetry):
+$$\begin{align}
+\vec{E}(\vec{r})&=-\left(\dfrac{\partial\Phi_\text{in}}{\partial r}\hat{r}+\dfrac{1}{r}\dfrac{\partial\Phi_\text{in}}{\partial\theta}\hat{\theta}\right)
+\end{align}$$
+The radial derivative is:
+$$\begin{align}
+\dfrac{\partial\Phi_\text{in}}{\partial r}&=\dfrac{Q}{8\pi\epsilon_0}\sum_{l=1}^\infty\dfrac{1}{2l+1}\dfrac{lr^{l-1}}{R^{l+1}}\left(P_{l+1}(\cos\alpha)-P_{l-1}(\cos\alpha)\right)P_l(\cos\theta)
+\end{align}$$
+And the polar derivative is:
+$$\begin{align}
+\dfrac{\partial\Phi_\text{in}}{\partial\theta}&=\dfrac{Q}{8\pi\epsilon_0}\sum_{l=1}^\infty\dfrac{1}{2l+1}\dfrac{r^{l}}{R^{l+1}}\left(P_{l+1}(\cos\alpha)-P_{l-1}(\cos\alpha)\right)\dfrac{dP_l(\cos\theta)}{d\theta}
+\end{align}$$
+I had to go find the the following online, but I assume it comes from the recursion relation:
+$$\begin{align}
+\dfrac{dP_l(\cos\theta)}{d\theta}&=\dfrac{l\cos\theta P_l(\cos\theta)-l P_{l-1}(\cos\theta)}{\sin\theta}
+\end{align}$$
+Returning to the electric field, we get:
+$$\begin{align}
+\vec{E}(\vec{r})&=-\dfrac{Q}{8\pi\epsilon_0}\sum_{l=1}^\infty\dfrac{1}{2l+1}\dfrac{lr^{l-1}}{R^{l+1}}\left(P_{l+1}(\cos\alpha)-P_{l-1}(\cos\alpha)\right)P_l(\cos\theta)\hat{r}\\
+&\ \ \ \ \ -\dfrac{Q}{8\pi\epsilon_0}\sum_{l=1}^\infty\dfrac{1}{2l+1}\dfrac{r^{l-1}}{R^{l+1}}\left(P_{l+1}(\cos\alpha)-P_{l-1}(\cos\alpha)\right)\dfrac{dP_l(\cos\theta)}{d\theta}\hat{\theta}\\\\
+\vec{E}(r=0)&=-\dfrac{Q}{8\pi\epsilon_0}\dfrac{1}{2+1}\dfrac{1r^{1-1}}{R^{1+1}}\left(P_{1+1}(\cos\alpha)-P_{1-1}(\cos\alpha)\right)P_1(\cos\theta)\hat{r}+0+\dots\\
+&\ \ \ \ \ -\dfrac{Q}{8\pi\epsilon_0}\dfrac{1}{2+1}\dfrac{r^{1-1}}{R^{1+1}}\left(P_{1+1}(\cos\alpha)-P_{1-1}(\cos\alpha)\right)\dfrac{dP_1(\cos\theta)}{d\theta}\hat{\theta}+0+\dots\\\\
+&=-\dfrac{Q}{24\pi\epsilon_0R^{2}}\left(\dfrac{3\cos^2\alpha-1}{2}-1\right)\cos\theta\ \hat{r}+\dfrac{Q}{24\pi\epsilon_0 R^2}\left(\dfrac{3\cos^2\alpha-1}{2}-1\right)\sin\theta\ \hat{\theta}\\
+&=-\dfrac{Q}{16\pi\epsilon_0R^{2}}\left(\cos^2\alpha-1\right)\cos\theta\ \hat{r}+\dfrac{Q}{16\pi\epsilon_0 R^2}\left(\cos^2\alpha-1\right)\sin\theta\ \hat{\theta}\\
+&=\dfrac{Q}{16\pi\epsilon_0R^{2}}\sin^2\alpha\left(\cos\theta\ \hat{r}-\sin\theta\ \hat{\theta}\right)\\
+\Aboxed{\vec{E}(r=0)&=\dfrac{Q\sin^2\alpha}{16\pi\epsilon_0R^{2}}\hat{z}}
+\end{align}$$
+---
 ### Question 3.2.C
 Discuss the limiting forms of the potential (part A) and the electric field (part B)...
-
+$$\begin{align}
+\Phi_\text{in}(r,\theta,\phi)&=\dfrac{Q}{8\pi\epsilon_0}\sum_{l=0}^\infty\dfrac{1}{2l+1}\dfrac{r^l}{R^{l+1}}\left(P_{l+1}(\cos\alpha)-P_{l-1}(\cos\alpha)\right)P_l(\cos\theta)\\
+\vec{E}(r=0)&=\dfrac{Q\sin^2\alpha}{16\pi\epsilon_0R^{2}}\hat{z}
+\end{align}$$
 #### Question 3.2.C.I
-As the spherical cap becomes very small
+As the spherical cap becomes very small ($\alpha\ll1$);
 
+We can expand the polynomials about the point $x=1$ for our upcoming potential:
+$$\begin{align}
+P_{l}(\cos\alpha)&\approx P_{l}(1)-\dfrac{\alpha^2}{2}\left.\dfrac{dP_{l}(x)}{dx}\right|_{x=1}=1-\dfrac{\alpha^2}{2}\left.\dfrac{dP_{l}(x)}{dx}\right|_{x=1}\\
+P_{l+1}(\cos\alpha)-P_{l-1}(\cos\alpha)&\approx-\dfrac{\alpha^2}{2}\left(\left.\dfrac{dP_{l+1}(x)}{dx}\right|_{x=1}-\left.\dfrac{dP_{l-1}(x)}{dx}\right|_{x=1}\right)\\
+P_{l+1}(\cos\alpha)-P_{l-1}(\cos\alpha)&\approx-\dfrac{\alpha^2}{2}\left(2l+1\right)
+\end{align}$$
+However, for $l=0$, we actually get instead:
+$$\begin{align}
+P_{+1}(\cos\alpha)-P_{-1}(\cos\alpha)&=\cos\alpha+1\approx2-\dfrac{\alpha^2}{2}
+\end{align}$$
+Using these for the internal potential limits, we get:
+$$\begin{align}
+\lim_{\alpha\ll1}\Phi_\text{in}(r,\theta,\phi)&=\dfrac{Q}{8\pi\epsilon_0R}\left(2-\dfrac{\alpha^2}{2}\right)P_0(\cos\theta)+\dfrac{Q}{8\pi\epsilon_0}\sum_{l=1}^\infty\dfrac{1}{2l+1}\dfrac{r^l}{R^{l+1}}\left(-\dfrac{\alpha^2}{2}\left(2l+1\right)\right)P_l(\cos\theta)\\
+&=\dfrac{Q}{4\pi\epsilon_0R}\left(1-\dfrac{\alpha^2}{4}\right)P_0(\cos\theta)-\dfrac{Q\alpha^2}{16\pi\epsilon_0}\sum_{l=1}^\infty\dfrac{r^l}{R^{l+1}}P_l(\cos\theta)\\
+\Aboxed{\lim_{\alpha\ll1}\Phi_\text{in}(r,\theta,\phi)&=\dfrac{Q}{4\pi\epsilon_0R}P_0(\cos\theta)-\dfrac{Q\alpha^2}{16\pi\epsilon_0}\sum_{l=0}^\infty\dfrac{r^l}{R^{l+1}}P_l(\cos\theta)}
+\end{align}$$
+I was looking at the Wikipedia for Legendre Polynomials and the 2nd term almost looks exactly like the generating function, so I can change the form of it:
+$$\begin{align}
+-\dfrac{Q\alpha^2}{16\pi\epsilon_0 R}\sum_{l=0}^\infty\left(\dfrac{r}{R}\right)^{l}P_l(\cos\theta)&=-\dfrac{Q\alpha^2}{16\pi\epsilon_0}\dfrac{1}{\sqrt{r^2+R^2-2rR\cos\theta}}
+\end{align}$$
+This looks like the magnitude of the difference of $\vec{r}$ and $R\hat{z}$, because of the $\cos\theta$:
+$$\begin{align}
+\lim_{\alpha\ll1}\Phi_\text{in}(r,\theta,\phi)&=\dfrac{Q}{8\pi\epsilon_0R}\left(2-\dfrac{\alpha^2}{2}\right)P_0(\cos\theta)+\dfrac{Q}{8\pi\epsilon_0}\sum_{l=1}^\infty\dfrac{1}{2l+1}\dfrac{r^l}{R^{l+1}}\left(-\dfrac{\alpha^2}{2}\left(2l+1\right)\right)P_l(\cos\theta)\\
+&=\dfrac{Q}{4\pi\epsilon_0R}\left(1-\dfrac{\alpha^2}{4}\right)-\dfrac{Q\alpha^2}{16\pi\epsilon_0}\sum_{l=1}^\infty\dfrac{r^l}{R^{l+1}}P_l(\cos\theta)\\
+\Aboxed{\lim_{\alpha\ll1}\Phi_\text{in}(r,\theta,\phi)&=\dfrac{Q}{4\pi\epsilon_0R}-\dfrac{Q\alpha^2}{16\pi\epsilon_0}\dfrac{1}{|\vec{r}-R\hat{z}|}}
+\end{align}$$
+So this is the potential due to a closed charged sphere and a potential of an opposite charge located exactly at the north pole of the sphere.
+
+The external potential under this limit is pretty much the same (swapping $r$ and $R$):
+$$\begin{align}
+\Aboxed{\lim_{\alpha\ll1}\Phi_\text{out}(r,\theta,\phi)&=\dfrac{Q}{4\pi\epsilon_0r}-\dfrac{Q\alpha^2}{16\pi\epsilon_0}\dfrac{1}{|\vec{r}-R\hat{z}|}}
+\end{align}$$
+The electric field at the origin is really simple ($\sin\alpha\approx\alpha$):
+$$\begin{align}
+\Aboxed{\lim_{\alpha\ll1}\vec{E}(r=0)&=\dfrac{Q\alpha^2}{16\pi\epsilon_0R^{2}}\hat{z}}
+\end{align}$$
+---
 #### Question 3.2.C.II
-As the spherical cap becomes so large that the area with the charge on it becomes a very small cap at the south pole.
+As the spherical cap becomes so large that the area with the charge on it becomes a very small cap at the south pole $(\alpha\sim\pi)$. Let the new angle be $\beta=\pi-\alpha$
 
+We can use the same expansions as previous, so long as we include a factor $(-1)^l$:
+$$\begin{align}
+P_{l}(\cos\alpha)&\approx(-1)^l\left(1-\dfrac{\beta^2}{2}\left.\dfrac{dP_{l}(x)}{dx}\right|_{x=1}\right)\\
+P_{l+1}(\cos\alpha)-P_{l-1}(\cos\alpha)&\approx(-1)^l\dfrac{\beta^2}{2}\left(2l+1\right)
+\end{align}$$
+Substituting into the internal potential, we get:
+$$\begin{align}
+\lim_{\beta\ll1}\Phi_\text{in}(r,\theta,\phi)
+&=\dfrac{Q}{8\pi\epsilon_0}\sum_{l=0}^\infty\dfrac{1}{2l+1}\dfrac{r^l}{R^{l+1}}\dfrac{\beta^2}{2}\left(2l+1\right)(-1)^lP_l(\cos\theta)\\
+&=\dfrac{Q\beta^2}{16\pi\epsilon_0}\sum_{l=0}^\infty\dfrac{r^l}{R^{l+1}}P_l(-\cos\theta)
+\end{align}$$
+This almost has the same structure as the other limit, but with the point at $-R\hat{z}$:
+$$\begin{align}
+\Aboxed{\lim_{\pi-\alpha\ll1}\Phi_\text{in}(r,\theta,\phi)&=\dfrac{Q\alpha^2}{16\pi\epsilon_0}\dfrac{1}{|\vec{r}+R\hat{z}|}}
+\end{align}$$
+So this is the potential due to a charge located exactly at the south pole of the sphere, which makes sense, since all the charge will be there as $\alpha\rightarrow\pi$.
 
-
+The external potential is once again very similar and simple (swapping $r$ and $R$):
+$$\begin{align}
+\Aboxed{\lim_{\pi-\alpha\ll1}\Phi_\text{out}(r,\theta,\phi)&=\dfrac{Q\alpha^2}{16\pi\epsilon_0}\dfrac{1}{|\vec{r}+R\hat{z}|}}
+\end{align}$$
+And the electric field at the origin is identical since $\sin\beta=\sin(\pi-\alpha)=\pi-\alpha$, so:
+$$\begin{align}
+\Aboxed{\lim_{\pi-\alpha\ll1}\vec{E}(r=0)&=\dfrac{Q(\pi-\alpha)^2}{16\pi\epsilon_0R^{2}}\hat{z}}
+\end{align}$$
 ---
