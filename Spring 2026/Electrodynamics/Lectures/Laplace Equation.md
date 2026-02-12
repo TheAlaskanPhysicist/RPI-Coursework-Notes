@@ -29,6 +29,11 @@ $$\begin{align}
 
 
 
+
+
+
+
+
 ## Cylindrical Coordinates
 Suppose we have the Laplacian:
 $$\begin{align}
