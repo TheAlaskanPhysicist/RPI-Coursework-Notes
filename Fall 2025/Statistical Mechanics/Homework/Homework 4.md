@@ -229,7 +229,7 @@ $$\begin{align}
 \dfrac{\partial L}{\partial u_j}&=-\dfrac{1}{2}\kappa\dfrac{\partial}{\partial u_j}\left(\left(u_{j+1}-u_{j}\right)^2+\left(u_{j}-u_{j-1}\right)^2\right)\\
 &=-\kappa\left(-[u_{j+1}-u_{j}]+u_{j}-u_{j-1}\right)\\
 &=-\kappa\left(-u_{j+1}-u_{j-1}+2u_{j}\right)\\
-\Aboxed{m\ddot{u}_j&=\kappa\left(u_{j+1}u_{j-1}-2u_{j}\right)}
+\Aboxed{m\ddot{u}_j&=\kappa\left(u_{j+1}+u_{j-1}-2u_{j}\right)}
 \end{align}$$
 ---
 ### Question 4.B

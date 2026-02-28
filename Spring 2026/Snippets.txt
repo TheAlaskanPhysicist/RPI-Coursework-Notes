@@ -407,7 +407,7 @@
 	{trigger: "\\min(", replacement: "\\min\\left($0\\right)$1", options: "mA", description: "Minimum with Parentheses"},
 	{trigger: "\\max(", replacement: "\\max\\left($0\\right)$1", options: "mA", description: "Maximum with Parentheses"},
 	{trigger: "\\sup", replacement: "\\sup_{$0}$1", options: "mA", description: "Supremum"},
-	{trigger: "\\inf", replacement: "\\inf_{$0}$1", options: "mA", description: "Infimum"},
+	{trigger: "\\infi", replacement: "\\inf_{$0}$1", options: "mA", description: "Infimum"},
 	{trigger: "\\argmin", replacement: "\\operatorname*{arg\\,min}_{$0}$1", options: "mA", description: "Argument of Minimum"},
 	{trigger: "\\argmax", replacement: "\\operatorname*{arg\\,max}_{$0}$1", options: "mA", description: "Argument of Maximum"},
 
