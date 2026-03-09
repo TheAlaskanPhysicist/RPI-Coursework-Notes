@@ -1,3 +1,4 @@
+
 As a foreword, I would like to express that the following writ is not intended to be verbal or written judgment of any individual, whether faculty, student, or groups thereof. I feel that it is easier for me to write and articulate my feelings through text, as I often have much more time to decide on the wording and indirect intention behind such, and thus gives me much less anxiety.
 
 ---
