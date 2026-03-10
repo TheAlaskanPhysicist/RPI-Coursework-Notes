@@ -19,4 +19,3 @@ The other part I found very interesting was encoding a superposition of unitary 
 I think connecting it to well-demonstrated quantum algorithms would have been helpful for explaining the purpose of the results that were presented. 
 
 I didn't full understand his answer to my question about higher-order operator permutations and what we'd be able to determine from certain classes of unitary operations. I think going further in-depth in this part would have been an excellent addition to the presentation.
-
