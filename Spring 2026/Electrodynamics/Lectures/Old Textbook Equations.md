@@ -1,11 +1,64 @@
-## Chapter 1: Introduction to Electrostatics
+
+
+
+
+
+
+
+Maxwells Equations:
+$$\begin{align}
+\vec\nabla\cdot\vec{D}&=\rho & 
+\vec\nabla\times\vec{E}-\dfrac{\partial\vec{B}}{\partial t}&=0 && \text{(I.1)}\\
+\vec\nabla\cdot\vec{B}&=0 &
+\vec\nabla\times\vec{H}-\dfrac{\partial\vec{D}}{\partial t}&=\vec{J}\\
+\end{align}$$
+Continuity equation:
+$$\begin{align}
+\dfrac{\partial\rho}{\partial t}+\vec\nabla\cdot\vec{J}&=0 && \text{(I.2)}
+\end{align}$$
+Lorentz Force Law:
+$$\begin{align}
+\vec{F}&=q\left(\vec{E}+\vec{v}\times\vec{B}\right) && \text{(I.3)}
+\end{align}$$
+
+
+In Vacuum, $\vec{E}$ and $\vec{B}$ are linear (Maxwellian).
+ - In QFT, this is not the case due to uncertainty.
+
+For slow-varying fields, our fields can be written as:
+$$\begin{align}
+\dfrac{\vec{D}}{\epsilon_0}&=\sum_k\epsilon_{ik}E_k & \dfrac{\vec{B}}{\mu_0}&=\sum_k\mu_{ik}H_k && \text{(I.5)}\\
+\end{align}$$
+where these $\epsilon_{ik}$, $\mu_{ik}$ tensors of the vacuum:
+$$\begin{align}
+\epsilon_{ik}=\delta_{ik}+\dfrac{e_G^4\hbar}{45\pi m^4c^7}\left[2(\vec{E}^2-c^2\vec{B}^2)\delta_{ik}+7c^2B_iB_k\right]+\dots && \text{(I.5)}\\
+\mu_{ik}=\delta_{ik}+\dfrac{e_G^4\hbar}{45\pi m^4c^7}\left[2(c^2\vec{B}^2-\vec{E}^2)\delta_{ik}+7c^2E_iE_k\right]+\dots\\
+\end{align}$$
+The exact results come from Electromagnetic Tensor theory.
+
+
+
+A more generally expression for $\vec{D}$ and $\vec{H}$, as well as current density $\vec{J}$:
+$$\begin{align}
+\vec{D}&=\vec{D}[\vec{E},\vec{B}] & \vec{H}&=\vec{H}[\vec{E},\vec{B}] & \vec{J}&=\vec{J}[\vec{E},\vec{B}]
+\end{align}$$
+where $[]$ signify that the connections might not be simple and may depend on history.
+
+
+
+
+
+
+
 ---
-### 1.2 Electric Field
+## Chapter 1
+---
+### Coulomb's Law and Electric Field
 Coulomb's Law and Electric Field of Point Charge:
 $$\begin{align}
+\vec{F}(\vec{r})&=\dfrac{1}{4\pi\epsilon_0}\dfrac{\vec{r}-\vec{r}'}{|\vec{r}-\vec{r}'|^3}qq' && \text{(1.2)} \\
 \vec{F}(\vec{r})&=q\vec{E}(\vec{r}) && \text{(1.1)} \\
-\vec{F}(\vec{r})&=\dfrac{qq'}{4\pi\epsilon_0}\dfrac{\vec{r}-\vec{r}'}{|\vec{r}-\vec{r}'|^3} && \text{(1.2)} \\
-\vec{E}(\vec{r})&=\dfrac{q'}{4\pi\epsilon_0}\dfrac{\vec{r}-\vec{r}'}{|\vec{r}-\vec{r}'|^3} && \text{(1.3)}
+\vec{E}(\vec{r})&=\dfrac{1}{4\pi\epsilon_0}\dfrac{\vec{r}-\vec{r}'}{|\vec{r}-\vec{r}'|^3}q' && \text{(1.3)}
 \end{align}$$
 For a distribution of charge, whether discrete or continuous:
 $$\begin{align}
@@ -17,42 +70,13 @@ $$\begin{align}
 \rho(\vec{r})&=\textstyle\sum_i q_i\delta(\vec{r}-\vec{r}_i) && \text{(1.6)}
 \end{align}$$
 ---
-### 1.3 Gauss's Law
-Electric field normal:
-$$\begin{align}
-\vec{E}(\vec{r})\cdot\hat{n}\ da&=\dfrac{q}{4\pi\epsilon_0}\dfrac{\cos\theta}{r^2}\ da && \text{(1.7)} \\
-\vec{E}(\vec{r})\cdot\hat{n}\ da&=\dfrac{q}{4\pi\epsilon_0}\ d\Omega && \text{(1.8)}
-\end{align}$$
-Integrating over the whole surface:
-$$\begin{align}
-\oint_{S}\vec{E}(\vec{r})\cdot\hat{n}\ da&=\begin{cases}q/\epsilon_0&q\text{ inside } S\\q/\epsilon_0&0\text{ outside } S\end{cases}
-\end{align}$$
-For a distribution of charge, whether discrete or continuous:
-$$\begin{align}
-\oint_{S}\vec{E}(\vec{r})\cdot\hat{n}\ da&=\dfrac{1}{\epsilon_0}\int_V\rho(\vec{r})\ d^3r && \text{(1.11)}
-\end{align}$$
-
-
-
-
+### Gauss's Law
 Gauss's Law relates electric flux (density) to charge (density):
 $$\begin{align}
 \oint_{\partial\Omega}\vec{E}(\vec{r})\cdot d^2\vec\Sigma&=\dfrac{1}{\epsilon_0}\int_\Omega\rho(\vec{r})\ d^3r
 &\iff&&
 \vec\nabla\cdot\vec{E}(\vec{r})&=\dfrac{1}{\epsilon_0}\rho(\vec{r}) && \text{(1.11, 1.13)}
 \end{align}$$
-
-
-
-
-
-### Coulomb's Law and Electric Field
-
-
-
-
----
-
 ---
 ### Scalar Potential
 Knowledge of the divergence and curl of $\vec{E}$, up to the addition of a gradient of a function that is an element of the Kernel of the Laplacian, uniquely defines electric field.

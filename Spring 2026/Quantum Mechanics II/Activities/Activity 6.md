@@ -1,131 +1,92 @@
-Stanley Goodwin, 2/24/2026
+Stanley Goodwin, 3/26/2026
 
 ---
 ### Question 1
-Calculate the density of states $\rho(E)$ for a free particle in a three-dimensional box of size $L$.
+Using the residue theorem, calculate the following integral:
+$$\begin{align}
+\int_{-\infty}^{+\infty}\dfrac{dk}{2\pi}e^{ikx}\dfrac{1}{k^2+m^2}
+\end{align}$$
+where $m>0$. Make sure you discuss the $x>0$ and $x<0$ cases separately.
 
-For the typical case of a one-dimensional box with periodic boundary conditions:
+Since there are poles at $k=\pm im$, we can complete the contour looping in the upper half plane:
 $$\begin{align}
-\psi_n(x)&\propto\sin\left(\dfrac{2n\pi}{L}x\right) & k&=\dfrac{2n\pi}{L} & E_{n}&=\dfrac{\hbar^2k^2}{2m}=\dfrac{(2\pi\hbar)^2}{2mL^2}n^2=\dfrac{h^2}{2mL^2}n^2
+\oint_\Gamma f(z)\ dz&=\lim_{R\to\infty}\int_{-R}^{+R}f(x)\ dx+\lim_{R\to\infty}\int_0^\pi f\left(Re^{i\phi}\right)\cdot iRe^{i\phi}d\phi
 \end{align}$$
-We effectively have this solution in each coordinate (independently), and so:
+To see the evaluation for this added extra contour, look at the limit of the magnitude:
 $$\begin{align}
-\vec{k}&=\dfrac{2\pi}{L}\vec{n} & E(\vec{n})&=\dfrac{h^2}{2mL^2}\left|\vec{n}\right|^2
+\lim_{R\to\infty}\int_0^\pi\dfrac{\left|e^{iRe^{i\phi}x}\right|}{\left|(Re^{i\phi})^2+m^2\right|}|i|\left|Re^{i\phi}\right|d\phi&\le\lim_{R\to\infty}\int_0^\pi\dfrac{Re^{-R\sin\phi x}}{R^2+m^2}d\phi
 \end{align}$$
-Define an cumulative density of state function $N(\varepsilon\le E)$:
+This upper-half plane only converges to $0$ if $x>0$. Similarly, a contour in the lower-half plane only converges for $x<0$. The full contour is equal to $2\pi i$ times the sum of the residues.
 $$\begin{align}
-N(\varepsilon\le E)&=\sum_{\left|\vec{n}\right|^2=\tfrac{L^2}{h^2}\cdot2mE} 1
+\operatorname{Res}(f,\pm mi)&=\pm\dfrac{1}{2\pi}\lim_{k\to\pm im}(k\mp im)\dfrac{e^{ikx}}{k^2+m^2}\\
+&=\pm\dfrac{1}{2\pi}\lim_{k\to\pm im}\dfrac{e^{ikx}}{(k\pm im)}\\
+\operatorname{Res}(f,\pm mi)&=\dfrac{1}{2\pi i}\cdot\dfrac{e^{\mp mx}}{2m}
 \end{align}$$
-In the continuum limit of states (arbitrarily high momentum eigenstates):
+So, for the two conditions for $x$, we have:
 $$\begin{align}
-N(\varepsilon\le E)&\simeq\int_0^E\ dV=\dfrac{4}{3}\pi|\vec{n}|^3
+\int_{-\infty}^{+\infty}\dfrac{dk}{2\pi}e^{ikx}\dfrac{1}{k^2+m^2}&=\dfrac{e^{-mx}}{2m} & x>0\\
+\int_{-\infty}^{+\infty}\dfrac{dk}{2\pi}e^{ikx}\dfrac{1}{k^2+m^2}&=\dfrac{e^{+mx}}{2m} & x<0
 \end{align}$$
-This is the full volume since the solution can have both positive and negative momenta.
+Or, more compactly, we can write the final integral as:
+$$\begin{align}
+\Aboxed{\int_{-\infty}^{+\infty}\dfrac{dk}{2\pi}e^{ikx}\dfrac{1}{k^2+m^2}&=\dfrac{e^{-m|x|}}{2m}} & x\ne0
+\end{align}$$
+<div style="page-break-before: always;"></div>
 
-If we solve for $|\vec{n}|$ in terms of energy, we can find an expression for the CDF:
-$$\begin{align}
-\left|\vec{n}\right|&=\dfrac{L}{h}\sqrt{2mE} &\implies&& N(\varepsilon\le E)&\simeq\dfrac{4}{3}\pi\cdot\dfrac{L^3}{h^3}(2m)^{3/2}E^{3/2}
-\end{align}$$
-The differential of the CDF gives the PDF (in our case, the density of states):
-$$\begin{align}
-N(\varepsilon\le E)&\simeq\dfrac{2^{7/2}\pi}{3}\dfrac{L^3m^{3/2}}{h^3}E^{3/2} &\implies&&\left.\dfrac{dN}{dE}\right|_{E}=\rho(E)&=2^{5/2}\pi\dfrac{L^3m^{3/2}}{h^3}E^{1/2}
-\end{align}$$
-Since our density of states is independent of $\theta,\phi$, we can write the radial density of state:
-$$\begin{align}
-\dfrac{d\rho(E)}{d\Omega}&=\dfrac{2^{5/2}\pi}{4\pi}\dfrac{L^3m^{3/2}}{h^3}E^{1/2}
-\end{align}$$
-Therefore, we have the following density of states:
-$$\begin{align}
-\Aboxed{\rho(E)&=2^{5/2}\pi\dfrac{L^3m^{3/2}}{h^3}E^{1/2}}
-&& \substack{\text{Constant} \\ \text{Separated}} &
-\Aboxed{\rho(E)&=2\pi\dfrac{(2mL^2)^{3/2}}{h^3}E^{1/2}}
-&& \substack{\text{Written Like} \\ \text{Energy Term}} \\
-\Aboxed{\rho(E)&=\dfrac{1}{\pi^2\sqrt{2}}\dfrac{L^3m^{3/2}}{\hbar^3}E^{1/2}}
-&& \substack{\text{In Terms} \\ \text{Of }\hbar\text{ Instead}} &
-\Aboxed{\rho(E)&=\dfrac{1}{4\pi^2}\dfrac{(2mL^2)^{3/2}}{\hbar^3}E^{1/2}}
-&& \substack{\text{Written Like} \\ \text{Energy Term} \\ \text{With }\hbar\text{ Instead}}
-\end{align}$$
-Our radial density of states are similarly written:
-$$\begin{align}
-\Aboxed{\dfrac{d\rho}{d\Omega}&=\sqrt{2}\dfrac{L^3m^{3/2}}{h^3}E^{1/2}}
-&& \substack{\text{Constant} \\ \text{Separated}} &
-\Aboxed{\dfrac{d\rho}{d\Omega}&=\dfrac{1}{2}\dfrac{(2mL^2)^{3/2}}{h^3}E^{1/2}}
-&& \substack{\text{Written Like} \\ \text{Energy Term}} \\
-\Aboxed{\dfrac{d\rho}{d\Omega}&=\dfrac{1}{2^{5/2}\pi^3}\dfrac{L^3m^{3/2}}{\hbar^3}E^{1/2}}
-&& \substack{\text{In Terms} \\ \text{Of }\hbar\text{ Instead}} &
-\Aboxed{\dfrac{d\rho}{d\Omega}&=\dfrac{1}{16\pi^3}\dfrac{(2mL^2)^{3/2}}{\hbar^3}E^{1/2}}
-&& \substack{\text{Written Like} \\ \text{Energy Term} \\ \text{With }\hbar\text{ Instead}}
-\end{align}$$
----
+
 ### Question 2
-Show that, in the limit that $\lim_{r\to\infty}f(\vec{x})g(\vec{x})=0$, the following is true:
+Calculate the following Cauchy Principle Value integral:
 $$\begin{align}
-\int f(\vec{x})\vec\nabla g(\vec{x})\ d^3x&=-\int g(\vec{x})\vec\nabla f(\vec{x})\ d^3x
+\mathcal{P}\int_{-1}^{+2}\dfrac{1}{x}dx
 \end{align}$$
-To be more precise, the product vanishes faster than $\sim 1/r^2$ as $r\to\infty$.
-
-We can take the gradient of the function product using the chain rule:
+We can split the integral into two limits:
 $$\begin{align}
-\vec\nabla\left(f(\vec{x})g(\vec{x})\right)&=g(\vec{x})\vec\nabla f(\vec{x})+f(\vec{x})\vec\nabla g(\vec{x})\\
-\end{align}$$
-Now we can integrate both sides over a volume:
-$$\begin{align}
-\int\vec\nabla\left(f(\vec{x})g(\vec{x})\right)\ d^3x&=\int g(\vec{x})\vec\nabla f(\vec{x})\ d^3x+\int f(\vec{x})\vec\nabla g(\vec{x})\ d^3x
-\end{align}$$
-On the left side, we can use the Divergence Theorem:
-$$\begin{align}
-\int_\Omega\vec\nabla F\ dV &=\oint_{\partial\Omega}F\ d\vec{S} &\implies&&
-\int_{V}\vec\nabla\left(f(\vec{x})g(\vec{x})\right)\ dV &=\oint_{\partial V}f(\vec{x})g(\vec{x})\ d\vec{S}
-\end{align}$$
-When we take the limit as $r\to\infty$, we find that:
-$$\begin{align}
-\lim_{r\to\infty}\oint_{\partial V}f(\vec{x})g(\vec{x})\ d\vec{S}=\oint_{\partial V}\lim_{r\to\infty} f(\vec{x})g(\vec{x})\ d\vec{S}&=0 &\implies&&
-\int_{V}\vec\nabla\left(f(\vec{x})g(\vec{x})\right)\ dV&=0
-\end{align}$$
-The left side is just zero in our original expression, and so:
-$$\begin{align}
-\int g(\vec{x})\vec\nabla f(\vec{x})\ d^3x+\int f(\vec{x})\vec\nabla g(\vec{x})\ d^3x&=0
-\end{align}$$
-We can then rearrange to get the result we would like:
-$$\begin{align}
-\lim_{r\to\infty} && \Aboxed{\int f(\vec{x})\vec\nabla g(\vec{x})\ d^3x&=-\int g(\vec{x})\vec\nabla f(\vec{x})\ d^3x}
+\mathcal{P}\int_{-1}^{+2}\dfrac{1}{x}dx
+&=\lim_{\delta\to0^-}\int_{-1}^{\delta}\dfrac{dx}{x}+\lim_{\delta\to0^+}\int_{\delta}^{+2}\dfrac{dx}{x}\\
+&=\lim_{\delta\to0^-}\left.\ln\left|x\right|\right|_{-1}^{\delta}+\lim_{\delta\to0^+}\left.\ln\left|x\right|\right|_{\delta}^{2}\\
+&=\lim_{\delta\to0}\left[\ln\left|-\delta\right|-\ln\left|-1\right|+\ln\left|2\right|-\ln\left|+\delta\right|\right]\\
+&=\ln\left|2\right|-\ln\left|-1\right|+\lim_{\delta\to0}\left[\ln\delta-\ln\delta\right]\\
+\Aboxed{\mathcal{P}\int_{-1}^{+2}\dfrac{1}{x}dx&=\ln2}
 \end{align}$$
 ---
 ### Question 3
-Calculate the integral:
+Show that when $f(z)$ is analytic in the domain $\mathrm{Im}(z)\ge0$, and that $\lim_{|z|\to\infty}|f(z)|=0$, then:
 $$\begin{align}
-\int_{\mathbb{R}^3}e^{-i\vec{q}\cdot\vec{x}}e^{-Zr/a_0}\ d^3x
+\mathcal{P}\int_{-\infty}^{+\infty}\dfrac{f(x)}{x-x_0}dx&=i\pi f(x_0)
 \end{align}$$
-We can represent both $\vec{q}$ and $\vec{x}$ in spherical coordinates. Let $\vec{q}$ be on the $z$-axis without loss of generality, since the angular parts are relative to the position, so we can always realign $\vec{q}$:
+Well the first thing we can do is rewrite this integral by shifting the $x$ axis:
 $$\begin{align}
-\vec{x}&=r\sin\theta\cos\phi\ \hat{x}+r\sin\theta\sin\phi\ \hat{y}+r\cos\theta\ \hat{z} & \vec{q}&=q\hat{z}\\
-\vec{q}\cdot\vec{x}&=qr\cos\theta
+\mathcal{P}\int_{-\infty}^{+\infty}\dfrac{f(x)}{x-x_0}dx&=\mathcal{P}\int_{-\infty}^{+\infty}\dfrac{f(x+x_0)}{x}dx
 \end{align}$$
-Writing our integral in spherical coordinates, and substituting the inner product:
+We can create a complete contour with the following integrals:
 $$\begin{align}
-I&=\int_0^{2\pi}\int_0^\pi\int_0^\infty e^{-i(qr\cos\theta)}e^{-Zr/a_0}\ \left(r^2\sin\theta\ dr\ d\theta\ d\phi\right)
+I_1&=\lim_{R\to-\infty}\lim_{\delta\to0^-}\int_R^\delta\dfrac{f(x+x_0)}{x}dx &
+I_2&=\lim_{\delta\to0^+}\int_{\pi}^{2\pi}\dfrac{f(\delta e^{i\phi}+x_0)}{\delta e^{i\phi}}\cdot i\delta e^{i\phi}d\phi\\
+I_3&=\lim_{R\to+\infty}\lim_{\delta\to0^+}\int_{\delta}^R\dfrac{f(x+x_0)}{x}dx &
+I_4&=\lim_{R\to\infty}\int_{0}^{\pi}\dfrac{f(Re^{i\phi}+x_0)}{Re^{i\phi}}\cdot iRe^{i\phi}d\phi
 \end{align}$$
-The azimuthal integration is trivial, and the polar integral is an integral found on a table:
+The addition of $I_1$ and $I_3$ is just the original principle integral, while $I_2$ and $I_4$ are semicircle contours that connect the two disjoint real integrations. Integral $2$ is:
 $$\begin{align}
-I&=\int_0^\infty dr\ r^2e^{-Zr/a_0}\int_0^\pi\  e^{-iqr\cos\theta}\sin\theta\ d\theta\int_0^{2\pi}d\phi\\
-&=\int_0^\infty dr\ r^2e^{-Zr/a_0}\cdot\dfrac{2\sin\left(qr\right)}{qr}\cdot2\pi\\
-I&=\dfrac{4\pi}{q}\int_0^\infty re^{-Zr/a_0}\sin\left(qr\right)\ dr
+I_2&=\lim_{\delta\to0^+}i\int_{\pi}^{2\pi}f(\delta e^{i\phi}+x_0)\ d\phi=i\int_{\pi}^{2\pi}f(x_0)\ d\phi\\
+\Aboxed{I_2&=i\pi f(x_0)}
 \end{align}$$
-This is also a well-known integral because of complex analysis:
+Integral $4$ is similar, but needs constraints:
 $$\begin{align}
-\int_0^\infty re^{-\alpha r}\sin\left(\beta r\right)\ dr&=\dfrac{2\alpha\beta}{|\alpha+i\beta|^4} & \alpha&=Z/a_0 & \beta&=q
+I_4&=i\lim_{R\to\infty}\int_{0}^{\pi}f(Re^{i\phi}+x_0)\ d\phi\\
+|I_4|&\le |i|\int_{0}^{\pi}\lim_{R\to\infty}\left|f(Re^{i\phi}+x_0)\right|\ d\phi\\
+&=\int_{0}^{\pi}\lim_{|z|\to\infty}\left|f(z)\right|\ d\phi\\
+|I_4|&\le0
 \end{align}$$
-Our integral can be simplified more:
+Since the absolute value of the integral is less than or equal to zero, and that the absolute value evaluates to elements zero or strictly positive, we know that $\boxed{I_4=0}$. We then have that the total contour integral is equal to:
 $$\begin{align}
-I&=\dfrac{4\pi}{q}\dfrac{2(Z/a_0)(q)}{|(Z/a_0)+i(q)|^4}\\
-&=8\pi\dfrac{a_0^4}{a_0^4}\dfrac{Z/a_0}{|Z/a_0+iq|^4}\\
-\Aboxed{I&=8\pi\dfrac{Za_0^3}{|Z+iqa_0|^4}}
+I=\mathcal{P}\int_{-\infty}^{+\infty}\dfrac{f(x)}{x-x_0}dx+i\pi f(x_0)=2\pi i\operatorname{Res}\left(f,z=x_0\right)
 \end{align}$$
-One last thing we can do is emphasize that there is a pole at a certain value of $q$:
+The residue is trivial to calculate:
 $$\begin{align}
-\Aboxed{I&=\dfrac{8\pi Z/a_0}{|q-iZ/a_0|^4}}
+&&2\pi i\lim_{z\to x_0}(z-x_0)\dfrac{f(z)}{z-x_0}=2\pi if(x_0) \\
+\implies&&\mathcal{P}\int_{-\infty}^{+\infty}\dfrac{f(x)}{x-x_0}dx+i\pi f(x_0)=2\pi if(x_0)
 \end{align}$$
-Or if we want to make it explicit that this integral is real-valued:
+Rearranging for the principle value integral, we get the final solution:
 $$\begin{align}
-\Aboxed{I&=8\pi\dfrac{Za_0^3}{|Z^2+q^2a_0^2|^2}}
+\Aboxed{\mathcal{P}\int_{-\infty}^{+\infty}\dfrac{f(x)}{x-x_0}dx&=i\pi f(x_0)}
 \end{align}$$
