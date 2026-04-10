@@ -1,0 +1,13 @@
+**Author:** Stanley Goodwin
+**Date:** April 22nd, 2026
+
+---
+**Title:** *Title*
+**Speaker:** *Name, Degree*, Where
+**Understanding:** TBD
+
+---
+> Briefly describe in words the key concepts of the talk that interested you or if you did not find the talk interesting, why it was not interesting to you.
+
+---
+> If you were the speaker what would you do differently?

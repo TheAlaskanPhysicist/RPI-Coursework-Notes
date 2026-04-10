@@ -3,11 +3,11 @@ Date: February 27th, 2026
 
 ---
 ## PDF Question 1
-When calculating the relativistic corrections to the kinetic energy in class, we used the trick (without going through the details) that we can relate the expectation value $\bra{nlm}\tfrac{\gamma}{r^2}\ket{nlm}$ to the expansion of the *exact* energy levels of the "modified" Hydrogen-like atom with:
-$$\begin{align}
+> When calculating the relativistic corrections to the kinetic energy in class, we used the trick (without going through the details) that we can relate the expectation value $\bra{nlm}\tfrac{\gamma}{r^2}\ket{nlm}$ to the expansion of the *exact* energy levels of the "modified" Hydrogen-like atom with:
+> $$\begin{align}
 l(l+1)&&\to&&l'(l'+1)=l(l+1)+\dfrac{2m\gamma}{\hbar^2}
 \end{align}$$
-Find $\bra{nlm}\dfrac{\gamma}{r^2}\ket{nlm}$.
+> Find $\bra{nlm}\dfrac{\gamma}{r^2}\ket{nlm}$.
 
 Our perturbation is of the same form as the centrifugal term:
 $$\begin{align}
@@ -49,15 +49,15 @@ $$\begin{align}
 \end{align}$$
 ---
 ## PDF Question 2
-We discussed in class the first-order energy shifts $\Delta_K^{(1)}$ from relativistic corrections to the *kinetic* energy. We also discussed $\Delta_{LS}^{(1)}$ from the *spin-orbit* interaction, but there was a problem in that it gave a nonzero result for $l=0$ states if we blindly let an $l=0$ in the numerator cancel an $l=0$ in the denominator. In fact, $\Delta_{LS}^{(1)}$ from (5.3.31) is invalid for $l=0$. However, if we take into account the spread of the electron wavefunction in the region of changing electric field, we are led to include the *Darwin term* in the Hamiltonian. It turns out, the corresponding perturbation is:
-$$\begin{align}
+> We discussed in class the first-order energy shifts $\Delta_K^{(1)}$ from relativistic corrections to the *kinetic* energy. We also discussed $\Delta_{LS}^{(1)}$ from the *spin-orbit* interaction, but there was a problem in that it gave a nonzero result for $l=0$ states if we blindly let an $l=0$ in the numerator cancel an $l=0$ in the denominator. In fact, $\Delta_{LS}^{(1)}$ from (5.3.31) is invalid for $l=0$. However, if we take into account the spread of the electron wavefunction in the region of changing electric field, we are led to include the *Darwin term* in the Hamiltonian. It turns out, the corresponding perturbation is:
+> $$\begin{align}
 V_D&=-\dfrac{1}{8m^2c^2}\left[p_i,[p_i,V_C(r)]\right]
 \end{align}$$
-where $V_C(r)=-Ze^2/r$ is the Coulomb potential and summation over $i$ is implied.
+> where $V_C(r)=-Ze^2/r$ is the Coulomb potential and summation over $i$ is implied.
 
 ---
 ### PDF Question 2.A
-Find $\Delta_D^{(1)}$ and show that it is nonzero only for $l=0$ states, and that it gives precisely the same result as blindly using (5.3.31) for $l=0$.
+> Find $\Delta_D^{(1)}$ and show that it is nonzero only for $l=0$ states, and that it gives precisely the same result as blindly using (5.3.31) for $l=0$.
 
 For both commutators applied to a state $\psi$, we can use the position representation for momentum and the chain rule for derivatives to find:
 $$\begin{align}
@@ -109,11 +109,11 @@ I did the whole problem in Gauss units, btw, hence why there is no $\epsilon_0$ 
 
 ---
 ### PDF Question 2.B
-Then show that:
-$$\begin{align}
+> Then show that:
+> $$\begin{align}
 \Delta_{nj}^{(1)}\equiv\Delta_K^{(1)}+\Delta_{LS}^{(1)}+\Delta_{D}^{(1)}=\dfrac{mc^2(Z\alpha)^4}{2n^3}\left(\dfrac{3}{4n}-\dfrac{2}{2j+1}\right)
 \end{align}$$
-Later on in this course, we will compare this expression to the result of solving the Dirac equation in the presence of Coulomb potential.
+> Later on in this course, we will compare this expression to the result of solving the Dirac equation in the presence of Coulomb potential.
 
 From previous sections, we have the energy corrections:
 $$\begin{align}
@@ -141,11 +141,11 @@ $$\begin{align}
 \end{align}$$
 ---
 ## Question 5.25
-Work out the *quadratic* Zeeman effect for the ground-state hydrogen atom due to the usually neglected $e^2\vec{A}^2/2m_ec^2$ term in the Hamiltonian taken to the first order. Write the energy shift as:
-$$\begin{align}
+> Work out the *quadratic* Zeeman effect for the ground-state hydrogen atom due to the usually neglected $e^2\vec{A}^2/2m_ec^2$ term in the Hamiltonian taken to the first order. Write the energy shift as:
+> $$\begin{align}
 \Delta=-\dfrac{1}{2}\chi\vec{B}^2
 \end{align}$$
-and obtain an expression for *diamagnetic susceptibility* $\chi$.
+> and obtain an expression for *diamagnetic susceptibility* $\chi$.
 
 Suppose a perturbative Hamiltonian with the form of the neglected term:
 $$\begin{align}
@@ -196,11 +196,11 @@ $$\begin{align}
 \end{align}$$
 ---
 ## Question 5.27
-Estimate the ground-state energy of a one-dimensional simple harmonic oscillator using:
-$$\begin{align}
+> Estimate the ground-state energy of a one-dimensional simple harmonic oscillator using:
+> $$\begin{align}
 \braket{x\lvert\tilde{0}}&=e^{-\beta|x|}
 \end{align}$$
-as a trial function with $\beta$ to be varied.
+> as a trial function with $\beta$ to be varied.
 
 Well firstly we can normalize this function:
 $$\begin{align}
@@ -240,13 +240,13 @@ Seems to be a pretty decent approximation, with the true ground state having coe
 
 ---
 ## Question 5.30
-A one-dimensional harmonic oscillator is in its ground state for $t<0$. For $t\ge0$ it is subjected to a time-dependent but spatially uniform force (not potential!) in the x-direction:
-$$\begin{align}
+> A one-dimensional harmonic oscillator is in its ground state for $t<0$. For $t\ge0$ it is subjected to a time-dependent but spatially uniform force (not potential!) in the x-direction:
+> $$\begin{align}
 \vec{F}(t)&=F_0e^{-t/\tau}
 \end{align}$$
 ---
 ### Question 5.30.A
-Using time-dependent perturbation theory to first order, obtain the probability of finding the oscillator in its first excited state for $t>0$. Show that the $t\to\infty$ ($\tau$ finite) limit of your expression is independent of time. Is this reasonable or surprising?
+> Using time-dependent perturbation theory to first order, obtain the probability of finding the oscillator in its first excited state for $t>0$. Show that the $t\to\infty$ ($\tau$ finite) limit of your expression is independent of time. Is this reasonable or surprising?
 
 The (first-order) transition amplitude from notes is:
 $$\begin{align}
@@ -303,7 +303,7 @@ It's mildly surprising that is it inversely proportional to the cube of the angu
 
 ---
 ### Question 5.30.B
-Can we find higher excited states?
+> Can we find higher excited states?
 
 We can write the transition amplitude out more explicitly as:
 $$\begin{align}
@@ -319,15 +319,14 @@ So *no*, we cannot see any other transitions to higher excited states, at least 
 
 ---
 ## Question 5.35
-A hydrogen atom in its ground state is placed between the plates of a capacitor. A time-dependent but spatial uniform electric field (not potential!) is applied as follows:
-$$\begin{align}
+> A hydrogen atom in its ground state is placed between the plates of a capacitor. A time-dependent but spatial uniform electric field (not potential!) is applied as follows:
+> $$\begin{align}
 \vec{E}&=\begin{cases}
 0&t<0\\
 E_0e^{-t/\tau}\hat{z}&t\ge0
 \end{cases}
 \end{align}$$
-Using first-order time-dependent perturbation theory, compute the probability for the atom to be found at $t\gg\tau$ in each of the three $2p$ states. Repeat the problem for the $2s$ state. Consider the 
-limit $\tau\to\infty$.
+> Using first-order time-dependent perturbation theory, compute the probability for the atom to be found at $t\gg\tau$ in each of the three $2p$ states. Repeat the problem for the $2s$ state. Consider the limit $\tau\to\infty$.
 
 Our transition amplitude for this system is:
 $$\begin{align}

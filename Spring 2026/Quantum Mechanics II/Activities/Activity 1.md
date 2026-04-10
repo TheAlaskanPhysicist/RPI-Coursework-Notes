@@ -1,23 +1,17 @@
-Stanley Goodwin, 1/16/2026
+**Author:** Stanley Goodwin
+**Date:** January 16th, 2026
 
 ---
-### Question
-Using the explicit form of:
-$$\begin{align}
+> Using the explicit form of
+> $$\begin{align}
 Y_l^m&=(-1)^m\sqrt{\dfrac{(2l+1)(l-m)!}{4\pi(l+m)!}}P_l^m(\cos\theta)e^{im\phi}
 \end{align}$$
-for positive $m$, where:
-$$\begin{align}
+> for positive $m$, with $(3.247)$, where
+> $$\begin{align}
 P_l^{|m|}(\cos\theta)&=\dfrac{(-1)^{l+m}}{2^l l!}\dfrac{(l+|m|)!}{(l-|m|)!}\sin(\theta)^{-|m|}\left(\dfrac{d}{d(\cos\theta)}\right)^{l-|m|}\sin(\theta)^{2l}
 \end{align}$$
-we can readily show that:
-$$\begin{align}
-Y_l^m\rightarrow(-1)^{l}Y_l^m
-\end{align}$$
-Prove it!
+> prove the reflection equation $Y_l^m\rightarrow(-1)^{l}Y_l^m$.
 
----
-### Proof
 Under the parity transform $\pi$, we know that:
 $$\begin{align}
 r&\rightarrow r & \theta&\rightarrow\pi-\theta & \phi&\rightarrow\pi+\phi
@@ -42,4 +36,3 @@ $$\begin{align}
 \pi Y_l^m&=(-1)^{l}Y_l^m\\
 \Aboxed{Y_l^m&\rightarrow(-1)^{l}Y_l^m}
 \end{align}$$
----

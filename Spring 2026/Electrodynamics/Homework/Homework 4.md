@@ -1,9 +1,9 @@
-Author: Stanley Goodwin
-Date: March 15th, 2026
+**Author:** Stanley Goodwin
+**Date:** March 15th, 2026
 
 ---
 ## Question 7.3
-An infinite volume of uniform, isotropic, apermeable, lossless dielectric with index of refraction $n$ is bisected by a plane $P$, and physically separated in the direction of $P$'s normal by displacement $d$. The new separated volume is filled with air $(n=1)$. A electromagnetic plane wave of frequency $\omega$ originates within the dielectric volume from infinity and is incident on the interface of the gap with angle of incidence $i$.
+> An infinite volume of uniform, isotropic, apermeable, lossless dielectric with index of refraction $n$ is bisected by a plane $P$, and physically separated in the direction of $P$'s normal by displacement $d$. The new separated volume is filled with air $(n=1)$. A electromagnetic plane wave of frequency $\omega$ originates within the dielectric volume from infinity and is incident on the interface of the gap with angle of incidence $i$.
 #### Clarification of Standards
 I will separate the problem into 3 regions:
 $$\begin{align}
@@ -240,9 +240,9 @@ $$\begin{align}
 
 
 ### Question 7.3.A
-For linear polarization (both parallel to **and** perpendicular to the plane of incidence), calculate:
- - The ratio of power transmitted into the second volume to the incident power.
- - The ratio of power reflected back into the first volume to incident power.
+> For linear polarization (both parallel to **and** perpendicular to the plane of incidence), calculate:
+ > - The ratio of power transmitted into the second volume to the incident power.
+ > - The ratio of power reflected back into the first volume to incident power.
 
 The magnitude squared of the perpendicular polarizations are as follows:
 $$\begin{align}
@@ -262,7 +262,7 @@ $$\begin{align}
 \end{align}$$
 ---
 ### Question 7.3.B
-For $i$ greater than the critical angle for total internal reflection, sketch the ratio of transmitted power to incident power as a function of $d$ measured in units of wavelength in the gap.
+> For $i$ greater than the critical angle for total internal reflection, sketch the ratio of transmitted power to incident power as a function of $d$ measured in units of wavelength in the gap.
 
 I can't be bothered. This homework is way too much work for literally nothing.
 
@@ -278,7 +278,7 @@ I can't be bothered. This homework is way too much work for literally nothing.
 
 ---
 ## Question 7.4
-A plane-polarized electromagnetic wave of frequency $\omega$ in free space is normally incident on the flat surface of a nonpermeable medium of conductivity $\sigma$ and dielectric constant $\epsilon$.
+> A plane-polarized electromagnetic wave of frequency $\omega$ in free space is normally incident on the flat surface of a nonpermeable medium of conductivity $\sigma$ and dielectric constant $\epsilon$.
 
 
 
@@ -287,7 +287,7 @@ A plane-polarized electromagnetic wave of frequency $\omega$ in free space is no
 
 ---
 ### Question 7.4.A
-Calculate the amplitude and phase of the reflected wave relative to the incident wave for arbitrary $\sigma$ and $\epsilon$.
+> Calculate the amplitude and phase of the reflected wave relative to the incident wave for arbitrary $\sigma$ and $\epsilon$.
 
 
 
@@ -296,11 +296,11 @@ Calculate the amplitude and phase of the reflected wave relative to the incident
 
 ---
 ### Question 7.4.B
-Discuss the limiting cases of a very poor and a very good conductor, and show that for a good conductor the reflection coefficient (ratio of reflected to incident intensity) is approximately:
-$$\begin{align}
+> Discuss the limiting cases of a very poor and a very good conductor, and show that for a good conductor the reflection coefficient (ratio of reflected to incident intensity) is approximately:
+> $$\begin{align}
 R&\simeq1-2\dfrac{\omega}{c}\delta
 \end{align}$$
-where $\delta$ is the skin depth.
+> where $\delta$ is the skin depth.
 
 
 
@@ -309,16 +309,16 @@ where $\delta$ is the skin depth.
 
 ---
 ## Question 7.6
-A plane wave of frequency $\omega$ is normally incident from vacuum on a semi-infinite slab of material with a *complex* index of refraction $n(\omega)$, where $n^2(\omega)=\epsilon(\omega)/\epsilon_0$.
+> A plane wave of frequency $\omega$ is normally incident from vacuum on a semi-infinite slab of material with a *complex* index of refraction $n(\omega)$, where $n^2(\omega)=\epsilon(\omega)/\epsilon_0$.
 
 ---
 ### Question 7.6.A
-Show that the ratio of reflected power to incident power is
-$$\begin{align}
+> Show that the ratio of reflected power to incident power is
+> $$\begin{align}
 R&=\left|\dfrac{1-n(\omega)}{1+n(\omega)}\right|^2
 \end{align}$$
-while the ratio of power transmitted into the medium to the incident power is
-$$\begin{align}
+> while the ratio of power transmitted into the medium to the incident power is
+> $$\begin{align}
 T&=\dfrac{4\Re\left(n(\omega)\right)}{|1+n(\omega)|^2}
 \end{align}$$
 
@@ -331,7 +331,7 @@ T&=\dfrac{4\Re\left(n(\omega)\right)}{|1+n(\omega)|^2}
 
 ---
 ### Question 7.6.B
-Evaluate $\Re\left[\tfrac{i\omega}{2}(\vec{E}\cdot\vec{D}^*-\vec{B}\cdot\vec{H}^*)\right]$ as a function of $(x,y,z)$. Show that this rate of change of energy per unit volume accounts for the relative transmitted power $T$.
+> Evaluate $\Re\left[\tfrac{i\omega}{2}(\vec{E}\cdot\vec{D}^*-\vec{B}\cdot\vec{H}^*)\right]$ as a function of $(x,y,z)$. Show that this rate of change of energy per unit volume accounts for the relative transmitted power $T$.
 
 
 
@@ -347,7 +347,7 @@ Evaluate $\Re\left[\tfrac{i\omega}{2}(\vec{E}\cdot\vec{D}^*-\vec{B}\cdot\vec{H}^
 
 ---
 ### Question 7.6.C
-For a conductor, with $n^2=1+i(\sigma/\omega\epsilon_0)$, $\sigma\in\mathbb{R}$, write out the results of [[#Question 7.6.A]] and [[#Question 7.6.B]] in the limit $\epsilon_0\omega\ll\sigma$. Express your answer in terms of $\delta$ as much as possible. Calculate $\tfrac{1}{2}\Re\left(\vec{J}^*\cdot\vec{E}\right)$ and compare with the result of [[#Question 7.6.B]]. Do both enter the complex form of Poynting's theorem?
+> For a conductor, with $n^2=1+i(\sigma/\omega\epsilon_0)$, $\sigma\in\mathbb{R}$, write out the results of [[#Question 7.6.A]] and [[#Question 7.6.B]] in the limit $\epsilon_0\omega\ll\sigma$. Express your answer in terms of $\delta$ as much as possible. Calculate $\tfrac{1}{2}\Re\left(\vec{J}^*\cdot\vec{E}\right)$ and compare with the result of [[#Question 7.6.B]]. Do both enter the complex form of Poynting's theorem?
 
 
 
@@ -356,15 +356,15 @@ For a conductor, with $n^2=1+i(\sigma/\omega\epsilon_0)$, $\sigma\in\mathbb{R}$,
 
 ---
 ## Question 7.12
-The time dependence of the electrical disturbances in good conductors is governed by the frequency-dependent conductivity (7.58). Consider longitudinal electric fields in a conductor, using Ohm's law, the continuity equation, and the differential form of Coulomb's law.
+> The time dependence of the electrical disturbances in good conductors is governed by the frequency-dependent conductivity (7.58). Consider longitudinal electric fields in a conductor, using Ohm's law, the continuity equation, and the differential form of Coulomb's law.
 
 
 
 
 ---
 ### Question 7.12.A
-Show that the time-Fourier-transformed charge density satisfies the equation
-$$\begin{align}
+> Show that the time-Fourier-transformed charge density satisfies the equation
+> $$\begin{align}
 \left[\sigma(\omega)-i\omega\epsilon_0\right]\rho(\vec{x},\omega)&=0
 \end{align}$$
 
@@ -372,5 +372,5 @@ $$\begin{align}
 
 ---
 ### Question 7.12.B
-Using the representation $\sigma(\omega)=\sigma_0/(1-i\omega\tau)$, where $\sigma_0=\epsilon_0\omega_p^2\tau$ and $\tau$ is a damping time, show that in the approximation $\omega_p\tau\gg1$ any disturbance will oscillate with the plasma frequency and decay in amplitude with decay constant $\lambda=1/2\tau$. Note that if you use $\sigma(\omega)\simeq\sigma(0)=\sigma_0$ in [[#Question 7.12.A]], you will find no oscillations and extremely rapid damping with the (wrong) decay constant $\lambda_w=\sigma_0/\epsilon_0$.
+> Using the representation $\sigma(\omega)=\sigma_0/(1-i\omega\tau)$, where $\sigma_0=\epsilon_0\omega_p^2\tau$ and $\tau$ is a damping time, show that in the approximation $\omega_p\tau\gg1$ any disturbance will oscillate with the plasma frequency and decay in amplitude with decay constant $\lambda=1/2\tau$. Note that if you use $\sigma(\omega)\simeq\sigma(0)=\sigma_0$ in [[#Question 7.12.A]], you will find no oscillations and extremely rapid damping with the (wrong) decay constant $\lambda_w=\sigma_0/\epsilon_0$.
 

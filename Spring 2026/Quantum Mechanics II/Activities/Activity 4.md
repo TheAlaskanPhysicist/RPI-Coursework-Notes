@@ -1,12 +1,14 @@
-Stanley Goodwin, 2/10/2026
+**Author:** Stanley Goodwin
+**Date:** February 10th, 2026
 
 ---
-Consider an infinite square potential in the $(-a,a)$ interval $(a>0)$. Consider the trial function:
-$$\begin{align}
+> Consider an infinite square potential in the $(-a,a)$ interval $(a>0)$. Consider the trial function:
+> $$\begin{align}
 \braket{x\lvert\psi}&=A\left(a^\lambda-|x|^\lambda\right)
 \end{align}$$
+---
 ### Part A
-Find $\lambda_\text{min}$ for which $\bar{H}(\lambda)$ is minimum.
+> Find $\lambda_\text{min}$ for which $\bar{H}(\lambda)$ is minimum.
 
 We can find the normalization of this state:
 $$\begin{align}
@@ -45,7 +47,7 @@ $$\begin{align}
 \end{align}$$
 ---
 ### Part B
-Find the energy $\bar{H}_\text{min}=\bar{H}(\lambda_\text{min})$ as the approximate energy of the ground state.
+> Find the energy $\bar{H}_\text{min}=\bar{H}(\lambda_\text{min})$ as the approximate energy of the ground state.
 
 Our Hamiltonian Parametrized by $\lambda$ is the following:
 $$\begin{align}

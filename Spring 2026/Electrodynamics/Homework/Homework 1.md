@@ -1,11 +1,9 @@
-Author: Stanley Goodwin
-Date: January 29th, 2026
-
-Apologies for the late submission.
+**Author:** Stanley Goodwin
+**Date:** January 29th, 2026
 
 ---
 ## Question 1.3
-Using the Dirac delta functions in the appropriate coordinates, express the following charge distributions as three-dimensional charge densities $\rho(\vec{x})$.
+> Using the Dirac delta functions in the appropriate coordinates, express the following charge distributions as three-dimensional charge densities $\rho(\vec{x})$.
 
 ---
 ### Question 1.3.A
@@ -17,7 +15,7 @@ The extra factors come from the Jacobian determinant of the basis.
 
 ---
 ### Question 1.3.B
-In cylindrical coordinates, a charge per unit length $\lambda$ uniformly distributed over a cylinder surface of radius $b$.
+> In cylindrical coordinates, a charge per unit length $\lambda$ uniformly distributed over a cylinder surface of radius $b$.
 
 The difficulty is the charge per unit length in what axis? The $z$ axis or $\phi$ axis. Assuming $z$:
 $$\begin{align}
@@ -31,7 +29,7 @@ I'm going to guess it was asking for the $z$ length, and is boxed above.
 <div style="page-break-before: always;"></div>
 
 ### Question 1.3.C
-In cylindrical coordinates, a charge $Q$ spread uniformly over a flat, circular, disc of negligible thickness and radius $R$.
+> In cylindrical coordinates, a charge $Q$ spread uniformly over a flat, circular, disc of negligible thickness and radius $R$.
 $$\begin{align}
 \Aboxed{\rho(\vec{r})&=\dfrac{Q}{\pi R^2}\delta(z),\ 0\le r\le R}
 \end{align}$$
@@ -47,11 +45,11 @@ Our spherical encoding enforces that the disk is infinitesimally thick.
 
 ---
 ## Question 1.5
-The time-averaged potential of a neutral hydrogen atom is given by:
-$$\begin{align}
+> The time-averaged potential of a neutral hydrogen atom is given by:
+> $$\begin{align}
 \Phi\equiv\dfrac{q}{4\pi\epsilon_0}\dfrac{e^{-\alpha r}}{r}\left(1+\dfrac{\alpha r}{2}\right)
 \end{align}$$
-where $q$ is the magnitude of the electric charge, and $\alpha^{-1}=a_0/2$, $a_0$ being the Bohr radius. Find the distribution of charge (both continuous and discrete) that will give this potential and interpret your result physically.
+> where $q$ is the magnitude of the electric charge, and $\alpha^{-1}=a_0/2$, $a_0$ being the Bohr radius. Find the distribution of charge (both continuous and discrete) that will give this potential and interpret your result physically.
 <div style="page-break-before: always;"></div>
 
 The spherical Laplacian operation is the following (since it is spherically symmetric):
@@ -80,15 +78,15 @@ The delta function corresponds to a positive elementary charge (nucleus), and th
 
 ---
 ## Question 1.7
-Two long, cylindrical, capacitors of radii $a_1$ and $a_2$ are parallel and separated by distance $d$, which is large compared with either radius. 
+> Two long, cylindrical, capacitors of radii $a_1$ and $a_2$ are parallel and separated by distance $d$, which is large compared with either radius. 
 <div style="page-break-before: always;"></div>
 
 ### Question 1.7.A
-Show that the capacitance per unit length is given approximately by:
-$$\begin{align}
+> Show that the capacitance per unit length is given approximately by:
+> $$\begin{align}
 C\simeq\pi\epsilon_0\left(\ln\dfrac{d}{a}\right)^{-1}
 \end{align}$$
-where $a$ is the geometric mean of the two radii.
+> where $a$ is the geometric mean of the two radii.
 
 The electric field in the plane between the two cylinders:
 $$\begin{align}
@@ -124,7 +122,7 @@ $$\begin{align}
 
 .
 ### Question 1.7.B
-Approximately what gauge wire (state diameter in millimeters) would be necessary to make a two-wire transmission like with a capacitance of $1.2\times10^{-11}\mathrm{ F/m}$ if the separation of the wires was...
+> Approximately what gauge wire (state diameter in millimeters) would be necessary to make a two-wire transmission like with a capacitance of $1.2\times10^{-11}\mathrm{ F/m}$ if the separation of the wires was...
 
 We can rearrange the above equation for the geometric mean of the wire radii:
 $$\begin{align}
@@ -145,7 +143,7 @@ $$\begin{align}
 \end{align}$$
 ---
 ## Question 1.14
-Consider the electrostatic Green's functions of *Section 1.10* for Dirichlet and Neumann boundary conditions on the surface $S$ bounding the volume $V$. Apply Green's theorem (1.35) with integration variable $\vec{y}$ and $\phi=G(\vec{x},\vec{y})$, $\psi=G(\vec{x}',\vec{y})$, with $\nabla_y^2G(\vec{z},\vec{y})=-4\pi\delta(\vec{y}-\vec{z})$. Find an expression for the difference $\left[G(\vec{x},\vec{x}')-G(\vec{x}',\vec{x})\right]$ in terms of an integral over the boundary $S$.
+> Consider the electrostatic Green's functions of *Section 1.10* for Dirichlet and Neumann boundary conditions on the surface $S$ bounding the volume $V$. Apply Green's theorem (1.35) with integration variable $\vec{y}$ and $\phi=G(\vec{x},\vec{y})$, $\psi=G(\vec{x}',\vec{y})$, with $\nabla_y^2G(\vec{z},\vec{y})=-4\pi\delta(\vec{y}-\vec{z})$. Find an expression for the difference $\left[G(\vec{x},\vec{x}')-G(\vec{x}',\vec{x})\right]$ in terms of an integral over the boundary $S$.
 
 For reference, 1.35 is the following:
 $$\begin{align}
@@ -161,7 +159,7 @@ $$\begin{align}
 \Aboxed{&\left[G(\vec{x},\vec{x}')-G(\vec{x}',\vec{x})\right]=-\dfrac{1}{4\pi}\oint_S\left[G(\vec{x},\vec{y})\dfrac{\partial G(\vec{x}',\vec{y})}{\partial n}-G(\vec{x}',\vec{y})\dfrac{\partial G(\vec{x},\vec{y})}{\partial n}\right]\ da_y}
 \end{align}$$
 ### Question 1.14.A
-For Dirichlet boundary conditions on the potential and the associated boundary condition on the Green's function, show that $G_D(\vec{x},\vec{x}')$ must be symmetric in $\vec{x}$ and $\vec{x}'$.
+> For Dirichlet boundary conditions on the potential and the associated boundary condition on the Green's function, show that $G_D(\vec{x},\vec{x}')$ must be symmetric in $\vec{x}$ and $\vec{x}'$.
 
 The Green's function for Dirichlet boundary condition is:
 $$\begin{align}
@@ -174,10 +172,11 @@ $$\begin{align}
 \end{align}$$
 ---
 ### Question 1.14.B
-For Neumann boundary conditions, use the boundary condition (1.45) for $G_N(\vec{x},\vec{x}')$ to show that $G_N(\vec{x},\vec{x}')$ is **not** symmetric in general, but that $G_N(\vec{x},\vec{x}')-F(\vec{x})$ **is** symmetric in $\vec{x}$ and $\vec{x}'$, where:
-$$\begin{align}
+> For Neumann boundary conditions, use the boundary condition (1.45) for $G_N(\vec{x},\vec{x}')$ to show that $G_N(\vec{x},\vec{x}')$ is **not** symmetric in general, but that $G_N(\vec{x},\vec{x}')-F(\vec{x})$ **is** symmetric in $\vec{x}$ and $\vec{x}'$, where:
+> $$\begin{align}
 F(\vec{x})&=\dfrac{1}{S}\oint_SG_N(\vec{x},\vec{y})\ da_y
 \end{align}$$
+
 Equation 1.45 is the following:
 $$\begin{align}
 \dfrac{\partial G_N}{\partial n'}(\vec{x},\vec{x}')&=-\dfrac{4\pi}{S} &\text{for }\vec{x}'\text{ on }S
@@ -197,7 +196,7 @@ If we swap $\vec{x}\leftrightarrow\vec{x}'$, this relation does hold.
 <div style="page-break-before: always;"></div>
 
 ### Question 1.14.C
-Show that the addition of $F(\vec{x})$ to the Green's function does not affect the potential $\Phi(\vec{x})$. See problem 3.26 for an example of the Neumann Green's function.
+> Show that the addition of $F(\vec{x})$ to the Green's function does not affect the potential $\Phi(\vec{x})$. See problem 3.26 for an example of the Neumann Green's function.
 
 The Green's function for Neumann boundary condition is:
 $$\begin{align}

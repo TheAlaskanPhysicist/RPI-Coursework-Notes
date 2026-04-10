@@ -1,5 +1,5 @@
-Author: Stanley Goodwin
-Date: January 27th, 2026
+**Author:** Stanley Goodwin
+**Date:** January 27th, 2026
 
 ---
 ## PDF Question
@@ -7,11 +7,11 @@ Date: January 27th, 2026
 
 ---
 ### PDF Question 1.A
-As a warm-up exercise, show by brute force that the momentum operator $\vec{p}$ is a (Cartesian) vector operator, i.e., it satisfies:
-$$\begin{align}
+> As a warm-up exercise, show by brute force that the momentum operator $\vec{p}$ is a (Cartesian) vector operator, i.e., it satisfies:
+> $$\begin{align}
 [L_i,p_j]&=i\hbar\epsilon_{ijk}p_k
 \end{align}$$
-Hint: Write $L_i=\epsilon_{imn}x_mp_n$ and use $[x_m,p_j]=i\hbar\delta_{mj}$.
+> **Hint:** Write $L_i=\epsilon_{imn}x_mp_n$ and use $[x_m,p_j]=i\hbar\delta_{mj}$.
 $$\begin{align}
 [L_i,p_j]&=[\epsilon_{imn}x_mp_n,p_j]\\
 &=(\epsilon_{imn}x_mp_n)p_j-p_j(\epsilon_{imn}x_mp_n)\\
@@ -28,16 +28,16 @@ $$\begin{align}
 \end{align}$$
 ---
 ### PDF Question 1.B
-Recall the QM Runge-Lenz vector from class and the text (Chapter 4.1):
-$$\begin{align}
+> Recall the QM Runge-Lenz vector from class and the text (Chapter 4.1):
+> $$\begin{align}
 \vec{M}&=\dfrac{1}{2m}\left(\vec p\times\vec L-\vec L\times\vec p\right)-\dfrac{Ze^2}{r}\vec{x}
 \end{align}$$
-where $r=|\vec{x}|$. Show that:
-$$\begin{align}
+> where $r=|\vec{x}|$. Show that:
+> $$\begin{align}
 \vec{L}\cdot\vec{M}&=L_iM_i=0
 \end{align}$$
-Here, you can use these identities shown earlier:
-$[\vec{L},H]=0$ (for Coulomb potential); $[L_i,p_j]=i\hbar\epsilon_{ijk}p_k$.
+> Here, you can use these identities shown earlier:
+> $[\vec{L},H]=0$ (for Coulomb potential); $[L_i,p_j]=i\hbar\epsilon_{ijk}p_k$.
 
 ---
 #### 1.B: Dot Product Proof
@@ -138,13 +138,13 @@ L_iM_i
 \end{align}$$
 ---
 ## Question 4.3
-A quantum-mechanical state $\ket\Psi$ is known to be a simultaneous eigenstate of two Hermitian operators $A$ and $B$ which anti-commute,
-$$\begin{align}
+> A quantum-mechanical state $\ket\Psi$ is known to be a simultaneous eigenstate of two Hermitian operators $A$ and $B$ which anti-commute,
+> $$\begin{align}
 AB+BA=0
 \end{align}$$
 ---
 ### Question 4.3.A
-What can you say about the eigenvalues of $A$ and $B$ for state $\ket\Psi$?
+> What can you say about the eigenvalues of $A$ and $B$ for state $\ket\Psi$?
 
 We can notice the following:
  - Hermitian $\implies$ $a,b \in\mathbb{R}$
@@ -168,7 +168,7 @@ For a quantum-mechanical state $\ket\Psi$ that is a simultaneous eigenstate of t
 
 ---
 ### Question 4.3.B
-Illustrate your point using parity (chosen to satisfy $\pi=\pi^\dagger=\pi^{-1}$) and momentum operators.
+> Illustrate your point using parity (chosen to satisfy $\pi=\pi^\dagger=\pi^{-1}$) and momentum operators.
 
 Where $\lambda$ is the eigenvalue of parity (idk what the standard variable is).
 $$\begin{align}
@@ -192,7 +192,7 @@ Up to a global phase of the state.
 
 ---
 ## Question 4.4
-A spin $1/2$ particle is bound to a fixed center by a spherically symmetrical potential.
+> A spin $1/2$ particle is bound to a fixed center by a spherically symmetrical potential.
 
 I particularly hate spherical harmonic notation, so I'm going to use a different one. I will use:
 $$\begin{align}
@@ -230,7 +230,7 @@ _CY_{l=1}^{3/2,-3/2}&=\sqrt{\dfrac{3}{8\pi}}e^{-i\phi}\sin\theta\ \chi^{-1/2}_{1
 \end{align}$$
 ---
 ### Question 4.4.A
-Write down the spin angular function $Y_{l=0}^{j=1/2,m_j=1/2}$.
+> Write down the spin angular function $Y_{l=0}^{j=1/2,m_j=1/2}$.
 
 In our case, we're looking at the state where $j=1/2$, $l=0$, and $m_j=+1/2$. From the table list above, we can write the following:
 $$\begin{align}
@@ -242,7 +242,7 @@ $$\begin{align}
 \end{align}$$
 ---
 ### Question 4.4.B
-Express $(\sigma\cdot\vec{x})Y_{l=0}^{j=1/2,m_j=1/2}$ in terms of some other $Y_{l}^{j,m_j}$.
+> Express $(\sigma\cdot\vec{x})Y_{l=0}^{j=1/2,m_j=1/2}$ in terms of some other $Y_{l}^{j,m_j}$.
 
 This operator in the front can be written, in spherical coordinates as:
 $$\begin{align}
@@ -284,7 +284,7 @@ $$\begin{align}
 \end{align}$$
 ---
 ### Question 4.4.C
-Show that your result in (b) is understandable in view of the transformation properties of the operator $\vec{S}\cdot\vec{x}$ under rotations and under space inversion (parity).
+> Show that your result in (b) is understandable in view of the transformation properties of the operator $\vec{S}\cdot\vec{x}$ under rotations and under space inversion (parity).
 
 We can rewrite $\vec{S}\cdot\vec{x}$ to be in terms of the Pauli vector as $\dfrac{\hbar}{2}\sigma\cdot\vec{x}$. Under parity:
 $$\begin{align}
@@ -295,7 +295,7 @@ Under parity, $\vec{S}\cdot\vec{x}$ is odd. Our original state, $l=0$, was even 
 ---
 ## Question 4.7
 ### Question 4.7.A
-Let $\psi(\vec{x},t)$ be the wave function of a spinless particle corresponding to a plane-wave in three dimensions. Show that $\psi^*(\vec{x},-t)$ is a wavefunction for the plane wave with the momentum direction reversed.
+> Let $\psi(\vec{x},t)$ be the wave function of a spinless particle corresponding to a plane-wave in three dimensions. Show that $\psi^*(\vec{x},-t)$ is a wavefunction for the plane wave with the momentum direction reversed.
 
 A three-dimensional plane-wave wavefunction as:
 $$\begin{align}
@@ -313,7 +313,7 @@ This operation looks identical to the prior wavefunction with the momentum direc
 
 ---
 ### Question 4.7.B
-Let $\chi(\hat{n})$ be the two-component eigenspinor $\sigma\cdot\hat{n}$ with eigenvalue $+1$. *Using the explicit form of* $\chi(\hat{n})$, in terms of polar and azimuthal angles $\beta$ and $\gamma$ that characterize $\hat{n}$, verify that $-i\sigma_2\chi^*(\hat{n})$ is the two-component eigenspinor with the spin direction reversed.
+> Let $\chi(\hat{n})$ be the two-component eigenspinor $\sigma\cdot\hat{n}$ with eigenvalue $+1$. *Using the explicit form of* $\chi(\hat{n})$, in terms of polar and azimuthal angles $\beta$ and $\gamma$ that characterize $\hat{n}$, verify that $-i\sigma_2\chi^*(\hat{n})$ is the two-component eigenspinor with the spin direction reversed.
 
 We can start by writing the eigenspinor in as Euler angles (in the Z-basis):
 $$\begin{align}
@@ -345,7 +345,7 @@ This is, indeed, the opposite spin state, and thus concludes the proof.
 ---
 ## Question 4.10
 ### Question 4.10.A
-For the time-reversal operator $\Theta$, use $\Theta\vec{J}\Theta^{-1}=-\vec{J}$ to show that $\Theta\ket{j,m}\propto\ket{j,-m}$ up to some phase that includes the factor $(-1)^m$. Show that $\Theta\ket{j,m}$, where $\delta$ is independent of $m$.
+> For the time-reversal operator $\Theta$, use $\Theta\vec{J}\Theta^{-1}=-\vec{J}$ to show that $\Theta\ket{j,m}\propto\ket{j,-m}$ up to some phase that includes the factor $(-1)^m$. Show that $\Theta\ket{j,m}$, where $\delta$ is independent of $m$.
 
 Not sure where to start, but we can see how $\Theta$ operates on $J_\pm$ and $J_z$:
 $$\begin{align}
@@ -378,7 +378,7 @@ $$\begin{align}
 \end{align}$$
 ---
 ### Question 4.10.B
-Using the same phase convention, find the time-reversed state corresponding to $\mathcal{D}(R)\ket{j,m}$.
+> Using the same phase convention, find the time-reversed state corresponding to $\mathcal{D}(R)\ket{j,m}$.
 Consider using the infinitesimal form $\mathcal{D}(\hat{n},d\phi)$ and then generalize to finite rotations.
 
 The infinitesimal form of the state can be written as:
@@ -407,10 +407,11 @@ Rotation and time-reversing operations are agnostic to order between them.
 
 ---
 ### Question 4.10.C
-From these results, prove that, independent of $\delta$, one finds:
-$$\begin{align}
+> From these results, prove that, independent of $\delta$, one finds:
+> $$\begin{align}
 \mathcal{D}^{(j)*}_{m',m}(R)&=(-1)^{m-m'}\mathcal{D}^{(j)}_{-m',-m}(R)
 \end{align}$$
+
 So we know the following properties:
 $$\begin{align}
 \Theta\ket{j,m}&=(-1)^{j-m}\ket{j,-m} &\implies&& \ket{j,-m}&\propto(-1)^{j+m}\Theta^{-1}\ket{j,m}\\
@@ -430,7 +431,7 @@ $$\begin{align}
 \end{align}$$
 ---
 ### Question 4.10.D
-Conclude that we are free to choose $\delta=0$, and $\Theta\ket{j,m}=(-1)^m\ket{j,-m}=i^{2m}\ket{j,-m}$.
+> Conclude that we are free to choose $\delta=0$, and $\Theta\ket{j,m}=(-1)^m\ket{j,-m}=i^{2m}\ket{j,-m}$.
 
 Start with our original state:
 $$\begin{align}
@@ -444,5 +445,3 @@ To extend it for $m$ that is half-integer, we can use $i^2=-1$ to then write:
 $$\begin{align}
 \Aboxed{\Theta\ket{j,m}&=i^{2m}\ket{j,-m}}
 \end{align}$$
-
-

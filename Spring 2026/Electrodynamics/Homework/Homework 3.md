@@ -1,21 +1,21 @@
-Author: Stanley Goodwin
-Date: February 12th, 2026
+**Author:** Stanley Goodwin
+**Date:** February 12th, 2026
 
 ---
 ## Question 3.10
-For the cylinder in Problem 3.9, the cylindrical surface is made of two equal half-cylinders, one at potential $V$ and the other at potential $-V$, so that:
-$$\begin{align}
+> For the cylinder in Problem 3.9, the cylindrical surface is made of two equal half-cylinders, one at potential $V$ and the other at potential $-V$, so that:
+> $$\begin{align}
 \Phi(\rho=b,\phi,z)&=\begin{cases}
 +V,&-\tfrac{\pi}{2}<\phi<+\tfrac{\pi}{2}\\
 -V,&+\tfrac{\pi}{2}<\phi<+\tfrac{3\pi}{2}
 \end{cases}\\
 \Phi(\rho,\phi,z\in\{0,L\})&=0
 \end{align}$$
-Where the cylinder is $\rho\in[0,b)$, $z\in(0,L)$.
+> Where the cylinder is $\rho\in[0,b)$, $z\in(0,L)$.
 
 ---
 ### Question 3.10.A
-Find the potential inside the cylinder.
+> Find the potential inside the cylinder.
 
 Start with the general solution coefficients of the Laplace equation:
 $$\begin{align}
@@ -73,7 +73,7 @@ $$\begin{align}
 <div style="page-break-before: always;"></div>
 
 ### Question 3.10.B
-Assuming $L\gg b$, consider the potential at $z=\tfrac{L}{2}$ as a function of $\rho$ and $\phi$, and compare it with the two-dimensional Problem 2.13.
+> Assuming $L\gg b$, consider the potential at $z=\tfrac{L}{2}$ as a function of $\rho$ and $\phi$, and compare it with the two-dimensional Problem 2.13.
 
 We want to consider the limit process $\rho,b\ll L$, the super long and skinny cylinder:
 $$\begin{align}
@@ -128,7 +128,7 @@ This is identical since our problem uses $V_1=V$ and $V_2=-V$.
 
 ---
 ## Question 3.14
-A line charge of length $2d$ with a total charge $Q$ has a linear charge density varying as $(d^2-z^2)$, where $z$ is the distance from the midpoint. A grounded, conducting, spherical shell of inner radius $b>d$ is centered at the midpoint of the line charge.
+> A line charge of length $2d$ with a total charge $Q$ has a linear charge density varying as $(d^2-z^2)$, where $z$ is the distance from the midpoint. A grounded, conducting, spherical shell of inner radius $b>d$ is centered at the midpoint of the line charge.
 
 For usage later, the charge density should take something like the following form:
 $$\begin{align}
@@ -149,7 +149,7 @@ $$\begin{align}
 <div style="page-break-before: always;"></div>
 
 ### Question 3.14.A
-Find the potential everywhere inside the spherical shell as an expansion of Legendre polynomials.
+> Find the potential everywhere inside the spherical shell as an expansion of Legendre polynomials.
 
 The Green's function that vanishes at the boundary of a sphere is Equation 2.16 with $a\to b$:
 $$\begin{align}
@@ -218,7 +218,7 @@ $$\begin{align}
 \end{align}$$
 
 ### Question 3.14.B
-Calculate the surface-charge density induced on the shell.
+> Calculate the surface-charge density induced on the shell.
 
 We can use the surface-charge equation, and $\vec{n}=-r\hat{r}$ for the inside charge distribution, then:
 $$\begin{align}
@@ -235,7 +235,7 @@ $$\begin{align}&=\dfrac{3Q}{4\pi}\left.\sum_{l=0}^\text{even}P_{l}(\cos\theta)\d
 \end{align}$$
 ---
 ### Question 3.14.C
-Discuss your answers to parts A and B in the limit that $d\ll b$.
+> Discuss your answers to parts A and B in the limit that $d\ll b$.
 
 In the limit of $\tfrac{d}{b}\ll1$, we can apply this to the potential:
 $$\begin{align}
@@ -260,7 +260,7 @@ This is exactly a uniform distribution of conjugate charge $-Q$ over the surface
 
 ## Question 4.1
 ### Question 4.1.A
-Calculate the multipole moments $q_{lm}$ for figure A.
+> Calculate the multipole moments $q_{lm}$ for figure A.
 
 Our charge density can be written in terms of delta functions in spherical coordinates:
 $$\begin{align}
@@ -301,7 +301,7 @@ The terms $a_{0,0},a_{1,0},a_{2,m},a_{3,-2},a_{3,0},a_{3,+2}$ are all zero.
 
 ---
 ### Question 4.1.B
-Calculate the multipole moments $q_{lm}$ for figure B.
+> Calculate the multipole moments $q_{lm}$ for figure B.
 
 Our charge density can be written in terms of delta functions in spherical coordinates:
 $$\begin{align}
@@ -345,7 +345,7 @@ All other terms not of this form are $0$ (such as $q_{00},q_{1,-1},q_{1,0},q_{1,
 
 ---
 ### Question 4.1.C
-For the charge distribution of [[#Question 4.1.B]], write down the multipole expansion for the potential. Keeping only the lowest-order term in the expansion, plot the potential in the $xy$-plane as a function of the distance from the origin for distances greater than $a$.
+> For the charge distribution of [[#Question 4.1.B]], write down the multipole expansion for the potential. Keeping only the lowest-order term in the expansion, plot the potential in the $xy$-plane as a function of the distance from the origin for distances greater than $a$.
 
 Start with the general case for multipole expansion:
 $$\begin{align}
@@ -377,7 +377,7 @@ Since this is our potential at $r>a$, the graph is over the domain $1<\tfrac{r}{
 <div style="page-break-before: always;"></div>
 
 ### Question 4.1.D
-Calculate directly from Coulomb's law the exact potential for [[#Question 4.1.B]] in the $xy$-plane. Plot it as a function of distance and compare with the result found in [[#Question 4.1.C]].
+> Calculate directly from Coulomb's law the exact potential for [[#Question 4.1.B]] in the $xy$-plane. Plot it as a function of distance and compare with the result found in [[#Question 4.1.C]].
 
 The exact potential is really simple since it is just three point charges:
 $$\begin{align}
@@ -394,14 +394,14 @@ They look to have very similar asymptotic behavior, but are different near $r=a$
 
 ---
 ## Question 4.7
-A localized distribution of charge has a charge density:
-$$\begin{align}
+> A localized distribution of charge has a charge density:
+> $$\begin{align}
 \rho(\vec{r})&=\dfrac{1}{64\pi}r^2e^{-r}\sin^2\theta
 \end{align}$$
 <div style="page-break-before: always;"></div>
 
 ### Question 4.7.A
-Make a multipole expansion of the potential due to this charge density and determine all the non-vanishing multipole moments. Write down the potential at large distances as a finite expansions in Legendre polynomials.
+> Make a multipole expansion of the potential due to this charge density and determine all the non-vanishing multipole moments. Write down the potential at large distances as a finite expansions in Legendre polynomials.
 
 Start with the definition of $q_{lm}$, we have:
 $$\begin{align}
@@ -445,10 +445,11 @@ $$\begin{align}
 \end{align}$$
 ---
 ### Question 4.7.B
-Determine the potential explicitly, and show that near the origin, correct to $r^2$ inclusive:
-$$\begin{align}
+> Determine the potential explicitly, and show that near the origin, correct to $r^2$ inclusive:
+> $$\begin{align}
 \Phi(\vec{r})&\simeq\dfrac{1}{4\pi\epsilon_0}\left[\dfrac{1}{4}-\dfrac{r^2}{120}P_2(\cos\theta)\right]
 \end{align}$$
+
 To find the solution exactly, we can use Coulomb's law:
 $$\begin{align}
 \Phi(\vec{r})&=\dfrac{1}{4\pi\epsilon_0}\int\dfrac{1}{|\vec{r}-\vec{r}'|}\rho(\vec{r}')\ d^3r'\\
@@ -524,7 +525,7 @@ Exactly as we expected.
 
 ---
 ### Question 4.7.C
-If there exists, at the origin, a nucleus with a quadrupole moment $Q=10^{-28}\mathrm{m}^2$, determine the exact magnitude of the interaction energy, assuming that the unit of charge in $\rho(\vec{r})$ above is the electronic charge and the unit of length is the Bohr radius $a_0=4\pi\epsilon_0\hbar^2/me^2=0.529\times10^{-10}\mathrm{m}$. Express your answer as a frequency by dividing by Planck's constant $h$.
+> If there exists, at the origin, a nucleus with a quadrupole moment $Q=10^{-28}\mathrm{m}^2$, determine the exact magnitude of the interaction energy, assuming that the unit of charge in $\rho(\vec{r})$ above is the electronic charge and the unit of length is the Bohr radius $a_0=4\pi\epsilon_0\hbar^2/me^2=0.529\times10^{-10}\mathrm{m}$. Express your answer as a frequency by dividing by Planck's constant $h$.
 
 The charge density in this problem is that for the $m=\pm1$ states of the $2p$ level in hydrogen, while the quadrupole interactions is of the same order as found in molecules.''
 

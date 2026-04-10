@@ -1,17 +1,16 @@
-Author: Stanley Goodwin
-Date: February 5th, 2026
-
-**Note for the Professor:** I removed a lot of the in-between steps of arithmetic since this PDF was originally 29 pages long. Let me know if I had done too much in terms of simplification and I'll adjust future homework accordingly.
+**Author:** Stanley Goodwin
+**Date:** February 5th, 2026
 
 ---
 ## Question 2.1
-A point charge $q$ is brought to a position a distance $d$ away from an infinite-plane conductor held at zero potential. Using the method of images, find...
+> A point charge $q$ is brought to a position a distance $d$ away from an infinite-plane conductor held at zero potential. Using the method of images, find...
+
 ![[Homework 2.2.1.png]]
 **Pictured:** The induced charge on the plane can be represented as a ghost charge equidistant to the plane on the other side, of opposite charge, because the electric field must be perpendicular to a conducting surface (at equilibrium).
 <div style="page-break-before: always;"></div>
 
 ### Question 2.1.A
-The surface-charge density induced on the plane, and plot it;
+> The surface-charge density induced on the plane, and plot it;
 
 The potential of this system is the superposition of the point charge $q$ and the image charge $-q$:
 $$\begin{align}
@@ -43,7 +42,7 @@ Where $r$ is the radial distance from the origin within the plane $z=0$.
 
 ---
 ### Question 2.1.B
-The force between the plane and the charge by using Coulomb's law for the force between a charge and its image;
+> The force between the plane and the charge by using Coulomb's law for the force between a charge and its image;
 
 The image charge is a charge of opposite sign at an equal distance from the plane $z=0$. 
 $$\begin{align}
@@ -58,7 +57,7 @@ Where the superscript on force is the object feeling this force.
 <div style="page-break-before: always;"></div>
 
 ### Question 2.1.C
-The total force acting on the plane by integrating $\sigma^2/2\epsilon_0$ over the whole plane;
+> The total force acting on the plane by integrating $\sigma^2/2\epsilon_0$ over the whole plane;
 $$\begin{align}
 \left|\vec{F}\right|&=\int\dfrac{\sigma^2}{2\epsilon_0}da
 \end{align}$$
@@ -79,7 +78,7 @@ $$\begin{align}
 \end{align}$$
 ---
 ### Question 2.1.D
-The work necessary to remove the charge $q$ from its position to infinity;
+> The work necessary to remove the charge $q$ from its position to infinity;
 
 The work moving the charge from $z=d$ to $z\rightarrow\infty$ takes the following form:
 $$\begin{align}
@@ -93,7 +92,7 @@ W&=-\int^{\infty}_d\vec{F}^\text{charge}_z(z)\ dz=-\dfrac{q^2}{16\pi\epsilon_0}\
 \end{align}$$
 .
 ### Question 2.1.E
-The potential energy between the charge $q$ and its image (compare to part D and discuss);
+> The potential energy between the charge $q$ and its image (compare to part D and discuss);
 
 Since $q$ and it's image are point charges, the potential energy is simply:
 $$\begin{align}
@@ -104,7 +103,7 @@ I believe this to be expected since the energy required to "move" the image char
 
 ---
 ### Question 2.1.F
-Find the answer to part D in electron volts for an electron originally one angstrom from the surface.
+> Find the answer to part D in electron volts for an electron originally one angstrom from the surface.
 
 Special thanks to [Wikipedia](https://en.wikipedia.org/wiki/Vacuum_permittivity) for the super convenient value for $\epsilon_0$:
 $$\begin{align}
@@ -113,11 +112,11 @@ W&=\dfrac{1}{16\pi\epsilon_0}\dfrac{q^2}{d}=\dfrac{1}{16\pi\left(55.263\text{ e}
 \end{align}$$
 ---
 ## Question 2.7
-Consider a potential problem in the half-space defined by $z\ge0$, with (homogenous) Dirichlet boundary conditions on the plane $z=0$ (and at infinity).
+> Consider a potential problem in the half-space defined by $z\ge0$, with (homogenous) Dirichlet boundary conditions on the plane $z=0$ (and at infinity).
 ![[Homework 2.2.7.png]]
 
 ### Question 2.7.A
-Write down an appropriate Green's function $G(\vec{x},\vec{x}')$.
+> Write down an appropriate Green's function $G(\vec{x},\vec{x}')$.
 
 We would like a Green's function that vanishes on the $z=0$ plane and at infinity. The homogenous Green's function already decays at infinity. To force it to vanish at $z=0$, we can add an image charge of opposite polarity similar to [[#Question 2.1]]:
 $$\begin{align}
@@ -133,7 +132,7 @@ Where the difference $\vec{x}-\vec{x}'$ uses the law of cosines of the angle bet
 
 ---
 ### Question 2.7.B
-If the potential on the plane $z=0$ is specified to be $\Phi=V$ inside a circle of radius $a$ centered at the origin, and $\Phi=0$ outside that circle, find an integral expression for the potential at a point $P$ specified in cylindrical coordinates $(\rho,\phi,z)$.
+> If the potential on the plane $z=0$ is specified to be $\Phi=V$ inside a circle of radius $a$ centered at the origin, and $\Phi=0$ outside that circle, find an integral expression for the potential at a point $P$ specified in cylindrical coordinates $(\rho,\phi,z)$.
 
 From Green's equations, and that "potential problem"$\implies\rho(\vec{x})=0$, we get:
 $$\begin{align}
@@ -166,10 +165,11 @@ $$\begin{align}
 \end{align}$$
 ---
 ### Question 2.7.C
-Show that, along the axis of the circle ($\rho=0$), the potential is given by:
-$$\begin{align}
+> Show that, along the axis of the circle ($\rho=0$), the potential is given by:
+> $$\begin{align}
 \Phi&=V\left(1-\dfrac{z}{\sqrt{a^2+z^2}}\right)
 \end{align}$$
+
 Using our equation from [[#Question 2.7.B]], using $\rho=0$, and separating integrals, we get:
 $$\begin{align}
 \Phi(0,\phi,z)&=\dfrac{Vz}{2\pi}\int_0^a\dfrac{\rho'}{(\rho'^2+z^2)^{3/2}}\ d\rho'\int_0^{2\pi} d\phi'
@@ -183,11 +183,11 @@ $$\begin{align}
 <div style="page-break-before: always;"></div>
 
 ### Question 2.7.D
-Show that at large distances $\rho^2+z^2\gg a^2$, the potential can be expanded in a power series in $(\rho^2+z^2)^{-1}$, and that the leading terms are:
-$$\begin{align}
+> Show that at large distances $\rho^2+z^2\gg a^2$, the potential can be expanded in a power series in $(\rho^2+z^2)^{-1}$, and that the leading terms are:
+> $$\begin{align}
 \Phi(\rho,\phi,z)&=\dfrac{Va^2}{2}\dfrac{z}{(\rho^2+z^2)^{3/2}}\left[1-\dfrac{3a^2}{4(\rho^2+z^2)}+\dfrac{5(3\rho^2a^2+a^4)}{8(\rho^2+z^2)^2}+\dots\right]
 \end{align}$$
-Verify that the result of parts C and D are consistent in their common range of validity.
+> Verify that the result of parts C and D are consistent in their common range of validity.
 
 Start with the equation found in [[#Question 2.7.B]], and we can factor out $(\rho^2+z^2)^{3/2}$:
 $$\begin{align}
@@ -238,11 +238,11 @@ $$\begin{align}
 \end{align}$$
 ---
 ## Question 3.1
-Two concentric spheres have radii $a,b$ $(b>a)$ and each is divided into two hemispheres by the same horizontal plane. The upper hemisphere of the inner sphere and the lower hemisphere of the outer sphere are maintained at potential $V$. The other hemispheres are at zero potential.
+> Two concentric spheres have radii $a,b$ $(b>a)$ and each is divided into two hemispheres by the same horizontal plane. The upper hemisphere of the inner sphere and the lower hemisphere of the outer sphere are maintained at potential $V$. The other hemispheres are at zero potential.
 <div style="page-break-before: always;"></div>
 
 ### Question 3.1.A
-Determined the potential in the region $a\le r\le b$ as a series of Legendre polynomials. Include terms at least up to $l=4$.
+> Determine the potential in the region $a\le r\le b$ as a series of Legendre polynomials. Include terms at least up to $l=4$.
 
 The problem gives us the potentials on these surfaces to be:
 $$\begin{align}
@@ -314,7 +314,8 @@ $$\begin{align}
 <div style="page-break-before: always;"></div>
 
 ### Question 3.2.B
-Check your solution against the know results in the limiting cases $b\rightarrow\infty$ and $a\rightarrow 0$.
+> Check your solution against the know results in the limiting cases $b\rightarrow\infty$ and $a\rightarrow 0$.
+
 In the limit as $b\rightarrow\infty$, we see that:
 $$\begin{align}
 \lim_{b\rightarrow\infty}\Phi(r,\theta)&\approx\dfrac{V}{2}\left[1+\dfrac{3}{2}\dfrac{a^{2}}{r^2}\cos\theta-\dfrac{7}{16}\dfrac{a^{4}}{r^4}(5\cos^3\theta-3\cos\theta)+\dots\right]
@@ -332,7 +333,7 @@ The $b\rightarrow\infty$ potential has the expansion for the potential outside a
 
 ---
 ## Question 3.2
-A spherical surface of radius $R$ has charge uniformly distributed over its surface with a density $Q/4\pi R^2$, except for a spherical cap at the north pole, defined by the cone $\theta=\alpha$.
+> A spherical surface of radius $R$ has charge uniformly distributed over its surface with a density $Q/4\pi R^2$, except for a spherical cap at the north pole, defined by the cone $\theta=\alpha$.
 
 We can write the charge density as the following:
 $$\begin{align}
@@ -342,11 +343,11 @@ It took me a bit to understand what he meant by "except".
 <div style="page-break-before: always;"></div>
 
 ### Question 3.2.A
-Show that the potential **inside** the spherical surface can be expressed as:
-$$\begin{align}
+> Show that the potential **inside** the spherical surface can be expressed as:
+> $$\begin{align}
 \Phi&=\dfrac{Q}{8\pi\epsilon_0}\sum_{l=0}^\infty\dfrac{1}{2l+1}\left[P_{l+1}(\cos\alpha)-P_{l-1}(\cos\alpha)\right]\dfrac{r^l}{R^{l+1}}P_{l}(\cos\theta)
 \end{align}$$
-where, for $l=0$, $P_{l-1}(\cos\alpha)=-1$. What is the potential outside?
+> where, for $l=0$, $P_{l-1}(\cos\alpha)=-1$. What is the potential outside?
 
 Since the inside cannot contain singularities and the outside must approach zero:
 $$\begin{align}
@@ -395,7 +396,7 @@ $$\begin{align}
 \end{align}$$
 ---
 ### Question 3.2.B
-Find the magnitude and the direction of the electric field at the origin.
+> Find the magnitude and the direction of the electric field at the origin.
 
 The electric field can be found from the general equation (ignoring $\phi$ by symmetry):
 $$\begin{align}
@@ -428,7 +429,7 @@ $$\begin{align}
 \end{align}$$
 ---
 ### Question 3.2.C
-Discuss the limiting forms of the potential (part A) and the electric field (part B)...
+> Discuss the limiting forms of the potential (part A) and the electric field (part B)...
 $$\begin{align}
 \Phi_\text{in}(r,\theta,\phi)&=\dfrac{Q}{8\pi\epsilon_0}\sum_{l=0}^\infty\dfrac{1}{2l+1}\dfrac{r^l}{R^{l+1}}\left(P_{l+1}(\cos\alpha)-P_{l-1}(\cos\alpha)\right)P_l(\cos\theta)\\
 \vec{E}(r=0)&=\dfrac{Q\sin^2\alpha}{16\pi\epsilon_0R^{2}}\hat{z}
@@ -436,7 +437,7 @@ $$\begin{align}
 <div style="page-break-before: always;"></div>
 
 #### Question 3.2.C.I
-As the spherical cap becomes very small ($\alpha\ll1$);
+> As the spherical cap becomes very small ($\alpha\ll1$);
 
 We can expand the polynomials about the point $x=1$ for our upcoming potential:
 $$\begin{align}
@@ -476,7 +477,7 @@ $$\begin{align}
 \end{align}$$
 ---
 #### Question 3.2.C.II
-As the spherical cap becomes so large that the area with the charge on it becomes a very small cap at the south pole $(\alpha\sim\pi)$. Let the new angle be $\beta=\pi-\alpha$
+> As the spherical cap becomes so large that the area with the charge on it becomes a very small cap at the south pole $(\alpha\sim\pi)$. Let the new angle be $\beta=\pi-\alpha$
 
 We can use the same expansions as previous, so long as we include a factor $(-1)^l$:
 $$\begin{align}

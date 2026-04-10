@@ -1,10 +1,10 @@
-Author: Stanley Goodwin
-Date: February 11th, 2026
+**Author:** Stanley Goodwin
+**Date:** February 11th, 2026
 
 ---
-Title: *Extreme light-matter interaction for future large-scale and ultrafast sub-terahertz quantum photonics.*
-Speaker: **Demid Sychev, Ph.D.**
-Understanding: **Medium**
+**Title:** *Extreme light-matter interaction for future large-scale and ultrafast sub-terahertz quantum photonics.*
+**Speaker:** *Demid Sychev, Ph.D.*, Purdue University
+**Understanding:** Medium
 
 ---
 > Briefly describe in words the key concepts of the talk that interested you or if you did not find the talk interesting, why it was not interesting to you.

@@ -1,5 +1,5 @@
-Author: Stanley Goodwin
-Date: March 26th, 2026
+**Author:** Stanley Goodwin
+**Date:** March 26th, 2026
 
 ---
 ## Question 9.1
@@ -554,7 +554,7 @@ $$\begin{align}
 \dfrac{dP}{d\Omega}&=\dfrac{2I_0^2}{(4\pi\epsilon_0) c}\cdot\dfrac{1}{4\pi}\dfrac{\sin^2\left(\pi\cos\theta\right)}{\sin^2\theta}
 \end{align}$$
 If we plot this, where the radius is proportional to its contribution, it takes the following shape
-![[9.16.A.png]]
+![[Homework 5.9.16.A.png]]
 where the angle $\theta$ is read from vertical up and goes clockwise to vertical down. This is azimuthally symmetric, and so this geometry is revolved around the vertical axis to make the final shape.
 <div style="page-break-before: always;"></div>
 

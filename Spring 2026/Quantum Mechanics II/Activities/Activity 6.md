@@ -1,12 +1,13 @@
-Stanley Goodwin, 3/26/2026
+**Author:** Stanley Goodwin
+**Date:** March 26th, 2026
 
 ---
 ### Question 1
-Using the residue theorem, calculate the following integral:
-$$\begin{align}
+> Using the residue theorem, calculate the following integral:
+> $$\begin{align}
 \int_{-\infty}^{+\infty}\dfrac{dk}{2\pi}e^{ikx}\dfrac{1}{k^2+m^2}
 \end{align}$$
-where $m>0$. Make sure you discuss the $x>0$ and $x<0$ cases separately.
+> where $m>0$. Make sure you discuss the $x>0$ and $x<0$ cases separately.
 
 Since there are poles at $k=\pm im$, we can complete the contour looping in the upper half plane:
 $$\begin{align}
@@ -35,10 +36,11 @@ $$\begin{align}
 
 
 ### Question 2
-Calculate the following Cauchy Principle Value integral:
-$$\begin{align}
+> Calculate the following Cauchy Principle Value integral:
+> $$\begin{align}
 \mathcal{P}\int_{-1}^{+2}\dfrac{1}{x}dx
 \end{align}$$
+
 We can split the integral into two limits:
 $$\begin{align}
 \mathcal{P}\int_{-1}^{+2}\dfrac{1}{x}dx
@@ -50,10 +52,11 @@ $$\begin{align}
 \end{align}$$
 ---
 ### Question 3
-Show that when $f(z)$ is analytic in the domain $\mathrm{Im}(z)\ge0$, and that $\lim_{|z|\to\infty}|f(z)|=0$, then:
-$$\begin{align}
+> Show that when $f(z)$ is analytic in the domain $\mathrm{Im}(z)\ge0$, and that $\lim_{|z|\to\infty}|f(z)|=0$, then:
+> $$\begin{align}
 \mathcal{P}\int_{-\infty}^{+\infty}\dfrac{f(x)}{x-x_0}dx&=i\pi f(x_0)
 \end{align}$$
+
 Well the first thing we can do is rewrite this integral by shifting the $x$ axis:
 $$\begin{align}
 \mathcal{P}\int_{-\infty}^{+\infty}\dfrac{f(x)}{x-x_0}dx&=\mathcal{P}\int_{-\infty}^{+\infty}\dfrac{f(x+x_0)}{x}dx

@@ -1,8 +1,9 @@
-Stanley Goodwin, 2/24/2026
+**Author:** Stanley Goodwin
+**Date:** February 24th, 2026
 
 ---
 ### Question 1
-Calculate the density of states $\rho(E)$ for a free particle in a three-dimensional box of size $L$.
+> Calculate the density of states $\rho(E)$ for a free particle in a three-dimensional box of size $L$.
 
 For the typical case of a one-dimensional box with periodic boundary conditions:
 $$\begin{align}
@@ -58,11 +59,11 @@ $$\begin{align}
 \end{align}$$
 ---
 ### Question 2
-Show that, in the limit that $\lim_{r\to\infty}f(\vec{x})g(\vec{x})=0$, the following is true:
-$$\begin{align}
+> Show that, in the limit that $\lim_{r\to\infty}f(\vec{x})g(\vec{x})=0$, the following is true:
+> $$\begin{align}
 \int f(\vec{x})\vec\nabla g(\vec{x})\ d^3x&=-\int g(\vec{x})\vec\nabla f(\vec{x})\ d^3x
 \end{align}$$
-To be more precise, the product vanishes faster than $\sim 1/r^2$ as $r\to\infty$.
+> To be more precise, the product vanishes faster than $\sim 1/r^2$ as $r\to\infty$.
 
 We can take the gradient of the function product using the chain rule:
 $$\begin{align}
@@ -92,10 +93,11 @@ $$\begin{align}
 \end{align}$$
 ---
 ### Question 3
-Calculate the integral:
-$$\begin{align}
+> Calculate the integral over the whole three-dimensional volume
+> $$\begin{align}
 \int_{\mathbb{R}^3}e^{-i\vec{q}\cdot\vec{x}}e^{-Zr/a_0}\ d^3x
 \end{align}$$
+
 We can represent both $\vec{q}$ and $\vec{x}$ in spherical coordinates. Let $\vec{q}$ be on the $z$-axis without loss of generality, since the angular parts are relative to the position, so we can always realign $\vec{q}$:
 $$\begin{align}
 \vec{x}&=r\sin\theta\cos\phi\ \hat{x}+r\sin\theta\sin\phi\ \hat{y}+r\cos\theta\ \hat{z} & \vec{q}&=q\hat{z}\\

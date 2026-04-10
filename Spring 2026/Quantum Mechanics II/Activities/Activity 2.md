@@ -1,12 +1,13 @@
-Stanley Goodwin, 1/25/2026
+**Author:** Stanley Goodwin
+**Date:** January 25th, 2026
 
 ---
 ### Question 1
-Show that the time-reversal operator $\Theta$ commutes with the rotation operator $\mathcal{D}(R)$, i.e.
-$$\begin{align}
+> Show that the time-reversal operator $\Theta$ commutes with the rotation operator $\mathcal{D}(R)$, i.e.,
+> $$\begin{align}
 \Theta\ \mathcal{D}(R)\ \Theta^{-1}&=\mathcal{D}(R)
 \end{align}$$
-Hint: start with $\mathcal{D}(R)=e^{-i(\vec{J}\cdot{n})\phi/\hbar}$ and exploit $\Theta\ \vec{J}\ \Theta^{-1}=-\vec{J}$.
+> Hint: start with $\mathcal{D}(R)=e^{-i(\vec{J}\cdot{n})\phi/\hbar}$ and exploit $\Theta\ \vec{J}\ \Theta^{-1}=-\vec{J}$.
 
 Starting with our generator representation of $\mathcal{D}(R)$, we get:
 $$\begin{align}
@@ -23,7 +24,7 @@ $$\begin{align}
 \end{align}$$
 ---
 ### Question 2
-The momentum-space wave function of state $\ket\alpha$ is $\phi\left(\vec{p}'\right)=\braket{\vec{p}'|\alpha}$. What is the momentum-space wave function of its time-reversed transform $\Theta\ket\alpha$, i.e. $\bra{\vec{p}'}\Theta\ket{\alpha}$? Hint: start with the expansion of $\ket\alpha$ in momentum eigenkets and exploit what you know about $\Theta\ket{\vec{p}'}$.
+> The momentum wave function of state $\ket\alpha$ is $\phi\left(\vec{p}'\right)=\braket{\vec{p}'|\alpha}$. What is the momentum-space wave function of its time-reversed transform $\Theta\ket\alpha$, i.e. $\bra{\vec{p}'}\Theta\ket{\alpha}$? Hint: start with the expansion of $\ket\alpha$ in momentum eigenkets and exploit what you know about $\Theta\ket{\vec{p}'}$.
 
 We can represent an arbitrary state in a complete basis, such as momentum, as:
 $$\begin{align}

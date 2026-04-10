@@ -1,11 +1,11 @@
-Author: Stanley Goodwin
-Date: February 10th, 2026
+**Author:** Stanley Goodwin
+**Date:** February 10th, 2026
 
 ---
 ## Question 4.7
 **Note for the grader:** This is the same as my Homework #1 solution, copy-pasted.
 ### Question 4.7.A
-Let $\psi(\vec{x},t)$ be the wave function of a spinless particle corresponding to a plane-wave in three dimensions. Show that $\psi^*(\vec{x},-t)$ is a wavefunction for the plane wave with the momentum direction reversed.
+> Let $\psi(\vec{x},t)$ be the wave function of a spinless particle corresponding to a plane-wave in three dimensions. Show that $\psi^*(\vec{x},-t)$ is a wavefunction for the plane wave with the momentum direction reversed.
 
 A three-dimensional plane-wave wavefunction as:
 $$\begin{align}
@@ -23,7 +23,7 @@ This operation looks identical to the prior wavefunction with the momentum direc
 
 ---
 ### Question 4.7.B
-Let $\chi(\hat{n})$ be the two-component eigenspinor $\sigma\cdot\hat{n}$ with eigenvalue $+1$. *Using the explicit form of* $\chi(\hat{n})$, in terms of polar and azimuthal angles $\beta$ and $\gamma$ that characterize $\hat{n}$, verify that $-i\sigma_2\chi^*(\hat{n})$ is the two-component eigenspinor with the spin direction reversed.
+> Let $\chi(\hat{n})$ be the two-component eigenspinor $\sigma\cdot\hat{n}$ with eigenvalue $+1$. *Using the explicit form of* $\chi(\hat{n})$, in terms of polar and azimuthal angles $\beta$ and $\gamma$ that characterize $\hat{n}$, verify that $-i\sigma_2\chi^*(\hat{n})$ is the two-component eigenspinor with the spin direction reversed.
 
 We can start by writing the eigenspinor in as Euler angles (in the Z-basis):
 $$\begin{align}
@@ -54,12 +54,12 @@ This is, indeed, the opposite spin state, and thus concludes the proof.
 
 ---
 ## Question 5.7
-Consider an isotropic harmonic oscillator in two dimensions. The Hamiltonian is:
-$$
+> Consider an isotropic harmonic oscillator in two dimensions. The Hamiltonian is:
+> $$
 H_{0}=\dfrac{p_{x}^{2}}{2m}+\dfrac{p_{y}^{2}}{2m}+\dfrac{m\omega^{2}}{2}\left(x^{2}+y^{2}\right)
 $$
 ### Question 5.7.A
-What are the energies of the three lowest-lying states? Is there any degeneracy?
+> What are the energies of the three lowest-lying states? Is there any degeneracy?
 
 The first thing I thought of was the Schwinger picture for angular momenta, so I believe it's probably best to start with representing our Hamiltonian in terms of creation/annihilation.
 $$
@@ -95,11 +95,11 @@ These are just the ground state and the first excited states in each direction. 
 
 ---
 ### Question 5.7.B
-We now apply a perturbation:
-$$
+> We now apply a perturbation:
+> $$
 V=\delta m\omega^2xy
 $$
-where $\delta$ is a dimensionless real number much smaller than unity. Find the zeroth-order energy eigenket and the corresponding energy to first order (that is, the unperturbed energy obtained in [[#Question 5.7.A]] plus the first-order energy shift) for each of the three lowest-lying states.
+> where $\delta$ is a dimensionless real number much smaller than unity. Find the zeroth-order energy eigenket and the corresponding energy to first order (that is, the unperturbed energy obtained in [[#Question 5.7.A]] plus the first-order energy shift) for each of the three lowest-lying states.
 
 We can represent this perturbative potential as creation/annihilation as well:
 $$
@@ -159,7 +159,7 @@ This is also a valid basis in the $\delta\to0$ limit due to degeneracy.
 
 ---
 ### Question 5.7.C
-Solve the $H_{0}+V$ problem *exactly*. Compare with the perturbation results obtained in [[#Question 5.7.B]].
+> Solve the $H_{0}+V$ problem *exactly*. Compare with the perturbation results obtained in [[#Question 5.7.B]].
 
 Start with the total Hamiltonian:
 $$
@@ -231,10 +231,11 @@ Thus the exact solution and first-order perturbative solutions match in the firs
 
 ---
 ## Question 5.12
-A p-orbital electron characterized by $\ket{n,l=1,m=\{0,\pm1\}}$ is subjected to a potential:
-$$
+> A p-orbital electron characterized by $\ket{n,l=1,m=\{0,\pm1\}}$ is subjected to a potential:
+> $$
 V=\lambda(x^2-y^2)
 $$
+
 Heeding the hint, the Wigner-Eckart theorem is:
 $$
 \bra{jm}T_q^{(k)}\ket{j'm'}=\braket{j'm'kq\lvert jm}\dfrac{\bra{j}\left\lVert T^{k}\right\rVert\ket{j'}}{\sqrt{2j+1}}
@@ -247,7 +248,7 @@ T^{(2)}_{0}&=\dfrac{1}{\sqrt{6}}(2z^2-x^2-y^2) & T^{(2)}_{\pm1}&=\mp\dfrac{1}{2}
 $$
 ---
 ### Question 5.12.A
-Obtain the "correct" zeroth-order energy eigenstates that diagonalize the perturbation. You need not evaluate the energy shifts in detail, but show that the original threefold degeneracy is now completely removed.
+> Obtain the "correct" zeroth-order energy eigenstates that diagonalize the perturbation. You need not evaluate the energy shifts in detail, but show that the original threefold degeneracy is now completely removed.
 
 We can express the potential in terms of spherical tensors:
 $$
@@ -304,7 +305,7 @@ The $m=0$ state remains $E_0$, and thus all 3 states are now non-degenerate unde
 
 ---
 ### Question 5.12.B
-Because $V$ is invariant under time reversal and because there is no longer any degeneracy, we expect each of the energy eigenstates obtained in [[#Question 5.12.A]] to go into itself (up to a phase factor or sign) under time reversal. Check this point explicitly.
+> Because $V$ is invariant under time reversal and because there is no longer any degeneracy, we expect each of the energy eigenstates obtained in [[#Question 5.12.A]] to go into itself (up to a phase factor or sign) under time reversal. Check this point explicitly.
 
 Recall that time-reversal applied to an angular state vector has the following operation effect:
 $$
@@ -324,15 +325,15 @@ All 3 states are identical to themselves up to a phase, Q.E.D.
 
 ---
 ## Question 5.13
-Consider a spinless particle in a two-dimensional infinite square well:
-$$
+> Consider a spinless particle in a two-dimensional infinite square well:
+> $$
 V=\begin{cases}
 0,&0\le x\le a,\ 0\le y\le a \\
 \infty,&\text{otherwise}
 \end{cases}
 $$
 ### Question 5.13.A
-What are the energy eigenvalues for the three lowest states? Is there any degeneracy?
+> What are the energy eigenvalues for the three lowest states? Is there any degeneracy?
 
 Our unperturbed Hamiltonian within the box can be written as:
 $$\begin{align}
@@ -360,13 +361,13 @@ The ground state is unique, but there are 2 first-excited states (degenerate).
 
 ---
 ### Question 5.13.B
-We now add a potential:
-$$
+> We now add a potential:
+> $$
 V_{1}=\lambda xy,\ 0\le x\le a,\ 0\le y\le a
 $$
-Taking this as a weak perturbation, answer the following.
+> Taking this as a weak perturbation, answer the following.
 #### Question 5.13.B.I
-Is the energy shift due to the perturbation linear or quadratic in $\lambda$ for each of the three states?
+> Is the energy shift due to the perturbation linear or quadratic in $\lambda$ for each of the three states?
 
 We can use the equation for the first order energy shift as:
 $$
@@ -376,7 +377,7 @@ The energy shift is linear with $\lambda$, as more explicitly shown in [[#Questi
 
 ---
 #### Question 5.13.B.II
-Obtain expressions for the energy shifts of the three lowest states accurate to order $\lambda$.
+> Obtain expressions for the energy shifts of the three lowest states accurate to order $\lambda$.
 
 Substituting our expression for $V_1$ and our unperturbed wavefunctions into the correction, we get:
 $$
@@ -392,23 +393,23 @@ It is agnostic to our quantum state parameter, interestingly.
 
 ---
 #### Question 5.13.B.III
-Draw an energy diagram with and without the perturbation for the three energy states. Make sure to specify which unperturbed state is connected to which perturbed state.
+> Draw an energy diagram with and without the perturbation for the three energy states. Make sure to specify which unperturbed state is connected to which perturbed state.
 
 The structure of the perturbed state diagram is identical to the unperturbed state diagram, except that it is shifted up by energy addition energy $+\tfrac{\lambda a^2}{4}$:
-![[5.13.B.III.png]]
+![[Homework 2.5.13.B.III.png]]
 The degeneracy of the first excited states is preserved in the 1st order correction.
 
 ---
 ## Question 5.15
-A system that has three unperturbed states can be represented by the perturbed Hamiltonian matrix:
-$$
+> A system that has three unperturbed states can be represented by the perturbed Hamiltonian matrix:
+> $$
 \begin{bmatrix}
 E_{1}&0&a \\
 0&E_{1}&b \\
 a^*&b^*&E_{2}
 \end{bmatrix}
 $$
-where $E_{2}>E_{1}$. The quantities $a$ and $b$ are to be regarded as perturbations that are of the same order and are small compared with $E_{2}-E_{1}$.
+> where $E_{2}>E_{1}$. The quantities $a$ and $b$ are to be regarded as perturbations that are of the same order and are small compared with $E_{2}-E_{1}$.
 
 For my usage, we can split this matrix into 2 components:
 $$
@@ -427,7 +428,7 @@ a^*&b^*&0
 $$
 ---
 ### Question 5.15.A
-Use the second-order nondegenerate perturbation theory to calculate the perturbed eigenvalues. (Is this procedure correct?)
+> Use the second-order nondegenerate perturbation theory to calculate the perturbed eigenvalues. (Is this procedure correct?)
 
 The second-order nondegenerate energy is the following:
 $$
@@ -449,7 +450,7 @@ $$
 $$
 ---
 ### Question 5.15.B
-Diagonalize the matrix to find the exact eigenvalues. 
+> Diagonalize the matrix to find the exact eigenvalues. 
 
 I had originally done this by hand, but was able to simplify it since one eigenvalue is $\lambda=E_1$.
 
@@ -487,7 +488,8 @@ $$\begin{align}
 \end{align}$$
 ---
 ### Question 5.15.C
-Finally, use the second-order degenerate perturbation theory. 
+> Finally, use the second-order degenerate perturbation theory.
+
 $$\begin{align}
 \bra{i}H_\text{D}^{(2)}\ket{j}&=\sum_{k\not\in D}\dfrac{\bra{i}V\ket{k}\bra{k}V\ket{j}}{E_1-E_k}
 \end{align}$$
@@ -518,7 +520,7 @@ The third energy is the same as that found in nondegenerate perturbations theory
 $$\begin{align}E_{n=3}&=E_2+\dfrac{|a|^2+|b|^2}{E_2-E_1}\end{align}$$
 ---
 ### Question 5.15.D
-Compare the three results obtained.
+> Compare the three results obtained.
 
 From [[#Question 5.15.A]]:
 $$\begin{align}

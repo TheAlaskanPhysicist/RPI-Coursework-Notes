@@ -3,7 +3,7 @@ Date: March 13th, 2026
 
 ---
 ## Problem 1
-Use perturbation theory to calculate the effect of the proton's finite size on the $n=1$ and $n=2$ energy levels of the hydrogen atom. Assume the proton is a uniformly charged sphere of radius $R$. Give a physical explanation for why the $l=1$ shifts are so much smaller than for $l=0$.
+> Use perturbation theory to calculate the effect of the proton's finite size on the $n=1$ and $n=2$ energy levels of the hydrogen atom. Assume the proton is a uniformly charged sphere of radius $R$. Give a physical explanation for why the $l=1$ shifts are so much smaller than for $l=0$.
 
 ---
 ### Coulomb Potential of Finite-Radius Proton
@@ -160,23 +160,24 @@ This was the question I did in class.
 
 ---
 ## Problem 3
-Two spin-$\text{1/2}$ particles are coupled by the effective Hamiltonian
-$$\begin{align}
+> Two spin-$\text{1/2}$ particles are coupled by the effective Hamiltonian
+> $$\begin{align}
 H&=\underbrace{A\vec{S}_1\cdot\vec{S}_2}_{H_0}+\underbrace{\tfrac{eB}{mc}\left(S_{1z}-S_{2z}\right)}_{V}
 \end{align}$$
-where $A>0$ is a coupling constant and $B$ is the external magnetic field. Our choice of $V$ as a perturbation can be justified for small applied magnetic fields.
+> where $A>0$ is a coupling constant and $B$ is the external magnetic field. Our choice of $V$ as a perturbation can be justified for small applied magnetic fields.
 
 ---
 ### Problem 3.A
-Find the eigenkets and eigenvalues of the unperturbed Hamiltonian $H_0=A\vec{S}_1\cdot\vec{S}_2$. Noting that $\vec{J}=\vec{S}_1+\vec{S}_2$ , where $\vec{J}$ is the total angular momentum, and using an appropriate basis to begin with, this task can be accomplished almost immediately, as opposed to brute-force diagonalization.
+> Find the eigenkets and eigenvalues of the unperturbed Hamiltonian $H_0=A\vec{S}_1\cdot\vec{S}_2$. Noting that $\vec{J}=\vec{S}_1+\vec{S}_2$ , where $\vec{J}$ is the total angular momentum, and using an appropriate basis to begin with, this task can be accomplished almost immediately, as opposed to brute-force diagonalization.
 
-Hint: please use the following $\left\{\ket{jm}\right\}$ basis for the total spin (where $\vec{J}$ and $J_z$ are diagonal) *and stick to this labeling to have a common ground in our notation*:
-$$\begin{align}
+> Hint: please use the following $\left\{\ket{jm}\right\}$ basis for the total spin (where $\vec{J}$ and $J_z$ are diagonal) *and stick to this labeling to have a common ground in our notation*:
+> $$\begin{align}
 \ket{1}&\equiv\ket{0\ \ \ \ 0}=\dfrac{1}{\sqrt{2}}\left(\ket{+-}-\ket{-+}\right)\\
 \ket{2}&\equiv\ket{1-\!1}=\ket{--}\\
 \ket{3}&\equiv\ket{1\ \ \ \ 0}=\dfrac{1}{\sqrt{2}}\left(\ket{+-}+\ket{-+}\right)\\
 \ket{4}&\equiv\ket{1+\!1}=\ket{++}
 \end{align}$$
+
 We can rewrite the Hamiltonian in terms of angular momenta as the following:
 $$\begin{align}
 \vec{J}^2&=\vec{S}_1^2+\vec{S}_2^2+2\vec{S}_1\cdot\vec{S}_2 &\implies&& \vec{S}_1\cdot\vec{S}_2&=\dfrac{1}{2}\left(\vec{J}^2-\vec{S}_1^2-\vec{S}_2^2\right)
@@ -215,7 +216,7 @@ The coupled basis makes this system trivial because of the dot product depending
 
 ---
 ### Problem 3.B
-Use degenerate or non-degenerate perturbation theory (higher-order if necessary) in the appropriate subspaces to obtain the lowest-order non-vanishing corrections to the energy levels.
+> Use degenerate or non-degenerate perturbation theory (higher-order if necessary) in the appropriate subspaces to obtain the lowest-order non-vanishing corrections to the energy levels.
 
 From our eigenstate basis in [[#Problem 3.A]], we see a three-fold degeneracy for $j=1$ states. We want to similarly represent the perturbation in this basis.
 
@@ -272,13 +273,13 @@ E_4&=+\dfrac{1}{4}A\hbar^2 &
 
 
 ## Problem 4
-A particle of mass $m$ and energy $E>0$ moves in one dimension through an infinite series of equally-spaced $\delta$-function potentials:
-$$\begin{align}
+> A particle of mass $m$ and energy $E>0$ moves in one dimension through an infinite series of equally-spaced $\delta$-function potentials:
+> $$\begin{align}
 V(x)&=\dfrac{\hbar^2}{2m}\lambda\sum_{n=-\infty}^\infty\delta(x-na), &&& (\lambda>0).
 \end{align}$$
 ---
 ### Problem 4A
-Derive the proper continuity or discontinuity for $\psi(x)$ and $d\psi/dx$ at $x=0$.
+> Derive the proper continuity or discontinuity for $\psi(x)$ and $d\psi/dx$ at $x=0$.
 
 I had a bit of difficulty writing this in a coherent way. There were many different ways I could talk about it and prove it, but I'll use my what I learned in my undergraduate quantum class.
 
@@ -325,7 +326,7 @@ Physically, these conditions enforce that the wavefunction is continuous across 
 
 ---
 ### Problem 4B
-Write $\psi(x)=Ae^{ik'x}+Be^{-ik'x}$ for $-a<x<0$, where $k'=\sqrt{2mE}/\hbar$. Use Bloch's Theorem, $\psi(x+a)=e^{ika}\psi(x),\ k\in\mathbb{R}$ , to derive an expression for $\psi(x)$ in the region $0<x<a$.
+> Write $\psi(x)=Ae^{ik'x}+Be^{-ik'x}$ for $-a<x<0$, where $k'=\sqrt{2mE}/\hbar$. Use Bloch's Theorem, $\psi(x+a)=e^{ika}\psi(x),\ k\in\mathbb{R}$ , to derive an expression for $\psi(x)$ in the region $0<x<a$.
 
 We are given the wavefunction ANSATZ:
 $$\begin{align}
@@ -352,7 +353,7 @@ $$\begin{align}
 
 
 ### Problem 4C
-Using your result from [[#Problem 4A]] and [[#Problem 4B]], obtain the equation which provides the allowed values of $k'$. Show that this equation implies a *band structure*.
+> Using your result from [[#Problem 4A]] and [[#Problem 4B]], obtain the equation which provides the allowed values of $k'$. Show that this equation implies a *band structure*.
 
 The shared point in problem 4B is $x=0$, so we'll want to look at the behavior there. Once again, because of discrete translation symmetry, this is universal for the whole system.
 
@@ -416,7 +417,7 @@ If you're interested, [here](https://www.desmos.com/calculator/qslxslbuxg) is my
 
 
 ### Problem 4D
-Set $\lambda a=40$, and *obtain numerical values* for the lower and upper boundaries of $k'a$ for the first five energy bands. Use a computer to plot the band structure.
+> Set $\lambda a=40$, and *obtain numerical values* for the lower and upper boundaries of $k'a$ for the first five energy bands. Use a computer to plot the band structure.
 
 From [[#Problem 4C]], we have the following condition:
 $$\begin{align}
@@ -445,7 +446,7 @@ The question asks for the first 5 bands, so I ran 10 zeros-searches on $\kappa=n
 
 
 Graphically, in [Desmos](https://www.desmos.com/calculator/qslxslbuxg), this is what it appeared as:
-![[bandgaps.png]]
+![[Midterm Bandgaps.png]]
 Normally I would have plotted it in another software, but I am very tired. It was really fun to do this problem though, it's very interesting.
 
 **End of Document**
