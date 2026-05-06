@@ -27,7 +27,8 @@ Our integral expression for the multipole moment $q_{lm}(t)$ is in terms of sphe
 $$\begin{align}
 q_{lm}(t)&=\int Y_{lm}^*(\theta,\phi)r^{l}\rho(\vec{x},t)\ d^3x
 \end{align}$$
-<div style="page-break-before: always;"></div>
+
+<div style="page-break-before: always;"></div>*PDF next page*
 
 
 Using charge density represented in Fourier space, we can rearrange to the following form:
@@ -66,7 +67,8 @@ The summation can be expanded in terms of Dirac delta functions as:
 $$\begin{align}
 \rho(\vec{x},\omega)&=\int_{0}^{T} e^{i\omega\tau}\rho(\vec{x},\tau)\ d\tau\cdot\dfrac{2\pi}{T}\sum_{n=-\infty}^\infty\delta(\omega-n\omega_0)
 \end{align}$$
-<div style="page-break-before: always;"></div>
+
+<div style="page-break-before: always;"></div>*PDF next page*
 
 
 This selects certain choice of $\omega$, so we can bring the integral inside and reduce:
@@ -100,13 +102,13 @@ $$\begin{align}
 +\sum_{n=1}^\infty\Re\left[2\rho_n(\vec{x})e^{-in\omega_0t}\right]} &&& 
 \Aboxed{\rho_n(\vec{x})&=\dfrac{1}{T}\int_0^Te^{in\omega_0t}\rho(\vec{x},t)\ dt}
 \end{align}$$
-<div style="page-break-before: always;"></div>
 
+<div style="page-break-before: always;"></div>*PDF next page*
 
 ### Question 9.1.C
-> For a single charge $q$ rotating about the origin in the $xy$-plane in a circle of radius $R$ and constant angular speed $\omega_0$, calculate the $l=0$ and $l=1$ multipole moments by the methods of parts [[#Question 9.1.A|A]] and [[#Question 9.1.B|B]] and compare. In method [[#Question 9.1.B|B]], express the charge density $\rho_n(\vec{x})$ in cylindrical coordinates. Are there higher multipoles, for example, quadrupole? At what frequencies.
+> For a single charge $q$ rotating about the origin in the $xy$-plane in a circle of radius $R$ and constant angular speed $\omega_0$, calculate the $l=0$ and $l=1$ multipole moments by the methods of parts [[#Question 9.1.A|a]] and [[#Question 9.1.B|b]] and compare. In [[#Question 9.1.B|method b]], express the charge density $\rho_n(\vec{x})$ in cylindrical coordinates. Are there higher multipoles, for example, quadrupole? At what frequencies.
 
-For solving in the method used in [[#Question 9.1.A|Problem 9.1.A]], we can write the charge density as:
+For solving in the method used in [[#Question 9.1.A|part a]], we can write the charge density as:
 $$\begin{align}
 \rho(\vec{x},t)&=\dfrac{q}{R^2}\delta(r-R)\delta(\theta-\pi/2)\delta(\phi-[\omega_0t+\phi_0])
 \end{align}$$
@@ -135,7 +137,8 @@ $$\begin{align}
 q_{lm}(\omega)
 &=q\dfrac{2\pi}{\omega_0}K_{lm}R^{l}e^{-im\phi_0}e^{iz\left(1-\tfrac{\phi_0}{\pi}\right)}\dfrac{\sin z}{z}
 \end{align}$$
-<div style="page-break-before: always;"></div>
+
+<div style="page-break-before: always;"></div>*PDF next page*
 
 
 Now if we take the inverse Fourier transform, we get that:
@@ -173,6 +176,10 @@ For $l=0$, this equation reduces to:
 $$\begin{align}
 \Aboxed{q_{00}(t)&=q\sqrt{\dfrac{1}{4\pi}}}
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 For $l=1$, only $m\pm1$ results in non-zero multipole coefficients, and so:
 $$\begin{align}
 \Aboxed{q_{1,0}(t)=0}&&&\Aboxed{q_{1,\pm1}(t)&=\mp qR\sqrt{\dfrac{3}{8\pi}}e^{\mp i\phi(t)}}
@@ -205,9 +212,9 @@ q_{5,\pm 3}(t)&=\pm qR^5\sqrt{\dfrac{385}{1024\pi}}e^{\mp i3\phi(t)} \\ &&
 q_{5,\pm 5}(t)&=\mp qR^5\sqrt{\dfrac{693}{1024\pi}}e^{\mp i5\phi(t)}
 \end{align}$$
 So yes, there are high-order multipoles, and they are of increasing harmonics of the original frequency $\omega_0$, since $\phi(t)=\phi_0+\omega_0t$. It is the exact same procedure with the other system, and I will not do all that again, so I apologize.
-<div style="page-break-before: always;"></div>
 
 
+<div style="page-break-before: always;"></div>*PDF next page*
 
 ## Question 9.2
 > A radiating quadrupole consists of a square of side $a$ with charges $\pm q$ at alternate corners. The square rotates with angular velocity $\omega$ about an axis normal to the plane of the square and through its center. Calculate the quadrupole moments, the radiation fields, the angular distribution of radiation, and the total radiated power, all in the long-wavelength approximation. What is the frequency of this radiation?
@@ -245,6 +252,10 @@ Q^{(2)}(t)&=qa^{2}\begin{bmatrix}
 -\sin\left(2\omega_0t\right)&-\cos\left(2\omega_0t\right)&0\\ 0&0&0
 \end{bmatrix}
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 As a quadrupole vector, we can write:
 $$\begin{align}
 \vec{Q}(\hat{r},t)&=Q_{xx}\left[(\hat{x}\cdot\hat{r})\hat{x}-(\hat{y}\cdot\hat{r})\hat{y}\right]+Q_{xy}\left[(\hat{x}\cdot\hat{r})\hat{x}+(\hat{y}\cdot\hat{r})\hat{y}\right]
@@ -286,6 +297,7 @@ $$\begin{align}
 My coefficient seems to disagree with what I can find online, but I can't be bothered to go find where my coefficients get changed. In the end, it's of the right order.
 
 
+<div style="page-break-before: always;"></div>*PDF next page*
 
 ## Question 9.10
 > The transitional charge and current densities for the radiative transition from the $m=0$, $2p$ state in hydrogen to the $1s$ ground state are, in the notation of $(9.1)$ and with the neglect of spin,
@@ -294,9 +306,6 @@ My coefficient seems to disagree with what I can find online, but I can't be bot
 \vec{J}(r,\theta,\phi,t)&=-\dfrac{iv_0}{2}\left(\dfrac{\hat{r}}{2}+\dfrac{a_0}{z}\hat{z}\right)\rho(r,\theta,\phi,t)
 \end{align}$$
 > where $a_0=4\pi\epsilon_0\hbar^2/me^2=0.529\times10^{-10}\text{m}$ is the Bohr radius, $\omega_0=3e^2/32\pi\epsilon_0\hbar a_0$ is the frequency difference of the levels, and $v_0=e^2/4\pi\epsilon_0\hbar=\alpha c$ is the Bohr orbit speed.
-<div style="page-break-before: always;"></div>
-
-
 
 For reference, the spherical harmonics have the form ([Table Referenced](https://en.wikipedia.org/wiki/Table_of_spherical_harmonics)):
 $$\begin{align}
@@ -314,7 +323,9 @@ $$\begin{align}
 \vec{J}(r,\theta,\phi,t)
 &=-\dfrac{i}{8\pi\sqrt{2}}\dfrac{ev_0}{a_0^4}\left[\left(z+2a_0\cos\theta\right)\hat{r}-2a_0\sin\theta\ \hat{\theta}\right]e^{-3r/2a_0}e^{-i\omega_0t}
 \end{align}$$
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 9.10.A
 > Show that the effective transitional (orbital) "magnetization" is
 > $$\begin{align}
@@ -331,8 +342,6 @@ $$\begin{align}
 \Aboxed{\mathcal{M}(\vec{r},t)&=i\dfrac{\alpha ca_0}{4}\tan\theta\ \rho(\vec{r},t)\ \hat{\phi}}
 \end{align}$$
 This is equivalent to the answer above since $-\hat{\phi}=\hat{x}\sin\theta-\hat{y}\cos\theta$.
-<div style="page-break-before: always;"></div>
-
 
 Since our quantity $\mathcal{M}$ is only dependent on $r$ and $\theta$, and that it only has basis components in $\hat{\phi}$, the divergence is inherently $0$, and so:
 $$\begin{align}
@@ -350,6 +359,10 @@ The magnetic dipole is also pretty simple, since our $\hat{\phi}$ doesn't accumu
 $$\begin{align}
 \vec{m}&=\int\mathcal{M}(\vec{r},t)\ d^3r\propto\int\hat{\phi}\ d\phi=0 &\implies&& \Aboxed{\vec{m}=0}
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 For the magnetic quadrupole (not sure we need to go out this far), it will be helpful to use the solution given to us since it is in cartesian. There is no $z$-component, so we only need $4$ elements.
 $$\begin{align}
 M_{jj}&=2\int\left[r_i\mathcal{M}_{i}\right]\ d^3r=2\int\left[x_j\hat{x}_j\cdot i\dfrac{\alpha ca_0}{4}\tan\theta\ \rho(r,\theta,t)\ \hat{\phi}\right]\ d^3r\\
@@ -361,10 +374,7 @@ So, like the magnetic dipole, the magnetic quadrupole also vanishes $\boxed{M_{i
 $$\begin{align}
 \Aboxed{q_{10}(t)=p_z(t)&=\dfrac{2^{15/2}}{3^{9/2}}\dfrac{ea_0}{\sqrt{\pi}}e^{-i\omega_0t}}
 \end{align}$$
-<div style="page-break-before: always;"></div>
-
-
-
+---
 ### Question 9.10.B
 > In the electric dipole approximation, calculate the total time-averaged power radiated. Express your answer in units of $(\hbar\omega_0)\cdot(\alpha^4c/a_0)$, where $e^2/4\pi\epsilon_0\hbar c$ is the fine structure constant.
 
@@ -379,6 +389,10 @@ $$\begin{align}
 \Aboxed{\hat{n}\times\vec{p}&=-\dfrac{2^{15/2}}{3^{9/2}}\dfrac{ea_0}{\sqrt{\pi}}e^{-i\omega_0t}\sin\theta\ \hat{\phi}}\\
 \Aboxed{\left(\hat{n}\times\vec{p}\right)\times\hat{n}&=-\dfrac{2^{15/2}}{3^{9/2}}\dfrac{ea_0}{\sqrt{\pi}}e^{-i\omega_0t}\sin\theta\ \hat{\theta}}
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 Our electromagnetic fields then becomes:
 $$\begin{align}
 c\vec{B}&=-\dfrac{2^{15/2}}{3^{9/2}\sqrt{\pi}}\dfrac{ea_0k^2}{4\pi\epsilon_0}\dfrac{e^{ikr}}{r}e^{-i\omega_0t}\sin\theta\ \hat{\phi} &&& \vec{E}&=\left(c\vec{B}\cdot\hat{\phi}\right)\hat{\theta}
@@ -395,9 +409,6 @@ If we substitute in the painful expression for the magnitude:
 $$\begin{align}
 \dfrac{dP}{d\Omega}&=\dfrac{2^{12}}{3^{9}\pi^2}\dfrac{ce^2a_0^2}{4\pi\epsilon_0}\cdot k^4\sin^2\theta
 \end{align}$$
-<div style="page-break-before: always;"></div>
-
-
 In our system, the wavenumber $k$ is related to the frequency of the energy levels by $k=\omega_0/c$ :
 $$\begin{align}
 \dfrac{dP}{d\Omega}&=\dfrac{2^{10}}{3^{9}\pi}\dfrac{ce^2a_0^2}{4\pi\epsilon_0}\cdot\dfrac{\omega_0^4}{c^4}\cdot\dfrac{1}{4\pi}\sin^2\theta\\
@@ -411,7 +422,9 @@ $$\begin{align}
 \end{align}$$
 Not sure if the coefficient is correct, unfortunately. Way too much math.
 
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 9.10.C
 > Interpreting the classically calculated power as the photon energy $(\hbar\omega_0)$ times the transition probability, evaluate numerically the transition amplitude in units of reciprocal seconds.
 
@@ -431,9 +444,7 @@ What this would mean statistically is that the mean time for the transition from
 
 This is assuming my coefficient is correct, which I am *not* confident about.
 
-
-
-
+---
 ### Question 9.10.D
 > If, instead of the semiclassical charge density used above, the electron in the $2p$ state was described by a circular Bohr orbit of radius $2a_0$, rotating with the transitional frequency $\omega_0$, what would the radiated power be? Express your answer in the same units are part [[#Question 9.10.B|B]] and evaluate the ratio of the two powers numerically.
 
@@ -445,6 +456,10 @@ The electric dipole moment, being a point particle, is trivially:
 $$\begin{align}
 \vec{p}&=-2ea_0\left(\hat{x}\cos(\omega_0t)+\hat{y}\sin(\omega_0t)\right)
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 The evaluation of the cross product is:
 $$\begin{align}
 \hat{r}\times\vec{p}=&-2ea_0\cos\theta\left(\cos\phi\cos(\omega_0t)+\sin\phi\sin(\omega_0t)\right)\ \hat{\phi}\\
@@ -478,7 +493,9 @@ $$\begin{align}
 \end{align}$$
 The naive Bohr model power is over $200$ times the amount of power compared to quantum mechanics calculations, assuming my coefficient was correct.
 
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ## Question 9.16
 > A thin, linear, antenna of length $d$ is excited in such a way that the sinusoidal current makes a full wavelength of oscillation as shown in the figure.
 
@@ -503,14 +520,15 @@ Since we'll want to write the characteristics of this system in the far-field li
 $$\begin{align}
 \vec{A}(r,\theta)&=\dfrac{\mu_0I_0}{4\pi}\hat{z}\int_{-d/2}^{d/2}\sin\left(\dfrac{2\pi}{d}z'\right)\dfrac{e^{ik\sqrt{r^2+z'^2-2z'r\cos\theta}}}{\sqrt{r^2+z'^2-2rz'\cos\theta}}\ dz'\\
 \end{align}$$
-<div style="page-break-before: always;"></div>
-
-
 For evaluating the field at large $r\gg d/2$, we want to linearize the distance by Taylor expansion:
 $$\begin{align}
 \sqrt{r^2+z'^2-2rz'\cos\theta}&=r\sqrt{1-2\dfrac{z'}{r}\cos\theta+\dfrac{z'^2}{r^2}}\approx r\left(1-\dfrac{2}{2}\dfrac{z'}{r}\cos\theta\right)=r-z'\cos\theta\\
 \dfrac{1}{r-z'\cos\theta}&\approx\dfrac{1}{r}+\dfrac{z'\cos\theta}{r^2}+\dots\approx\dfrac{1}{r}
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 This immensely simplifies our integral in this regime, now written as:
 $$\begin{align}
 \lim_{r\gg d}\vec{A}(r,\theta)
@@ -534,13 +552,14 @@ $$\begin{align}
 c\vec{B}(r,\theta)&=-\dfrac{I_0}{2\pi\epsilon_0 c}\dfrac{e^{ikr}}{r}\left[\dfrac{\left(\tfrac{kd}{2\pi}\right)\sin\left(\tfrac{kd}{2}\cos\theta\right)}{1-\left(\tfrac{kd}{2\pi}\right)^2\cos^2\theta}\right]\sin\theta\ \hat{\phi}\\
 \vec{E}(r,\theta)&=-\dfrac{I_0}{2\pi\epsilon_0 c}\dfrac{e^{ikr}}{r}\left[\dfrac{\left(\tfrac{kd}{2\pi}\right)\sin\left(\tfrac{kd}{2}\cos\theta\right)}{1-\left(\tfrac{kd}{2\pi}\right)^2\cos^2\theta}\right]\sin\theta\ \hat{\theta}
 \end{align}$$
-<div style="page-break-before: always;"></div>
-
-
 We can take their cross product:
 $$\begin{align}
 \vec{E}\times c\vec{B}^*&=\dfrac{4I_0^2}{(4\pi\epsilon_0)^2 c^2r^2}\left(\dfrac{kd}{2\pi}\right)^2\dfrac{\sin^2\left(\tfrac{kd}{2}\cos\theta\right)\sin^2\theta}{\left[1-\left(\tfrac{kd}{2\pi}\right)^2\cos^2\theta\right]^2}\ \hat{r}
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 For further simplification, since this is radiated from the antenna, we have the relationship:
 $$\begin{align}
 k=\dfrac{\omega}{c}=\dfrac{2\pi}{\lambda}=\dfrac{2\pi}{d}
@@ -554,12 +573,10 @@ $$\begin{align}
 \dfrac{dP}{d\Omega}&=\dfrac{2I_0^2}{(4\pi\epsilon_0) c}\cdot\dfrac{1}{4\pi}\dfrac{\sin^2\left(\pi\cos\theta\right)}{\sin^2\theta}
 \end{align}$$
 If we plot this, where the radius is proportional to its contribution, it takes the following shape
-![[Homework 5.9.16.A.png]]
-where the angle $\theta$ is read from vertical up and goes clockwise to vertical down. This is azimuthally symmetric, and so this geometry is revolved around the vertical axis to make the final shape.
-<div style="page-break-before: always;"></div>
+![[Homework 5.9.16.A.png|200]]
+where the angle $\theta$ is read from the $+x$-axis and increasing counterclockwise. This is azimuthally symmetric, and so this geometry is revolved around the $x$-axis to make the final shape.
 
-
-
+---
 ### Question 9.16.B
 > Determine the total power radiated and find a numerical value for the radiation resistance.
 
@@ -569,11 +586,7 @@ P&=\dfrac{2I_0^2}{(4\pi\epsilon_0) c}\cdot\dfrac{1}{4\pi}\cdot2\pi\int_0^\pi\dfr
 &=\dfrac{I_0^2}{(4\pi\epsilon_0) c}\int_{-1}^{1}\dfrac{\sin^2\left(\pi z\right)}{1-z^2}\ dz\\
 \Aboxed{P&=\dfrac{I_0^2}{4\pi\epsilon_0c}\cdot1.557}
 \end{align}$$
-Evaluating numerically, we get a power:
+Evaluating numerically, we get a power and [resistance](https://en.wikipedia.org/wiki/Radiation_resistance) with our substituted values:
 $$\begin{align}
-\Aboxed{P&\sim46.684I_0^2\ \text{W}\cdot\text{A}^{-2}}
-\end{align}$$
-Radiation resistance, as I found it on [Wikipedia](https://en.wikipedia.org/wiki/Radiation_resistance), and substituted with our values:
-$$\begin{align}
-R_\text{rad}&=\dfrac{R_\text{rad}}{I_\text{rms}^2}=\dfrac{R_\text{rad}}{(I_0/\sqrt{2})^2} &\implies && \Aboxed{R_\text{rad}&\approx93.368\ \Omega}
+\Aboxed{P&\sim46.684I_0^2\ \text{W}\cdot\text{A}^{-2}} &&& R_\text{rad}&=\dfrac{R_\text{rad}}{I_\text{rms}^2}=\dfrac{R_\text{rad}}{(I_0/\sqrt{2})^2} &\implies && \Aboxed{R_\text{rad}&\approx93.368\ \Omega}
 \end{align}$$

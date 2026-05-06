@@ -24,6 +24,10 @@ $$\begin{align}
 &=(-1)^{-(l-|m|)}\cdot\dfrac{(-1)^{l+m}}{2^l l!}\dfrac{(l+|m|)!}{(l-|m|)!}\sin(\theta)^{-|m|}\left(\dfrac{d}{d\left(\cos(\theta)\right)}\right)^{l-|m|}\sin(\theta)^{2l}\\
 \Aboxed{\pi P_l^{|m|}(\cos\theta)&=(-1)^{-(l-|m|)}\cdot P_l^{|m|}(\cos\theta)}
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 We can do the same for $Y_l^m$, so that:
 $$\begin{align}
 \pi Y_l^m&=(-1)^m\sqrt{\dfrac{(2l+1)(l-m)!}{4\pi(l+m)!}}\pi\left( P_l^m(\cos\theta)e^{im\phi}\right)\\

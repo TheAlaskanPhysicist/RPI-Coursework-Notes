@@ -1,5 +1,5 @@
-Author: Stanley Goodwin
-Date: February 27th, 2026
+**Author:** Stanley Goodwin
+**Date:** February 27th, 2026
 
 ---
 ## PDF Question 1
@@ -31,6 +31,10 @@ As we saw in class, the energy is:
 $$\begin{align}
 E_{n'}&=-\dfrac{mc^2\alpha^2}{2n'^2} & n'=n+l'+1
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 Given that $l'$ is now a small perturbation of $l$, we can expand energy as:
 $$\begin{align}
 E_{n'}&=-\dfrac{mc^2\alpha^2}{2(n+dl)^2}\approx-\dfrac{mc^2\alpha^2}{2n^2}+2\dfrac{mc^2\alpha^2}{2n^3}dl-\dots
@@ -59,11 +63,13 @@ V_D&=-\dfrac{1}{8m^2c^2}\left[p_i,[p_i,V_C(r)]\right]
 ### PDF Question 2.A
 > Find $\Delta_D^{(1)}$ and show that it is nonzero only for $l=0$ states, and that it gives precisely the same result as blindly using (5.3.31) for $l=0$.
 
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 For both commutators applied to a state $\psi$, we can use the position representation for momentum and the chain rule for derivatives to find:
 $$\begin{align}
-[p_i,V]\psi&=-i\hbar\left((\partial_iV)\psi+V\partial_i\psi-V\partial_i\psi\right) &\implies&& [p_i,V]&=-i\hbar\dfrac{\partial V}{\partial x_i}\\
-\left[p_i,[p_i,V]\right]\psi&=(-i\hbar)^2\left(\partial_i\left(\dfrac{\partial V}{\partial x_i}\right)\psi+\dfrac{\partial V}{\partial x_i}\partial_i\psi-\dfrac{\partial V}{\partial x_i}\partial_i\psi\right)&\implies&&
-\left[p_i,[p_i,V]\right]&=-\hbar^2\dfrac{\partial^2V}{\partial x_i^2}
+[p_i,V]&=-i\hbar\dfrac{\partial V}{\partial x_i} &\text{and}&& \left[p_i,[p_i,V]\right]&=-\hbar^2\dfrac{\partial^2V}{\partial x_i^2}
 \end{align}$$
 The implicit summation turns the differentials into a gradient, and so our Darwin term is:
 $$\begin{align}
@@ -105,9 +111,9 @@ Substituting into our Darwin energy correction term:
 $$\begin{align}
 \Delta_D^{(1)}&=\dfrac{\hbar^2Z^4e^2}{2m^2c^2a_0^3}\dfrac{1}{n^3} &\implies&& \Aboxed{\Delta_D^{(1)}&=\dfrac{(Z\alpha)^4}{2n^3}mc^2\delta_{l0},\ l=0}
 \end{align}$$
-I did the whole problem in Gauss units, btw, hence why there is no $\epsilon_0$ stuff.
 
----
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### PDF Question 2.B
 > Then show that:
 > $$\begin{align}
@@ -139,7 +145,9 @@ $$\begin{align}
 &=\dfrac{(Z\alpha)^4}{2n^3}mc^2\left(\dfrac{3}{4n}-\dfrac{2}{2j+1}-1+1\right)\\
 \Aboxed{\Delta_{nj}^{(1)}&=\dfrac{(Z\alpha)^4}{2n^3}mc^2\left(\dfrac{3}{4n}-\dfrac{2}{2j+1}\right)}
 \end{align}$$
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ## Question 5.25
 > Work out the *quadratic* Zeeman effect for the ground-state hydrogen atom due to the usually neglected $e^2\vec{A}^2/2m_ec^2$ term in the Hamiltonian taken to the first order. Write the energy shift as:
 > $$\begin{align}
@@ -174,6 +182,10 @@ For the expected value for the Hamiltonian (Energy Shift), we can see that:
 $$\begin{align}
 \braket{r^2}=\braket{x^2}+\braket{y^2}+\braket{z^2}=3\braket{z^2}
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 The Hamiltonian expectation value then reduces to:
 $$\begin{align}
 \braket{H'}&=\dfrac{e^2}{2m_ec^2}\cdot\left(\dfrac{1}{2}Br\sin\theta\right)^2=\dfrac{e^2B^2}{8m_ec^2}\cdot\dfrac{2}{3}\braket{r^2}
@@ -212,6 +224,10 @@ The Hamiltonian in position representation is:
 $$\begin{align}
 H&=-\dfrac{\hbar^2}{2m}\dfrac{\partial^2}{\partial x^2}+\dfrac{1}{2}m\omega^2x^2
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 The expected value of each component is calculated pretty simply as:
 $$\begin{align}
 \left\langle T\right\rangle
@@ -240,11 +256,11 @@ Seems to be a pretty decent approximation, with the true ground state having coe
 
 ---
 ## Question 5.30
-> A one-dimensional harmonic oscillator is in its ground state for $t<0$. For $t\ge0$ it is subjected to a time-dependent but spatially uniform force (not potential!) in the x-direction:
-> $$\begin{align}
-\vec{F}(t)&=F_0e^{-t/\tau}
-\end{align}$$
----
+> A one-dimensional harmonic oscillator is in its ground state for $t<0$. For $t\ge0$ it is subjected to a time-dependent but spatially uniform force (not potential!) in the x-direction $$\begin{align}\vec{F}(t)&=F_0e^{-t/\tau}\end{align}$$
+
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 5.30.A
 > Using time-dependent perturbation theory to first order, obtain the probability of finding the oscillator in its first excited state for $t>0$. Show that the $t\to\infty$ ($\tau$ finite) limit of your expression is independent of time. Is this reasonable or surprising?
 
@@ -281,6 +297,10 @@ $$\begin{align}
 I=\int_0^te^{-(1/\tau+i\omega )t'}\ dt'
 &=\dfrac{1-e^{-(1/\tau+i\omega )t}}{1/\tau+i\omega} & I^*=\dfrac{1-e^{-(1/\tau-i\omega )t}}{1/\tau-i\omega}
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 The magnitude squared is the product of $I$ and its complex conjugate, and so:
 $$\begin{align}
 |I|^2&=\dfrac{1}{1/\tau^2+\omega^2}\left(1-2e^{-t/\tau}\cos\left(\omega t\right)+e^{-2t/\tau}\right)
@@ -311,13 +331,13 @@ c_n^{(1)}(t)&=-\dfrac{F_0}{i\hbar}\bra{n}x\ket{0}\int_0^te^{-t'/\tau}e^{in\omega
 \end{align}$$
 The cross-expectation on linear position is:
 $$\begin{align}
-\bra{n}x\ket{0}&=\left(\dfrac{a^{\dagger n}}{\sqrt{n!}}\ket{0}\right)^\dagger\sqrt{\dfrac{\hbar}{2m\omega}}\left(a^\dagger+a\right)\ket{0}\\
-&=\sqrt{\dfrac{\hbar}{2m\omega}}\bra{0}a^n\left(a^\dagger+a\right)\ket{0}\\
-\bra{n}x\ket{0}&=\sqrt{\dfrac{\hbar}{2m\omega}}\delta_{n1}
+\bra{n}x\ket{0}&=\left(\dfrac{a^{\dagger n}}{\sqrt{n!}}\ket{0}\right)^\dagger\sqrt{\dfrac{\hbar}{2m\omega}}\left(a^\dagger+a\right)\ket{0}=\sqrt{\dfrac{\hbar}{2m\omega}}\bra{0}a^n\left(a^\dagger+a\right)\ket{0}=\sqrt{\dfrac{\hbar}{2m\omega}}\delta_{n1}
 \end{align}$$
 So *no*, we cannot see any other transitions to higher excited states, at least in the 1st-order approx.
 
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ## Question 5.35
 > A hydrogen atom in its ground state is placed between the plates of a capacitor. A time-dependent but spatial uniform electric field (not potential!) is applied as follows:
 > $$\begin{align}
@@ -351,6 +371,10 @@ $$\begin{align}
 &=\sqrt{\dfrac{4\pi}{3}}\int_0^\infty r^3R_{2l}^*(r)R_{10}(r)\ dr\int Y_{lm}^*(\theta,\phi)\cdot Y_{10}(\theta,\phi)\ d\Omega\cdot\sqrt{\dfrac{1}{4\pi}}\\
 &=\dfrac{1}{\sqrt{3}}\delta_{l1}\delta_{m0}\int_0^\infty r^3R_{21}^*(r)R_{10}(r)\ dr\\
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 Using the radial wavefunctions from a [table](https://quantummechanics.ucsd.edu/ph130a/130_notes/node233.html):
 $$\begin{align}
 \bra{2lm}z\ket{100}
@@ -386,6 +410,10 @@ $$\begin{align}
 \end{align}$$
 In our case here, the transition probability looks to be proportional to the energy density of the field in our system, which is pretty cool.
 
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 Taking some rough approximation of our numbers, we see that:
 $$\begin{align}
 \lim_{\omega_{12}\gg 1/\tau}\lim_{t\to\infty}P_{1s\to2p^z}(t)
@@ -399,4 +427,3 @@ $$\begin{align}
 \end{align}$$
 This was just extra because I was curious about the super large number.
 
----

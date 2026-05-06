@@ -6,6 +6,7 @@
 > $$\begin{align}
 \braket{x\lvert\psi}&=A\left(a^\lambda-|x|^\lambda\right)
 \end{align}$$
+
 ---
 ### Part A
 > Find $\lambda_\text{min}$ for which $\bar{H}(\lambda)$ is minimum.
@@ -26,6 +27,10 @@ $$\begin{align}
 &=\dfrac{\hbar^2}{2m}2A^2a^{2\lambda-1}\lambda(\lambda-1)\left[\dfrac{1}{\lambda-1}-\dfrac{1}{2\lambda-1}\right]\\
 &=\dfrac{\hbar^2}{2ma^2}\lambda(\lambda-1)\dfrac{\left[\dfrac{1}{\lambda-1}-\dfrac{1}{2\lambda-1}\right]}{\left[1-\dfrac{2}{\lambda+1}+\dfrac{1}{2\lambda+1}\right]}\\
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 We need to simply this rational expression. Start with all the lambda terms:
 $$\begin{align}
 R&=\lambda(\lambda-1)\dfrac{\left[\dfrac{1}{\lambda-1}-\dfrac{1}{2\lambda-1}\right]}{\left[1-\dfrac{2}{\lambda+1}+\dfrac{1}{2\lambda+1}\right]}\\
@@ -45,7 +50,9 @@ The solutions where these extrema occur are the following:
 $$\begin{align}
 \lambda&=\dfrac{1\pm\sqrt{6}}{2} &\implies&& \Aboxed{\lambda_\text{min}&=\dfrac{1+\sqrt{6}}{2}, \ R''(\lambda_\text{min})>0}
 \end{align}$$
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Part B
 > Find the energy $\bar{H}_\text{min}=\bar{H}(\lambda_\text{min})$ as the approximate energy of the ground state.
 

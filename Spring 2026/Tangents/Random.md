@@ -1,4 +1,25 @@
 
+Field I want to work in:
+Information Statistics 
+
+
+
+Entropy of iterated Quantum Algorithms
+Example: Entropy of State during Grovers Algorithm iterations 
+What if symmetry breaks of fields are caused by phase transitions? What happens when a field has a boundary between pre and post phase transition?
+Is there some inherent "structure" to temperatures? I.e. not just a random number, but instead a configuration characteristic?
+
+
+Using a Quantum Computer to simulate a system and then measure has a distribution over energy states.
+Use a modified Grovers Algorithm to perhaps make the ground state truly most likely?
+
+
+
+How do quantum repeaters work
+How to correctly trotterizarion for classical Sims in Qiskit
+
+
+
 We can differentiate both sides with respect to $\lambda$ as:
 $$\begin{align}
 \dfrac{d}{d\lambda}(n\lambda)&=\dfrac{d}{d\lambda}(2d\sin\theta)\\
@@ -293,3 +314,12 @@ f(x)&=\braket{x\lvert f}=\sum_y\braket{x\lvert y}\braket{y\lvert f}=\sum_y\brake
 \end{align}$$
 
 
+
+
+
+
+## Magnetic Monopoles
+When you exceed $c$ in Lorentz, you gain an imaginary number. 
+- Imaginary numbers are as Pseudo scalars in Clifford algebra. Given that B fields are effectively oriented plane objects, would the system inside a black hole create "magnetic monopoles".
+- If I had a stream where the speed increases as some function and then as the origin speed decreases as the same function, what happens at the critical value where c>=c_vacuum?
+- Do we even need white holes? Can't small systems of this form give us ideas of how spacetime works around black holes as we approach a region of speed exceeding the speed of sound in a medium?

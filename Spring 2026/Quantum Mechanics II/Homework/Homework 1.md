@@ -26,7 +26,9 @@ $$\begin{align}
 &=i\hbar\epsilon_{ijn}p_n\\
 \Aboxed{[L_i,p_j]&=i\hbar \epsilon_{ijk}p_k} && \text{(Reindexing }n\rightarrow k)
 \end{align}$$
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### PDF Question 1.B
 > Recall the QM Runge-Lenz vector from class and the text (Chapter 4.1):
 > $$\begin{align}
@@ -65,9 +67,9 @@ $$\begin{align}
 &=\dfrac{1}{2m}\cdot0-\dfrac{1}{2m}\cdot0-\dfrac{Ze^2}{r}\cdot0\\
 \Aboxed{\vec{L}\cdot\vec{M}&=0}
 \end{align}$$
-Thus concludes the proof.
 
----
+<div style="page-break-before: always;"></div>*PDF next page*
+
 #### 1.B: Tensors Proof
 We can write the product of two vectors as:
 $$\begin{align}
@@ -97,6 +99,10 @@ $$\begin{align}
 L_iM_i&=\left(\epsilon_{ijk}x^jp^k\right)\left(-\dfrac{x^np^n}{m}p^i+\left(\dfrac{p^np^n}{m}-\dfrac{Ze^2}{r}\right)x^i\right)\\
 &=-\dfrac{1}{m}\epsilon_{ijk}x^jp^kx^np^np^i+\dfrac{1}{m}\epsilon_{ijk}x^jp^kp^np^nx^i-\dfrac{Ze^2}{r}\epsilon_{ijk}x^jp^kx^i
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 First term:
 $$\begin{align}
 -\dfrac{1}{m}\epsilon_{ijk}x^jp^kx^np^np^i
@@ -129,6 +135,10 @@ In order for this to occur, we have:
 $$\begin{align}
 \dfrac{1}{2}\epsilon_{ijk}x^jP^{ki}=-\left(\dfrac{1}{2}\epsilon_{ijk}x^jP^{ki}\right)
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 Thus the inside must be 0 in order for this relation to hold. Therefore, we find that:
 $$\begin{align}
 L_iM_i
@@ -142,6 +152,7 @@ L_iM_i
 > $$\begin{align}
 AB+BA=0
 \end{align}$$
+
 ---
 ### Question 4.3.A
 > What can you say about the eigenvalues of $A$ and $B$ for state $\ket\Psi$?
@@ -166,7 +177,9 @@ With the prior assumptions, one of the eigenvalues must be zero (both 0 is trivi
 
 For a quantum-mechanical state $\ket\Psi$ that is a simultaneous eigenstate of two Hermitian, anti-commuting operators, at least one of the operator eigenvalues must be $0$.
 
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 4.3.B
 > Illustrate your point using parity (chosen to satisfy $\pi=\pi^\dagger=\pi^{-1}$) and momentum operators.
 
@@ -199,6 +212,10 @@ $$\begin{align}
 Y_{l,\ s}^{m_l,m_s}&=\ket{l,m_l}\ket{s,m_s}=Y_l^{m_l}\chi^{m_s}_s\\
 _CY_{l,\ s}^{j,m_j}&=\ket{l,s,j,m_j}
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 For the coupled basis, we can see that for $l=0,1$, I will have:
 $$\begin{align}
 _CY_{l=0}^{1/2,+1/2}&=Y_{0,\ 1/2}^{+0,+1/2}
@@ -228,7 +245,9 @@ _CY_{l=1}^{3/2,-1/2}&=\sqrt{\dfrac{1}{8\pi}}e^{-i\phi}\sin\theta\ \chi^{+1/2}_{1
 _CY_{l=1}^{1/2,-1/2}&=\sqrt{\dfrac{1}{4\pi}}e^{-i\phi}\sin\theta\ \chi^{+1/2}_{1/2}-\sqrt{\dfrac{1}{4\pi}}\cos\theta\ \chi^{-1/2}_{1/2} &
 _CY_{l=1}^{3/2,-3/2}&=\sqrt{\dfrac{3}{8\pi}}e^{-i\phi}\sin\theta\ \chi^{-1/2}_{1/2}
 \end{align}$$
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 4.4.A
 > Write down the spin angular function $Y_{l=0}^{j=1/2,m_j=1/2}$.
 
@@ -260,6 +279,10 @@ $$\begin{align}
 \cos\theta&=\sqrt{\dfrac{4\pi}{3}}Y_{1}^{0}\\
 e^{i\phi}\sin\theta&=-\sqrt{\dfrac{8\pi}{3}}Y_{1}^{+1}
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 Substituting, we get:
 $$\begin{align}
 (\sigma\cdot\vec{x})\ _CY_{l=0}^{1/2,+1/2}
@@ -292,8 +315,11 @@ $$\begin{align}
 \end{align}$$
 Under parity, $\vec{S}\cdot\vec{x}$ is odd. Our original state, $l=0$, was even under parity. The $\vec{x}$ effectively adds an angular dependence ($l=1$) to our prior state, thus becoming odd under parity.
 
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ## Question 4.7
+---
 ### Question 4.7.A
 > Let $\psi(\vec{x},t)$ be the wave function of a spinless particle corresponding to a plane-wave in three dimensions. Show that $\psi^*(\vec{x},-t)$ is a wavefunction for the plane wave with the momentum direction reversed.
 
@@ -325,8 +351,6 @@ If I remember correctly, $\sigma_2=\sigma_y$, and so:
 $$\begin{align}
 -i\sigma_2\chi^*(\hat{n})&=-i\begin{bmatrix}0&-i\\i&0\end{bmatrix}
 \begin{bmatrix}\cos(\beta/2)\\e^{-i\gamma}\sin(\beta/2)\end{bmatrix}\\
-&=\begin{bmatrix}0&-1\\1&0\end{bmatrix}
-\begin{bmatrix}\cos(\beta/2)\\e^{-i\gamma}\sin(\beta/2)\end{bmatrix}\\
 \chi(-\hat{n})&=\begin{bmatrix}-e^{-i\gamma}\sin(\beta/2)\\\cos(\beta/2)\end{bmatrix}
 \end{align}$$
 To verify, we can evaluate the inner product of these two vectors:
@@ -344,6 +368,7 @@ This is, indeed, the opposite spin state, and thus concludes the proof.
 
 ---
 ## Question 4.10
+---
 ### Question 4.10.A
 > For the time-reversal operator $\Theta$, use $\Theta\vec{J}\Theta^{-1}=-\vec{J}$ to show that $\Theta\ket{j,m}\propto\ket{j,-m}$ up to some phase that includes the factor $(-1)^m$. Show that $\Theta\ket{j,m}$, where $\delta$ is independent of $m$.
 
@@ -368,6 +393,10 @@ For another state, $\ket{j,-m}$, we can also see that:
 $$\begin{align}
 J_z\ket{j,-m}&=-m\ket{j,-m}
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 Thus, we can conclude that:
 $$\begin{align}
 \Aboxed{\Theta\ket{j,m}\propto\ket{j,-m}}
@@ -378,8 +407,7 @@ $$\begin{align}
 \end{align}$$
 ---
 ### Question 4.10.B
-> Using the same phase convention, find the time-reversed state corresponding to $\mathcal{D}(R)\ket{j,m}$.
-Consider using the infinitesimal form $\mathcal{D}(\hat{n},d\phi)$ and then generalize to finite rotations.
+> Using the same phase convention, find the time-reversed state corresponding to $\mathcal{D}(R)\ket{j,m}$. Consider using the infinitesimal form $\mathcal{D}(\hat{n},d\phi)$ and then generalize to finite rotations.
 
 The infinitesimal form of the state can be written as:
 $$\begin{align}
@@ -405,7 +433,9 @@ $$\begin{align}
 \end{align}$$
 Rotation and time-reversing operations are agnostic to order between them.
 
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 4.10.C
 > From these results, prove that, independent of $\delta$, one finds:
 > $$\begin{align}

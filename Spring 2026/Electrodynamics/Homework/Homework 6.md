@@ -3,6 +3,7 @@
 
 ---
 ## Question 10.1
+---
 ### Question 10.1.A
 > Show that, for arbitrary initial polarization, the scattering cross section of a perfectly conducting sphere of radius $a$ (summed over outgoing polarizations) is given in the IR limit by
 > $$\begin{align}
@@ -24,6 +25,10 @@ Substituting in our value for our dipole moment, we get:
 $$\begin{align}
 \vec{E}_\text{sc}(\vec{r})&=k^2a^3E_0\dfrac{e^{ikr}}{r}(\hat{n}\times\hat{\epsilon}_0)\times\hat{n}=k^2a^3E_0\dfrac{e^{ikr}}{r}\left[\hat{\epsilon}_0-(\hat{n}\cdot\hat{\epsilon}_0)\hat{n}\right]
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 This vector term in the back can be averaged over all polarizations, which is the plane perpendicular to $\hat{n}$. Power is related to the intensity, which is in terms of the field squared:
 $$\begin{align}
 \dfrac{|\vec{E}_\text{sc}|^2}{E_0^2}&=\dfrac{k^4a^6}{r^2}\left[1-|\hat{n}\cdot\hat{\epsilon}_0|^2\right]
@@ -59,7 +64,9 @@ After some trigonometric identities, we find the expected relation:
 $$\begin{align}
 \Aboxed{\dfrac{d\sigma}{d\Omega}&=k^4a^6\left[\dfrac{5}{8}\left(1+\cos^2\theta\right)-\cos\theta-\dfrac{3}{8}\sin^2\theta\cos2\phi\right]}
 \end{align}$$
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 10.1.C
 > What is the ratio of the scattered intensities at $\theta=\pi/2,\phi=0$ and $\theta=\pi/2,\phi=\pi/2$. Explain, physically, in terms of the induced multipoles and their radiation patterns.
 
@@ -67,10 +74,6 @@ Our two cross sections are:
 $$\begin{align}
 \dfrac{d\sigma}{d\Omega}\left(\tfrac{\pi}{2},0\right)&=k^4a^6\left[\dfrac{5}{8}-\dfrac{3}{8}\right]=\dfrac{1}{4}k^4a^6 &&& \dfrac{d\sigma}{d\Omega}\left(\tfrac{\pi}{2},\tfrac{\pi}{2}\right)&=k^4a^6\left[\dfrac{5}{8}+\dfrac{3}{8}\right]=1k^4a^6
 \end{align}$$
-<div style="page-break-before: always;"></div>
-
-
-
 Thus, the ratio between these two intensities is:
 $$\begin{align}
 \Aboxed{\dfrac{I\left(\theta=\tfrac{\pi}{2},\phi=0\right)}{I\left(\theta=\tfrac{\pi}{2},\phi=\tfrac{\pi}{2}\right)}&=\dfrac{1}{4}}
@@ -93,6 +96,10 @@ This curl being zero means we can write $\vec{B}$ as a gradient of another field
 $$\begin{align}
 \vec{B}&=-\vec\nabla\psi &\implies&& \vec\nabla^2\psi&=0
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 This is effectively identical to electrostatics solutions, just with this new field $\psi$. Its solution for our system is the azimuthally symmetric solution of the Laplace equation,
 $$\begin{align}
 \psi(r,\theta)&=-B_0r\cos\theta+\dfrac{m\cos\theta}{r^2} & (r>R)
@@ -101,9 +108,6 @@ where $m$ is a constant proportional to the magnetic dipole moment magnitude. We
 $$\begin{align}
 B(R)&=0 &\implies&& \dfrac{\partial\psi}{\partial r}(R)&=0
 \end{align}$$
-<div style="page-break-before: always;"></div>
-
-
 This imposes that the value for $m$ must be:
 $$\begin{align}
 0&=B_0\cos\theta+2\dfrac{m\cos\theta}{R^3} &\implies&& m&=-\dfrac{1}{2}R^3B_0
@@ -131,12 +135,11 @@ $$\begin{align}
 \end{align}$$
 Exactly as the question states should happen.
 
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ## Question 10.4
 > An unpolarized wave of frequency $\omega=ck$ is scattered by a *slightly* lossy uniform isotropic dielectric sphere of radius $R$ much smaller than a wavelength. The sphere is characterized by an ordinary real dielectric constant $\epsilon_r$ and a real conductivity $\sigma$. The parameters are such that the skin depth $\delta$ is very *large* compared to the radius $R$.
-<div style="page-break-before: always;"></div>
-
-
 
 For a linearly responding dielectric, the permittivity is:
 $$\begin{align}
@@ -166,6 +169,10 @@ Substituting, we get that:
 $$\begin{align}
 \dfrac{d\sigma}{d\Omega}&=k^4R^6\dfrac{(\epsilon_r-1)^2+(\tfrac{\sigma}{\epsilon_0\omega})^2}{(\epsilon_r+2)+(\tfrac{\sigma}{\epsilon_0\omega})^2}\left[1-\left|\hat{n}\cdot\hat{\epsilon}_0\right|^2\right]
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 If the incidence is along $\hat{z}$, and that our light is unpolarized, we get:
 $$\begin{align}
 \dfrac{d\sigma}{d\Omega}&=\dfrac{k^4R^6}{2}\dfrac{(\epsilon_r-1)^2+(\tfrac{\sigma}{\epsilon_0\omega})^2}{(\epsilon_r+2)+(\tfrac{\sigma}{\epsilon_0\omega})^2}\left[1+\cos^2\theta\right]
@@ -174,10 +181,7 @@ If we integrate this over the surface of a sphere, we get a factor of $16\pi/3$,
 $$\begin{align}
 \Aboxed{\sigma_\text{sc}&=\dfrac{8\pi}{3}\dfrac{(\epsilon_r-1)^2+(\tfrac{\sigma}{\epsilon_0\omega})^2}{(\epsilon_r+2)+(\tfrac{\sigma}{\epsilon_0\omega})^2}k^4R^6=\dfrac{8\pi}{3}\dfrac{(\epsilon_r-1)^2+(Z_0\sigma/k)^2}{(\epsilon_r+2)+(Z_0\sigma/k)^2}k^4R^6}
 \end{align}$$
-<div style="page-break-before: always;"></div>
-
-
-
+---
 ### Question 10.4.B
 > Show that the absorption cross section is
 > $$\begin{align}
@@ -196,7 +200,9 @@ $$\begin{align}
 \end{align}$$
 Exactly as expected.
 
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 10.4.C
 From [[#Question 10.4.A|part a]], write down the forward scattering amplitude and use the optical theorem to evaluate the total cross section. Compare your answer with the sum of the scattering and absorption cross sections from [[#Question 10.4.A|part a]] and [[#Question 10.4.B|part b]]. Comment.
 
@@ -213,7 +219,6 @@ After substituting in $Z_0$ and $k=\omega/c$, this reduces exactly to our absorp
 $$\begin{align}
 \Aboxed{\sigma_\text{ext}&\simeq\sigma_\text{abs}}
 \end{align}$$
-<div style="page-break-before: always;"></div>
 
 
 As for adding both cross sections together, we get:

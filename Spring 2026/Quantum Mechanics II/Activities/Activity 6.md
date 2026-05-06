@@ -32,8 +32,8 @@ Or, more compactly, we can write the final integral as:
 $$\begin{align}
 \Aboxed{\int_{-\infty}^{+\infty}\dfrac{dk}{2\pi}e^{ikx}\dfrac{1}{k^2+m^2}&=\dfrac{e^{-m|x|}}{2m}} & x\ne0
 \end{align}$$
-<div style="page-break-before: always;"></div>
 
+<div style="page-break-before: always;"></div>*PDF next page*
 
 ### Question 2
 > Calculate the following Cauchy Principle Value integral:
@@ -73,6 +73,10 @@ $$\begin{align}
 I_2&=\lim_{\delta\to0^+}i\int_{\pi}^{2\pi}f(\delta e^{i\phi}+x_0)\ d\phi=i\int_{\pi}^{2\pi}f(x_0)\ d\phi\\
 \Aboxed{I_2&=i\pi f(x_0)}
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 Integral $4$ is similar, but needs constraints:
 $$\begin{align}
 I_4&=i\lim_{R\to\infty}\int_{0}^{\pi}f(Re^{i\phi}+x_0)\ d\phi\\

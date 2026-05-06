@@ -2,62 +2,10 @@
 **Date:** February 10th, 2026
 
 ---
-## Question 4.7
-**Note for the grader:** This is the same as my Homework #1 solution, copy-pasted.
-### Question 4.7.A
-> Let $\psi(\vec{x},t)$ be the wave function of a spinless particle corresponding to a plane-wave in three dimensions. Show that $\psi^*(\vec{x},-t)$ is a wavefunction for the plane wave with the momentum direction reversed.
-
-A three-dimensional plane-wave wavefunction as:
-$$\begin{align}
-\psi(\vec{x},t)&=A\exp\left(i\vec{k}\cdot\vec{x}-i\omega t\right)
-\end{align}$$
-Applying time-reversal and complex conjugation, we get:
-$$\begin{align}
-\psi^*(\vec{x},-t)
-&=\left[A\exp\left(i\vec{k}\cdot\vec{x}-i\omega (-t)\right)\right]^*\\
-&=\left[A\exp\left(i\vec{k}\cdot\vec{x}+i\omega t\right)\right]^*\\
-&=A\exp\left(-i\vec{k}\cdot\vec{x}-i\omega t\right)\\
-\Aboxed{\psi^*(\vec{x},-t)&=A\exp\left(i(-\vec{k})\cdot\vec{x}-i\omega t\right)}
-\end{align}$$
-This operation looks identical to the prior wavefunction with the momentum direction reversed.
-
----
-### Question 4.7.B
-> Let $\chi(\hat{n})$ be the two-component eigenspinor $\sigma\cdot\hat{n}$ with eigenvalue $+1$. *Using the explicit form of* $\chi(\hat{n})$, in terms of polar and azimuthal angles $\beta$ and $\gamma$ that characterize $\hat{n}$, verify that $-i\sigma_2\chi^*(\hat{n})$ is the two-component eigenspinor with the spin direction reversed.
-
-We can start by writing the eigenspinor in as Euler angles (in the Z-basis):
-$$\begin{align}
-\chi(\hat{n})&=\begin{bmatrix}\cos(\beta/2)\\e^{i\gamma}\sin(\beta/2)\end{bmatrix}
-& \implies &&
-\chi^*(\hat{n})&=\begin{bmatrix}\cos(\beta/2)\\e^{-i\gamma}\sin(\beta/2)\end{bmatrix}
-\end{align}$$
-If I remember correctly, $\sigma_2=\sigma_y$, and so:
-$$\begin{align}
--i\sigma_2\chi^*(\hat{n})&=-i\begin{bmatrix}0&-i\\i&0\end{bmatrix}
-\begin{bmatrix}\cos(\beta/2)\\e^{-i\gamma}\sin(\beta/2)\end{bmatrix}\\
-&=\begin{bmatrix}0&-1\\1&0\end{bmatrix}
-\begin{bmatrix}\cos(\beta/2)\\e^{-i\gamma}\sin(\beta/2)\end{bmatrix}\\
-\chi(-\hat{n})&=\begin{bmatrix}-e^{-i\gamma}\sin(\beta/2)\\\cos(\beta/2)\end{bmatrix}
-\end{align}$$
-To verify, we can evaluate the inner product of these two vectors:
-$$\begin{align}
-\chi(-\hat{n})^\dagger\chi(\hat{n})
-&=\begin{bmatrix}-e^{-i\gamma}\sin(\beta/2)\\\cos(\beta/2)\end{bmatrix}^\dagger
-\begin{bmatrix}\cos(\beta/2)\\e^{i\gamma}\sin(\beta/2)\end{bmatrix}\\
-&=\begin{bmatrix}-e^{i\gamma}\sin(\beta/2)&\cos(\beta/2)\end{bmatrix}
-\begin{bmatrix}\cos(\beta/2)\\e^{i\gamma}\sin(\beta/2)\end{bmatrix}\\
-&=-e^{i\gamma}\sin(\beta/2)\cos(\beta/2)+\cos(\beta/2)e^{i\gamma}\sin(\beta/2)\\
-&=-e^{i\gamma}\sin(\beta/2)\cos(\beta/2)+e^{i\gamma}\sin(\beta/2)\cos(\beta/2)\\
-\Aboxed{\chi(-\hat{n})^\dagger\chi(\hat{n})&=0}
-\end{align}$$
-This is, indeed, the opposite spin state, and thus concludes the proof.
-
----
 ## Question 5.7
-> Consider an isotropic harmonic oscillator in two dimensions. The Hamiltonian is:
-> $$
-H_{0}=\dfrac{p_{x}^{2}}{2m}+\dfrac{p_{y}^{2}}{2m}+\dfrac{m\omega^{2}}{2}\left(x^{2}+y^{2}\right)
-$$
+> Consider an isotropic harmonic oscillator in two dimensions. The Hamiltonian is: $$H_{0}=\dfrac{p_{x}^{2}}{2m}+\dfrac{p_{y}^{2}}{2m}+\dfrac{m\omega^{2}}{2}\left(x^{2}+y^{2}\right)$$
+
+---
 ### Question 5.7.A
 > What are the energies of the three lowest-lying states? Is there any degeneracy?
 
@@ -93,13 +41,11 @@ $$
 $$
 These are just the ground state and the first excited states in each direction. There is a degeneracy on the first-excited states.
 
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 5.7.B
-> We now apply a perturbation:
-> $$
-V=\delta m\omega^2xy
-$$
-> where $\delta$ is a dimensionless real number much smaller than unity. Find the zeroth-order energy eigenket and the corresponding energy to first order (that is, the unperturbed energy obtained in [[#Question 5.7.A]] plus the first-order energy shift) for each of the three lowest-lying states.
+> We now apply a perturbation $V=\delta m\omega^2xy$, where $\delta$ is a dimensionless real number much smaller than unity. Find the zeroth-order energy eigenket and the corresponding energy to first order (that is, the unperturbed energy obtained in [[#Question 5.7.A|part a]] plus the first-order energy shift) for each of the three lowest-lying states.
 
 We can represent this perturbative potential as creation/annihilation as well:
 $$
@@ -148,6 +94,10 @@ $$
 \ket{\pm}&=\dfrac{\ket{1,0}\pm\ket{0,1}}{\sqrt{2}} & E_\pm&=\pm\delta\dfrac{\hbar\omega}{2}
 \end{align}
 $$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 One last thing, since $\ket{1,0},\ket{0,1}$ are degenerate, any linear combination will have same energy:
 $$
 \begin{align}
@@ -159,7 +109,7 @@ This is also a valid basis in the $\delta\to0$ limit due to degeneracy.
 
 ---
 ### Question 5.7.C
-> Solve the $H_{0}+V$ problem *exactly*. Compare with the perturbation results obtained in [[#Question 5.7.B]].
+> Solve the $H_{0}+V$ problem *exactly*. Compare with the perturbation results obtained in [[#Question 5.7.B|part b]].
 
 Start with the total Hamiltonian:
 $$
@@ -196,9 +146,12 @@ H
 H&=\dfrac{p_{x'}^{2}}{2m}+\dfrac{p_{y'}^{2}}{2m}+\dfrac{m(\omega\sqrt{1+\delta})^{2}}{2}x'^2+\dfrac{m(\omega\sqrt{1-\delta})^{2}}{2}y'^2\\
 \end{align}
 $$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 Our system is then akin to a 2D uncoupled oscillator with modified frequency:
-$$
-\begin{align}
+$$\begin{align}
 H\ket{n_+,n_-}&=\hbar\left[\omega\sqrt{1+\delta}(n_++\tfrac{1}{2})+\omega\sqrt{1-\delta}(n_-+\tfrac{1}{2})\right]
 \end{align}
 $$
@@ -214,7 +167,7 @@ E_{n_+,n_-}&\approx\hbar\left[\omega\left(1+\dfrac{1}{2}\delta\right)(n_++\tfrac
 &&&=\hbar\omega\left[n_++n_- +1)\right]+\delta\dfrac{\hbar\omega}{2}\left[n_+-n_-\right]
 \end{align}
 $$
-Compared to [[#Question 5.7.B]], if we evaluate at for 
+Compared to [[#Question 5.7.B|part b]], if we evaluate at for 
 $$
 \begin{align}
 \ket{\pm}&=\dfrac{\ket{1,0}\pm\ket{0,1}}{\sqrt{2}} & E_\pm&=\pm\delta\dfrac{\hbar\omega}{2}
@@ -232,9 +185,7 @@ Thus the exact solution and first-order perturbative solutions match in the firs
 ---
 ## Question 5.12
 > A p-orbital electron characterized by $\ket{n,l=1,m=\{0,\pm1\}}$ is subjected to a potential:
-> $$
-V=\lambda(x^2-y^2)
-$$
+> $$V=\lambda(x^2-y^2)$$
 
 Heeding the hint, the Wigner-Eckart theorem is:
 $$
@@ -246,7 +197,9 @@ $$
 T^{(2)}_{0}&=\dfrac{1}{\sqrt{6}}(2z^2-x^2-y^2) & T^{(2)}_{\pm1}&=\mp\dfrac{1}{2}\left[(x\pm iy)z+z(x\pm iy)\right] & T^{(2)}_{\pm2}&=\dfrac{1}{2}(x\pm iy)^2
 \end{align}
 $$
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 5.12.A
 > Obtain the "correct" zeroth-order energy eigenstates that diagonalize the perturbation. You need not evaluate the energy shifts in detail, but show that the original threefold degeneracy is now completely removed.
 
@@ -294,6 +247,10 @@ $$
 \ket{1,\text{sym}}&=\dfrac{\ket{1,+1}+\ket{1,-1}}{\sqrt{2}} & \ket{1,\text{asym}}&=\dfrac{\ket{1,+1}-\ket{1,-1}}{\sqrt{2}}
 \end{align}
 $$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 These states have new eigenvalues for energy to be the following:
 $$
 \begin{align}
@@ -323,15 +280,13 @@ $$
 $$
 All 3 states are identical to themselves up to a phase, Q.E.D.
 
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ## Question 5.13
-> Consider a spinless particle in a two-dimensional infinite square well:
-> $$
-V=\begin{cases}
-0,&0\le x\le a,\ 0\le y\le a \\
-\infty,&\text{otherwise}
-\end{cases}
-$$
+> Consider a spinless particle in a two-dimensional infinite square well $$V=\begin{cases}0,&0\le x\le a,\ 0\le y\le a \\\infty,&\text{otherwise}\end{cases}$$
+
+---
 ### Question 5.13.A
 > What are the energy eigenvalues for the three lowest states? Is there any degeneracy?
 
@@ -359,13 +314,14 @@ $$\begin{align}
 \end{align}$$
 The ground state is unique, but there are 2 first-excited states (degenerate).
 
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 5.13.B
-> We now add a potential:
-> $$
-V_{1}=\lambda xy,\ 0\le x\le a,\ 0\le y\le a
-$$
+> We now add a potential $$V_{1}=\lambda xy,\ 0\le x\le a,\ 0\le y\le a$$
 > Taking this as a weak perturbation, answer the following.
+
+---
 #### Question 5.13.B.I
 > Is the energy shift due to the perturbation linear or quadratic in $\lambda$ for each of the three states?
 
@@ -373,7 +329,7 @@ We can use the equation for the first order energy shift as:
 $$
 \Delta_{nm}^{(1)}=\bra{\psi_{nm}^{(0)}}V_1\ket{\psi_{nm}^{(0)}}
 $$
-The energy shift is linear with $\lambda$, as more explicitly shown in [[#Question 5.13.B.II]].
+The energy shift is linear with $\lambda$, as more explicitly shown in [[#Question 5.13.B.II|the next part]].
 
 ---
 #### Question 5.13.B.II
@@ -391,7 +347,9 @@ $$
 $$
 It is agnostic to our quantum state parameter, interestingly. 
 
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 #### Question 5.13.B.III
 > Draw an energy diagram with and without the perturbation for the three energy states. Make sure to specify which unperturbed state is connected to which perturbed state.
 
@@ -401,14 +359,7 @@ The degeneracy of the first excited states is preserved in the 1st order correct
 
 ---
 ## Question 5.15
-> A system that has three unperturbed states can be represented by the perturbed Hamiltonian matrix:
-> $$
-\begin{bmatrix}
-E_{1}&0&a \\
-0&E_{1}&b \\
-a^*&b^*&E_{2}
-\end{bmatrix}
-$$
+> A system that has three unperturbed states can be represented by the perturbed Hamiltonian matrix $$\begin{bmatrix}E_{1}&0&a \\0&E_{1}&b \\a^*&b^*&E_{2}\end{bmatrix}$$
 > where $E_{2}>E_{1}$. The quantities $a$ and $b$ are to be regarded as perturbations that are of the same order and are small compared with $E_{2}-E_{1}$.
 
 For my usage, we can split this matrix into 2 components:
@@ -426,7 +377,9 @@ a^*&b^*&0
 \end{bmatrix}
 \end{align}
 $$
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 5.15.A
 > Use the second-order nondegenerate perturbation theory to calculate the perturbed eigenvalues. (Is this procedure correct?)
 
@@ -454,22 +407,15 @@ $$
 
 I had originally done this by hand, but was able to simplify it since one eigenvalue is $\lambda=E_1$.
 
-For the matrix:
-$$
+For our matrix, we have the eigenvalues
+$$\begin{align}
 \begin{bmatrix}
 E_{1}&0&a \\
 0&E_{1}&b \\
 a^*&b^*&E_{2}
-\end{bmatrix}
-$$
-The eigenvalues are:
-$$
-\begin{align}
+\end{bmatrix} &&\implies&&
 \Aboxed{\lambda_{0}&=E_1} & \Aboxed{\lambda_{\pm}&=\dfrac{E_2+E_1}{2}\pm\sqrt{\dfrac{(E_2-E_1)^2}{4}+|a|^2+|b|^2}}
-\end{align}
-$$
-While I could show all the work, I deleted the LaTeX because it was like 3 pages.
-
+\end{align}$$
 If we want to Taylor expand around a small quantity, we can notice that:
 $$
 \begin{align}
@@ -486,7 +432,9 @@ Substituting our values back in, we see that:
 $$\begin{align}
 \Aboxed{E_{n=1}&=E_1} & \Aboxed{E_{n=2}&\approx E_1-\dfrac{|a|^2+|b|^2}{E_2-E_1}} & \Aboxed{\lambda_{3}&\approx E_{n=3}+\dfrac{|a|^2+|b|^2}{E_2-E_1}} 
 \end{align}$$
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 5.15.C
 > Finally, use the second-order degenerate perturbation theory.
 
@@ -518,19 +466,21 @@ Thus the two energies in the degenerate subspace are:
 $$\begin{align}E_{n=1}&=E_1 & E_{n=3}&=E_1-\dfrac{|a|^2+|b|^2}{E_2-E_1}\end{align}$$
 The third energy is the same as that found in nondegenerate perturbations theory:
 $$\begin{align}E_{n=3}&=E_2+\dfrac{|a|^2+|b|^2}{E_2-E_1}\end{align}$$
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 5.15.D
 > Compare the three results obtained.
 
-From [[#Question 5.15.A]]:
+From [[#Question 5.15.A|part a]]:
 $$\begin{align}
 \Aboxed{E_{n=1}&=E_1-\dfrac{|a|^2}{E_2-E_1}} & \Aboxed{E_{n=2}&=E_1-\dfrac{|b|^2}{E_2-E_1}} & \Aboxed{E_{n=3}&=E_2+\dfrac{|a|^2+|b|^2}{E_2-E_1}}
 \end{align}$$
-From [[#Question 5.15.B]]:
+From [[#Question 5.15.B|part b]]:
 $$\begin{align}
 \Aboxed{E_{n=1}&=E_1} & \Aboxed{E_{n=2}&\approx E_1-\dfrac{|a|^2+|b|^2}{E_2-E_1}} & \Aboxed{E_{n=3}&\approx E_2+\dfrac{|a|^2+|b|^2}{E_2-E_1}} 
 \end{align}$$
-From [[#Question 5.15.C]]:
+From [[#Question 5.15.C|part c]]:
 $$\begin{align}
 \Aboxed{E_{n=1}&=E_1} & \Aboxed{E_{n=2}&=E_1-\dfrac{|a|^2+|b|^2}{E_2-E_1}} & \Aboxed{E_{n=3}&=E_2+\dfrac{|a|^2+|b|^2}{E_2-E_1}} 
 \end{align}$$

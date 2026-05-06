@@ -27,7 +27,9 @@ $$\begin{align}
 &=\dfrac{\left(E_1^{(0)}+E_2^{(0)}\right)}{2}\pm\sqrt{\dfrac{\left(E_1^{(0)}\right)^2-2E_1^{(0)}E_2^{(0)}+\left(E_2^{(0)}\right)^2}{4}+\lambda^2 V_{12}V_{21}}\\
 \Aboxed{\mathcal{E}_{1,2}&=\dfrac{\left(E_2^{(0)}+E_1^{(0)}\right)}{2}\pm\sqrt{\dfrac{\left(E_2^{(0)}-E_1^{(0)}\right)^2}{4}+\lambda^2 V_{12}V_{21}}}
 \end{align}$$
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Part B
 > Expand the eigenvalues in $\lambda$ up to the lowest-order non-vanishing corrections.
 
@@ -62,6 +64,10 @@ E_n^{(2)}&=+\dfrac{\lambda^2 |V_{kn}|^2}{E_n^{(0)}-E_k^{(0)}} &
 E_1^{(2)}&=-\dfrac{\lambda^2 |V_{21}|^2}{E_2^{(0)}-E_1^{(0)}} & 
 E_2^{(2)}&=+\dfrac{\lambda^2 |V_{12}|^2}{E_2^{(0)}-E_1^{(0)}}
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 The magnitude squared makes these identical, and thus:
 $$\begin{align}
 \Aboxed{E_1^{(2)}&=-\dfrac{V_{12}V_{21}}{E_2^{(0)}-E_1^{(0)}}\lambda^2} & 

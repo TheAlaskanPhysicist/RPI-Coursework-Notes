@@ -1,5 +1,5 @@
-Author: Stanley Goodwin
-Date: March 13th, 2026
+**Author:** Stanley Goodwin
+**Date:** March 13th, 2026
 
 ---
 ## Problem 1
@@ -34,14 +34,16 @@ However, the potential must be continuous at $r=R$ (no interface charge), and so
 $$\begin{align}
 \dfrac{Q}{4\pi\epsilon_0}\dfrac{1}{R}&=-\dfrac{Q}{8\pi\epsilon_0R^3}R^2+V_0 &\implies&& V_0&=3\dfrac{Q}{8\pi\epsilon_0}\dfrac{1}{R}
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 For simplicity later, we can break this potential into two parts (and using $Q=+e$):
 $$\begin{align}
 V_\text{in}(r)&=\dfrac{e}{4\pi\epsilon_0}\dfrac{3R^2-r^2}{2R^3},&0\le r<R\\
 V_\text{out}(r)&=\dfrac{e}{4\pi\epsilon_0}\dfrac{1}{r},&r\ge R
 \end{align}$$
-
-
-
+---
 ### Hydrogen Atom ($r<R$)
 For radii inside the radius of the proton, our Hamiltonian takes the form:
 $$\begin{align}
@@ -72,14 +74,15 @@ Substituting into our energy correction (now labelled $E_{n,l}^{(1)}=\left\langl
 $$\begin{align}
 E_{n,l}^{(1)}&=\dfrac{e^2}{n^2a_0}-\dfrac{3e^2}{2R}+\dfrac{e^2}{2R^3}\dfrac{a_0^2n^2}{2}\left[5n^2+1-3l(l+1)\right]
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 Note #2 mentioning we should consider answers only of the leading order $R/a_0$, so we can write each term with factored out components as:
 $$\begin{align}
 E_{n,l}^{(1)}&=\dfrac{e^2}{a_0}\left(\dfrac{1}{n^2}-\dfrac{3}{2}\left(\dfrac{a_0}{R}\right)+\dfrac{n^2}{4}\left(\dfrac{a_0}{R}\right)^3\left[5n^2+1-3l(l+1)\right]\right)\\
 &=\dfrac{e^2}{a_0}\left(\dfrac{a_0}{R}\right)^3\left(\dfrac{1}{n^2}\left(\dfrac{R}{a_0}\right)^3-\dfrac{3}{2}\left(\dfrac{R}{a_0}\right)^2+\dfrac{n^2}{4}\left[5n^2+1-3l(l+1)\right]\right)
 \end{align}$$
-
-
-
 Just to the leading order of $R/a_0$, the potential in the small-proton regime is:
 $$\begin{align}
 \Aboxed{\lim_{R/a_0\ll1}E_{n,l}^{(1)}&=\dfrac{e^2a_0^2}{4R^3}n^2\left[5n^2+1-3l(l+1)\right]} && \text{Gaussian Units}\\
@@ -107,16 +110,17 @@ $$\begin{align}
 \Aboxed{E_\text{2s}^{(1)}&=21\dfrac{e^2a_0^2}{4\pi\epsilon_0R^3}} &
 \Aboxed{E_\text{2p}^{(1)}&=15\dfrac{e^2a_0^2}{4\pi\epsilon_0R^3}}
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 In terms of total energy after the first-order correction, we have instead:
 $$\begin{align}
 \Aboxed{E_\text{1s}&\approx-\dfrac{me^4}{2(4\pi\epsilon_0)^2\hbar^2}\left(1-3\dfrac{a_0^3}{R^3}\right)} \\
 \Aboxed{E_\text{2s}&\approx-\dfrac{me^4}{2(4\pi\epsilon_0)^2\hbar^2}\left(\dfrac{1}{4}-42\dfrac{a_0^3}{R^3}\right)} \\
 \Aboxed{E_\text{2p}&\approx-\dfrac{me^4}{2(4\pi\epsilon_0)^2\hbar^2}\left(\dfrac{1}{4}-30\dfrac{a_0^3}{R^3}\right)}
 \end{align}$$
-<div style="page-break-before: always;"></div>
-
-
-
+---
 ### Orbital Energy Difference ($R\ll a_0$)
 To answer the question about why $l=1$ and $l=0$ shifts are different, we can substitute in:
 $$\begin{align}
@@ -143,6 +147,10 @@ R_{21}(r)&=\left(\dfrac{1}{2a_0}\right)^{3/2}\dfrac{r}{\sqrt{3}a_0}e^{-r/2a_0}
 \end{align}$$
 The linear component forces the probability density to decay near the origin, and so when our proton radius is very small, the interior contribution becomes vanishingly small. This is *not* the case for the $s$-orbital, since even at $r=0$, there's a constant probability density.
 
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 This actually occurs for all higher-order orbitals, since we can see the difference in the energy of an orbital from the $s$-orbital is:
 $$\begin{align}
 \lim_{R/a_0\ll1}E_{n,l}^{(1)}-E_{n,0}^{(1)}&=-\dfrac{3e^2a_0^2}{16\pi\epsilon_0R^3}n^2\cdot l(l+1)
@@ -152,11 +160,6 @@ $$\begin{align}
 R_{nl}(r)&\sim\left(\dfrac{r}{a_0}\right)^l &&& 1\le l&<n &\land&& n\ge2
 \end{align}$$
 Thus, higher values of $l$ have much faster decays since $0\le r\le R\ll a_0$.
-
-
-
-## Problem 2
-This was the question I did in class.
 
 ---
 ## Problem 3
@@ -178,6 +181,10 @@ H&=\underbrace{A\vec{S}_1\cdot\vec{S}_2}_{H_0}+\underbrace{\tfrac{eB}{mc}\left(S
 \ket{4}&\equiv\ket{1+\!1}=\ket{++}
 \end{align}$$
 
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 We can rewrite the Hamiltonian in terms of angular momenta as the following:
 $$\begin{align}
 \vec{J}^2&=\vec{S}_1^2+\vec{S}_2^2+2\vec{S}_1\cdot\vec{S}_2 &\implies&& \vec{S}_1\cdot\vec{S}_2&=\dfrac{1}{2}\left(\vec{J}^2-\vec{S}_1^2-\vec{S}_2^2\right)
@@ -186,10 +193,6 @@ Since we're working on solely spin-$\text{1/2}$ individual states, this product 
 $$\begin{align}
 \vec{S}_1^2=\vec{S}_2^2&=\dfrac{3}{4}\hbar^2 &\implies&& \vec{S}_1\cdot\vec{S}_2&=\dfrac{\hbar^2}{2}\left(\dfrac{\vec{J}^2}{\hbar^2}-\dfrac{3}{2}\right)
 \end{align}$$
-<div style="page-break-before: always;"></div>
-
-
-
 For $\vec{J}^2$, we can notice that we can quickly find the solution for all of our choice of basis:
 $$\begin{align}
 \vec{J}^2\ket{1}&=0\hbar^2\ket{1} & \vec{J}^2\ket{n}&=2\hbar^2\ket{n}, \ n=2,3,4
@@ -218,7 +221,11 @@ The coupled basis makes this system trivial because of the dot product depending
 ### Problem 3.B
 > Use degenerate or non-degenerate perturbation theory (higher-order if necessary) in the appropriate subspaces to obtain the lowest-order non-vanishing corrections to the energy levels.
 
-From our eigenstate basis in [[#Problem 3.A]], we see a three-fold degeneracy for $j=1$ states. We want to similarly represent the perturbation in this basis.
+From our eigenstate basis in [[#Problem 3.A|part a]], we see a three-fold degeneracy for $j=1$ states. We want to similarly represent the perturbation in this basis.
+
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 
 If we apply our perturbation operation on a general state (uncoupled), we see that:
 $$\begin{align}
@@ -230,9 +237,6 @@ These are eigenvalues associated with each uncoupled state:
 $$\begin{align}
 E_{--}&=0 & E_{+-}&=+\dfrac{eB\hbar}{mc} & E_{-+}&=-\dfrac{eB\hbar}{mc} & E_{++}&=0
 \end{align}$$
-
-
-
 States $\ket{2},\ket{4}$ are trivial since they are the same as each spin pointing in the same direction. However, for states $\ket{1},\ket{3}$, the application of the perturbation on each uncoupled basis component results in the following:
 $$\begin{align}
 V\ket{1}&=\dfrac{eB\hbar}{mc}\ket{3} & V\ket{3}&=\dfrac{eB\hbar}{mc}\ket{1}\\
@@ -257,6 +261,10 @@ E_3^{(2)}
 &=+\dfrac{1}{A\hbar^2}\left|\dfrac{eB\hbar}{mc}\right|^2\\
 \Aboxed{E_3^{(2)}&=+\dfrac{e^2B^2}{Am^2c^2}}
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 Therefore, all together, we have the following energies of each coupled state:
 $$\begin{align}
 E_1&=-\dfrac{3}{4}A\hbar^2-\dfrac{e^2B^2}{Am^2c^2} & 
@@ -268,17 +276,12 @@ E_3&=+\dfrac{1}{4}A\hbar^2+\dfrac{e^2B^2}{Am^2c^2} &
 E_4&=+\dfrac{1}{4}A\hbar^2 & 
 \ket{4}&=\ket{++}
 \end{align}$$
-<div style="page-break-before: always;"></div>
-
-
-
-## Problem 4
-> A particle of mass $m$ and energy $E>0$ moves in one dimension through an infinite series of equally-spaced $\delta$-function potentials:
-> $$\begin{align}
-V(x)&=\dfrac{\hbar^2}{2m}\lambda\sum_{n=-\infty}^\infty\delta(x-na), &&& (\lambda>0).
-\end{align}$$
 ---
-### Problem 4A
+## Problem 4
+> A particle of mass $m$ and energy $E>0$ moves in one dimension through an infinite series of equally-spaced $\delta$-function potentials $$\begin{align}V(x)&=\dfrac{\hbar^2}{2m}\lambda\sum_{n=-\infty}^\infty\delta(x-na), &&& (\lambda>0)\end{align}$$
+
+---
+### Problem 4.A
 > Derive the proper continuity or discontinuity for $\psi(x)$ and $d\psi/dx$ at $x=0$.
 
 I had a bit of difficulty writing this in a coherent way. There were many different ways I could talk about it and prove it, but I'll use my what I learned in my undergraduate quantum class.
@@ -296,14 +299,15 @@ H\psi(x)&=-\dfrac{\hbar^2}{2m}\dfrac{d^2}{dx^2}\psi(x)+\dfrac{\hbar^2}{2m}\lambd
 \end{align}$$
 Therefore any discontinuity in the slope of the wavefunction is directly related to $\lambda$.
 
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 As for the continuity of the general wavefunction, I had originally written steps with limits and using calculus to prove that the function must be continuous at $x=0$. We can exploit that the full expression for the potential has discrete translation symmetry:
 $$\begin{align}
 V(x+a)&=V(x)
 \end{align}$$
 Whatever solution we get for the wavefunction of this potential, the state must also be continuous at the boundaries since the left-side wavefunction approaching $\psi(a)$ is equivalent to $\psi(0)$ by translation, and thus the wavefunction is continuous. 
-<div style="page-break-before: always;"></div>
-
-
 
 Writing the wavefunction continuity as a limit equation, we can write both conditions as:
 $$\begin{align}
@@ -324,8 +328,10 @@ n\in\mathbb{Z}
 \end{align}$$
 Physically, these conditions enforce that the wavefunction is continuous across the potential barrier spike and that the slope of the wavefunction can jump discontinuously, but that such discontinuity must be equal to $\lambda$ times the value of the wavefunction at that point.
 
----
-### Problem 4B
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+### Problem 4.B
 > Write $\psi(x)=Ae^{ik'x}+Be^{-ik'x}$ for $-a<x<0$, where $k'=\sqrt{2mE}/\hbar$. Use Bloch's Theorem, $\psi(x+a)=e^{ika}\psi(x),\ k\in\mathbb{R}$ , to derive an expression for $\psi(x)$ in the region $0<x<a$.
 
 We are given the wavefunction ANSATZ:
@@ -348,14 +354,13 @@ Dividing both sides by the exponential attached to the wavefunction, we find:
 $$\begin{align}
 \Aboxed{\psi(x)&=(Ae^{i(k-k')a})e^{+ik'x}+(Be^{i(k+k')a})e^{-ik'x}}
 \end{align}$$
-<div style="page-break-before: always;"></div>
 
+<div style="page-break-before: always;"></div>*PDF next page*
 
+### Problem 4.C
+> Using your result from [[#Problem 4.A|part a]] and [[#Problem 4.B|part b]], obtain the equation which provides the allowed values of $k'$. Show that this equation implies a *band structure*.
 
-### Problem 4C
-> Using your result from [[#Problem 4A]] and [[#Problem 4B]], obtain the equation which provides the allowed values of $k'$. Show that this equation implies a *band structure*.
-
-The shared point in problem 4B is $x=0$, so we'll want to look at the behavior there. Once again, because of discrete translation symmetry, this is universal for the whole system.
+The shared point in [[#Problem 4.B|part b]] is $x=0$, so we'll want to look at the behavior there. Once again, because of discrete translation symmetry, this is universal for the whole system.
 
 Approaching $x=0$ from the left side $(x\to0^-)$, the wavefunction and its derivative are:
 $$\begin{align}
@@ -389,6 +394,7 @@ $$\begin{align}
 \Aboxed{\cos\left(ka\right)&=\cos\left(k'a\right)+\dfrac{\lambda a}{2(k'a)} \sin\left(k'a\right)}
 \end{align}$$
 
+<div style="page-break-before: always;"></div>*PDF next page*
 
 
 As for why this implies band structure? I can definitely see that there is a lot of solutions to this system. Cosine is bounded by $\pm1$, so we can see the boundary on the other side as:
@@ -412,14 +418,14 @@ $$\begin{align}
 \left|\sqrt{1+\dfrac{(\lambda a)^2}{4(k'a)^2}}\sin\left(k'a+\tan^{-1}\left(2\dfrac{k'a}{\lambda a}\right)\right)\left(k'a\right)\right|\le 1
 \end{align}$$
 If you're interested, [here](https://www.desmos.com/calculator/qslxslbuxg) is my graph I used to talk about this condition. I also use this graph in problem 4D and it was a lot of fun to make it since it's interactive!
-<div style="page-break-before: always;"></div>
 
 
+<div style="page-break-before: always;"></div>*PDF next page*
 
-### Problem 4D
+### Problem 4.D
 > Set $\lambda a=40$, and *obtain numerical values* for the lower and upper boundaries of $k'a$ for the first five energy bands. Use a computer to plot the band structure.
 
-From [[#Problem 4C]], we have the following condition:
+From [[#Problem 4.C|part c]], we have the following condition:
 $$\begin{align}
 -1\le\cos\left(k'a\right)+\dfrac{\lambda a}{2(k'a)} \sin\left(k'a\right)\le 1
 \end{align}$$
@@ -444,9 +450,9 @@ The question asks for the first 5 bands, so I ran 10 zeros-searches on $\kappa=n
 | 5      | $(14.456219543254,15.70796326795)$ | $(14.4563,15.7079)$  | $1.2517$         |
 
 
+<div style="page-break-before: always;"></div>*PDF next page*
+
 
 Graphically, in [Desmos](https://www.desmos.com/calculator/qslxslbuxg), this is what it appeared as:
-![[Midterm Bandgaps.png]]
+![[Midterm 4.D.png]]
 Normally I would have plotted it in another software, but I am very tired. It was really fun to do this problem though, it's very interesting.
-
-**End of Document**

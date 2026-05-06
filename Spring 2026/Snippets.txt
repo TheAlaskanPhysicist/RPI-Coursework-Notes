@@ -276,7 +276,7 @@
 	// Dirac Physics Notation
 	{trigger: "\\bra", replacement: "\\bra{$0}$1", options: "mA", description: "Automatic Brackets for Bra"},
 	{trigger: "\\ket", replacement: "\\ket{$0}$1", options: "mA", description: "Automatic Brackets for Ket"},
-	{trigger: "\\inner", replacement: "\\braket{$0\\lvert $1}$2", options: "mA", description: "Automatic Brackets for Braket"},
+	{trigger: "\\inner", replacement: "\\left<$0\\middle|$1\\right>$2", options: "mA", description: "Automatic Brackets for Braket"},
 	{trigger: "\\outer", replacement: "\\ket{$0}\\bra{$1}$2", options: "mA", description: "Automatic Brackets for Outer Product"},
 
 
@@ -448,22 +448,22 @@
 	// **************************************************
 
 	// Symbols
-	{trigger: "+-", replacement: "\\pm", options: "mA"},
-	{trigger: "-+", replacement: "\\mp", options: "mA"},
-	{trigger: "...", replacement: "\\dots", options: "mA"},
-	{trigger: "===", replacement: "\\equiv", options: "mA"},
-	{trigger: "!=", replacement: "\\neq", options: "mA"},
-	{trigger: ">=", replacement: "\\geq", options: "mA"},
-	{trigger: "<=", replacement: "\\leq", options: "mA"},
-	{trigger: ">>", replacement: "\\gg", options: "mA"},
-	{trigger: "<<", replacement: "\\ll", options: "mA"},
-	{trigger: "~~", replacement: "\\sim", options: "mA"},
-	{trigger: "~=", replacement: "\\simeq", options: "mA"},
-	{trigger: "<->", replacement: "\\leftrightarrow ", options: "mA"},
-	{trigger: "->", replacement: "\\to", options: "mA"},
-	{trigger: "!>", replacement: "\\mapsto", options: "mA"},
-	{trigger: "=>", replacement: "\\implies", options: "mA"},
-	{trigger: "=<", replacement: "\\impliedby", options: "mA"},
+	// {trigger: "+-", replacement: "\\pm", options: "mA"},
+	// {trigger: "-+", replacement: "\\mp", options: "mA"},
+	// {trigger: "...", replacement: "\\dots", options: "mA"},
+	// {trigger: "===", replacement: "\\equiv", options: "mA"},
+	// {trigger: "!=", replacement: "\\neq", options: "mA"},
+	// {trigger: ">=", replacement: "\\geq", options: "mA"},
+	// {trigger: "<=", replacement: "\\leq", options: "mA"},
+	// {trigger: ">>", replacement: "\\gg", options: "mA"},
+	// {trigger: "<<", replacement: "\\ll", options: "mA"},
+	// {trigger: "~~", replacement: "\\sim", options: "mA"},
+	// {trigger: "~=", replacement: "\\simeq", options: "mA"},
+	// {trigger: "<->", replacement: "\\leftrightarrow ", options: "mA"},
+	// {trigger: "->", replacement: "\\to", options: "mA"},
+	// {trigger: "!>", replacement: "\\mapsto", options: "mA"},
+	// {trigger: "=>", replacement: "\\implies", options: "mA"},
+	// {trigger: "=<", replacement: "\\impliedby", options: "mA"},
 
 
 	// **************************************************

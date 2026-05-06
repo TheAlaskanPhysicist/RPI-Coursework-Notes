@@ -1,0 +1,9 @@
+### Course Overview
+**Class:** Physics Colloquium (PHYS-6900)
+**Instructor:** Ingrid Wilke, Professor of Physics (wilkei@rpi.edu)
+
+**Description:** The course is seminar (Physics Colloquium). External and internal invited speakers present a topic of current research in physics followed by a discussion driven by questions and comments from the seminar (Physics Colloquium) participants.
+
+**Learning Outcomes:** Students will broaden their understanding of current research in physics and related disciplines. Students will deepen their understanding on how to present a research lecture. Students will be able to interact with different speakers from different institutions about research related to physics.
+
+**Assessment & Grading:** Students are required to attend seminars. Attendance will be taken by the instructor. Students are required to complete and submit a work sheet following each seminar presentation. The course will be graded using the pass/fail system. In order to pass, you have to attend the colloquium regularly and to complete the Physics Colloquium Work Sheet for each colloquium. You are required to complete the Physics Colloquium Work Sheet for each colloquium presentation. The questionnaire template is available on the LMS course webpage. The deadline for submission of the work sheet is Wednesday at 4pm one week after the colloquium presentation. Submit the work sheet through the dedicated weblink on the LMS course webpage. You must demonstrate a reasonable effort to attend all colloquia and special presentation to obtain a passing grade. If you miss more than one talk, you need to send your instructor a note of excused or other written notice prior to the scheduled colloquium’s presentation. Missing more than one talk will result in a fail grade. Instructor takes attendance at the beginning of each colloquium.

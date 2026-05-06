@@ -17,8 +17,9 @@ $$\begin{align}
 x_i'=\Lambda(\vec{x},t)&=A_{i}^{(0)}+A_{i\mu}^{(1)}x_\mu+A_{i\mu\nu}^{(2)}x_\mu x_\nu+A^{(3)}_{i\mu\nu\gamma}x_\mu x_\nu x_\gamma+\dots
 \end{align}$$
 where each index can range from 0 to 3. If we impose the condition that space-time is isotropic, then rotations of our spatial coordinate basis does not change the effect of the transformation. Therefore, without loss of generality, make a change of basis in both coordinates systems to align each axis parallel to the velocity to be $x_1=x$ and $x_1'=x'$, and the remaining perpendicular spatial bases not involve themselves in the transform.
-<div style="page-break-before: always;"></div>
 
+
+<div style="page-break-before: always;"></div>*PDF next page*
 
 
 The effect of isotropy is that we only need to iterate over indices $0,1$, instead of all 4, resulting in
@@ -57,8 +58,9 @@ $$\begin{align}
 t'&=A_{00}^{(1)}t+A_{01}^{(1)}x & x'&=A_{10}^{(1)}t+A_{11}^{(1)}x & y'&=y & z'&=z
 \end{align}$$
 where the coefficients out the front absorb any extra physical constants. 
-<div style="page-break-before: always;"></div>
 
+
+<div style="page-break-before: always;"></div>*PDF next page*
 
 
 In order to write the velocity dependence in our system, we define the origin in space-time for $K'$ to be $x'=0$ for all time $t'$. Writing in terms of the $K$ frame coordinates, we have:
@@ -92,11 +94,7 @@ $$\begin{align}
 \Lambda(-v)&=\begin{bmatrix}A_{00}^{(1)}&vA_{01}^{(1)}\\ vA_{11}^{(1)}&A_{11}^{(1)}
 \end{bmatrix}
 \end{align}$$
-Since we have the inverse transformation relation
-$$\begin{align}
-\Lambda^{-1}(v)&=\Lambda(-v) &\implies&& \Lambda^{-1}(v)\Lambda(v)&=\Lambda(-v)\Lambda^{}(v)=\mathbb{I}
-\end{align}$$
-We can write the product of these transforms as
+With the inverse transform relation, we can write the product of these transforms as
 $$\begin{align}
 \Lambda(-v)\Lambda(v)&=\begin{bmatrix}
 A_{00}^2-v^2A_{01}A_{11} & vA_{00}A_{01}-vA_{01}A_{11} \\
@@ -105,21 +103,16 @@ A_{00}^2-v^2A_{01}A_{11} & vA_{00}A_{01}-vA_{01}A_{11} \\
 \end{align}$$
 Thus, we have the relationship between the coefficients:
 $$\begin{align}
-A_{11}&=A_{00} &  A_{00}(A_{00}-v^2A_{01})&=1
-\end{align}$$
-Using our substitutions from earlier, we have:
-$$\begin{align}
+A_{11}&=A_{00} &  A_{00}(A_{00}-v^2A_{01})&=1 &\implies&&
 \Aboxed{f(v^2)&=g(v^2)} & \Aboxed{f(v^2)\left[f(v^2)-v^2h(v^2)\right]&=1}
 \end{align}$$
 This is precisely what the question asks for.
 
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 11.1.C
-> If a physical entity has speed $u'$ parallel to the $x'$ axis in $K'$, show that its speed $u$ parallel to the $x$ axis in $K$ is
-> $$\begin{align}
-u=\dfrac{u'+v}{1+vu'(h/f)}
-\end{align}$$
-> Using the second postulate $2'$ (universal limiting speed $C$), show that $h=f/C^2$ is required and that the Lorentz transformation of the coordinates results. The universal limiting speed $C$ is to be determined from experiment.
+> If a physical entity has speed $u'$ parallel to the $x'$ axis in $K'$, show that its speed $u$ parallel to the $x$ axis in $K$ is $u=\dfrac{u'+v}{1+vu'(h/f)}$. Using the second postulate $2'$ (universal limiting speed $C$), show that $h=f/C^2$ is required and that the Lorentz transformation of the coordinates results. The universal limiting speed $C$ is to be determined from experiment.
 
 Start with our Lorentz transform
 $$\begin{align}t'&=f(v^2)t-vh(v^2)x & x'&=f(v^2)x-vf(v^2)t\end{align}$$
@@ -141,10 +134,6 @@ As for the relationship between these two functions, start with its definition:
 $$\begin{align}
 f(v^2)\left[f(v^2)-v^2h(v^2)\right]&=1
 \end{align}$$
-<div style="page-break-before: always;"></div>
-
-
-
 Let $h(v^2)=f(v^2)/C^2$, then we get that:
 $$\begin{align}
 f(v^2)^2\left[1-v^2/C^2\right]&=1 &\implies&& f(v^2)&=\dfrac{1}{\sqrt{1-v^2/C^2}}
@@ -153,7 +142,9 @@ This is the only solution who is symmetric in $v$ that satisfies this constraint
 $$\begin{align}
 \Aboxed{f(v^2)&=\dfrac{1}{\sqrt{1-v^2/C^2}}} & \Aboxed{h(v^2)&=\dfrac{1}{C^2}\dfrac{1}{\sqrt{1-v^2/C^2}}}
 \end{align}$$
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ## Question 11.3
 > Show, explicitly, that two successive Lorentz transformations in the same direction are equivalent to a single Lorentz transformation with velocity:
 > $$\begin{align}
@@ -173,31 +164,25 @@ $$\begin{align}
 \end{align}$$
 Or we can substitute in our summed velocity value above:
 $$\begin{align}
-\Lambda(v)&=\dfrac{\gamma\left(\dfrac{v_1+v_2}{1+\tfrac{v_1v_2}{c^2}}\right)}{1+\tfrac{v_1v_2}{c^2}}\begin{bmatrix}1+\tfrac{v_1v_2}{c^2}&-(v_1+v_2)/c^2\\-(v_1+v_2)&1+\tfrac{v_1v_2}{c^2}\end{bmatrix}
+\Lambda(v)&=\dfrac{\gamma\left(\tfrac{v_1+v_2}{1+\tfrac{v_1v_2}{c^2}}\right)}{1+\tfrac{v_1v_2}{c^2}}\begin{bmatrix}1+\tfrac{v_1v_2}{c^2}&-(v_1+v_2)/c^2\\-(v_1+v_2)&1+\tfrac{v_1v_2}{c^2}\end{bmatrix}
 \end{align}$$
-The matrices are identical, so we only need to consider the factor out the front.
-<div style="page-break-before: always;"></div>
-
-
-
-The product of the two gamma factors is:
+The matrices are identical, so we only need to consider the factor out the front. The product of the two gamma factors is:
 $$\begin{align}
-\dfrac{1}{\sqrt{1-\beta_1^2}}\dfrac{1}{\sqrt{1-\beta_2^2}}&=\dfrac{1}{\sqrt{1+\beta_1^2\beta_2^2-\beta_1^2-\beta_2^2}}
+\tfrac{1}{\sqrt{1-\beta_1^2}}\tfrac{1}{\sqrt{1-\beta_2^2}}&=\tfrac{1}{\sqrt{1+\beta_1^2\beta_2^2-\beta_1^2-\beta_2^2}}
 \end{align}$$
 The combined gamma factor then is:
 $$\begin{align}
-\gamma(v)&=\dfrac{1}{\sqrt{1-\left(\dfrac{\beta_1+\beta_2}{1+\beta_1\beta_2}\right)^2}}\\
-&=\dfrac{1+\beta_1\beta_2}{\sqrt{(1+\beta_1\beta_2)^2-\left(\beta_1+\beta_2\right)^2}}\\
-&=\dfrac{1+\beta_1\beta_2}{\sqrt{\beta_1^2\beta_2^2+2\beta_1\beta_2+1-\beta_1^2-\beta_2^2-2\beta_1\beta_2}}\\
-&=\dfrac{1+\beta_1\beta_2}{\sqrt{1+\beta_1^2\beta_2^2-\beta_1^2-\beta_2^2}}\\
-\gamma(v)&=(1+\beta_1\beta_2)\gamma(v_1)\gamma(v_2)
+\gamma(v)&=\dfrac{1}{\sqrt{1-\left(\tfrac{\beta_1+\beta_2}{1+\beta_1\beta_2}\right)^2}}=\dots=(1+\beta_1\beta_2)\gamma(v_1)\gamma(v_2)
 \end{align}$$
 When used for the Lorentz matrix of the velocity sum, the coefficient cancels the denominator, giving us exactly the right relationship:
 $$\begin{align}
 \Aboxed{\gamma(v)&=\left(1+\dfrac{v_1v_2}{c^2}\right)\gamma(v_1)\gamma(v_2)}
 \end{align}$$
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ## Question 11.14
+---
 ### Question 11.14.A
 > Express the Lorentz scalars $F^{\alpha\beta}F_{\alpha\beta}$, $\mathfrak{F}^{\alpha\beta}F_{\alpha\beta}$, and $\mathfrak{F}^{\alpha\beta}\mathfrak{F}_{\alpha\beta}$, in terms of $\vec{E}$ and $\vec{B}$. Are there any other invariants quadratic in the field strengths $\vec{E}$ and $\vec{B}$?
 
@@ -216,9 +201,6 @@ F_{\mu\nu}&=\begin{bmatrix}
 -E_z/c&-B_y&B_x&0
 \end{bmatrix}
 \end{align}$$
-<div style="page-break-before: always;"></div>
-
-
 while the tensor duals from the same table, using the notation of the question, are
 $$\begin{align}
 \mathfrak{F}^{\mu\nu}&=\begin{bmatrix}
@@ -246,6 +228,10 @@ Similarly, the third Lorentz scalar $\mathfrak{F}^{\alpha\beta}\mathfrak{F}_{\al
 $$\begin{align}
 \Aboxed{\mathfrak{F}^{\mu\nu}\mathfrak{F}_{\mu\nu}&=2\left(\dfrac{|\vec{E}|^2}{c^2}-|\vec{B}|^2\right)=-F^{\mu\nu}F_{\mu\nu}}
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 The second Lorentz scalar $\mathfrak{F}^{\alpha\beta}F_{\alpha\beta}$ is also the sum of the product of entries
 $$\begin{align}
 c\cdot\mathfrak{F}^{\mu\nu}F_{\mu\nu}=
@@ -278,7 +264,9 @@ $$\begin{align}
 \Aboxed{\mathfrak{F}^{\mu\nu}\mathfrak{F}_{\mu\nu}&=-F^{\mu\nu}F_{\mu\nu}} & 
 \Aboxed{F^{\mu\nu}\mathfrak{F}_{\mu\nu}&=\mathfrak{F}^{\mu\nu}F_{\mu\nu}}
 \end{align}$$
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 11.14.B
 > Is it possible to have an electromagnetic field that appears as a purely electric field in one inertial frame and as a purely magnetic field in some other inertial frame? What are the criteria imposed on $\vec{E}$ and $\vec{B}$ such that there is an initial frame where there is no electric field?
 
@@ -301,8 +289,6 @@ So, for two inertial frames to have pure fields opposite to each other, the fiel
 > For macroscopic media, $\vec{E},\vec{B}$ form the field tensor $F^{\alpha\beta}$ and $\vec{D},\vec{H}$ the tensor $G^{\alpha\beta}$. What further invariants can be formed? What are there explicit expressions in terms of the $3$-vector fields?
 
 As a foreword, I was not able to find the tensor for $G$ in the textbook, so I did a simple exchange between $E\leftrightarrow D$ and $B\leftrightarrow H$. If there are differing sign conventions, it will show up either as a complete negation of value, or by one of the dot products swapping signs, or both.
-<div style="page-break-before: always;"></div>
-
 
 Inspired by [[#Question 11.14.A (595)|part a]], we can form a few Lorentz scalars such as
 $$\begin{align}
@@ -315,6 +301,10 @@ G^{\mu\nu}G_{\mu\nu}&=-\mathfrak{G}^{\mu\nu}\mathfrak{G}_{\mu\nu}\\
 && 
 G^{\mu\nu}\mathfrak{G}_{\mu\nu}&=\mathfrak{G}^{\mu\nu}G_{\mu\nu}
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 For linear media, the $G$ tensor takes the same form as $F$, just with the macroscopic fields, so
 $$\begin{align}
 \Aboxed{G^{\mu\nu}G_{\mu\nu}&=-2\left(|\vec{D}|^2-|\vec{H}|^2\right)} &

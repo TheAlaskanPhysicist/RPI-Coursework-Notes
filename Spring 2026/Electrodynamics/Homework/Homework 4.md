@@ -10,6 +10,10 @@ $$\begin{align}
 \text{Region I: Incidence} && \text{Region II: Air Gap} && \text{Region III: Transmittence}
 \end{align}$$
 All three regions have incoming wavevectors, then regions $\text{I, II}$ have reflected wavevectors. Reflected wavevectors will be denoted with a $'$ with the same symbol as incoming.
+
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 #### Electric Field & Boundary Conditions
 For the sake of writing more LaTeX than is needed, it's relatively simple to show all the angular frequencies are identical, since our boundary conditions hold for all time $t$. Thus, we can write the following general forms of the electric fields in each region as:
 $$\begin{align}
@@ -73,6 +77,9 @@ $$\begin{align}
 \vec{E}_\text{III}(\vec{x},t)&=
 \hat{\epsilon}_\text{III}E_\text{III}e^{i\tfrac{\omega}{c/n}(z-d)\cos\theta_\text{I}}
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 #### Field Coefficients: Perpendicular Polarization
 The electric field is perpendicular to the plane of incidence ($xz$-plane), so $+\hat{y}$. Magnetic field is written in the form $\vec{B}=\tfrac{1}{c/n}\hat{k}\times\vec{E}$. All together, we get the 6 fields:
 $$\begin{align}
@@ -134,6 +141,10 @@ $$\begin{align}
 \epsilon_\text{I}&=\epsilon_\text{III}=\epsilon & \epsilon_\text{II}=\epsilon_0\\
 \mu_\text{I}&=\mu_\text{III}=\mu & \mu_\text{II}=\mu_0\\
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 Using those and earlier relations for the angles, we have the conditions:
 $$\begin{align}
 E_\text{I}+E_\text{I}'&=E_\text{II}+E_\text{II}' &
@@ -157,6 +168,7 @@ $$\begin{align}
 \dfrac{E_\text{II}'}{E_\text{I}}&=\dfrac{1}{2}(1-\beta)\left[1-(1+\beta)^2\dfrac{e^{i\alpha}-e^{-i\alpha}}{(1-\beta)^2e^{i\alpha}-(1+\beta)^2e^{-i\alpha}}\right]\\
 \dfrac{E_\text{III}}{E_\text{I}}&=\left[1-\dfrac{e^{i\alpha}-e^{-i\alpha}}{e^{i\alpha}-\left(\tfrac{1+\beta}{1-\beta}\right)^2e^{-i\alpha}}\right]e^{i\alpha}
 \end{align}$$
+---
 #### Field Coefficients: Parallel Polarization
 The magnetic field is perpendicular to the plane of incidence ($xz$-plane), so $-\hat{y}$. Magnetic field relates to the electric field by $\vec{B}=\tfrac{1}{c/n}\hat{k}\times\vec{E}$. All together, we get the 6 fields:
 $$\begin{align}
@@ -183,7 +195,13 @@ $$\begin{align}
 \vec{E}_\text{III}(\vec{x},t)&=
 \left(\hat{z}\sin\theta_\text{I}-\hat{x}\cos\theta_\text{I}\right)E_\text{III}e^{i\tfrac{\omega}{c/n}(z-d)\cos\theta_\text{I}}
 \end{align}$$
-Since there are no free charges or currents at either interface, we have continuity in the perpendicular components of $\vec{D},\vec{B}$, and parallel components of $\vec{E},\vec{H}$. We have two interfaces to consider, so we have 8 total conditions:
+Since there are no free charges or currents at either interface, we have continuity in the perpendicular components of $\vec{D},\vec{B}$, and parallel components of $\vec{E},\vec{H}$. 
+
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
+We have two interfaces to consider, so we have 8 total conditions:
 $$\begin{align}
 \left[\epsilon_\text{I}\vec{E}_\text{I}(\vec{x},t)\cdot\hat{z}\right.&=\left.\epsilon_\text{II}\vec{E}_\text{II}(\vec{x},t)\cdot\hat{z}\right]_{z=0}&\implies&& 
 E_\text{I}+E_\text{I}'&=n\dfrac{\epsilon_\text{II}}{\epsilon_\text{I}}\left(E_\text{II}+E_\text{II}'\right)\\
@@ -235,9 +253,7 @@ $$\begin{align}
 \dfrac{E_\text{III}}{E_\text{I}}&=\dfrac{2n^2\beta}{\left(1+\dfrac{\mu_0}{\mu}\right)n^2\beta\cos\alpha-i\left(\left(\dfrac{\mu_0}{\mu}\right)^2n^4+\dfrac{\mu}{\mu_0}\beta^2\right)\sin\alpha}
 \end{align}$$
 
-
-
-
+<div style="page-break-before: always;"></div>*PDF next page*
 
 ### Question 7.3.A
 > For linear polarization (both parallel to **and** perpendicular to the plane of incidence), calculate:
@@ -267,34 +283,20 @@ $$\begin{align}
 I can't be bothered. This homework is way too much work for literally nothing.
 
 
+<div style="page-break-before: always;"></div>*PDF next page*
 
-
-
-
-
-
-
-
-
----
 ## Question 7.4
 > A plane-polarized electromagnetic wave of frequency $\omega$ in free space is normally incident on the flat surface of a nonpermeable medium of conductivity $\sigma$ and dielectric constant $\epsilon$.
 
 
+<div style="page-break-before: always;"></div>*PDF next page*
 
-
-
-
----
 ### Question 7.4.A
 > Calculate the amplitude and phase of the reflected wave relative to the incident wave for arbitrary $\sigma$ and $\epsilon$.
 
 
+<div style="page-break-before: always;"></div>*PDF next page*
 
-
-
-
----
 ### Question 7.4.B
 > Discuss the limiting cases of a very poor and a very good conductor, and show that for a good conductor the reflection coefficient (ratio of reflected to incident intensity) is approximately:
 > $$\begin{align}
@@ -303,11 +305,8 @@ R&\simeq1-2\dfrac{\omega}{c}\delta
 > where $\delta$ is the skin depth.
 
 
+<div style="page-break-before: always;"></div>*PDF next page*
 
-
-
-
----
 ## Question 7.6
 > A plane wave of frequency $\omega$ is normally incident from vacuum on a semi-infinite slab of material with a *complex* index of refraction $n(\omega)$, where $n^2(\omega)=\epsilon(\omega)/\epsilon_0$.
 
@@ -323,43 +322,22 @@ T&=\dfrac{4\Re\left(n(\omega)\right)}{|1+n(\omega)|^2}
 \end{align}$$
 
 
+<div style="page-break-before: always;"></div>*PDF next page*
 
-
-
-
-
-
----
 ### Question 7.6.B
 > Evaluate $\Re\left[\tfrac{i\omega}{2}(\vec{E}\cdot\vec{D}^*-\vec{B}\cdot\vec{H}^*)\right]$ as a function of $(x,y,z)$. Show that this rate of change of energy per unit volume accounts for the relative transmitted power $T$.
 
 
+<div style="page-break-before: always;"></div>*PDF next page*
 
-
-
-
-
-
-
-
-
-
-
----
 ### Question 7.6.C
-> For a conductor, with $n^2=1+i(\sigma/\omega\epsilon_0)$, $\sigma\in\mathbb{R}$, write out the results of [[#Question 7.6.A]] and [[#Question 7.6.B]] in the limit $\epsilon_0\omega\ll\sigma$. Express your answer in terms of $\delta$ as much as possible. Calculate $\tfrac{1}{2}\Re\left(\vec{J}^*\cdot\vec{E}\right)$ and compare with the result of [[#Question 7.6.B]]. Do both enter the complex form of Poynting's theorem?
+> For a conductor, with $n^2=1+i(\sigma/\omega\epsilon_0)$, $\sigma\in\mathbb{R}$, write out the results of [[#Question 7.6.A|part a]] and [[#Question 7.6.B|part b]] in the limit $\epsilon_0\omega\ll\sigma$. Express your answer in terms of $\delta$ as much as possible. Calculate $\tfrac{1}{2}\Re\left(\vec{J}^*\cdot\vec{E}\right)$ and compare with the result of [[#Question 7.6.B|part b]]. Do both enter the complex form of Poynting's theorem?
 
 
+<div style="page-break-before: always;"></div>*PDF next page*
 
-
-
-
----
 ## Question 7.12
 > The time dependence of the electrical disturbances in good conductors is governed by the frequency-dependent conductivity (7.58). Consider longitudinal electric fields in a conductor, using Ohm's law, the continuity equation, and the differential form of Coulomb's law.
-
-
-
 
 ---
 ### Question 7.12.A
@@ -369,8 +347,7 @@ T&=\dfrac{4\Re\left(n(\omega)\right)}{|1+n(\omega)|^2}
 \end{align}$$
 
 
+<div style="page-break-before: always;"></div>*PDF next page*
 
----
 ### Question 7.12.B
-> Using the representation $\sigma(\omega)=\sigma_0/(1-i\omega\tau)$, where $\sigma_0=\epsilon_0\omega_p^2\tau$ and $\tau$ is a damping time, show that in the approximation $\omega_p\tau\gg1$ any disturbance will oscillate with the plasma frequency and decay in amplitude with decay constant $\lambda=1/2\tau$. Note that if you use $\sigma(\omega)\simeq\sigma(0)=\sigma_0$ in [[#Question 7.12.A]], you will find no oscillations and extremely rapid damping with the (wrong) decay constant $\lambda_w=\sigma_0/\epsilon_0$.
-
+> Using the representation $\sigma(\omega)=\sigma_0/(1-i\omega\tau)$, where $\sigma_0=\epsilon_0\omega_p^2\tau$ and $\tau$ is a damping time, show that in the approximation $\omega_p\tau\gg1$ any disturbance will oscillate with the plasma frequency and decay in amplitude with decay constant $\lambda=1/2\tau$. Note that if you use $\sigma(\omega)\simeq\sigma(0)=\sigma_0$ in [[#Question 7.12.A|part a]], you will find no oscillations and extremely rapid damping with the (wrong) decay constant $\lambda_w=\sigma_0/\epsilon_0$.

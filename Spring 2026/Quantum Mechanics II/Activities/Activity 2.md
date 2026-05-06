@@ -22,7 +22,9 @@ $$\begin{align}
 &=e^{-i\vec{J}\cdot\vec{n}\ \phi/\hbar}\\
 \Aboxed{\Theta\ \mathcal{D}(R)\ \Theta^{-1}&=\mathcal{D}(R)}
 \end{align}$$
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 2
 > The momentum wave function of state $\ket\alpha$ is $\phi\left(\vec{p}'\right)=\braket{\vec{p}'|\alpha}$. What is the momentum-space wave function of its time-reversed transform $\Theta\ket\alpha$, i.e. $\bra{\vec{p}'}\Theta\ket{\alpha}$? Hint: start with the expansion of $\ket\alpha$ in momentum eigenkets and exploit what you know about $\Theta\ket{\vec{p}'}$.
 

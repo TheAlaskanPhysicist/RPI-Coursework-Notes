@@ -26,7 +26,9 @@ $$\begin{align}
 \rho(\vec{r})&=\dfrac{Q}{2\pi z}\dfrac{\delta(r-b)}{r}=\dfrac{\lambda}{z}\delta(r-b)
 \end{align}$$
 I'm going to guess it was asking for the $z$ length, and is boxed above.
-<div style="page-break-before: always;"></div>
+
+
+<div style="page-break-before: always;"></div>*PDF next page*
 
 ### Question 1.3.C
 > In cylindrical coordinates, a charge $Q$ spread uniformly over a flat, circular, disc of negligible thickness and radius $R$.
@@ -37,20 +39,21 @@ Since this is the limit of an infinitely-thin charge, there is no factor of 2.
 
 ---
 ### Question 1.3.D
-The same as [[#Question 1.3.C]], but using spherical coordinates.
+The same as [[#Question 1.3.C|part c]], but using spherical coordinates.
 $$\begin{align}
 \Aboxed{\rho(\vec{r})&=\dfrac{Q}{\pi R^2}\dfrac{\delta(\cos\theta)}{r},\ 0\le r\le R}
 \end{align}$$
 Our spherical encoding enforces that the disk is infinitesimally thick.
 
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ## Question 1.5
 > The time-averaged potential of a neutral hydrogen atom is given by:
 > $$\begin{align}
 \Phi\equiv\dfrac{q}{4\pi\epsilon_0}\dfrac{e^{-\alpha r}}{r}\left(1+\dfrac{\alpha r}{2}\right)
 \end{align}$$
 > where $q$ is the magnitude of the electric charge, and $\alpha^{-1}=a_0/2$, $a_0$ being the Bohr radius. Find the distribution of charge (both continuous and discrete) that will give this potential and interpret your result physically.
-<div style="page-break-before: always;"></div>
 
 The spherical Laplacian operation is the following (since it is spherically symmetric):
 $$\begin{align}
@@ -76,17 +79,15 @@ $$\begin{align}
 \end{align}$$
 The delta function corresponds to a positive elementary charge (nucleus), and the exponential is a cloud of negative elementary charge that decays exponentially as $r\to\infty$.
 
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ## Question 1.7
 > Two long, cylindrical, capacitors of radii $a_1$ and $a_2$ are parallel and separated by distance $d$, which is large compared with either radius. 
-<div style="page-break-before: always;"></div>
 
+---
 ### Question 1.7.A
-> Show that the capacitance per unit length is given approximately by:
-> $$\begin{align}
-C\simeq\pi\epsilon_0\left(\ln\dfrac{d}{a}\right)^{-1}
-\end{align}$$
-> where $a$ is the geometric mean of the two radii.
+> Show that the capacitance per unit length is given approximately by $C\simeq\pi\epsilon_0\left(\ln\dfrac{d}{a}\right)^{-1}$ where $a$ is the geometric mean of the two radii.
 
 The electric field in the plane between the two cylinders:
 $$\begin{align}
@@ -99,8 +100,7 @@ $$\begin{align}
 Since we're going on a line (for simplicity $y=0$), we can find the potential:
 $$\begin{align}
 E_x(x,0)&=\dfrac{Q}{2\pi\epsilon_0 L}\dfrac{1}{x}-
-\dfrac{Q}{2\pi\epsilon_0 L}\dfrac{1}{x-d}\\
-\dfrac{\partial\Phi}{\partial x}(x,0)&=
+\dfrac{Q}{2\pi\epsilon_0 L}\dfrac{1}{x-d} &\implies&& \dfrac{\partial\Phi}{\partial x}(x,0)&=
 \dfrac{Q}{2\pi\epsilon_0 L}\dfrac{1}{x-d}-\dfrac{Q}{2\pi\epsilon_0 L}\dfrac{1}{x}\\
 \end{align}$$
 Integrate along this line of the differential, and the voltage is:
@@ -118,9 +118,9 @@ From there, it's apparent the capacitance per unit length is:
 $$\begin{align}
 \Aboxed{C&=\pi\epsilon_0\left(\ln\left|\dfrac{d}{a}\right|\right)^{-1}}
 \end{align}$$
-.
 
-.
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 1.7.B
 > Approximately what gauge wire (state diameter in millimeters) would be necessary to make a two-wire transmission like with a capacitance of $1.2\times10^{-11}\mathrm{ F/m}$ if the separation of the wires was...
 
@@ -141,11 +141,13 @@ $$\begin{align}
 \Aboxed{\text{Diameter}(1.5\text{ cm})&\approx3\text{ mm}} & 
 \Aboxed{\text{Diameter}(5.0\text{ cm})&\approx10\text{ mm}}
 \end{align}$$
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ## Question 1.14
 > Consider the electrostatic Green's functions of *Section 1.10* for Dirichlet and Neumann boundary conditions on the surface $S$ bounding the volume $V$. Apply Green's theorem (1.35) with integration variable $\vec{y}$ and $\phi=G(\vec{x},\vec{y})$, $\psi=G(\vec{x}',\vec{y})$, with $\nabla_y^2G(\vec{z},\vec{y})=-4\pi\delta(\vec{y}-\vec{z})$. Find an expression for the difference $\left[G(\vec{x},\vec{x}')-G(\vec{x}',\vec{x})\right]$ in terms of an integral over the boundary $S$.
 
-For reference, 1.35 is the following:
+For reference, equation $1.35$ is the following:
 $$\begin{align}
 \int_V\left(\phi\vec\nabla^2\psi-\psi\vec\nabla^2\phi\right)\ d^3x&=\oint_S\left[\phi\dfrac{\partial\psi}{\partial n}-\psi\dfrac{\partial\phi}{\partial n}\right]\ da
 \end{align}$$
@@ -158,6 +160,7 @@ $$\begin{align}
 &-4\pi\int_V\left(G(\vec{x},\vec{y})\delta(\vec{y}-\vec{x}')-G(\vec{x}',\vec{y})\delta(\vec{y}-\vec{x})\right)\ d^3y=\oint_S\left[G(\vec{x},\vec{y})\dfrac{\partial G(\vec{x}',\vec{y})}{\partial n}-G(\vec{x}',\vec{y})\dfrac{\partial G(\vec{x},\vec{y})}{\partial n}\right]\ da_y\\
 \Aboxed{&\left[G(\vec{x},\vec{x}')-G(\vec{x}',\vec{x})\right]=-\dfrac{1}{4\pi}\oint_S\left[G(\vec{x},\vec{y})\dfrac{\partial G(\vec{x}',\vec{y})}{\partial n}-G(\vec{x}',\vec{y})\dfrac{\partial G(\vec{x},\vec{y})}{\partial n}\right]\ da_y}
 \end{align}$$
+---
 ### Question 1.14.A
 > For Dirichlet boundary conditions on the potential and the associated boundary condition on the Green's function, show that $G_D(\vec{x},\vec{x}')$ must be symmetric in $\vec{x}$ and $\vec{x}'$.
 
@@ -165,12 +168,14 @@ The Green's function for Dirichlet boundary condition is:
 $$\begin{align}
 \Phi(\vec{x})&=\dfrac{1}{4\pi\epsilon_0}\int_V\rho(\vec{x}')G(\vec{x}-\vec{x}')\ d^3x'-\dfrac{1}{4\pi}\oint_{S}\Phi(\vec{x}')\dfrac{\partial G(\vec{x}-\vec{x}')}{\partial n'}\ da'
 \end{align}$$
-The Green's function is $0$ at the surface, so using our equation from [[#Question 1.14]]:
+The Green's function is $0$ at the surface, so using our equation from [[#Question 1.14|above]]:
 $$\begin{align}
 \left[G(\vec{x},\vec{x}')-G(\vec{x}',\vec{x})\right]&=-\dfrac{1}{4\pi}\oint_S\left[0\cdot\dfrac{\partial(0)}{\partial n}-0\cdot\dfrac{\partial (0)}{\partial n}\right]\ da_y=0\\
 \Aboxed{G(\vec{x},\vec{x}')&=G(\vec{x}',\vec{x})}
 \end{align}$$
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 1.14.B
 > For Neumann boundary conditions, use the boundary condition (1.45) for $G_N(\vec{x},\vec{x}')$ to show that $G_N(\vec{x},\vec{x}')$ is **not** symmetric in general, but that $G_N(\vec{x},\vec{x}')-F(\vec{x})$ **is** symmetric in $\vec{x}$ and $\vec{x}'$, where:
 > $$\begin{align}
@@ -181,7 +186,7 @@ Equation 1.45 is the following:
 $$\begin{align}
 \dfrac{\partial G_N}{\partial n'}(\vec{x},\vec{x}')&=-\dfrac{4\pi}{S} &\text{for }\vec{x}'\text{ on }S
 \end{align}$$
-Substituting this into our equation from [[#Question 1.14]]:
+Substituting this into our equation from [[#Question 1.14|above]]:
 $$\begin{align}
 \left[G(\vec{x},\vec{x}')-G(\vec{x}',\vec{x})\right]
 &=-\dfrac{1}{4\pi}\oint_S\left[G(\vec{x},\vec{y})\cdot-\dfrac{4\pi}{S}-G(\vec{x}',\vec{y})\cdot-\dfrac{4\pi}{S}\right]\ da_y\\
@@ -193,7 +198,9 @@ G(\vec{x},\vec{x}')+\dfrac{1}{S}\oint_SG(\vec{x}',\vec{y})\ da_y&=G(\vec{x}',\ve
 \Aboxed{G(\vec{x},\vec{x}')+F(\vec{x}')&=G(\vec{x}',\vec{x})+F(\vec{x})}
 \end{align}$$
 If we swap $\vec{x}\leftrightarrow\vec{x}'$, this relation does hold.
-<div style="page-break-before: always;"></div>
+
+
+<div style="page-break-before: always;"></div>*PDF next page*
 
 ### Question 1.14.C
 > Show that the addition of $F(\vec{x})$ to the Green's function does not affect the potential $\Phi(\vec{x})$. See problem 3.26 for an example of the Neumann Green's function.

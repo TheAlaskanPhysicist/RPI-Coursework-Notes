@@ -36,7 +36,9 @@ Define a new coefficient $A'_{nm}$, and solve for it using the $\rho=b$ boundary
 $$\begin{align}
 \Phi(b,\phi,z)&=\sum_{n=1}^\infty\sum_{m=0}^\infty A'_{nm}J_m\left(\tfrac{n\pi}{L}b\right)\cos(m\phi)\sin\left(\tfrac{n\pi}{L}z\right)
 \end{align}$$
-<div style="page-break-before: always;"></div>
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 
 I saw a neat trick for expressing the potential, since it is effectively the $\operatorname{sign}\left(\cos\phi\right)$ function:
 $$\begin{align}
@@ -70,7 +72,8 @@ Substituting back to find the potential for the inside of the cylinder, we get:
 $$\begin{align}
 \Aboxed{\Phi_\text{inside}(\rho,\phi,z)&=\dfrac{16V}{\pi^2}\sum_{n=1}^\text{odd}\sum_{m=1}^\text{odd}\dfrac{(-1)^{\tfrac{m-1}{2}}}{mn}\dfrac{J_m\left(\tfrac{n\pi}{L}\rho\right)}{J_m\left(\tfrac{n\pi}{L}b\right)}\cos(m\phi)\sin\left(\tfrac{n\pi}{L}z\right)}
 \end{align}$$
-<div style="page-break-before: always;"></div>
+
+<div style="page-break-before: always;"></div>*PDF next page*
 
 ### Question 3.10.B
 > Assuming $L\gg b$, consider the potential at $z=\tfrac{L}{2}$ as a function of $\rho$ and $\phi$, and compare it with the two-dimensional Problem 2.13.
@@ -110,7 +113,9 @@ $$\begin{align}
 &=\dfrac{16V}{\pi^2}\mathrm{Re}\left[\tan^{-1}\left(\dfrac{\rho}{b}e^{i\phi}\right)\cdot\tan^{-1}\left(1\right)\right]\\
 \Aboxed{\lim_{\rho,b\ll L}\Phi_\text{inside}\left(\rho,\phi,\tfrac{L}{2}\right)&=\dfrac{4V}{\pi}\mathrm{Re}\left[\tan^{-1}\left(\dfrac{\rho}{b}e^{i\phi}\right)\right]}
 \end{align}$$
-<div style="page-break-before: always;"></div>
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 
 This is as far as I got, and I required looking up a particular relation to find the real component:
 $$\begin{align}
@@ -146,7 +151,8 @@ This renormalizes the charge density to be:
 $$\begin{align}
 \Aboxed{\rho(\vec{r})&=\dfrac{3Q}{4\pi d^3}\left(\dfrac{d^2}{r^2}-1\right)\dfrac{\delta\left(\cos\theta-1\right)+\delta\left(\cos\theta+1\right)}{2}} & 0\le r<d
 \end{align}$$
-<div style="page-break-before: always;"></div>
+
+<div style="page-break-before: always;"></div>*PDF next page*
 
 ### Question 3.14.A
 > Find the potential everywhere inside the spherical shell as an expansion of Legendre polynomials.
@@ -185,7 +191,9 @@ $$\begin{align}
 &=\dfrac{3Q}{16\pi\epsilon_0d^3}\int_0^d\left(d^2-r'^2\right)\sum_{l=0}^\infty\left[\dfrac{r_<^l}{r_>^{l+1}}-\dfrac{(rr')^l}{b^{2l+1}}\right]P_{l}(\cos\theta)\left[1+(-1)^l\right]\ dr'\\
 \Aboxed{\Phi(\vec{r})&=\dfrac{3Q}{8\pi\epsilon_0d^3}\sum_{l=0}^\text{even}P_{l}(\cos\theta)\int_0^d\left(d^2-r'^2\right)\left[\dfrac{r_<^l}{r_>^{l+1}}-\dfrac{(rr')^l}{b^{2l+1}}\right]\ dr'}
 \end{align}$$
-<div style="page-break-before: always;"></div>
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 
 If $r>d$, the potential becomes:
 $$\begin{align}
@@ -217,6 +225,8 @@ $$\begin{align}
 \end{cases}
 \end{align}$$
 
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 3.14.B
 > Calculate the surface-charge density induced on the shell.
 
@@ -245,7 +255,11 @@ $$\begin{align}
 &=\dfrac{3Q}{4\pi\epsilon_0b}\dfrac{1}{3}\left[\dfrac{b}{r}-1\right]P_{0}(\cos\theta)\\
 \Aboxed{\lim_{d\ll b}\Phi(\vec{r})&=\dfrac{Q}{4\pi\epsilon_0}\left[\dfrac{1}{r}-\dfrac{1}{b}\right]}
 \end{align}$$
-This is exactly what we would expect for the potential of a point charge in the center of a sphere.
+Exactly what we would expect for the potential of a point charge in the center of a sphere.
+
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 
 For the charge density:
 $$\begin{align}
@@ -255,10 +269,11 @@ $$\begin{align}
 &=-\dfrac{3Q}{4\pi b^2}\dfrac{1}{3}\\
 \Aboxed{\lim_{d\ll b}\sigma(\theta,\phi)&=-\dfrac{Q}{4\pi b^2}}
 \end{align}$$
-This is exactly a uniform distribution of conjugate charge $-Q$ over the surface of the sphere.
-<div style="page-break-before: always;"></div>
+Exactly a uniform distribution of conjugate charge $-Q$ over the surface of the sphere.
 
+---
 ## Question 4.1
+---
 ### Question 4.1.A
 > Calculate the multipole moments $q_{lm}$ for figure A.
 
@@ -280,6 +295,10 @@ These conjugated spherical harmonics can be written as:
 $$\begin{align}
 Y_{lm}^*(\theta,\phi)=\sqrt{\dfrac{2l+1}{4\pi}\dfrac{(l-m)!}{(l+m)!}}P^m_l(\cos\theta)e^{-im\phi}
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 All $l,m,\theta$ are equal, and so only the exponential term is unique for each:
 $$\begin{align}
 q_{lm}&=qa^{l}\sqrt{\dfrac{2l+1}{4\pi}\dfrac{(l-m)!}{(l+m)!}}P^m_l(0)\left(e^{-im0}+e^{-im\tfrac{\pi}{2}}-e^{-im\pi}-e^{-im\tfrac{3\pi}{2}}\right)\\
@@ -287,8 +306,6 @@ q_{lm}&=qa^{l}\sqrt{\dfrac{2l+1}{4\pi}\dfrac{(l-m)!}{(l+m)!}}P^m_l(0)\left(e^{-i
 &=qa^{l}\sqrt{\dfrac{2l+1}{4\pi}\dfrac{(l-m)!}{(l+m)!}}P^m_l(0)\left(1-(-1)^m\right)(1-i^m)\\
 \Aboxed{q_{lm}&=2qa^{l}\sqrt{\dfrac{2l+1}{4\pi}\dfrac{(l-m)!}{(l+m)!}}P^m_l(0)(1-i^m),\ m\text{ odd, else }0}
 \end{align}$$
-<div style="page-break-before: always;"></div>
-
 The first 2 non-trivially-zero terms are for $l=1$ and $l=3$:
 $$\begin{align}
 q_{1m}&=2qa^1\sqrt{\dfrac{2\cdot1+1}{4\pi}\dfrac{(1-m)!}{(1+m)!}}P^m_1(0)(1-i^m)\\
@@ -311,13 +328,15 @@ Our density picks out specific $(r,\theta,\phi)$ values when the integral for $q
 $$\begin{align}
 q_{lm}&=\int Y_{lm}^*(\theta,\phi)r^l\rho(\vec{r})\ d^3r
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 Using our charge density, we get 2 different integrals:
 $$\begin{align}
 q_{lm}^1&=+\dfrac{qa^l}{2\pi}\int Y_{lm}^*(\theta,\phi)\left[\delta(\cos\theta-1)+\delta(\cos\theta+1)\right]\sin\theta\ d\theta\ d\phi\\
 q_{lm}^2&=-\dfrac{2q}{4\pi}\int Y_{lm}^*(\theta,\phi)r^l\delta(r)\sin\theta\ dr\ d\theta\ d\phi\\
 \end{align}$$
-<div style="page-break-before: always;"></div>
-
 If we substitute the spherical harmonic equations, we get:
 $$\begin{align}
 q_{lm}^1&=+\dfrac{qa^l}{2\pi}\sqrt{\dfrac{2l+1}{4\pi}\dfrac{(l-m)!}{(l+m)!}}\int P^m_l(\cos\theta)e^{-im\phi}\left[\delta(\cos\theta-1)+\delta(\cos\theta+1)\right]\sin\theta\ d\theta\ d\phi\\
@@ -343,9 +362,11 @@ q_{20}&=qa^2\sqrt{\dfrac{5}{\pi}} & q_{40}&=qa^4\sqrt{\dfrac{9}{\pi}} & q_{60}&=
 \end{align}$$
 All other terms not of this form are $0$ (such as $q_{00},q_{1,-1},q_{1,0},q_{1,+1},\dots)$
 
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 4.1.C
-> For the charge distribution of [[#Question 4.1.B]], write down the multipole expansion for the potential. Keeping only the lowest-order term in the expansion, plot the potential in the $xy$-plane as a function of the distance from the origin for distances greater than $a$.
+> For the charge distribution of [[#Question 4.1.B|part b]], write down the multipole expansion for the potential. Keeping only the lowest-order term in the expansion, plot the potential in the $xy$-plane as a function of the distance from the origin for distances greater than $a$.
 
 Start with the general case for multipole expansion:
 $$\begin{align}
@@ -372,12 +393,14 @@ $$\begin{align}
 \Aboxed{\lim_{a/r\to0}\Phi(r,\tfrac{\pi}{2},\phi)&\simeq-\dfrac{q}{4\pi\epsilon_0a}\left(\dfrac{a}{r}\right)^{3}}
 \end{align}$$
 We can then plot this graph with respect to $r/a$ normalized distance and unit height as:
-![[Homework 3.4.1.C.png]]
+![[Homework 3.4.1.C.png|200]]
 Since this is our potential at $r>a$, the graph is over the domain $1<\tfrac{r}{a}<\infty$.
-<div style="page-break-before: always;"></div>
+
+
+<div style="page-break-before: always;"></div>*PDF next page*
 
 ### Question 4.1.D
-> Calculate directly from Coulomb's law the exact potential for [[#Question 4.1.B]] in the $xy$-plane. Plot it as a function of distance and compare with the result found in [[#Question 4.1.C]].
+> Calculate directly from Coulomb's law the exact potential for [[#Question 4.1.B|part b]] in the $xy$-plane. Plot it as a function of distance and compare with the result found in [[#Question 4.1.C|part c]].
 
 The exact potential is really simple since it is just three point charges:
 $$\begin{align}
@@ -389,17 +412,19 @@ $$\begin{align}
 &=-\dfrac{q}{4\pi\epsilon_0a}\left(\dfrac{2}{r/a}-\dfrac{2}{\sqrt{1+(r/a)^2}}\right)
 \end{align}$$
 I've plotted both, where blue is coulomb, and red is our multipole expansion:
-![[Homework 3.4.1.D.png]]
+![[Homework 3.4.1.D.png|600]]
 They look to have very similar asymptotic behavior, but are different near $r=a$.
 
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ## Question 4.7
 > A localized distribution of charge has a charge density:
 > $$\begin{align}
 \rho(\vec{r})&=\dfrac{1}{64\pi}r^2e^{-r}\sin^2\theta
 \end{align}$$
-<div style="page-break-before: always;"></div>
 
+---
 ### Question 4.7.A
 > Make a multipole expansion of the potential due to this charge density and determine all the non-vanishing multipole moments. Write down the potential at large distances as a finite expansions in Legendre polynomials.
 
@@ -418,6 +443,10 @@ We need an expression to reduce the polar integral. Looking at the table:
 $$\begin{align}
 \sin^2\theta&=\dfrac{2}{3}P_0^0(\cos\theta)-\dfrac{2}{3}P_2^0(\cos\theta)\\
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 Substituting, we get that:
 $$\begin{align}
 q_{lm}&=\dfrac{\Gamma(l+5)}{32}\sqrt{\dfrac{2l+1}{4\pi}}\delta_{0m}\int_0^\pi P^0_l(\cos\theta)\left[\dfrac{2}{3}P_0^0(\cos\theta)-\dfrac{2}{3}P_2^0(\cos\theta)\right]\sin\theta\ d\theta\\
@@ -443,7 +472,9 @@ Lastly, we know these Legendre polynomials, so the final potential takes the for
 $$\begin{align}
 \Aboxed{\Phi(\vec{r})&=\dfrac{1}{4\pi\epsilon_0}\left[\dfrac{1}{r}+\dfrac{3-9\cos^2\theta}{r^3}\right]=\dfrac{1}{4\pi\epsilon_0}\left[\dfrac{P^0_0(\cos\theta)}{r}-6\dfrac{P^0_2(\cos\theta)}{r^3}\right]}
 \end{align}$$
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 4.7.B
 > Determine the potential explicitly, and show that near the origin, correct to $r^2$ inclusive:
 > $$\begin{align}
@@ -482,6 +513,10 @@ $$\begin{align}
 &=\dfrac{1}{128\pi\epsilon_0}\dfrac{4}{3}P_0(\cos\theta)\left[\dfrac{1}{r}\int_0^rr'^{4}e^{-r'} dr'+\int_r^\infty r'^{3}e^{-r'}dr'\right]
 \\&-\dfrac{4}{15}\dfrac{1}{128\pi\epsilon_0}P_2(\cos\theta)\left[\dfrac{1}{r^3}\int_0^rr'^{6}e^{-r'} dr'+r^2\int_r^\infty r'e^{-r'}dr'\right]
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 We are going to need the finite integral equation (from integration by parts):
 $$\begin{align}
 \int_0^a r^k e^{-r}\ dr&=k!-e^{-a}\sum_{n=0}^k\dfrac{k!}{n!}a^n & \int_a^\infty r^k e^{-r}\ dr&=e^{-a}\sum_{n=0}^k\dfrac{k!}{n!}a^n
@@ -504,8 +539,6 @@ $$\begin{align}
 &=\dfrac{1}{96\pi\epsilon_0}\left[\dfrac{24}{r}-e^{-r}\left(\dfrac{24}{r}+18+6r+r^2\right)\right]
 \\&-\dfrac{1}{480\pi\epsilon_0}P_2(\cos\theta)\left[\dfrac{720}{r^3}-e^{-r}\left(\dfrac{720}{r^3}+\dfrac{720}{r^2}+\dfrac{360}{r}+120+30r+5r^2\right)\right]
 \end{align}$$
-<div style="page-break-before: always;"></div>
-
 We can factor out a $4\pi\epsilon_0$ to put it in a form more like the above:
 $$\begin{align}
 \Phi(\vec{r})
@@ -523,7 +556,9 @@ $$\begin{align}
 \end{align}$$
 Exactly as we expected.
 
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 4.7.C
 > If there exists, at the origin, a nucleus with a quadrupole moment $Q=10^{-28}\mathrm{m}^2$, determine the exact magnitude of the interaction energy, assuming that the unit of charge in $\rho(\vec{r})$ above is the electronic charge and the unit of length is the Bohr radius $a_0=4\pi\epsilon_0\hbar^2/me^2=0.529\times10^{-10}\mathrm{m}$. Express your answer as a frequency by dividing by Planck's constant $h$.
 
@@ -533,8 +568,6 @@ The potential around the origin in our system here is:
 $$\begin{align}
 \Phi(\vec{r})&\simeq-\dfrac{e}{4\pi\epsilon_0a_0}\left[\dfrac{1}{4}-\dfrac{(r/a_0)^2}{120}P_2(\cos\theta)\right]
 \end{align}$$
-<div style="page-break-before: always;"></div>
-
 We can calculate the work:
 $$\begin{align}
 W&=\int\rho\Phi\ d^3r\\

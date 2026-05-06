@@ -35,6 +35,10 @@ Since our density of states is independent of $\theta,\phi$, we can write the ra
 $$\begin{align}
 \dfrac{d\rho(E)}{d\Omega}&=\dfrac{2^{5/2}\pi}{4\pi}\dfrac{L^3m^{3/2}}{h^3}E^{1/2}
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 Therefore, we have the following density of states:
 $$\begin{align}
 \Aboxed{\rho(E)&=2^{5/2}\pi\dfrac{L^3m^{3/2}}{h^3}E^{1/2}}
@@ -65,25 +69,16 @@ $$\begin{align}
 \end{align}$$
 > To be more precise, the product vanishes faster than $\sim 1/r^2$ as $r\to\infty$.
 
-We can take the gradient of the function product using the chain rule:
-$$\begin{align}
-\vec\nabla\left(f(\vec{x})g(\vec{x})\right)&=g(\vec{x})\vec\nabla f(\vec{x})+f(\vec{x})\vec\nabla g(\vec{x})\\
-\end{align}$$
-Now we can integrate both sides over a volume:
+We can take the gradient of the function product using the chain rule and then integrate both sides over a volume to get that
 $$\begin{align}
 \int\vec\nabla\left(f(\vec{x})g(\vec{x})\right)\ d^3x&=\int g(\vec{x})\vec\nabla f(\vec{x})\ d^3x+\int f(\vec{x})\vec\nabla g(\vec{x})\ d^3x
 \end{align}$$
-On the left side, we can use the Divergence Theorem:
-$$\begin{align}
-\int_\Omega\vec\nabla F\ dV &=\oint_{\partial\Omega}F\ d\vec{S} &\implies&&
-\int_{V}\vec\nabla\left(f(\vec{x})g(\vec{x})\right)\ dV &=\oint_{\partial V}f(\vec{x})g(\vec{x})\ d\vec{S}
-\end{align}$$
-When we take the limit as $r\to\infty$, we find that:
+On the left side, we can use the Divergence Theorem and take the limit as $r\to\infty$ to find
 $$\begin{align}
 \lim_{r\to\infty}\oint_{\partial V}f(\vec{x})g(\vec{x})\ d\vec{S}=\oint_{\partial V}\lim_{r\to\infty} f(\vec{x})g(\vec{x})\ d\vec{S}&=0 &\implies&&
 \int_{V}\vec\nabla\left(f(\vec{x})g(\vec{x})\right)\ dV&=0
 \end{align}$$
-The left side is just zero in our original expression, and so:
+The left side is just zero in our original expression, and so
 $$\begin{align}
 \int g(\vec{x})\vec\nabla f(\vec{x})\ d^3x+\int f(\vec{x})\vec\nabla g(\vec{x})\ d^3x&=0
 \end{align}$$
@@ -91,7 +86,9 @@ We can then rearrange to get the result we would like:
 $$\begin{align}
 \lim_{r\to\infty} && \Aboxed{\int f(\vec{x})\vec\nabla g(\vec{x})\ d^3x&=-\int g(\vec{x})\vec\nabla f(\vec{x})\ d^3x}
 \end{align}$$
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 3
 > Calculate the integral over the whole three-dimensional volume
 > $$\begin{align}
@@ -125,9 +122,5 @@ I&=\dfrac{4\pi}{q}\dfrac{2(Z/a_0)(q)}{|(Z/a_0)+i(q)|^4}\\
 \end{align}$$
 One last thing we can do is emphasize that there is a pole at a certain value of $q$:
 $$\begin{align}
-\Aboxed{I&=\dfrac{8\pi Z/a_0}{|q-iZ/a_0|^4}}
-\end{align}$$
-Or if we want to make it explicit that this integral is real-valued:
-$$\begin{align}
-\Aboxed{I&=8\pi\dfrac{Za_0^3}{|Z^2+q^2a_0^2|^2}}
+\Aboxed{I&=\dfrac{8\pi Z/a_0}{|q-iZ/a_0|^4}=8\pi\dfrac{Za_0^3}{|Z^2+q^2a_0^2|^2}}
 \end{align}$$

@@ -7,7 +7,9 @@
 
 ![[Homework 2.2.1.png]]
 **Pictured:** The induced charge on the plane can be represented as a ghost charge equidistant to the plane on the other side, of opposite charge, because the electric field must be perpendicular to a conducting surface (at equilibrium).
-<div style="page-break-before: always;"></div>
+
+
+<div style="page-break-before: always;"></div>*PDF next page*
 
 ### Question 2.1.A
 > The surface-charge density induced on the plane, and plot it;
@@ -37,6 +39,10 @@ $$\begin{align}
 \end{align}$$
 Where $r$ is the radial distance from the origin within the plane $z=0$.
 
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 ![[Homework 2.2.1.A.png]]
 **Pictured:** A graph of the surface charge on the conductor with respect to a **normalized radius** $r/d$ from the origin, and without loss of generality, scale factor $\tfrac{q}{2\pi d^2}=1$.
 
@@ -54,14 +60,17 @@ $$\begin{align}
 \Aboxed{\left|\vec{F}\right|&=\dfrac{1}{16\pi\epsilon_0}\dfrac{q^2}{d^2}}
 \end{align}$$
 Where the superscript on force is the object feeling this force.
-<div style="page-break-before: always;"></div>
+
+
+<div style="page-break-before: always;"></div>*PDF next page*
 
 ### Question 2.1.C
 > The total force acting on the plane by integrating $\sigma^2/2\epsilon_0$ over the whole plane;
-$$\begin{align}
+> $$\begin{align}
 \left|\vec{F}\right|&=\int\dfrac{\sigma^2}{2\epsilon_0}da
 \end{align}$$
-We can use our charge distribution from [[#Question 2.1.A]], and split the integral in components:
+
+We can use our charge distribution from [[#Question 2.1.A|part a]], and split the integral in components:
 $$\begin{align}
 \left|\vec{F}\right|&=\dfrac{1}{2\epsilon_0}\left(\dfrac{qd}{2\pi}\right)^2\int_0^\infty\dfrac{1}{\left(r^2+d^2\right)^{3}}\ r\ dr\int_0^{2\pi}d\phi
 \end{align}$$
@@ -90,7 +99,9 @@ W&=-\int^{\infty}_d\vec{F}^\text{charge}_z(z)\ dz=-\dfrac{q^2}{16\pi\epsilon_0}\
 &=-\dfrac{q^2}{16\pi\epsilon_0}\left.\dfrac{1}{z}\right|^{\infty}_d=\dfrac{q^2}{16\pi\epsilon_0}\dfrac{1}{d}\\
 \Aboxed{W&=\dfrac{1}{16\pi\epsilon_0}\dfrac{q^2}{d}}
 \end{align}$$
-.
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 2.1.E
 > The potential energy between the charge $q$ and its image (compare to part D and discuss);
 
@@ -110,11 +121,16 @@ $$\begin{align}
 W&=\dfrac{1}{16\pi\epsilon_0}\dfrac{q^2}{d}=\dfrac{1}{16\pi\left(55.263\text{ e}^2\cdot\text{eV}^{-1}\cdot\mu\text{m}^{-1}\right)}\dfrac{\text{e}^2}{10^{-4}\mu\text{m}}\\
 \Aboxed{W&=3.600\text{ eV}}
 \end{align}$$
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ## Question 2.7
 > Consider a potential problem in the half-space defined by $z\ge0$, with (homogenous) Dirichlet boundary conditions on the plane $z=0$ (and at infinity).
-![[Homework 2.2.7.png]]
 
+![[Homework 2.2.7.png]]
+**Pictured:** My visualization of the problem system.
+
+---
 ### Question 2.7.A
 > Write down an appropriate Green's function $G(\vec{x},\vec{x}')$.
 
@@ -130,7 +146,9 @@ G(\vec{r},\vec{r}')&=\dfrac{1}{(\rho^2+\rho'^2-2\rho\rho'\cos(\phi-\phi')+(z-z')
 \end{align}$$
 Where the difference $\vec{x}-\vec{x}'$ uses the law of cosines of the angle between them in the $xy$-plane.
 
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 2.7.B
 > If the potential on the plane $z=0$ is specified to be $\Phi=V$ inside a circle of radius $a$ centered at the origin, and $\Phi=0$ outside that circle, find an integral expression for the potential at a point $P$ specified in cylindrical coordinates $(\rho,\phi,z)$.
 
@@ -142,12 +160,10 @@ The normal of the surface at the $xy$-plane points outward, in the $-\hat{z}$ di
 $$\begin{align}
 \Phi(\rho,\phi,z)&=+\dfrac{1}{4\pi}\oint_{\partial\Omega}\Phi(\rho',\phi',0)\left.\dfrac{\partial G(\vec{x},\vec{x}')}{\partial z'}\right|_{z'=0}\ dS'
 \end{align}$$
-From [[#Question 2.7.A]], we know the Green's function takes the form of:
+From [[#Question 2.7.A|part a]], we know the Green's function takes the form of:
 $$\begin{align}
 G(\vec{x},\vec{x}')&=\dfrac{1}{(\dots+(z-z')^2)^{1/2}}-\dfrac{1}{(\dots+(z+z')^2)^{1/2}}
 \end{align}$$
-<div style="page-break-before: always;"></div>
-
 Differentiating with represent to $z'$ in the $z'\rightarrow0$ limit, we get:
 $$\begin{align}
 \left.\dfrac{\partial G(\vec{x},\vec{x}')}{\partial z'}\right|_{z'=0}
@@ -163,14 +179,16 @@ Since $\cos(\phi-\phi')$ goes over its whole cycle, and is an even function, we 
 $$\begin{align}
 \Aboxed{\Phi(\rho,\phi,z)&=\dfrac{Vz}{2\pi}\int_0^{2\pi}\int_0^a\dfrac{\rho'\ d\rho'\ d\phi'}{(\rho^2+\rho'^2-2\rho\rho'\cos(\phi')+z^2)^{3/2}}}
 \end{align}$$
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 2.7.C
 > Show that, along the axis of the circle ($\rho=0$), the potential is given by:
 > $$\begin{align}
 \Phi&=V\left(1-\dfrac{z}{\sqrt{a^2+z^2}}\right)
 \end{align}$$
 
-Using our equation from [[#Question 2.7.B]], using $\rho=0$, and separating integrals, we get:
+Using our equation from [[#Question 2.7.B|part b]], using $\rho=0$, and separating integrals, we get:
 $$\begin{align}
 \Phi(0,\phi,z)&=\dfrac{Vz}{2\pi}\int_0^a\dfrac{\rho'}{(\rho'^2+z^2)^{3/2}}\ d\rho'\int_0^{2\pi} d\phi'
 \end{align}$$
@@ -180,7 +198,8 @@ $$\begin{align}
 &=\dfrac{Vz}{2}\left.\dfrac{-2}{\sqrt{u}}\right|_{z^2}^{a^2+z^2}=Vz\left(\dfrac{1}{\sqrt{z^2}}-\dfrac{1}{\sqrt{a^2+z^2}}\right)\\
 \Aboxed{\Phi(0,\phi,z)&=V\left(1-\dfrac{z}{\sqrt{a^2+z^2}}\right)}
 \end{align}$$
-<div style="page-break-before: always;"></div>
+
+<div style="page-break-before: always;"></div>*PDF next page*
 
 ### Question 2.7.D
 > Show that at large distances $\rho^2+z^2\gg a^2$, the potential can be expanded in a power series in $(\rho^2+z^2)^{-1}$, and that the leading terms are:
@@ -213,7 +232,9 @@ $$\begin{align}
 &=-\dfrac{3Vz}{4\pi}\dfrac{1}{(\rho^2+z^2)^{5/2}}\left(\left.\dfrac{\rho'^4}{4}\right|_0^a\cdot2\pi-2\rho\left.\dfrac{\rho'^3}{3}\right|_0^a\cdot-\left.\sin(\phi')\right|_0^{2\pi}\right)\\
 \Phi^{(1)}(\rho,\phi,z)&=-\dfrac{3Vz}{2}\dfrac{1}{(\rho^2+z^2)^{5/2}}\dfrac{a^4}{4}=\dfrac{Va^2}{2}\dfrac{z}{(\rho^2+z^2)^{3/2}}\left(-\dfrac{3a^2}{4(\rho^2+z^2)}\right)
 \end{align}$$
-<div style="page-break-before: always;"></div>
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 
 The 2nd order term:
 $$\begin{align}
@@ -239,7 +260,9 @@ $$\begin{align}
 ---
 ## Question 3.1
 > Two concentric spheres have radii $a,b$ $(b>a)$ and each is divided into two hemispheres by the same horizontal plane. The upper hemisphere of the inner sphere and the lower hemisphere of the outer sphere are maintained at potential $V$. The other hemispheres are at zero potential.
-<div style="page-break-before: always;"></div>
+
+
+<div style="page-break-before: always;"></div>*PDF next page*
 
 ### Question 3.1.A
 > Determine the potential in the region $a\le r\le b$ as a series of Legendre polynomials. Include terms at least up to $l=4$.
@@ -274,8 +297,6 @@ For the region $r\in[a,b]$, we expect the general solution to be of the form:
 $$\begin{align}
 \Phi(r,\theta)&=\sum_{l=0}^\infty\left(A_lr^l+B_lr^{-l-1}\right)P_l(\cos\theta)
 \end{align}$$
-<div style="page-break-before: always;"></div>
-
 Equating terms on the two surfaces, this becomes a system of equations we can invert:
 $$\begin{align}
 \begin{bmatrix}a^l&a^{-l-1}\\b^l&b^{-l-1}\end{bmatrix}\begin{bmatrix}A_l\\B_l\end{bmatrix}&=c_l^{r=a}\begin{bmatrix}1\\(-1)^l\end{bmatrix} &\implies&&
@@ -311,7 +332,8 @@ $$\begin{align}
 \Phi(r,\theta)&\approx\dfrac{V}{2}+\dfrac{V}{2}\left[\dfrac{3}{2}\dfrac{a^{2}+b^{2}}{a^{3}-b^{3}}r-\dfrac{3}{2}\dfrac{a^{2}b^{3}\\+a^{3}b^{2}}{a^{3}-b^{3}}r^{-2}\right]\cos\theta\\
 &+\dfrac{V}{2}\left[-\dfrac{7}{16}\dfrac{a^{4}+b^{4}}{a^{7}-b^{7}}r^3+\dfrac{7}{16}\dfrac{a^{4}b^{7}+a^{7}b^{4}}{a^{7}-b^{7}}r^{-4}\right]\left(5\cos^3\theta-3\cos\theta\right)+\dots
 \end{align}$$
-<div style="page-break-before: always;"></div>
+
+<div style="page-break-before: always;"></div>*PDF next page*
 
 ### Question 3.2.B
 > Check your solution against the know results in the limiting cases $b\rightarrow\infty$ and $a\rightarrow 0$.
@@ -378,7 +400,9 @@ $$\begin{align}
 \int_0^\pi\sigma P_{l}(\cos\theta)\sin\theta\ d\theta\\
  A_l&=\dfrac{1}{2\epsilon_0}R^{1-l}\int_0^\pi\sigma P_{l}(\cos\theta)\sin\theta\ d\theta
 \end{align}$$
-<div style="page-break-before: always;"></div>
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 
 We can substitute our charge distribution and reduce it to a simpler expression:
 $$\begin{align}
@@ -394,7 +418,9 @@ $$\begin{align}
 \Aboxed{\Phi_\text{in}(r,\theta,\phi)&=\dfrac{Q}{8\pi\epsilon_0}\sum_{l=0}^\infty\dfrac{1}{2l+1}\dfrac{r^l}{R^{l+1}}\left(P_{l+1}(\cos\alpha)-P_{l-1}(\cos\alpha)\right)P_l(\cos\theta)}\\
 \Aboxed{\Phi_\text{out}(r,\theta,\phi)&=\dfrac{Q}{8\pi\epsilon_0}\sum_{l=0}^\infty\dfrac{1}{2l+1}\dfrac{R^{l}}{r^{l+1}}\left(P_{l+1}(\cos\alpha)-P_{l-1}(\cos\alpha)\right)P_l(\cos\theta)}
 \end{align}$$
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 3.2.B
 > Find the magnitude and the direction of the electric field at the origin.
 
@@ -410,8 +436,6 @@ And the polar derivative is:
 $$\begin{align}
 \dfrac{\partial\Phi_\text{in}}{\partial\theta}&=\dfrac{Q}{8\pi\epsilon_0}\sum_{l=1}^\infty\dfrac{1}{2l+1}\dfrac{r^{l}}{R^{l+1}}\left(P_{l+1}(\cos\alpha)-P_{l-1}(\cos\alpha)\right)\dfrac{dP_l(\cos\theta)}{d\theta}
 \end{align}$$
-<div style="page-break-before: always;"></div>
-
 I had to go find the the following online, but I assume it comes from the recursion relation:
 $$\begin{align}
 \dfrac{dP_l(\cos\theta)}{d\theta}&=\dfrac{l\cos\theta P_l(\cos\theta)-l P_{l-1}(\cos\theta)}{\sin\theta}
@@ -427,15 +451,17 @@ $$\begin{align}
 &=\dfrac{Q}{16\pi\epsilon_0R^{2}}\sin^2\alpha\left(\cos\theta\ \hat{r}-\sin\theta\ \hat{\theta}\right)\\
 \Aboxed{\vec{E}(r=0)&=\dfrac{Q\sin^2\alpha}{16\pi\epsilon_0R^{2}}\hat{z}}
 \end{align}$$
----
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
 ### Question 3.2.C
 > Discuss the limiting forms of the potential (part A) and the electric field (part B)...
+
 $$\begin{align}
 \Phi_\text{in}(r,\theta,\phi)&=\dfrac{Q}{8\pi\epsilon_0}\sum_{l=0}^\infty\dfrac{1}{2l+1}\dfrac{r^l}{R^{l+1}}\left(P_{l+1}(\cos\alpha)-P_{l-1}(\cos\alpha)\right)P_l(\cos\theta)\\
 \vec{E}(r=0)&=\dfrac{Q\sin^2\alpha}{16\pi\epsilon_0R^{2}}\hat{z}
 \end{align}$$
-<div style="page-break-before: always;"></div>
-
+---
 #### Question 3.2.C.I
 > As the spherical cap becomes very small ($\alpha\ll1$);
 
@@ -459,6 +485,10 @@ I was looking at the Wikipedia for Legendre Polynomials and the 2nd term almost 
 $$\begin{align}
 -\dfrac{Q\alpha^2}{16\pi\epsilon_0 R}\sum_{l=0}^\infty\left(\dfrac{r}{R}\right)^{l}P_l(\cos\theta)&=-\dfrac{Q\alpha^2}{16\pi\epsilon_0}\dfrac{1}{\sqrt{r^2+R^2-2rR\cos\theta}}
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 This looks like the magnitude of the difference of $\vec{r}$ and $R\hat{z}$, because of the $\cos\theta$:
 $$\begin{align}
 \lim_{\alpha\ll1}\Phi_\text{in}(r,\theta,\phi)&=\dfrac{Q}{8\pi\epsilon_0R}\left(2-\dfrac{\alpha^2}{2}\right)P_0(\cos\theta)+\dfrac{Q}{8\pi\epsilon_0}\sum_{l=1}^\infty\dfrac{1}{2l+1}\dfrac{r^l}{R^{l+1}}\left(-\dfrac{\alpha^2}{2}\left(2l+1\right)\right)P_l(\cos\theta)\\
@@ -490,6 +520,10 @@ $$\begin{align}
 &=\dfrac{Q}{8\pi\epsilon_0}\sum_{l=0}^\infty\dfrac{1}{2l+1}\dfrac{r^l}{R^{l+1}}\dfrac{\beta^2}{2}\left(2l+1\right)(-1)^lP_l(\cos\theta)\\
 &=\dfrac{Q\beta^2}{16\pi\epsilon_0}\sum_{l=0}^\infty\dfrac{r^l}{R^{l+1}}P_l(-\cos\theta)
 \end{align}$$
+
+<div style="page-break-before: always;"></div>*PDF next page*
+
+
 This almost has the same structure as the other limit, but with the point at $-R\hat{z}$:
 $$\begin{align}
 \Aboxed{\lim_{\pi-\alpha\ll1}\Phi_\text{in}(r,\theta,\phi)&=\dfrac{Q\alpha^2}{16\pi\epsilon_0}\dfrac{1}{|\vec{r}+R\hat{z}|}}
