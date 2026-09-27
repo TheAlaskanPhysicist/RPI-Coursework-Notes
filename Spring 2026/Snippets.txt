@@ -2,231 +2,351 @@
 	// Math Mode
 	{trigger: "mk", replacement: "$$0$", options: "tA"},
 	{trigger: "dm", replacement: "$$$0$$", options: "tAw"},
-	// {trigger: "beg", replacement: "\\begin{$0}\n$1\n\\end{$0}", options: "mA"},
+
 
 
 	// **************************************************
-	//                                     FONTS
+	//                 CHARACTER HOTKEYS
 	// **************************************************
-	// "@" : Greek, "#A" Blackboard, "#a" Calligraphy, ":" Misc
+	// SUMMARY:
+	// @([A-Za-z])    : Greek Characters
+	// #([A-Za-z0-9]) : Blackboard Bold Font
+	// ;([A-Z])       : Calligraphic Font
+	// !([A-Za-z])    : Fraktur Font
+	// &([A-Za-z])    : Script Font
+	// NOTE: Using ":" by itself or after a hotkey gives the variation of that character/font
 
-	// Greek Letters [Lower Case]
-	{trigger: "@a", replacement: "\\alpha", options: "mA"}, 
-	{trigger: "@b", replacement: "\\beta", options: "mA"}, 
-	{trigger: "@c", replacement: "\\chi", options: "mA"}, 
-	{trigger: "@d", replacement: "\\delta", options: "mA"}, 
-	{trigger: "@e", replacement: "\\epsilon", options: "mA"}, 
-	{trigger: "@f", replacement: "\\phi", options: "mA"}, 
-	{trigger: "@g", replacement: "\\gamma", options: "mA"}, 
-	{trigger: "@h", replacement: "\\eta", options: "mA"}, 
-	{trigger: "@i", replacement: "\\iota", options: "mA"}, 
-	{trigger: "@j", replacement: "\\iota", options: "mA"}, 
-	{trigger: "@k", replacement: "\\kappa", options: "mA"}, 
-	{trigger: "@l", replacement: "\\lambda", options: "mA"}, 
-	{trigger: "@m", replacement: "\\mu", options: "mA"}, 
-	{trigger: "@n", replacement: "\\nu", options: "mA"}, 
-	{trigger: "@o", replacement: "\\omega", options: "mA"}, 
-	{trigger: "@p", replacement: "\\pi", options: "mA"}, 
-	{trigger: "@r", replacement: "\\rho", options: "mA"}, 
-	{trigger: "@s", replacement: "\\sigma", options: "mA"}, 
-	{trigger: "@t", replacement: "\\theta", options: "mA"}, 
-	{trigger: "@u", replacement: "\\upsilon", options: "mA"}, 
-	{trigger: "@x", replacement: "\\xi", options: "mA"}, 
-	{trigger: "@y", replacement: "\\psi", options: "mA"}, 
-	{trigger: "@z", replacement: "\\zeta", options: "mA"}, 
+	// Character Fonts
+	{trigger: /#([A-Za-z0-9])/, replacement: "\\mathbb{[[0]]}$0", options: "mA", description: "Blackboard Bold"},
+	{trigger: /;([A-Z])/, replacement: "\\mathcal{[[0]]}$0", options: "mA", description: "Calligraphic"},
+	{trigger: /!([A-Za-z])/, replacement: "\\mathfrak{[[0]]}$0", options: "mA", description: "Fraktur"},
+	{trigger: /&([A-Za-z])/, replacement: "\\mathscr{[[0]]}$0", options: "mA", description: "Script"},
+	
+	// Greek Letters - Lower Case
+	{trigger: "@a",  replacement: "\\alpha", options: "mA"}, 
+	{trigger: "@b",  replacement: "\\beta", options: "mA"}, 
+	{trigger: "@c",  replacement: "\\chi", options: "mA"}, 
+	{trigger: "@d",  replacement: "\\delta", options: "mA"}, 
+	{trigger: "@e",  replacement: "\\epsilon", options: "mA"}, 
+	{trigger: "@f",  replacement: "\\phi", options: "mA"}, 
+	{trigger: "@g",  replacement: "\\gamma", options: "mA"}, 
+	{trigger: "@h",  replacement: "\\eta", options: "mA"}, 
+	{trigger: "@i",  replacement: "\\iota", options: "mA"}, 
+	{trigger: "@j",  replacement: "\\iota", options: "mA"}, 
+	{trigger: "@k",  replacement: "\\kappa", options: "mA"}, 
+	{trigger: "@l",  replacement: "\\lambda", options: "mA"}, 
+	{trigger: "@m",  replacement: "\\mu", options: "mA"}, 
+	{trigger: "@n",  replacement: "\\nu", options: "mA"}, 
+	{trigger: "@o",  replacement: "\\omicron", options: "mA"}, 
+	{trigger: "@p",  replacement: "\\pi", options: "mA"}, 
+	{trigger: "@q",  replacement: "\\theta", options: "mA"}, 
+	{trigger: "@r",  replacement: "\\rho", options: "mA"}, 
+	{trigger: "@s",  replacement: "\\sigma", options: "mA"}, 
+	{trigger: "@t",  replacement: "\\tau", options: "mA"}, 
+	{trigger: "@u",  replacement: "\\upsilon", options: "mA"}, 
+	{trigger: "@w",  replacement: "\\omega", options: "mA"}, 
+	{trigger: "@x",  replacement: "\\xi", options: "mA"}, 
+	{trigger: "@y",  replacement: "\\psi", options: "mA"}, 
+	{trigger: "@z",  replacement: "\\zeta", options: "mA"},
 
-	// Greek Letters [Upper Case]
-	{trigger: "@A", replacement: "A", options: "mA"},
-	{trigger: "@B", replacement: "B", options: "mA"},
-	{trigger: "@C", replacement: "X", options: "mA"},
+	// Greek Letters - Upper Case
 	{trigger: "@D", replacement: "\\Delta", options: "mA"},
-	{trigger: "@E", replacement: "E", options: "mA"},
 	{trigger: "@F", replacement: "\\Phi", options: "mA"},
 	{trigger: "@G", replacement: "\\Gamma", options: "mA"},
-	{trigger: "@H", replacement: "\\mathsf{H}", options: "mA"},
-	{trigger: "@I", replacement: "\\mathrm{I}", options: "mA"},
-	{trigger: "@J", replacement: "\\mathrm{I}", options: "mA"},
-	{trigger: "@K", replacement: "\\kappa", options: "mA"},
 	{trigger: "@L", replacement: "\\Lambda", options: "mA"},
-	{trigger: "@M", replacement: "M", options: "mA"},
-	{trigger: "@N", replacement: "N", options: "mA"},
-	{trigger: "@O", replacement: "\\Omega", options: "mA"},
 	{trigger: "@P", replacement: "\\Pi", options: "mA"},
-	{trigger: "@R", replacement: "P", options: "mA"},
+	{trigger: "@Q", replacement: "\\Theta", options: "mA"},
 	{trigger: "@S", replacement: "\\Sigma", options: "mA"},
 	{trigger: "@T", replacement: "\\Theta", options: "mA"},
-	{trigger: "@U", replacement: "Y", options: "mA"},
+	{trigger: "@U", replacement: "\\Upsilon", options: "mA"},
+	{trigger: "@W", replacement: "\\Omega", options: "mA"},
 	{trigger: "@X", replacement: "\\Xi", options: "mA"},
 	{trigger: "@Y", replacement: "\\Psi", options: "mA"},
-	{trigger: "@Z", replacement: "Z", options: "mA"},
 
-	// Blackboard Letters
-	{trigger: /#([A-Z])/, replacement: "\\mathbb{[[0]]}$0", options: "mA", description: "Blackboard Letters"},
-	
-	// Calligraphic Letters
-	{trigger: /#([a-z])/, replacement: "\\mathcal{[[0]]}$0", options: "mA", description: "Calligraphic Letters"},
+	// Greek Letters - Lower Case Variants
+	{trigger: "@:e", replacement: "\\varepsilon", options: "mA", description: "Variant epsilon"},
+	{trigger: "@:f", replacement: "\\varphi", options: "mA", description: "Variant phi"},
+	{trigger: "@:k", replacement: "\\varkappa", options: "mA", description: "Variant kappa"},
+	{trigger: "@:p", replacement: "\\varpi", options: "mA", description: "Variant pi"},
+	{trigger: "@:r", replacement: "\\varrho", options: "mA", description: "Variant rho"},
+	{trigger: "@:s", replacement: "\\varsigma", options: "mA", description: "Variant sigma"},
+	{trigger: "@:t", replacement: "\\vartheta", options: "mA", description: "Variant theta"},
 
-	// Other Symbols
-	{trigger: ":a", replacement: "\\aleph", options: "mA"},
-	{trigger: ":b", replacement: "\\beth", options: "mA"},
-	{trigger: ":c", replacement: "\\gimel", options: "mA"},
-	{trigger: ":d", replacement: "\\daleth", options: "mA"},
-	{trigger: ":e", replacement: "\\varepsilon", options: "mA"},
-	{trigger: ":f", replacement: "\\varphi", options: "mA"},
-	{trigger: ":p", replacement: "\\varpi", options: "mA"},
-	{trigger: ":r", replacement: "\\varrho", options: "mA"},
-	{trigger: ":s", replacement: "\\varsigma", options: "mA"},
-	{trigger: ":t", replacement: "\\vartheta", options: "mA"},
-	{trigger: ":i", replacement: "\\imath", options: "mA"},
-	{trigger: ":j", replacement: "\\jmath", options: "mA"},
-	{trigger: ":l", replacement: "\\ell", options: "mA"},
-	{trigger: ":P", replacement: "\\wp", options: "mA"},
+	// Greek Letters - Upper Case Variants
+	{trigger: "@:D", replacement: "\\varDelta", options: "mA"},
+	{trigger: "@:F", replacement: "\\varPhi", options: "mA"},
+	{trigger: "@:G", replacement: "\\varGamma", options: "mA"},
+	{trigger: "@:L", replacement: "\\varLambda", options: "mA"},
+	{trigger: "@:S", replacement: "\\varSigma", options: "mA"},
+	{trigger: "@:T", replacement: "\\varTheta", options: "mA"},
+	{trigger: "@:U", replacement: "\\varUpsilon", options: "mA"},
+	{trigger: "@:W", replacement: "\\varOmega", options: "mA"},
+	{trigger: "@:X", replacement: "\\varXi", options: "mA"},
+	{trigger: "@:Y", replacement: "\\varPsi", options: "mA"},
+
+	// Hebrew Letters
+	{trigger: ":a", replacement: "\\aleph", options: "mA", description: "Hebrew aleph - cardinal number"},
+	{trigger: ":A", replacement: "\\aleph", options: "mA", description: "Hebrew aleph - cardinal number"},
+	{trigger: ":b", replacement: "\\beth", options: "mA", description: "Hebrew beth - cardinal number"},
+	{trigger: ":B", replacement: "\\beth", options: "mA", description: "Hebrew beth - cardinal number"},
+	{trigger: ":d", replacement: "\\daleth", options: "mA", description: "Hebrew daleth - cardinal number"},
+	{trigger: ":D", replacement: "\\daleth", options: "mA", description: "Hebrew daleth - cardinal number"},
+	{trigger: ":g", replacement: "\\gimel", options: "mA", description: "Hebrew gimel - cardinal number"},
+	{trigger: ":G", replacement: "\\gimel", options: "mA", description: "Hebrew gimel - cardinal number"},
+
+	// Variant Characters - Lower Case
+	// :c
+	{trigger: ":e", replacement: "\\eth", options: "mA", description: "Eth"},
+	// :f
+	{trigger: ":h", replacement: "\\hbar", options: "mA", description: "Reduced Planck constant"},
+	{trigger: "::h", replacement: "\\hslash", options: "mA", description: "Variant reduced Planck constant"},
+	{trigger: ":i", replacement: "\\imath", options: "mA", description: "Dotless i"},
+	{trigger: ":j", replacement: "\\jmath", options: "mA", description: "Dotless j"},
+	// :k
+	{trigger: ":l", replacement: "\\ell", options: "mA", description: "Script l"},
+	{trigger: ":m", replacement: "\\mho", options: "mA", description: "Mho"},
+	{trigger: ":n", replacement: "\\nabla", options: "mA", description: "Nabla"},
+	{trigger: ":o", replacement: "\\partial", options: "mA", description: "Partial derivative"},
+	// :p
+	{trigger: ":q", replacement: "\\digamma", options: "mA", description: "Digamma"},
+	// :r, :s, :t, :u, :v
+	{trigger: ":w", replacement: "\\wp", options: "mA", description: "Weierstrass p"},
+	// :x, :y, :z
+
+	// Variant Characters - Upper Case
+	// :C, :E, :F, :H
+	{trigger: ":I", replacement: "\\Im", options: "mA", description: "Imaginary part"},
+	// :J, :K, :L, :M, :N, :O
+	{trigger: ":P", replacement: "\\varPi", options: "mA"},
+	// :Q
+	{trigger: ":R", replacement: "\\Re", options: "mA", description: "Real part"},
+	// :S, :T, :U, :V, :W, :X, :Y, :Z
+
 
 
 	// **************************************************
-	//                                     FONTS
+	//               TEXT FUNCTION HELPERS
 	// **************************************************
 
 	// Text Fonts
 	{trigger: "\\text", replacement: "\\text{$0}$1", options: "mA", description: "Default Text Font"},
 	{trigger: "\\textrm", replacement: "\\textrm{$0}$1", options: "mA", description: "Roman (Serif) Font"},
-	{trigger: "\\textsf", replacement: "\\textsf{$0}$1", options: "mA", description: "Sans (Serif) Font"},
-	{trigger: "\\texttt", replacement: "\\texttt{$0}$1", options: "mA", description: "Typewritter/Monospace Text"},
+	{trigger: "\\textsf", replacement: "\\textsf{$0}$1", options: "mA", description: "Sans-Serif Font"},
+	{trigger: "\\texttt", replacement: "\\texttt{$0}$1", options: "mA", description: "Typewriter/Monospace Text"},
 	{trigger: "\\textbf", replacement: "\\textbf{$0}$1", options: "mA", description: "Boldface Text"},
 	{trigger: "\\textit", replacement: "\\textit{$0}$1", options: "mA", description: "Italic Text"},
 	{trigger: "\\textsc", replacement: "\\textsc{$0}$1", options: "mA", description: "Small Caps Text"},
 	{trigger: "\\textup", replacement: "\\textup{$0}$1", options: "mA", description: "Upright Text"},
 	{trigger: "\\textsl", replacement: "\\textsl{$0}$1", options: "mA", description: "Slanted Text"},
-	{trigger: "\\textnormal", replacement: "\\textnormal{$0}$1", options: "mA", description: "Default Text Font"},
+	{trigger: "\\textnormal", replacement: "\\textnormal{$0}$1", options: "mA", description: "Normal Text"},
 	{trigger: "\\textmd", replacement: "\\textmd{$0}$1", options: "mA", description: "Medium-Weight Text"},
+	{trigger: "\\emph", replacement: "\\emph{$0}$1", options: "mA", description: "Emphasized Text"},
+	{trigger: "\\textsuperscript", replacement: "\\textsuperscript{$0}$1", options: "mA", description: "Superscript Text"},
+	{trigger: "\\textsubscript", replacement: "\\textsubscript{$0}$1", options: "mA", description: "Subscript Text"},
 
 	// Math Fonts
 	{trigger: "\\mathrm", replacement: "\\mathrm{$0}$1", options: "mA", description: "Roman (Serif) Math"},
-	{trigger: "\\mathsf", replacement: "\\mathsf{$0}$1", options: "mA", description: "Sans (Serif) Math"},
-	{trigger: "\\mathtt", replacement: "\\mathtt{$0}$1", options: "mA", description: "Typewritter/Monospace Math"},
+	{trigger: "\\mathsf", replacement: "\\mathsf{$0}$1", options: "mA", description: "Sans-Serif Math"},
+	{trigger: "\\mathtt", replacement: "\\mathtt{$0}$1", options: "mA", description: "Typewriter/Monospace Math"},
 	{trigger: "\\mathbf", replacement: "\\mathbf{$0}$1", options: "mA", description: "Boldface Math"},
 	{trigger: "\\mathit", replacement: "\\mathit{$0}$1", options: "mA", description: "Italic Math"},
 	{trigger: "\\mathbb", replacement: "\\mathbb{$0}$1", options: "mA", description: "Blackboard Bold Symbols"},
 	{trigger: "\\mathcal", replacement: "\\mathcal{$0}$1", options: "mA", description: "Calligraphic Symbols"},
 	{trigger: "\\mathfrak", replacement: "\\mathfrak{$0}$1", options: "mA", description: "Fraktur Symbols"},
 	{trigger: "\\mathscr", replacement: "\\mathscr{$0}$1", options: "mA", description: "Script Symbols"},
+	{trigger: "\\bold", replacement: "\\boldsymbol{$0}$1", options: "mA", description: "Boldface Math (Extended)"},
 
 
 	// **************************************************
-	//                           SYMBOL DECORATORS
+	//         SYMBOL DECORATOR FUNCTION HELPERS
 	// **************************************************
 
-	// Symbol Decorators
-	{trigger: "\\bold", replacement: "\\boldsymbol{$0}$1", options: "mA", description: "Boldface Math"},
-	{trigger: "\\hat", replacement: "\\hat{$0}$1", options: "mA"},
-	{trigger: "\\vec", replacement: "\\vec{$0}$1", options: "mA"},
-	{trigger: "\\tilde", replacement: "\\tilde{$0}$1", options: "mA"},
-	{trigger: "\\bar", replacement: "\\bar{$0}$1", options: "mA"},
-	{trigger: "\\dot", replacement: "\\dot{$0}$1", options: "mA", priority: -3},
-	{trigger: "\\ddot", replacement: "\\ddot{$0}$1", options: "mA", priority: -2},
-	{trigger: "\\dddot", replacement: "\\dddot{$0}$1", options: "mA", priority: -1},
-	{trigger: "\\ddddot", replacement: "\\ddddot{$0}$1", options: "mA"},
-	{trigger: "\\overline", replacement: "\\overline{$0}$1", options: "mA"},
-	{trigger: "\\underline", replacement: "\\underline{$0}$1", options: "mA"},
-	{trigger: "\\widetilde", replacement: "\\widetilde{$0}$1", options: "mA"},
-	{trigger: "\\widehat", replacement: "\\widehat{$0}$1", options: "mA"},
-	{trigger: "\\overrightarrow", replacement: "\\overrightarrow{$0}$1", options: "mA"},
-	{trigger: "\\overleftarrow", replacement: "\\overleftarrow{$0}$1", options: "mA"},
-	{trigger: "\\overleftrightarrow", replacement: "\\overleftrightarrow{$0}$1", options: "mA"},
-	{trigger: "\\underrightarrow", replacement: "\\underrightarrow{$0}$1", options: "mA"},
-	{trigger: "\\underleftarrow", replacement: "\\underleftarrow{$0}$1", options: "mA"},
-	{trigger: "\\underleftrightarrow", replacement: "\\underleftrightarrow{$0}$1", options: "mA"},
-	{trigger: "\\check", replacement: "\\check{$0}$1", options: "mA"},
-	{trigger: "\\breve", replacement: "\\breve{$0}$1", options: "mA"},
-	{trigger: "\\acute", replacement: "\\acute{$0}$1", options: "mA"},
-	{trigger: "\\grave", replacement: "\\grave{$0}$1", options: "mA"},
-	{trigger: "\\mathring", replacement: "\\mathring{$0}$1", options: "mA"},
-	{trigger: "\\overbrace", replacement: "\\overbrace{$0}^{${1:}}$2", options: "mA"},
-	{trigger: "\\underbrace", replacement: "\\underbrace{$0}_{${1:}}$2", options: "mA"},
-	{trigger: "\\xrightarrow", replacement: "\\xrightarrow{$0}$1", options: "mA"},
-	{trigger: "\\xleftarrow", replacement: "\\xleftarrow{$0}$1", options: "mA"},
-	{trigger: "\\overrightharpoon", replacement: "\\overrightharpoon{$0}$1", options: "mA"},
-	{trigger: "\\overleftharpoon", replacement: "\\overleftharpoon{$0}$1", options: "mA"},
+	// Single-Symbol Decorators
+	{trigger: "\\hat", replacement: "\\hat{$0}$1", options: "mA", description: "Hat"},
+	{trigger: "\\tilde", replacement: "\\tilde{$0}$1", options: "mA", description: "Tilde"},
+	{trigger: "\\bar", replacement: "\\bar{$0}$1", options: "mA", description: "Bar"},
+	{trigger: "\\vec", replacement: "\\vec{$0}$1", options: "mA", description: "Vector"},
+	{trigger: "\\check", replacement: "\\check{$0}$1", options: "mA", description: "Carat accent"},
+	{trigger: "\\breve", replacement: "\\breve{$0}$1", options: "mA", description: "Breve accent"},
+	{trigger: "\\acute", replacement: "\\acute{$0}$1", options: "mA", description: "Acute accent"},
+	{trigger: "\\grave", replacement: "\\grave{$0}$1", options: "mA", description: "Grave accent"},
+	{trigger: "\\mathring", replacement: "\\mathring{$0}$1", options: "mA", description: "Ring accent"},
 
-	
-	// **************************************************
-	//                            AUTOMATIC SYNTAX
-	// **************************************************
-
-	// Subscript & Superscript Auto Brackets [Only use Automatic or Manual at a time]
-	// {trigger: "_", replacement: "_{$0}$1", options: "mA", description: "Automatic Insert Subscript Brackets"},
-	// {trigger: "^", replacement: "^{$0}$1", options: "mA", description: "Automatic Insert Subscript Brackets"},
-	{trigger: "__", replacement: "_{$0}$1", options: "mA", description: "Manual Insert"},
-	{trigger: "^^", replacement: "^{$0}$1", options: "mA", description: "Manual Insert"},
-	{trigger: "_^", replacement: "_{$0}^{$1}$2", options: "mA", description: "Manual Insert"},
-	{trigger: "^_", replacement: "^{$0}_{$1}$2", options: "mA", description: "Manual Insert"},
-
-	// Automatic Number Indexing for Decorators
-	// {trigger: /([A-Za-z])(\d)/, replacement: "[[0]]_{[[1]]$0}$1", options: "rmA", description: "Auto letter subscript", priority: -100},
-	// {trigger: /\\hat{([A-Za-z])}(\d)/, replacement: "\\hat{[[0]]}_{[[1]]$0}$1", options: "rmA"},
-	// {trigger: /\\vec{([A-Za-z])}(\d)/, replacement: "\\vec{[[0]]}_{[[1]]$0}$1", options: "rmA"},
-	// {trigger: /\\tilde{([A-Za-z])}(\d)/, replacement: "\\tilde{[[0]]}_{[[1]]$0}$1", options: "rmA"},
-	// {trigger: /\\bar{([A-Za-z])}(\d)/, replacement: "\\bar{[[0]]}_{[[1]]$0}$1", options: "rmA"},
-	// {trigger: /\\und{([A-Za-z])}(\d)/, replacement: "\\underline{[[0]]}_{[[1]]$0}$1", options: "rmA"},
-	// {trigger: /\\dot{([A-Za-z])}(\d)/, replacement: "\\dot{[[0]]}_{[[1]]$0}$1", options: "rmA"},
-	// {trigger: /\\ddot{([A-Za-z])}(\d)/, replacement: "\\ddot{[[0]]}_{[[1]]$0}$1", options: "rmA"},
-	
-	// Automatic Number Indexing for Math Fonts
-	// {trigger: /\\mathrm{([A-Za-z])}(\d)/, replacement: "\\mathrm{[[0]]}_{[[1]]$0}$1", options: "rmA"},
-	// {trigger: /\\mathsf{([A-Za-z])}(\d)/, replacement: "\\mathsf{[[0]]}_{[[1]]$0}$1", options: "rmA"},
-	// {trigger: /\\mathtt{([A-Za-z])}(\d)/, replacement: "\\mathtt{[[0]]}_{[[1]]$0}$1", options: "rmA"},
-	// {trigger: /\\mathbf{([A-Za-z])}(\d)/, replacement: "\\mathbf{[[0]]}_{[[1]]$0}$1", options: "rmA"},
-	// {trigger: /\\mathit{([A-Za-z])}(\d)/, replacement: "\\mathit{[[0]]}_{[[1]]$0}$1", options: "rmA"},
-	// {trigger: /\\mathbb{([A-Z])}(\d)/, replacement: "\\mathbb{[[0]]}_{[[1]]$0}$1", options: "rmA"},
-	// {trigger: /\\mathcal{([A-Z])}(\d)/, replacement: "\\mathcal{[[0]]}_{[[1]]$0}$1", options: "rmA"},
-	// {trigger: /\\mathfrak{([A-Za-z])}(\d)/, replacement: "\\mathfrak{[[0]]}_{[[1]]$0}$1", options: "rmA"},
-	// {trigger: /\\mathscr{([A-Za-z])}(\d)/, replacement: "\\mathscr{[[0]]}_{[[1]]$0}$1", options: "rmA"},
+	// Multi-Symbol Decorators
+	{trigger: "\\widehat", replacement: "\\widehat{$0}$1", options: "mA", description: "Wide hat"},
+	{trigger: "\\widetilde", replacement: "\\widetilde{$0}$1", options: "mA", description: "Wide tilde"},
+	{trigger: "\\overline", replacement: "\\overline{$0}$1", options: "mA", description: "Overline"},
+	{trigger: "\\underline", replacement: "\\underline{$0}$1", options: "mA", description: "Underline"},
+	{trigger: "\\overrightarrow", replacement: "\\overrightarrow{$0}$1", options: "mA", description: "Right arrow above"},
+	{trigger: "\\overleftarrow", replacement: "\\overleftarrow{$0}$1", options: "mA", description: "Left arrow above"},
+	{trigger: "\\overleftrightarrow", replacement: "\\overleftrightarrow{$0}$1", options: "mA", description: "Two-way arrow above"},
+	{trigger: "\\underrightarrow", replacement: "\\underrightarrow{$0}$1", options: "mA", description: "Right arrow below"},
+	{trigger: "\\underleftarrow", replacement: "\\underleftarrow{$0}$1", options: "mA", description: "Left arrow below"},
+	{trigger: "\\underleftrightarrow", replacement: "\\underleftrightarrow{$0}$1", options: "mA", description: "Two-way arrow below"},
 
 
 	// **************************************************
-	//                          SYMBOLIC NOTATION
+	//         SYMBOL ANNOTATION FUNCTION HELPERS
 	// **************************************************
 
-	// Fraction Notation
+	// Bracing
+	{trigger: "\\overbrace", replacement: "\\overbrace{$0}^{\\text{${1:}}}$2", options: "mA", description: "Brace above with text label"},
+	{trigger: "\\underbrace", replacement: "\\underbrace{$0}_{\\text{${1:}}}$2", options: "mA", description: "Brace below with text label"},
+	{trigger: "\\overbracket", replacement: "\\overbracket{$0}^{\\text{${1:}}}$2", options: "mA", description: "Bracket above with text label"},
+	{trigger: "\\underbracket", replacement: "\\underbracket{$0}_{\\text{${1:}}}$2", options: "mA", description: "Bracket below with text label"},
+
+	// Arrows
+	{trigger: "\\xrightarrow", replacement: "\\xrightarrow{\\text{${1:}}}$0$2", options: "mA", description: "Right arrow with text label"},
+	{trigger: "\\xleftarrow", replacement: "\\xleftarrow{\\text{${1:}}}$0$2", options: "mA", description: "Left arrow with text label"},
+	{trigger: "\\xleftrightarrow", replacement: "\\xleftrightarrow{\\text{${1:}}}$0$2", options: "mA", description: "Two-way arrow with text label"},
+	{trigger: "\\xRightarrow", replacement: "\\xRightarrow{\\text{${1:}}}$0$2", options: "mA", description: "Right double arrow with text label"},
+	{trigger: "\\xLeftarrow", replacement: "\\xLeftarrow{\\text{${1:}}}$0$2", options: "mA", description: "Left double arrow with text label"},
+	{trigger: "\\xLeftrightarrow", replacement: "\\xLeftrightarrow{\\text{${1:}}}$0$2", options: "mA", description: "Two-way double arrow with text label"},
+
+	// Cancelling
+	{trigger: "\\cancel", replacement: "\\cancel{$0}$1", options: "mA", description: "Strike through"},
+	{trigger: "\\bcancel", replacement: "\\bcancel{$0}$1", options: "mA", description: "Backward strike through"},
+	{trigger: "\\xcancel", replacement: "\\xcancel{$0}$1", options: "mA", description: "Cross out"},
+
+
+
+
+
+	// **************************************************
+	//                 ARITHMETIC HELPERS
+	// **************************************************
+
+	// Fractions
 	{trigger: "\\frac", replacement: "\\frac{$0}{$1}$2", options: "mA"},
 	{trigger: "\\dfrac", replacement: "\\dfrac{$0}{$1}$2", options: "mA"},
 	{trigger: "\\tfrac", replacement: "\\tfrac{$0}{$1}$2", options: "mA"},
 	{trigger: "\\cfrac", replacement: "\\cfrac{$0}{$1}$2", options: "mA"},
 
-	// Root Notation
+	// Roots
 	{trigger: "\\sqrt", replacement: "\\sqrt{$0}$1", options: "mA"},
 	{trigger: "\\nsqrt", replacement: "\\sqrt[$0]{$1}$2", options: "mA"},
 	{trigger: "\\root", replacement: "\\root{$0}\\of{$1}$2", options: "mA"},
 
-	// Statistics Notation
+	// Rounding
+	{trigger: "\\floor", replacement: "\\left\\lfloor $0\\right\\rfloor$1", options: "mA", description: "Floor"},
+	{trigger: "\\ceil", replacement: "\\left\\lceil $0\\right\\rceil$1", options: "mA", description: "Ceiling"},
+	{trigger: "\\fpart", replacement: "\\left\\{$0\\right\\}$1", options: "mA", description: "Fractional Part"},
+	{trigger: "\\round", replacement: "\\operatorname{round}\\left($0\\right)$1", options: "mA", description: "Round"},
+
+	// Sign
+	{trigger: "\\sgn(", replacement: "\\operatorname{sgn}\\left($0\\right)$1", options: "mA", description: "Sign Function"},
+	{trigger: "\\sign(", replacement: "\\operatorname{sign}\\left($0\\right)$1", options: "mA", description: "Sign Function"},
+	
+	// Combinatorics
 	{trigger: "\\binom", replacement: "\\binom{${0:n}}{${1:k}}$2", options: "mA", description: "Binomial Coefficent"},
 	{trigger: "\\ebinom", replacement: "\\dfrac{${0:n}!}{${1:k}!\\left(${0:n}-${1:k}\\right)}", options: "mA", description: "Expanded Binomial Coefficent"},
 
-	// Numerical Notation
-	{trigger: "\\floor", replacement: "\\left\\lfloor $0\\right\\rfloor$1", options: "mA", description: "Floor"},
-	{trigger: "\\ceil", replacement: "\\left\\lceil $0\\right\\rceil$1", options: "mA", description: "Ceiling"},
+	// Modular Arithmetic
+	{trigger: "\\mod", replacement: "\\operatorname{mod}\\left($0,$1\\right)$2", options: "mA"},
+	{trigger: "\\pmod", replacement: "\\pmod{$0}$1", options: "mA"},
+	{trigger: "\\bmod", replacement: "\\bmod $0$1", options: "mA"},
 
-	// Tensor Notation
-	{trigger: "\\abs", replacement: "\\left|$0\\right|$1", options: "mA", description: "Absolute Value"},
+	// Divisibility
+	{trigger: "\\lcm ", replacement: "\\operatorname{lcm}$0", options: "mA", description: "Least Common Multiple"},
+	{trigger: "\\lcm(", replacement: "\\operatorname{lcm}\\left($0\\right)$1", options: "mA", description: "Least Common Multiple with Parentheses"},
+	{trigger: "\\gcd(", replacement: "\\gcd\\left($0\\right)$1", options: "mA", description: "Greated Common Divisor with Parentheses"},
+
+
+
+	// **************************************************
+	// LINEAR ALGEBRA HELPERS
+	// **************************************************
+
+	// Matrix Functions
+	{trigger: "\\det(", replacement: "\\det\\left($0\\right)$1", options: "mA", description: "Determinant with Parentheses"},
+	{trigger: "\\det[", replacement: "\\det\\left[$0\\right]$1", options: "mA", description: "Determinant with Square Brackets"},
+	{trigger: "\\det|", replacement: "\\det\\left|$0\\right|$1", options: "mA", description: "Determinant with Straight Brackets"},
+
+	{trigger: "\\tr ", replacement: "\\operatorname{tr}$0", options: "mA", description: "Trace"},
+	{trigger: "\\tr(", replacement: "\\operatorname{tr}\\left($0\\right)$1", options: "mA", description: "Trace with Parentheses"},
+	{trigger: "\\tr[", replacement: "\\operatorname{tr}\\left[$0\\right]$1", options: "mA", description: "Trace with Square Brackets"},
+
+	{trigger: "\\diag ", replacement: "\\operatorname{diag}$0", options: "mA", description: "Diagonal"},
+	{trigger: "\\diag(", replacement: "\\operatorname{diag}\\left($0\\right)$1", options: "mA", description: "Diagonal with Parentheses"},
+	{trigger: "\\diag[", replacement: "\\operatorname{diag}\\left[$0\\right]$1", options: "mA", description: "Diagonal with Square Brackets"},
+
+	{trigger: "\\adj ", replacement: "\\operatorname{adj}$0", options: "mA", description: "Adjugate"},
+	{trigger: "\\adj(", replacement: "\\operatorname{adj}\\left($0\\right)$1", options: "mA", description: "Adjugate Matrix with Parentheses"},
+	{trigger: "\\adj[", replacement: "\\operatorname{adj}\\left[$0\\right]$1", options: "mA", description: "Adjugate Matrix with Square Brackets"},
+
+	{trigger: "\\cof ", replacement: "\\operatorname{cof}$0", options: "mA", description: "Adjugate"},
+	{trigger: "\\cof(", replacement: "\\operatorname{cof}\\left($0\\right)$1", options: "mA", description: "Adjugate Matrix with Parentheses"},
+	{trigger: "\\cof[", replacement: "\\operatorname{cof}\\left[$0\\right]$1", options: "mA", description: "Adjugate Matrix with Square Brackets"},
+
+	{trigger: "\\rank ", replacement: "\\operatorname{rank}$0", options: "mA", description: "Rank"},
+	{trigger: "\\rank(", replacement: "\\operatorname{rank}\\left($0\\right)$1", options: "mA", description: "Rank with Parentheses"},
+	{trigger: "\\rank[", replacement: "\\operatorname{rank}\\left[$0\\right]$1", options: "mA", description: "Rank with Square Brackets"},
+
+
+	// Spaces & Subspaces
+	{trigger: "\\null ", replacement: "\\operatorname{null}$0", options: "mA", description: "Null Space"},
+	{trigger: "\\null(", replacement: "\\operatorname{null}\\left($0\\right)$1", options: "mA", description: "Null Space with Parentheses"},
+	{trigger: "\\null[", replacement: "\\operatorname{null}\\left[$0\\right]$1", options: "mA", description: "Null Space with Square Brackets"},
+	
+	{trigger: "\\ker ", replacement: "\\operatorname{ker}$0", options: "mA", description: "Kernel"},
+	{trigger: "\\ker(", replacement: "\\operatorname{ker}\\left($0\\right)$1", options: "mA", description: "Kernel with Parentheses"},
+	{trigger: "\\ker[", replacement: "\\operatorname{ker}\\left[$0\\right]$1", options: "mA", description: "Kernel with Square Brackets"},
+	
+	{trigger: "\\img ", replacement: "\\operatorname{img}$0", options: "mA", description: "Image"},
+	{trigger: "\\img(", replacement: "\\operatorname{img}\\left($0\\right)$1", options: "mA", description: "Image with Parentheses"},
+	{trigger: "\\img[", replacement: "\\operatorname{img}\\left[$0\\right]$1", options: "mA", description: "Image with Square Brackets"},
+	
+	{trigger: "\\range ", replacement: "\\operatorname{range}$0", options: "mA", description: "Range"},
+	{trigger: "\\range(", replacement: "\\operatorname{range}\\left($0\\right)$1", options: "mA", description: "Range with Parentheses"},
+	{trigger: "\\range[", replacement: "\\operatorname{range}\\left[$0\\right]$1", options: "mA", description: "Range with Square Brackets"},
+	
+	{trigger: "\\span ", replacement: "\\operatorname{span}$0", options: "mA", description: "Span"},
+	{trigger: "\\span(", replacement: "\\operatorname{span}\\left($0\\right)$1", options: "mA", description: "Span with Parentheses"},
+	{trigger: "\\span[", replacement: "\\operatorname{span}\\left[$0\\right]$1", options: "mA", description: "Span with Square Brackets"},
+	
+	{trigger: "\\orth ", replacement: "\\operatorname{orth}$0", options: "mA", description: "Orthogonal Complement"},
+	{trigger: "\\orth(", replacement: "\\operatorname{orth}\\left($0\\right)$1", options: "mA", description: "Orthogonal Complement with Parentheses"},
+	{trigger: "\\orth[", replacement: "\\operatorname{orth}\\left[$0\\right]$1", options: "mA", description: "Orthogonal Complement with Square Brackets"},
+
+
+	// Spectral
+	{trigger: "\\eig ", replacement: "\\operatorname{eig}$0", options: "mA", description: "Eigenvalues"},
+	{trigger: "\\eig(", replacement: "\\operatorname{eig}\\left($0\\right)$1", options: "mA", description: "Eigenvalues with Parentheses"},
+	{trigger: "\\eig[", replacement: "\\operatorname{eig}\\left[$0\\right]$1", options: "mA", description: "Eigenvalues with Square Brackets"},
+	
+	{trigger: "\\spec ", replacement: "\\operatorname{spec}$0", options: "mA"},
+	{trigger: "\\spec(", replacement: "\\operatorname{spec}\\left($0\\right)$1", options: "mA"},
+	{trigger: "\\spec[", replacement: "\\operatorname{spec}\\left[$0\\right]$1", options: "mA"},
+
+
+	// Projection
+	{trigger: "\\proj ", replacement: "\\operatorname{proj}$0", options: "mA", description: "Projection Operator"},
+	{trigger: "\\proj(", replacement: "\\operatorname{proj}\\left($0\\right)$1", options: "mA", description: "Projection Operator with Parentheses"},
+	{trigger: "\\proj[", replacement: "\\operatorname{proj}\\left[$0\\right]$1", options: "mA", description: "Projection Operator with Square Brackets"},
+
+
+	// Norm
 	{trigger: "\\norm", replacement: "\\left\\lvert $0\\right\\rvert$1", options: "mA", description: "Single-Bar Norm"},
 	{trigger: "\\Norm", replacement: "\\left\\lVert $0\\right\\rVert$1", options: "mA", description: "Double-Bar Norm"},
 
-	// Arithmatic Sum Notation
-	{trigger: "\\dsum", replacement: "\\sum_{${0:i}=${1:0}}^{${2:\\infty}}$3", options: "mA", description: "Definite Sum"},
-	
-	// Arithmatic Product Notation
-	{trigger: "\\dprod", replacement: "\\prod_{${0:i}=${1:0}}^{${2:\\infty}}$3", options: "mA", description: "Definite Product"},
+	{trigger: "\\pnorm", replacement: "\\left\\lvert $0\\right\\rvert_{$1}$2$1", options: "mA", description: "Single-Bar P-Norm"},
+	{trigger: "\\pNorm", replacement: "\\left\\lVert $0\\right\\rVert_{$1}$2", options: "mA", description: "Double-Bar P-Norm"},
 
-	// Arithmatic Co-Product Notation
-	{trigger: "\\dcoprod", replacement: "\\coprod_{${0:i}=${1:0}}^{${2:\\infty}}$3", options: "mA", description: "Definite Co-Product"},
+	{trigger: "\\abs", replacement: "\\left|$0\\right|$1", options: "mA", description: "Absolute Value"},
 
-	// Hadamard Product Notation
-	{ "trigger": "\\odot", "replacement": "\\odot$0", "options": "mA", "description": "Default O Dot" },
-	{ "trigger": "\\bodot", "replacement": "\\bigodot$0", "options": "mA", "description": "Big O Dot" },
-	{ "trigger": "\\ddotidx", "replacement": "\\bigodot_{${0:i}=1}^{${1:n}} ${2:A_i}$3", "options": "mA", "description": "Definite Big O Dot with Index" },
-	{ "trigger": "\\ddotset", "replacement": "\\bigodot_{${0:i}\\in ${1:S}} ${2:A_i}$3", "options": "mA", "description": "Definite Big O Dot over Set" },
 
-	// Direct Sum Notation
+	// Matrix Decompositions
+	{trigger: "\\lu", replacement: "$0=LU$1", options: "mA"},
+	{trigger: "\\qr", replacement: "$0=QR$1", options: "mA"},
+	{trigger: "\\svd", replacement: "$0=U\\Sigma V^{\\mathsf T}$1", options: "mA"},
+
+
+
+	// **************************************************
+	//  MULTILINEAR ALGEBRA HELPERS
+	// **************************************************
+
+	// Tensor Sum Notation
 	{ "trigger": "\\oplus", "replacement": "\\oplus$0", "options": "mA", "description": "Default O Plus" },
 	{ "trigger": "\\boplus", "replacement": "\\bigoplus$0", "options": "mA", "description": "Big O Plus" },
 	{ "trigger": "\\doplusidx", "replacement": "\\bigoplus_{${0:i}=1}^{${1:n}} ${2:A_i}$3", "options": "mA", "description": "Definite Big O Plus with Index" },
@@ -238,13 +358,72 @@
 	{ "trigger": "\\dotimesidx", "replacement": "\\bigotimes_{${0:i}=1}^{${1:n}} ${2:A_i}$3", "options": "mA", "description": "Definite Big O Times with Index" },
 	{ "trigger": "\\dotimesset", "replacement": "\\bigotimes_{${0:i}\\in ${1:S}} ${2:A_i}$3", "options": "mA", "description": "Definite Big O Times over Set" },
 
-	// Set-Theoretic Union Notation
+	// Symmetrization & Antisymmetrization
+	{trigger: "\\sym", replacement: "\\operatorname{Sym}\\left($0\\right)$1", options: "mA"},
+	{trigger: "\\antisym", replacement: "\\operatorname{Alt}\\left($0\\right)$1", options: "mA"},
+
+	
+	
+	// **************************************************
+	//  ANALYSIS HELPERS
+	// **************************************************
+	
+	// Limits
+	{trigger: "\\lim", replacement: "\\lim_{$0}$1", options: "mA", description: "Default Limit"},
+	{trigger: "\\alim", replacement: "\\lim_{${0:}\\to ${1:}}$2", options: "mA", description: "Approaching Limit"},
+	{trigger: "\\elim", replacement: "\\lim_{${0:} ${1:} ${2:}}$3", options: "mA", description: "Extremal Limit"},
+	{trigger: "\\limsup", replacement: "\\limsup_{$0}$1", options: "mA", description: "Limit Superior"},
+	{trigger: "\\liminf", replacement: "\\liminf_{$0}$1", options: "mA", description: "Limit Inferior"},
+
+	// Extremal Functions
+	{trigger: "\\min(", replacement: "\\min\\left($0\\right)$1", options: "mA", description: "Minimum with Parentheses"},
+	{trigger: "\\max(", replacement: "\\max\\left($0\\right)$1", options: "mA", description: "Maximum with Parentheses"},
+	{trigger: "\\argmin", replacement: "\\operatorname*{arg\\,min}_{$0}$1", options: "mA", description: "Argument of Minimum"},
+	{trigger: "\\argmax", replacement: "\\operatorname*{arg\\,max}_{$0}$1", options: "mA", description: "Argument of Maximum"},
+	{trigger: "\\sup", replacement: "\\sup_{$0}$1", options: "mA", description: "Supremum"},
+	{trigger: "\\inf", replacement: "\\inf_{$0}$1", options: "mA", description: "Infimum"},
+
+	// Sequences
+	{trigger: "\\seq", replacement: "\\left($0_n\\right)_{n=$1}$2", options: "mA", description: "Sequence Notation"},
+
+	// Sums
+	{trigger: "\\dsum", replacement: "\\sum_{${0:i}=${1:0}}^{${2:\\infty}}$3", options: "mA", description: "Definite Sum"},
+	{trigger: "\\esum", replacement: "\\sum_{${0:a}\in${1:A}}$2", options: "mA", description: "Element Sum"},
+	
+	// Products
+	{trigger: "\\dprod", replacement: "\\prod_{${0:i}=${1:0}}^{${2:\\infty}}$3", options: "mA", description: "Definite Product"},
+	{trigger: "\\eprod", replacement: "\\prod_{${0:a}=${1:A}}$2", options: "mA", description: "Element Product"},
+
+	// Derivatives
+	{trigger: "\\der", replacement: "\\dfrac{d${0:}}{d${1:}}$2", options: "mA", description: "Default Derivative", priority: -1},
+	{trigger: "\\dder", replacement: "\\dfrac{d^2${0:}}{d${1:}^2}$2", options: "mA", description: "Default Second Derivative"},
+	{trigger: "\\pder", replacement: "\\dfrac{\\partial ${0:}}{\\partial ${1:}}$2", options: "mA", description: "Partial Derivative", priority: -1},
+	{trigger: "\\ppder", replacement: "\\dfrac{\\partial^2 ${0:}}{\\partial ${1:}^2}$2", options: "mA", description: "Partial Second Derivative"},
+	{trigger: "\\tder", replacement: "\\dfrac{D${0:}}{D${1:}}$2", options: "mA", description: "Total Derivative", priority: -1},
+	{trigger: "\\ttder", replacement: "\\dfrac{D^2 ${0:}}{D${1:}^2}$2", options: "mA", description: "Total Second Derivative"},
+	{trigger: "\\cder", replacement: "\\dfrac{D${0:}}{D${1:}}$2", options: "mA", description: "Covariant Derivative", priority: -1},
+	{trigger: "\\ccder", replacement: "\\dfrac{D^2 ${0:}}{D${1:}^2}$2", options: "mA", description: "Covariant Second Derivative"},
+	{trigger: "\\vder", replacement: "\\dfrac{\\delta ${0:}}{\\delta ${1:}}$2", options: "mA", description: "Variational Derivative"},
+	{trigger: "\\vvder", replacement: "\\dfrac{\\delta^2 ${0:}}{\\delta ${1:}^2}$2", options: "mA", description: "Variational Second Derivative"},
+	
+	// Integrals
+	{trigger: "\\dint", replacement: "\\int_{${0:}}^{${1:}}$2", options: "mA", description: "Definite Integral", priority: -2},
+	{trigger: "\\diint", replacement: "\\iint_{${0:}}^{${1:}}$2", options: "mA", description: "Definite Double Integral", priority: -1},
+	{trigger: "\\diiint", replacement: "\\iiint_{${0:}}^{${1:}}$2", options: "mA", description: "Definite Triple Integral"},
+
+
+
+	// **************************************************
+	//  SET THEORY HELPERS
+	// **************************************************
+
+	// Union Notation
 	{trigger: "\\union", replacement: "\\cup$0", options: "mA", description: "Default Union"},
 	{trigger: "\\bunion", replacement: "\\bigcup_{$0}$1", options: "mA", description: "Default Big Union"},
 	{trigger: "\\dunionidx", replacement: "\\bigcup_{${0:i}=${1:1}}^{${2:n}}$3", options: "mA", description: "Definite Big Union with Index"},
 	{trigger: "\\dunionset", replacement: "\\bigcup_{${0:i}\\in ${1:1}}$2", options: "mA", description: "Definite Big Union with Set Elements"},
 	
-	// Set-Theoretic Intersection Notation
+	// Intersection Notation
 	{trigger: "\\inter", replacement: "\\cap$0", options: "mA", description: "Default Union"},
 	{trigger: "\\binter", replacement: "\\bigcap_{$0}$1", options: "mA", description: "Default Big Union"},
 	{trigger: "\\dinteridx", replacement: "\\bigcap_{${0:i}=${1:1}}^{${2:n}}$3", options: "mA", description: "Definite Big Intersection with Index"},
@@ -256,32 +435,55 @@
 	{ "trigger": "\\duplusidx", "replacement": "\\biguplus_{${0:i}=1}^{${1:n}} ${2:A_i}$3", "options": "mA", "description": "Definite Big U Plus with Index" },
 	{ "trigger": "\\duplusset", "replacement": "\\biguplus_{${0:i}\\in ${1:S}} ${2:A_i}$3", "options": "mA", "description": "Definite Big U Plus over Set" },
 
-	// Calculus Integral Notation
-	{trigger: "\\dint", replacement: "\\int_{${0:}}^{${1:}}$2", options: "mA", description: "Definite Integral", priority: -2},
-	{trigger: "\\diint", replacement: "\\iint_{${0:}}^{${1:}}$2", options: "mA", description: "Definite Double Integral", priority: -1},
-	{trigger: "\\diiint", replacement: "\\iiint_{${0:}}^{${1:}}$2", options: "mA", description: "Definite Triple Integral"},
-	{trigger: "\\pathint", replacement: "\\int\\mathcal{D}[${0:x}(t)] e^{i S[${0:x}]/\hbar}", options: "mA", description: "Path Integral"},
-
-	// Calculus Derivative Notation
-	{trigger: "\\der", replacement: "\\dfrac{d${0:}}{d${1:}}$2", options: "mA", description: "Default Derivative", priority: -1},
-	{trigger: "\\dder", replacement: "\\dfrac{d^2${0:}}{d${1:}^2}$2", options: "mA", description: "Default Second Derivative"},
-	{trigger: "\\pder", replacement: "\\dfrac{\\partial ${0:}}{\\partial ${1:}}$2", options: "mA", description: "Partial Derivative", priority: -1},
-	{trigger: "\\ppder", replacement: "\\dfrac{\\partial^2 ${0:}}{\\partial ${1:}^2}$2", options: "mA", description: "Partial Second Derivative"},
-	{trigger: "\\tder", replacement: "\\dfrac{D${0:}}{D${1:}}$2", options: "mA", description: "Total Derivative", priority: -1},
-	{trigger: "\\ttder", replacement: "\\dfrac{D^2 ${0:}}{D${1:}^2}$2", options: "mA", description: "Total Second Derivative"},
-	{trigger: "\\cder", replacement: "\\dfrac{D${0:}}{D${1:}}$2", options: "mA", description: "Covariant Derivative", priority: -1},
-	{trigger: "\\ccder", replacement: "\\dfrac{D^2 ${0:}}{D${1:}^2}$2", options: "mA", description: "Covariant Second Derivative"},
-	{trigger: "\\vder", replacement: "\\dfrac{\\delta ${0:}}{\\delta ${1:}}$2", options: "mA", description: "Variational Derivative"},
-
-	// Dirac Physics Notation
-	{trigger: "\\bra", replacement: "\\bra{$0}$1", options: "mA", description: "Automatic Brackets for Bra"},
-	{trigger: "\\ket", replacement: "\\ket{$0}$1", options: "mA", description: "Automatic Brackets for Ket"},
-	{trigger: "\\inner", replacement: "\\left<$0\\middle|$1\\right>$2", options: "mA", description: "Automatic Brackets for Braket"},
-	{trigger: "\\outer", replacement: "\\ket{$0}\\bra{$1}$2", options: "mA", description: "Automatic Brackets for Outer Product"},
 
 
 	// **************************************************
-	//                             TEXT NOTATIONS
+	//  COMPLEX ANALYSIS HELPERS
+	// **************************************************
+
+	// Complex Argument
+	{trigger: "\\arg(", replacement: "\\arg\\left($0\\right)$1", options: "mA", description: "Complex Argument with Parentheses"},
+	{trigger: "\\arg[", replacement: "\\arg\\left[$0\\right]$1", options: "mA", description: "Complex Argument with Square Brackets"},
+
+	// Real/Imaginary Part
+	{trigger: "\\Re ", replacement: "\\mathrm{Re}$0", options: "mA", description: "Real Component"},
+	{trigger: "\\Re(", replacement: "\\mathrm{Re}\\left($0\\right)$1", options: "mA", description: "Real Component with Parentheses"},
+	{trigger: "\\Im ", replacement: "\\mathrm{Im}$0", options: "mA", description: "Imaginary Component"},
+	{trigger: "\\Im(", replacement: "\\mathrm{Im}\\left($0\\right)$1", options: "mA", description: "Imaginary Component with Parentheses"},
+
+	// Residue
+	{trigger: "\\Res", replacement: "\\operatorname*{Res}_{${0:z}=${1:a}} ${2:f(z)}$3", options: "mA"},
+
+	// Complex Contour Integral
+	{trigger: "\\cint", replacement: "\\int_{${0:\\Gamma}} ${1:f(z)}\\,d${2:z}$3", options: "mA"},
+
+
+
+	// **************************************************
+	//  STATISTICS HELPERS
+	// **************************************************
+	{trigger: "\\Mean(", "replacement": "\\operatorname{Mean}\\left($0\\right)$1", "options": "mA", "description": "Mean"},
+	{trigger: "\\Median(", "replacement": "\\operatorname{Median}\\left($0\\right)$1", "options": "mA", "description": "Median"},
+	{trigger: "\\Mode(", "replacement": "\\operatorname{Mode}\\left($0\\right)$1", "options": "mA", "description": "Mode"},
+	{trigger: "\\Var(", replacement: "\\operatorname{Var}\\left($0\\right)$1", options: "mA", description: "Variance"},
+	{trigger: "\\Cov(", replacement: "\\operatorname{Cov}\\left($0\\right)$1", options: "mA", description: "Covariance"},
+	{trigger: "\\Corr(", replacement: "\\operatorname{Corr}\\left($0,$1\\right)$2", options: "mA", description: "Correlation"},
+	{trigger: "\\Skew(", replacement: "\\operatorname{Skew}\\left($0\\right)$1", options: "mA", description: "Skew"},
+	{trigger: "\\Kurt(", replacement: "\\operatorname{Kurt}\\left($0\\right)$1", options: "mA", description: "Kurtosis"},
+	{trigger: "\\Prob(", replacement: "\\operatorname{Prob}\\left($0\\right)$1", options: "mA", description: "Probability"},
+	{trigger: "\\SD(", replacement: "\\operatorname{SD}\\left($0\\right)$1", options: "mA"},
+	{trigger: "\\SE(", replacement: "\\operatorname{SE}\\left($0\\right)$1", options: "mA"},
+	{trigger: "\\Quantile(", replacement: "Q_{${0:p}}\\left(${1:X}\\right)$2", options: "mA"},
+	{trigger: "\\CDF(", replacement: "F_{${0:X}}\\left(${1:x}\\right)$2", options: "mA"},
+	{trigger: "\\PDF(", replacement: "f_{${0:X}}\\left(${1:x}\\right)$2", options: "mA"},
+	{trigger: "\\PMF(", replacement: "p_{${0:X}}\\left(${1:x}\\right)$2", options: "mA"},
+	{trigger: "\\Expect(", replacement: "\\mathbb E\\left[${0:X}\\right]$1", options: "mA"},
+	{trigger: "\\Moment(", replacement: "\\mathbb E\\left[${0:X}^{${1:k}}\\right]$2", options: "mA"},
+
+
+	
+	// **************************************************
+	//  FUNCTION HELPERS
 	// **************************************************
 
 	// Exponential Operation
@@ -317,161 +519,82 @@
 	{trigger: "\\sech(", replacement: "\\operatorname{sech}\\left($0\\right)$1", options: "mA", description: "Hyperbolic Secant with Parentheses"},
 	{trigger: "\\coth(", replacement: "\\coth\\left($0\\right)$1", options: "mA", description: "Hyperbolic Cotangent with Parentheses"},
 
-	// Linear Algebraic Matrix Determinant
-	{trigger: "\\det(", replacement: "\\det\\left($0\\right)$1", options: "mA", description: "Determinant with Parentheses"},
-	{trigger: "\\det[", replacement: "\\det\\left[$0\\right]$1", options: "mA", description: "Determinant with Square Brackets"},
-	{trigger: "\\det|", replacement: "\\det\\left|$0\\right|$1", options: "mA", description: "Determinant with Straight Brackets"},
+	// Elliptic Inverse Trigonometric Operations
+	{trigger: "\\asin(", replacement: "\\sin^{-1}\\left($0\\right)$1", options: "mA", description: "Sine with Parentheses"},
+	{trigger: "\\acos(", replacement: "\\cos^{-1}\\left($0\\right)$1", options: "mA", description: "Cosine with Parentheses"},
+	{trigger: "\\atan(", replacement: "\\tan^{-1}\\left($0\\right)$1", options: "mA", description: "Tangent with Parentheses"},
+	{trigger: "\\acsc(", replacement: "\\csc^{-1}\\left($0\\right)$1", options: "mA", description: "Cosecant with Parentheses"},
+	{trigger: "\\asec(", replacement: "\\sec^{-1}\\left($0\\right)$1", options: "mA", description: "Secant with Parentheses"},
+	{trigger: "\\acot(", replacement: "\\cot^{-1}\\left($0\\right)$1", options: "mA", description: "Cotangent with Parentheses"},
 
-	// Linear Algebraic Matrix Trace
-	{trigger: "\\tr ", replacement: "\\operatorname{tr}$0", options: "mA", description: "Trace"},
-	{trigger: "\\tr(", replacement: "\\operatorname{tr}\\left($0\\right)$1", options: "mA", description: "Trace with Parentheses"},
-	{trigger: "\\tr[", replacement: "\\operatorname{tr}\\left[$0\\right]$1", options: "mA", description: "Trace with Square Brackets"},
+	// Hyperbolic Inverse Trigonometric Operations
+	{trigger: "\\asinh(", replacement: "\\sinh^{-1}\\left($0\\right)$1", options: "mA", description: "Hyperbolic Sine with Parentheses"},
+	{trigger: "\\acosh(", replacement: "\\cosh^{-1}\\left($0\\right)$1", options: "mA", description: "Hyperbolic Cosine with Parentheses"},
+	{trigger: "\\atanh(", replacement: "\\tanh^{-1}\\left($0\\right)$1", options: "mA", description: "Hyperbolic Tangent with Parentheses"},
+	{trigger: "\\acsch(", replacement: "\\operatorname{csch}^{-1}\\left($0\\right)$1", options: "mA", description: "Hyperbolic Cosecant with Parentheses"},
+	{trigger: "\\asech(", replacement: "\\operatorname{sech}^{-1}\\left($0\\right)$1", options: "mA", description: "Hyperbolic Secant with Parentheses"},
+	{trigger: "\\acoth(", replacement: "\\coth^{-1}\\left($0\\right)$1", options: "mA", description: "Hyperbolic Cotangent with Parentheses"},
 
-	// Linear Algebraic Matrix Rank
-	{trigger: "\\rank ", replacement: "\\operatorname{rank}$0", options: "mA", description: "Rank"},
-	{trigger: "\\rank(", replacement: "\\operatorname{rank}\\left($0\\right)$1", options: "mA", description: "Rank with Parentheses"},
-	{trigger: "\\rank[", replacement: "\\operatorname{rank}\\left[$0\\right]$1", options: "mA", description: "Rank with Square Brackets"},
 
-	// Linear Algebraic Matrix Diagonal
-	{trigger: "\\diag ", replacement: "\\operatorname{diag}$0", options: "mA", description: "Diagonal"},
-	{trigger: "\\diag(", replacement: "\\operatorname{diag}\\left($0\\right)$1", options: "mA", description: "Diagonal with Parentheses"},
-	{trigger: "\\diag[", replacement: "\\operatorname{diag}\\left[$0\\right]$1", options: "mA", description: "Diagonal with Square Brackets"},
 
-	// Linear Algebraic Vector Span
-	{trigger: "\\span ", replacement: "\\operatorname{span}$0", options: "mA", description: "Span"},
-	{trigger: "\\span(", replacement: "\\operatorname{span}\\left($0\\right)$1", options: "mA", description: "Span with Parentheses"},
-	{trigger: "\\span[", replacement: "\\operatorname{span}\\left[$0\\right]$1", options: "mA", description: "Span with Square Brackets"},
+	// **************************************************
+	//  SPECIAL FUNCTION HELPERS
+	// **************************************************
 
-	// Linear Algebraic Matrix Kernel
-	{trigger: "\\ker ", replacement: "\\operatorname{ker}$0", options: "mA", description: "Kernel"},
-	{trigger: "\\ker(", replacement: "\\operatorname{ker}\\left($0\\right)$1", options: "mA", description: "Kernel with Parentheses"},
-	{trigger: "\\ker[", replacement: "\\operatorname{ker}\\left[$0\\right]$1", options: "mA", description: "Kernel with Square Brackets"},
-
-	// Linear Algebraic Matrix Image
-	{trigger: "\\img ", replacement: "\\operatorname{img}$0", options: "mA", description: "Image"},
-	{trigger: "\\img(", replacement: "\\operatorname{img}\\left($0\\right)$1", options: "mA", description: "Image with Parentheses"},
-	{trigger: "\\img[", replacement: "\\operatorname{img}\\left[$0\\right]$1", options: "mA", description: "Image with Square Brackets"},
-
-	// Linear Algebraic Matrix Null Space
-	{trigger: "\\null ", replacement: "\\operatorname{null}$0", options: "mA", description: "Null Space"},
-	{trigger: "\\null(", replacement: "\\operatorname{null}\\left($0\\right)$1", options: "mA", description: "Null Space with Parentheses"},
-	{trigger: "\\null[", replacement: "\\operatorname{null}\\left[$0\\right]$1", options: "mA", description: "Null Space with Square Brackets"},
-
-	// Linear Algebraic Matrix Range
-	{trigger: "\\range ", replacement: "\\operatorname{range}$0", options: "mA", description: "Range"},
-	{trigger: "\\range(", replacement: "\\operatorname{range}\\left($0\\right)$1", options: "mA", description: "Range with Parentheses"},
-	{trigger: "\\range[", replacement: "\\operatorname{range}\\left[$0\\right]$1", options: "mA", description: "Range with Square Brackets"},
-
-	// Linear Algebraic Adjugate Matrix
-	{trigger: "\\adj ", replacement: "\\operatorname{adj}$0", options: "mA", description: "Adjugate Matrix"},
-	{trigger: "\\adj(", replacement: "\\operatorname{adj}\\left($0\\right)$1", options: "mA", description: "Adjugate Matrix with Parentheses"},
-	{trigger: "\\adj[", replacement: "\\operatorname{adj}\\left[$0\\right]$1", options: "mA", description: "Adjugate Matrix with Square Brackets"},
-
-	// Linear Algebraic Eigenvalues
-	{trigger: "\\eig ", replacement: "\\operatorname{eig}$0", options: "mA", description: "Eigenvalues"},
-	{trigger: "\\eig(", replacement: "\\operatorname{eig}\\left($0\\right)$1", options: "mA", description: "Eigenvalues with Parentheses"},
-	{trigger: "\\eig[", replacement: "\\operatorname{eig}\\left[$0\\right]$1", options: "mA", description: "Eigenvalues with Square Brackets"},
-
-	// Linear Algebraic Orthogonal Complement
-	{trigger: "\\orth ", replacement: "\\operatorname{orth}$0", options: "mA", description: "Orthogonal Complement"},
-	{trigger: "\\orth(", replacement: "\\operatorname{orth}\\left($0\\right)$1", options: "mA", description: "Orthogonal Complement with Parentheses"},
-	{trigger: "\\orth[", replacement: "\\operatorname{orth}\\left[$0\\right]$1", options: "mA", description: "Orthogonal Complement with Square Brackets"},
-
-	// Linear Algebraic Projection Operator
-	{trigger: "\\proj ", replacement: "\\operatorname{proj}$0", options: "mA", description: "Projection Operator"},
-	{trigger: "\\proj(", replacement: "\\operatorname{proj}\\left($0\\right)$1", options: "mA", description: "Projection Operator with Parentheses"},
-	{trigger: "\\proj[", replacement: "\\operatorname{proj}\\left[$0\\right]$1", options: "mA", description: "Projection Operator with Square Brackets"},
-
-	// Complex Analytic Argument
-	{trigger: "\\arg(", replacement: "\\arg\\left($0\\right)$1", options: "mA", description: "Complex Argument with Parentheses"},
-
-	// Complex Analytic Real Projection
-	{trigger: "\\Re ", replacement: "\\mathrm{Re}$0", options: "mA", description: "Real Component"},
-	{trigger: "\\Re(", replacement: "\\mathrm{Re}\\left($0\\right)$1", options: "mA", description: "Real Component with Parentheses"},
-
-	// Complex Analytic Imaginary Projection
-	{trigger: "\\Im ", replacement: "\\mathrm{Im}$0", options: "mA", description: "Imaginary Component"},
-	{trigger: "\\Im(", replacement: "\\mathrm{Im}\\left($0\\right)$1", options: "mA", description: "Imaginary Component with Parentheses"},
-
-	// Calculaic Limits
-	{trigger: "\\lim", replacement: "\\lim_{$0}$1", options: "mA", description: "Default Limit"},
-	{trigger: "\\alim", replacement: "\\lim_{${0:}\\to ${1:}}$2", options: "mA", description: "Approaching Limit"},
-	{trigger: "\\elim", replacement: "\\lim_{${0:} ${1:} ${2:}}$3", options: "mA", description: "Extremal Limit"},
-	{trigger: "\\limsup", replacement: "\\limsup_{$0}$1", options: "mA", description: "Limit Superior"},
-	{trigger: "\\liminf", replacement: "\\liminf_{$0}$1", options: "mA", description: "Limit Inferior"},
-
-	// Calculaic Sequences
-	{trigger: "\\seq", replacement: "\\left($0_n\\right)_{n=$1}$2", options: "mA", description: "Sequence Notation"},
-
-	// Domain Operations
-	{trigger: "\\min(", replacement: "\\min\\left($0\\right)$1", options: "mA", description: "Minimum with Parentheses"},
-	{trigger: "\\max(", replacement: "\\max\\left($0\\right)$1", options: "mA", description: "Maximum with Parentheses"},
-	{trigger: "\\sup", replacement: "\\sup_{$0}$1", options: "mA", description: "Supremum"},
-	{trigger: "\\infi", replacement: "\\inf_{$0}$1", options: "mA", description: "Infimum"},
-	{trigger: "\\argmin", replacement: "\\operatorname*{arg\\,min}_{$0}$1", options: "mA", description: "Argument of Minimum"},
-	{trigger: "\\argmax", replacement: "\\operatorname*{arg\\,max}_{$0}$1", options: "mA", description: "Argument of Maximum"},
-
-	// Number Theory
-	{trigger: "\\gcd(", replacement: "\\gcd\\left($0\\right)$1", options: "mA", description: "Greated Common Divisor with Parentheses"},
-	{trigger: "\\lcm ", replacement: "\\operatorname{lcm}$0", options: "mA", description: "Least Common Multiple"},
-	{trigger: "\\lcm(", replacement: "\\operatorname{lcm}\\left($0\\right)$1", options: "mA", description: "Least Common Multiple with Parentheses"},
-
-	// Statistics
-	{"trigger": "\\Mean(", "replacement": "\\operatorname{Mean}\\left($0\\right)$1", "options": "mA", "description": "Mean"},
-	{"trigger": "\\Median(", "replacement": "\\operatorname{Median}\\left($0\\right)$1", "options": "mA", "description": "Median"},
-	{"trigger": "\\Mode(", "replacement": "\\operatorname{Mode}\\left($0\\right)$1", "options": "mA", "description": "Mode"},
-	{trigger: "\\Var(", replacement: "\\operatorname{Var}\\left($0\\right)$1", options: "mA", description: "Variance"},
-	{trigger: "\\Cov(", replacement: "\\operatorname{Cov}\\left($0\\right)$1", options: "mA", description: "Covariance"},
-	{trigger: "\\Corr(", replacement: "\\operatorname{Corr}\\left($0,$1\\right)$2", options: "mA", description: "Correlation"},
-	{trigger: "\\Skew(", replacement: "\\operatorname{Skew}\\left($0\\right)$1", options: "mA", description: "Skew"},
-	{trigger: "\\Kurt(", replacement: "\\operatorname{Kurt}\\left($0\\right)$1", options: "mA", description: "Kurtosis"},
-	{trigger: "\\Prob(", replacement: "\\operatorname{Prob}\\left($0\\right)$1", options: "mA", description: "Probability"},
-	
-	// Random
-	{trigger: "\\ord", replacement: "\\operatorname{ord}\\left($0\\right)$1", options: "mA", description: "Group/Element Order"},
-	{trigger: "\\sgn(", replacement: "\\operatorname{sgn}\\left($0\\right)$1", options: "mA", description: "Sign Function"},
-	{trigger: "\\sign(", replacement: "\\operatorname{sign}\\left($0\\right)$1", options: "mA", description: "Sign Function"},
-	{trigger: "\\round", replacement: "\\operatorname{round}\\left($0\\right)$1", options: "mA", description: "Round"},
-
-	// Special Functions
+	// Error Functions
 	{trigger: "\\erf", replacement: "\\operatorname{erf}\\left($0\\right)$1", options: "mA", description: "Gaussian Error Function"},
 	{trigger: "\\cerf", replacement: "\\operatorname{erfc}\\left($0\\right)$1", options: "mA", description: "Complementary Error Function"},
 	{trigger: "\\inverf", replacement: "\\operatorname{erf}^{-1}\\left($0\\right)$1", options: "mA", description: "Gaussian Error Function"},
+
+	// Integral Functions
 	{trigger: "\\Li", replacement: "\\operatorname{Li}\\left($0\\right)$1", options: "mA", description: "Logarithmic Integral Function"},
 	{trigger: "\\Ei", replacement: "\\operatorname{Ei}\\left($0\\right)$1", options: "mA", description: "Exponential Integral Function"},
 	{trigger: "\\Si", replacement: "\\operatorname{Si}\\left($0\\right)$1", options: "mA", description: "Sine Integral Function"},
 	{trigger: "\\Ci", replacement: "\\operatorname{Ci}\\left($0\\right)$1", options: "mA", description: "Cosine Integral Function"},
 
+	// Airy Functions
+	{trigger: "\\Ai(", replacement: "\\operatorname{Ai}\\left($0\\right)$1", options: "mA"},
+	{trigger: "\\Bi(", replacement: "\\operatorname{Bi}\\left($0\\right)$1", options: "mA"},
+
+
 
 	// **************************************************
-	//                            LAZY SUBSTUTIONS
+	//  PHYSICS NOTATION HELPERS
 	// **************************************************
 
-	// Symbols
-	// {trigger: "+-", replacement: "\\pm", options: "mA"},
-	// {trigger: "-+", replacement: "\\mp", options: "mA"},
-	// {trigger: "...", replacement: "\\dots", options: "mA"},
-	// {trigger: "===", replacement: "\\equiv", options: "mA"},
-	// {trigger: "!=", replacement: "\\neq", options: "mA"},
-	// {trigger: ">=", replacement: "\\geq", options: "mA"},
-	// {trigger: "<=", replacement: "\\leq", options: "mA"},
-	// {trigger: ">>", replacement: "\\gg", options: "mA"},
-	// {trigger: "<<", replacement: "\\ll", options: "mA"},
-	// {trigger: "~~", replacement: "\\sim", options: "mA"},
-	// {trigger: "~=", replacement: "\\simeq", options: "mA"},
-	// {trigger: "<->", replacement: "\\leftrightarrow ", options: "mA"},
-	// {trigger: "->", replacement: "\\to", options: "mA"},
-	// {trigger: "!>", replacement: "\\mapsto", options: "mA"},
-	// {trigger: "=>", replacement: "\\implies", options: "mA"},
-	// {trigger: "=<", replacement: "\\impliedby", options: "mA"},
+	// Dirac Physics Notation
+	{trigger: "\\bra", replacement: "\\bra{$0}$1", options: "mA", description: "Automatic Brackets for Bra"},
+	{trigger: "\\ket", replacement: "\\ket{$0}$1", options: "mA", description: "Automatic Brackets for Ket"},
+	{trigger: "\\inner", replacement: "\\left<$0\\middle|$1\\right>$2", options: "mA", description: "Automatic Brackets for Braket"},
+	{trigger: "\\outer", replacement: "\\ket{$0}\\bra{$1}$2", options: "mA", description: "Automatic Brackets for Outer Product"},
+	{trigger: "\\matrixel", replacement: "\\left\\langle $0\\middle|$1\\middle|$2\\right\\rangle$3", options: "mA"},
+
+	// Feynman Path Integral
+	{trigger: "\\pathint", replacement: "\\int\\mathcal{D}[${0:x}(t)] e^{i S[${0:x}]/\hbar}", options: "mA", description: "Path Integral"},
+	
+
+
+	// **************************************************
+	//  OTHER HELPERS
+	// **************************************************
+
+	// Hadamard (Matrix Pairwise) Product Notation
+	{ "trigger": "\\odot", "replacement": "\\odot$0", "options": "mA", "description": "Default O Dot" },
+	{ "trigger": "\\bodot", "replacement": "\\bigodot$0", "options": "mA", "description": "Big O Dot" },
+	{ "trigger": "\\ddotidx", "replacement": "\\bigodot_{${0:i}=1}^{${1:n}} ${2:A_i}$3", "options": "mA", "description": "Definite Big O Dot with Index" },
+	{ "trigger": "\\ddotset", "replacement": "\\bigodot_{${0:i}\\in ${1:S}} ${2:A_i}$3", "options": "mA", "description": "Definite Big O Dot over Set" },
+	
+	// Generic Operators
+	{trigger: "\\oper", replacement: "\\operatorname{$0}$1", options: "mA", description: "Generic Operator Maker"},
+	
+
+
 
 
 	// **************************************************
 	//                          OBJECT SUBSTITUTIONS
 	// **************************************************
-
-	// Generic Operator Generator
-	{trigger: "\\oper", replacement: "\\operatorname{$0}$1", options: "mA", description: "Generic Operator Maker"},
+	
 
 	// Left-Right Brackets Generator
 	{trigger: "\\left ", replacement: "\\left($0\\right)$1", options: "mA"},
@@ -479,10 +602,10 @@
 	{trigger: "\\lr{", replacement: "\\left\\{$0\\right\\}$1", options: "mA"},
 	{trigger: "\\lr[", replacement: "\\left[$0\\right]$1", options: "mA"},
 	{trigger: "\\lr|", replacement: "\\left|$0\\right|$1", options: "mA"},
-	// {trigger: "\\lr<", replacement: "\\left<$0\\right>$1", options: "mA"},
 	{trigger: "\\lr<", replacement: "\\left\\langle $0\\right\\rangle$1", options: "mA"},
 	{trigger: "\\lr.", replacement: "\\left.$0\\right.$1", options: "mA"},
 	{trigger: "\\eval", replacement: "\\left.$0\\right|_{$1}$2", options: "mA"},
+	{trigger: "\\set", replacement: "\\left\\{${0:x}\\mid ${1:P(x)}\\right\\}$2", options: "mA"},
 
 	// Matrix Generator
 	{trigger: "\\pmat", replacement: "\\begin{pmatrix}\n$0\n\\end{pmatrix}", options: "MA"},
@@ -499,12 +622,14 @@
 	{trigger: "\\matrix", replacement: "\\begin{matrix}$0\\end{matrix}", options: "nA"},
 
 
+
 	// **************************************************
 	//                     ENVIRONMENT SUBSTUTIONS
 	// **************************************************
 	{trigger: "cases", replacement: "\\begin{cases}\n$0\n\\end{cases}", options: "mA"},
 	{trigger: "align", replacement: "\\begin{align}\n$0\n\\end{align}", options: "mA"},
 	{trigger: "array", replacement: "\\begin{array}\n$0\n\\end{array}", options: "mA"},
+
 
 
 	// **************************************************
@@ -524,4 +649,43 @@
 	{"trigger": "\\LapPolar2DSol", "replacement": "${0:\\Phi}(r,\\theta) = A_0 + B_0 \\ln r + \\sum_{n=1}^{\\infty} r^n \\left[A_n \\cos(n\\theta) + B_n \\sin(n\\theta)\\right] + r^{-n} \\left[C_n \\cos(n\\theta) + D_n \\sin(n\\theta)\\right]$1", "options": "mA", "description": "2D Polar Laplace General Solution" },
 	{"trigger": "\\LapCyl3DSol", "replacement": "${0:\\Phi}(\\rho,\\phi,z) = \\sum_{n=-\\infty}^{\\infty} \\sum_{m=0}^{\\infty} \\left[A_{nm} J_n(k_{nm} \\rho) + B_{nm} Y_n(k_{nm} \\rho)\\right] \\left[C_{nm} \\cos(n\\phi) + D_{nm} \\sin(n\\phi)\\right] \\left[E_{nm} e^{k_{nm} z} + F_{nm} e^{-k_{nm} z}\\right]$1", "options": "mA", "description": "3D Cylindrical Laplace General Solution (Bessel Functions)" },
 	{"trigger": "\\LapSph3DSol", "replacement": "${0:\\Phi}(r,\\theta,\\phi) = \\sum_{l=0}^{\\infty} \\sum_{m=-l}^{l} \\left[A_{lm} r^l + B_{lm} r^{-(l+1)}\\right] Y_l^m(\\theta,\\phi)$1", "options": "mA", "description": "3D Spherical Laplace General Solution (Spherical Harmonics)" },
+
+
+
+
+
+	// **************************************************
+	//                            AUTOMATIC SYNTAX
+	// **************************************************
+
+	// Subscript & Superscript Auto Brackets [Only use Automatic or Manual at a time]
+	// {trigger: "_", replacement: "_{$0}$1", options: "mA", description: "Automatic Insert Subscript Brackets"},
+	// {trigger: "^", replacement: "^{$0}$1", options: "mA", description: "Automatic Insert Subscript Brackets"},
+	{trigger: "__", replacement: "_{$0}$1", options: "mA", description: "Manual Insert"},
+	{trigger: "^^", replacement: "^{$0}$1", options: "mA", description: "Manual Insert"},
+	{trigger: "_^", replacement: "_{$0}^{$1}$2", options: "mA", description: "Manual Insert"},
+	{trigger: "^_", replacement: "^{$0}_{$1}$2", options: "mA", description: "Manual Insert"},
+
+	// Automatic Number Indexing for Decorators
+	// {trigger: /([A-Za-z])(\d)/, replacement: "[[0]]_{[[1]]$0}$1", options: "rmA", description: "Auto letter subscript", priority: -100},
+	// {trigger: /\\hat{([A-Za-z])}(\d)/, replacement: "\\hat{[[0]]}_{[[1]]$0}$1", options: "rmA"},
+	// {trigger: /\\vec{([A-Za-z])}(\d)/, replacement: "\\vec{[[0]]}_{[[1]]$0}$1", options: "rmA"},
+	// {trigger: /\\tilde{([A-Za-z])}(\d)/, replacement: "\\tilde{[[0]]}_{[[1]]$0}$1", options: "rmA"},
+	// {trigger: /\\bar{([A-Za-z])}(\d)/, replacement: "\\bar{[[0]]}_{[[1]]$0}$1", options: "rmA"},
+	// {trigger: /\\und{([A-Za-z])}(\d)/, replacement: "\\underline{[[0]]}_{[[1]]$0}$1", options: "rmA"},
+	// {trigger: /\\dot{([A-Za-z])}(\d)/, replacement: "\\dot{[[0]]}_{[[1]]$0}$1", options: "rmA"},
+	// {trigger: /\\ddot{([A-Za-z])}(\d)/, replacement: "\\ddot{[[0]]}_{[[1]]$0}$1", options: "rmA"},
+	
+	// Automatic Number Indexing for Math Fonts
+	// {trigger: /\\mathrm{([A-Za-z])}(\d)/, replacement: "\\mathrm{[[0]]}_{[[1]]$0}$1", options: "rmA"},
+	// {trigger: /\\mathsf{([A-Za-z])}(\d)/, replacement: "\\mathsf{[[0]]}_{[[1]]$0}$1", options: "rmA"},
+	// {trigger: /\\mathtt{([A-Za-z])}(\d)/, replacement: "\\mathtt{[[0]]}_{[[1]]$0}$1", options: "rmA"},
+	// {trigger: /\\mathbf{([A-Za-z])}(\d)/, replacement: "\\mathbf{[[0]]}_{[[1]]$0}$1", options: "rmA"},
+	// {trigger: /\\mathit{([A-Za-z])}(\d)/, replacement: "\\mathit{[[0]]}_{[[1]]$0}$1", options: "rmA"},
+	// {trigger: /\\mathbb{([A-Z])}(\d)/, replacement: "\\mathbb{[[0]]}_{[[1]]$0}$1", options: "rmA"},
+	// {trigger: /\\mathcal{([A-Z])}(\d)/, replacement: "\\mathcal{[[0]]}_{[[1]]$0}$1", options: "rmA"},
+	// {trigger: /\\mathfrak{([A-Za-z])}(\d)/, replacement: "\\mathfrak{[[0]]}_{[[1]]$0}$1", options: "rmA"},
+	// {trigger: /\\mathscr{([A-Za-z])}(\d)/, replacement: "\\mathscr{[[0]]}_{[[1]]$0}$1", options: "rmA"},
+
+
 ]
