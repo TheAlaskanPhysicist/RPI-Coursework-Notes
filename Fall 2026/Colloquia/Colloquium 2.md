@@ -5,13 +5,24 @@
 ---
 **Title:** *Engineering Quantum Systems: From Materials to Networks*
 **Speaker:** *Tian Zhong, Ph.D.* | Chicago Quantum Institute, University of Chicago
-**Understanding:** <u>TBD</u>
+**Understanding:** <u>Low</u>
 
 ---
 > Briefly describe in words the key concepts of the talk that interested you or if you did not find the talk interesting, why it was not interesting to you.
 
+The telecom indistinguishable photons from materials was pretty interesting, but I don't fully understand it. Remote entanglement as well. What is dynamic rephasing?
+
+Entanglement purification is pretty cool though, but I'd have to figure out how it works.
+
 ---
 > If you were the speaker what would you do differently?
+
+I don't seem to have understood much of the connections between things? Like I saw results that seemed to be good based off of context, but I don't understand what those things actually mean. Effectively they mention "things are good" but I didn't understand why it was.
+
+---
+> How do the presented concepts relate to the classes you've taken?
+
+Well the research I do deals with a lot of coupled spin systems (TFIM) so the testbed slides were directly related to that concept. It seemed that the stoichiometric part was a volume, which is different from 1D systems.
 
 
 <div style="page-break-before: always;"></div>*PDF next page*

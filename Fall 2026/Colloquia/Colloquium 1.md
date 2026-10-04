@@ -5,13 +5,20 @@
 ---
 **Title:** *Emerging Materials, Mechanisms, and Design Principles for Wurtzite Ferroelectrics*
 **Speaker:** *Prashun Gorai, Ph.D.* | Rensselaer Polytechnic Institute, Troy, NY
-**Understanding:** <u>TBD</u>
+**Understanding:** <u>Medium</u>
 
 ---
 > Briefly describe in words the key concepts of the talk that interested you or if you did not find the talk interesting, why it was not interesting to you.
 
+1. "Compute in-memory" as opposed to von Neumann architecture?
+2. Open Questions: 
+	1. Novel Wurtzite materials, switching mechanisms, and design principles.
+	2. What about defects? (could change the barrier geometry and polarization)
+
 ---
 > If you were the speaker what would you do differently?
+
+I didn't actually have any notes about anything that I noticed that was obvious.
 
 
 <div style="page-break-before: always;"></div>*PDF next page*
