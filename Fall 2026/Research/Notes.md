@@ -13,3 +13,11 @@ We could sweep the magnetic field exponentially, since we eventually want a larg
 Use a log axis on the field axis.
 
 Allow X-X self-interaction.
+
+
+
+## Type-out of written page:
+"Investigation into the Quantum Ising Model and Simulation on RPI's Quantum Computer"
+
+TFIM: If we diagonalize $H$, then the time evolution is:
+... Time-averaged solution later, as found in other notes.
