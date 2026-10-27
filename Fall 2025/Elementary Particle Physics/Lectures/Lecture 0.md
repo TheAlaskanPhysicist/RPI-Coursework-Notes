@@ -10,29 +10,6 @@ Almost all experimental information comes from:
  - Scattering
  - Decays
  - Bound states
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### The Dirac Equation
 We can find that the Dirac equation, written in SI units, can be expressed as:
 $$\begin{align}
@@ -43,9 +20,6 @@ $$\begin{align}
 \psi\in\text{Span}\left\{\ket{e^-,\uparrow},\ket{e^-,\downarrow},\ket{e^+,\uparrow},\ket{e^+,\downarrow}\right\}
 \end{align}$$
 These are the product space of spin and electric charge of an electron.
-
-
- 
 ### Field Gauge Transformation
 When we make a choice on the basis of our Dirac particle, we maintain a level of degrees of freedom when there exists a transformation $U$ who maintains the same observable physics.
 
@@ -61,11 +35,6 @@ $$\begin{align}
 &=\left(i\hbar\gamma^\mu\partial_\mu U-mcU\right)\psi+U\cdot0\\
 &=\left(i\hbar\gamma^\mu\partial_\mu U-mcU\right)\psi
 \end{align}$$
-
-
-
-
-
 We would like to enforce that a unitary transformation $U$ makes the resultant wavefunction $\psi'$ also satisfy the Dirac equation, since we're effectively changing reference basis:
 $$\begin{align}
 \left(i\hbar\gamma^\mu\partial_\mu U-mcU\right)\psi&=0\\
@@ -100,7 +69,6 @@ We can then write the final form of this equation as:
 $$\begin{align}
 \Aboxed{q\gamma^\mu\partial_\mu A&=\dfrac{mc}{\hbar}}\\
 \end{align}$$
-
 ### Lagrangian Density of $U(1)$
 The following definition of the Lagrangian Density is as follows:
 $$\begin{align}

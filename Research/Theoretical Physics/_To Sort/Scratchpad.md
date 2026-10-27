@@ -1,6 +1,15 @@
 
 
 
+$$\begin{align}
+U(G;a)&=e^{-iGa/\hbar} & &\text{(General Operator)}\\
+U(\hat{p}\cdot\hat{r};r)&=e^{-i(\hat{p}\cdot\hat{r})r/\hbar} & &\text{(Spatial Translation)}\\
+U(\hat{J}\cdot\hat{n};\phi)&=e^{-i(\hat{J}\cdot\hat{n})\phi/\hbar} & &\text{(Rotation Translation)}\\
+U(\hat{H};t)&=e^{-i\hat{H}t/\hbar} & &\text{(Time Translation)}\\
+\end{align}$$
+
+
+
 
 
 $$\begin{align}
