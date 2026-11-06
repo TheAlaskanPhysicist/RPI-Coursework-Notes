@@ -1,0 +1,11 @@
+{
+  "accentColor": "#5056fb",
+  "cssTheme": "Minimal",
+  "interfaceFontFamily": "Tahoma",
+  "textFontFamily": "Tahoma",
+  "monospaceFontFamily": "Tahoma",
+  "baseFontSizeAction": true,
+  "showViewHeader": false,
+  "showRibbon": true,
+  "nativeMenus": true
+}
