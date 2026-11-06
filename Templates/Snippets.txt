@@ -1,7 +1,80 @@
 [
-	// Math Mode
-	{trigger: "mk", replacement: "$$0$", options: "tA"},
-	{trigger: "dm", replacement: "$$$0$$", options: "tAw"},
+	// Options Descriptions
+	// v: Only activate when text is selected
+	// t: Only activate outside math mode
+	// m: Only activate inside math mode
+	// 		n: Only activate in inline math
+	// 		M: Only activate in block math
+	// 		T: Only activate inside \text{}
+	// c: Only activate inside code blocks
+	// 		C: Only activate inside inline code
+	// w: Require a word boundary (triggers only when text is isolated)
+	// r: Treat trigger as a regular expression
+	// A: Automatically expand when you type the trigger (otherwise, hit Tab)
+	// U: Special undo behavior for automatic snippets
+	
+
+	// **************************************************
+	//		ENVIRONMENT SUBSTUTIONS
+	// **************************************************
+	{	// Code Environments
+		trigger: "(${CODEBLOCK_LANGUAGES})",
+		triggerKey: "Shift-Enter",
+		replacement: "```[[0]]\n$0\n```",
+		options: "trw",
+		description: "Create code block"
+	},
+	{	// In-Line LaTeX Environment
+		trigger: "mk", 
+		replacement: "$$0$", 
+		options: "tA",
+		description: "Create in-line math (LaTeX)"
+	},
+	{	// Block LaTeX Environment
+		trigger: "dm", 
+		replacement: "$$$0$$", 
+		options: "twA",
+		description: "Create block math (LaTeX)"
+	},
+	{	// Math Environments
+		trigger: "(${MATH_ENVIRONMENTS})",
+		replacement: "\\begin{[[0]]}\n$0\n\\end{[[0]]}",
+		options: "mrwA",
+		description: "Create math environment"
+	},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// Formatting: Fractions
+	{
+		trigger: "/",
+		replacement: "\\frac{${VISUAL}}{$0}",
+		options: "mAv",
+		description: "Alt+/ auto fraction"
+	},
+
+
+
+	
+	
+
+
+
+
+
+
 
 
 
@@ -623,12 +696,7 @@
 
 
 
-	// **************************************************
-	//                     ENVIRONMENT SUBSTUTIONS
-	// **************************************************
-	{trigger: "cases", replacement: "\\begin{cases}\n$0\n\\end{cases}", options: "mA"},
-	{trigger: "align", replacement: "\\begin{align}\n$0\n\\end{align}", options: "mA"},
-	{trigger: "array", replacement: "\\begin{array}\n$0\n\\end{array}", options: "mA"},
+	
 
 
 
