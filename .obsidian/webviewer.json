@@ -1,4 +1,6 @@
 {
-  "openExternalURLs": false,
-  "enableAdblocking": true
+  "openExternalURLs": true,
+  "enableAdblocking": true,
+  "customSearchEngine": "https://duckduckgo.com/?q=%s",
+  "homepage": "https://duckduckgo.com"
 }
